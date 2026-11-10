@@ -43,7 +43,7 @@ First public release, as `ir-reference-packs`.
 * **Discovery** keeps the unit ID of an article the site moved (`moved_from` in `articles.yaml`).
 * **Evaluation.** Held-out question x07 (mail forwarding and inbox rules) lost its evidence in the phishing
   playbook; it now cites the audit-log search procedures in `ms-purview-exchange`. The other `ms-learn-ir`
-  evidence is unchanged apart from its URLs. The evaluation has not been re-run on this snapshot.
+  evidence is unchanged apart from its URLs.
 
 ### Changed (ranking v4, fifth iteration)
 * **Ranking v4** is the default; v3 stays available (`--ranking v3`).
