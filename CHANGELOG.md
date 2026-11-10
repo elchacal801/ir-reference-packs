@@ -5,6 +5,10 @@ contain the code, recipes, source locks, history records and evaluation. Built p
 
 ## Unreleased
 
+### Fixed
+* The README status line and `irpacks.__version__` said `0.1.0.dev0` in the v0.1.0 tag; both now say `0.1.0`. Packs
+  built from the tag record the engine version as `0.1.0.dev0`.
+
 ## 0.1.0 (2026-11-10)
 
 First public release, as `ir-reference-packs`.
