@@ -1,0 +1,305 @@
+{
+  "run_at": "2026-10-25T16:07:40Z",
+  "backend": "local-fts5",
+  "label": "eight-pack-index",
+  "split": "vendor-heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions-vendor.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "2",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2
+    },
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 12,
+    "answerable": 11,
+    "unanswerable": 1,
+    "evidence_complete_at_5": "7/11",
+    "evidence_complete_at_5_rate": 0.636,
+    "mean_group_recall": 0.636,
+    "multi_evidence_questions": "0/1 complete",
+    "mrr": 0.374,
+    "citation_valid": "7/7",
+    "required_context_complete": "1/1",
+    "duplicate_results": "0/60",
+    "failures": [
+      "v02",
+      "v04",
+      "v09",
+      "v11"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "v01",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-10-25:7cde9a0b:mde-network-isolation-exclusions.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p03:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-device---automatic-attack-disruption-preview.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-shield-predict-threats.why-predictive-shielding-matters:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v02",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4688.t01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s01.s04.s01.a03:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:ms-ir-phishing.did-the-user-select-links-in-the-email:0",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-devicelogonevents-table.t01:1",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-deviceimageloadevents-table.t01:1"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v03",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s03.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:bm-afterword.p12:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-hunting.bookmarks-to-keep-track-of-data:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-bookmarks.add-a-bookmark-azure-portal-only:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-audit-track-tasks.view-tasks-added-to-the-list:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v04",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-activities.exchange-mailbox-activities.p01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-search.before-you-search-the-audit-log.l01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-get-started.p01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-solutions-overview.next-steps:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-get-started.step-1-verify-organization-subscription-and-billing:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v05",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-investigate-accounts.use-mailitemsaccessed-audit-records-for-forensic-investigations:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-search-email.what-to-do-when-searches-return-no-result:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-investigate-accounts.filter-duplicate-audit-records:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdo-submissions-users-report-message-add-in-configure.q-i-cant-scope-the-built-in-report-button-which-prevents-me-from-rolling-it-out-what-can-i-do:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-identify-mailbox-rules:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v06",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.logon-types-and-descriptions.p03:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.security-monitoring-recommendations.l01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.logon-types-and-descriptions.l03:1",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4626.f01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.logon-types-and-descriptions.t01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v07",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.security-monitoring-recommendations.l02:1",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-audit-logon:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.f01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.p12:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.p14:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "v08",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-compromised-creds:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-retired.privilegeescalation-iam-administrativepermissions:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-remediate-kubernetes.compromised-kubernetes-user.l01:1",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-retired.persistence-iam-userpermissions:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-iam.credentialaccess-iam-compromisedcredentials:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v09",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-aws-console-sign-in-events.cloudtrail-event-reference-aws-console-sign-in-events-federated-user.p03:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-aws-console-sign-in-events.cloudtrail-event-reference-aws-console-sign-in-events-federated-user.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.c04:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.p15:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v10",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-log-records.flow-logs-fields.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-logs-s3-create-flow-log.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-log-records.flow-logs-default:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-logs-firehose-create-flow-log.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-logs-limitations.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v11",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-playbook-recommendations.response-to-threats-immediately-with-minimal-human-dependencies:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-azure-network-layer.possible-compromised-machine-detected:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:fm-preface.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v12",
+      "split": "vendor-heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch16.s05.s02.s04.s04:0",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-find-ransomware.signs-of-ransomware-activity:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s05.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch16.s05.s02.s03.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s06:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    }
+  ]
+}

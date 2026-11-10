@@ -1,0 +1,28 @@
+# Content-rights record for the cisa-ir-playbooks pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: cisa-ir-playbooks
+content_license:
+  spdx: null
+  url: null
+  statement: >-
+    U.S. Government work by CISA. The document is marked TLP:CLEAR: "Disclosure is not limited ... TLP:CLEAR
+    information may be distributed without restriction" (PDF p. 1). The PDF's document properties carry a Microsoft
+    Information Protection label "For Official Use Only (FOUO)" set in 2020 (a Word-template leftover); the visible
+    marking is TLP:CLEAR and CISA publishes the document publicly, so the marking governs.
+  suggested_attribution: >-
+    CISA, Cybersecurity Incident & Vulnerability Response Playbooks (November 2021). TLP:CLEAR.
+  exclusions:
+    - "Use of this material does not imply endorsement by CISA or the other authoring organizations."
+    - "Agency seals and logos (CISA seal on the cover) are not redistributed."
+default_state: redistributable
+default_basis: >-
+  U.S. Government work by CISA. The document is marked TLP:CLEAR: "Disclosure is not limited ... TLP:CLEAR
+  information may be distributed without restriction" (PDF p. 1). The PDF's document properties carry a Microsoft
+  Information Protection label "For Official Use Only (FOUO)" set in 2020 (a Word-template leftover); the visible
+  marking is TLP:CLEAR and CISA publishes the document publicly, so the marking governs.
+rules:
+  - id: cover-seals
+    match: {type: figure, within: fm-front-matter}
+    state: metadata_only
+    reason: "Cover art and agency seals or logos (insignia)."
+overrides: []

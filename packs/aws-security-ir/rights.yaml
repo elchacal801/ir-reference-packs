@@ -1,0 +1,28 @@
+# Content-rights record for the aws-security-ir pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: aws-security-ir
+content_license:
+  spdx: null
+  url: https://aws.amazon.com/terms/
+  statement: >-
+    AWS documentation is published on docs.aws.amazon.com under the AWS Site Terms. No open content license was
+    located for these guides (the archived awsdocs GitHub repositories are not the current source). Amazon Web
+    Services trademarks and service names are not licensed.
+  suggested_attribution: >-
+    Amazon Web Services, "<page title>", AWS documentation, <url> (captured <date>). Copyright Amazon.com, Inc. or its
+    affiliates.
+  exclusions:
+    - "AWS trademarks, logos and service names are not licensed by this pack."
+    - "Diagrams and screenshots were not captured; figures carry alt text and a link to the published image only."
+default_state: redistributable
+default_basis: >-
+  Maintainer decision (2026-10-25), extending the Microsoft Learn decision to AWS: AWS documentation pages are
+  treated as publicly redistributable with attribution. They are published openly on docs.aws.amazon.com under the
+  AWS Site Terms; no open content license was located for these guides (the archived awsdocs GitHub repositories are
+  not the current source).
+rules:
+  - id: images-not-captured
+    match: {type: figure}
+    state: metadata_only
+    reason: "Image bytes were not captured; alt text and link only."
+overrides: []

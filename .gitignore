@@ -1,0 +1,16 @@
+# Isolated environment
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Source bytes and downloads are never tracked (see sources.lock.json for identities/hashes)
+input/
+
+# Generated outputs (reproducible from code + locked inputs); release candidates are built into dist/
+build/
+dist/
+
+# Editor / OS noise
+.DS_Store
+*.swp

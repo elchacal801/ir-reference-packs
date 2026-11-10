@@ -1,0 +1,24 @@
+# Suspected defects in the source PDF, preserved as published unless noted (the conversion never "fixes" source text).
+# Each entry was checked against the rendered page. Reported upstream: no (publication actions are out of scope).
+schema_version: 1
+pack_id: cisa-stopransomware
+defects:
+  - element_id: null
+    pdf_page: 1
+    page_label: null
+    description: >-
+      Hidden text on the cover: a "CHANGE RECORD" heading and an older change-record table (its version 2.0 row is
+      dated February, where the visible change record on page 2 says May 2023) are drawn underneath the cover artwork.
+      They are invisible on the printed page but present in the text layer and the structure tree.
+    reviewer: Claude (AI agent)
+    status: excluded
+    remediation: "Excluded from the reading text by the recipe (exclude_hidden_text); the visible change record on page 2 is kept."
+  - element_id: null
+    pdf_page: 1
+    page_label: null
+    description: >-
+      The TLP:CLEAR disclaimer printed at the foot of the cover is untagged (not in the structure tree), so it is not
+      part of the converted text; the same disclaimer wording governs the document's distribution (TLP:CLEAR).
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Recorded as a coverage gap on page 1; the rights record quotes the disclaimer."

@@ -1,0 +1,32 @@
+# Build recipe for the cisa-ir-playbooks pack: the tagged PDF's structure tree, with the PDF outline as hierarchy
+# (route tagged_pdf_structure, structure: outline). Printed page numbers come from the footer text.
+route: tagged_pdf_structure
+structure: outline
+printed_labels:
+  pattern: '(?:^|Agency\s+)(\d+)$'
+furniture_patterns: ['^TLP:CLEAR$']   # the TLP marking repeats on every page, sometimes inside the body area
+inputs:
+  authoritative: cisa-ir-playbooks/pdf/2021-11
+artifacts:
+  - source_id: cisa-ir-playbooks/pdf/2021-11
+    role: authoritative
+    url: https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf
+    resolved_from: https://www.cisa.gov/resources-tools/resources/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks
+    local_path: input/cisa-ir-playbooks/2026-10-25/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf
+    media_type: application/pdf
+    edition_stamp: "Publication: November 2021; PDF CreationDate 2024-08-23 (Acrobat PDFMaker 24 for Word)"
+    notes: >-
+      Supplied by the maintainer on 2026-10-25 as an upload: www.cisa.gov (and media.defense.gov) refuse requests
+      from the project's cloud environment, so these bytes were not fetched from the URL below and their identity
+      with the published file is not verified. The URL is recorded for reference and update checks.
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules:
+    - {within: fm-front-matter, corpus: front_matter, include: false, reason: "cover page and change record (non-substantive front matter)"}
+    - {within: fm-table-of-contents, corpus: navigation, include: false, reason: "table of contents (navigation)"}

@@ -1,0 +1,1621 @@
+{
+ "ranking": {
+  "version": "4",
+  "stopwords": false,
+  "all_terms_first": false,
+  "candidates": 100,
+  "corpus_weights": {
+   "notes": 0.5,
+   "references": 0.5
+  },
+  "proximity_weight": 1.0,
+  "visual_boost": 1.5,
+  "alias_slots": 2,
+  "alias_strip": "auto",
+  "alias_candidates": 20,
+  "alias_mode": "per_pack",
+  "alias_window": 5,
+  "rerank_weight": 0.3,
+  "dense_weight": 0.4,
+  "dense_candidates": 100,
+  "dense_within_filters": true,
+  "lexical_fallback": {
+   "rerank_weight": 0.3,
+   "dense_weight": 0.0
+  },
+  "v4_tokens": true,
+  "dense_norm": "minmax",
+  "similarity_levels": true
+ },
+ "summary": {
+  "answerable": 79,
+  "complete@5": 56,
+  "top1": 39,
+  "top3": 51,
+  "mrr@5": 0.582,
+  "multi_group_complete@5": "3/11"
+ },
+ "rows": [
+  {
+   "id": "t01",
+   "file": "questions.yaml",
+   "question": "What is a DNS sinkhole and how can it be used to contain malware command-and-control traffic?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "ms-defender",
+    "aws-security-ir",
+    "aws-security-ir"
+   ]
+  },
+  {
+   "id": "t02",
+   "file": "questions.yaml",
+   "question": "A phished user's Microsoft 365 account was taken over. Resetting the password is not enough \u2014 how do we terminate the attacker's existing sessions and tokens?",
+   "group_ranks": [
+    3
+   ],
+   "complete5": true,
+   "rr5": 0.3333333333333333,
+   "first": 3,
+   "top5_packs": [
+    "ms-defender",
+    "ms-defender",
+    "dynamic-ir",
+    "dynamic-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "t03",
+   "file": "questions.yaml",
+   "question": "How should responders handle malicious OAuth applications that a compromised user consented to?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "t04",
+   "file": "questions.yaml",
+   "question": "What steps confirm that containment actually worked?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "aws-security-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "t05",
+   "file": "questions.yaml",
+   "question": "Which situations call for immediate containment instead of continued monitoring and intelligence gathering?",
+   "group_ranks": [
+    4
+   ],
+   "complete5": true,
+   "rr5": 0.25,
+   "first": 4,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "t06",
+   "file": "questions.yaml",
+   "question": "What does NIST SP 800-61r3 recommend for continuous monitoring (DE.CM)?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "nist-sp800-61r3",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "nist-sp800-61r3"
+   ]
+  },
+  {
+   "id": "t07",
+   "file": "questions.yaml",
+   "question": "Which CSF 2.0 Functions correspond to the Preparation phase of the older SP 800-61 incident response life cycle?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "nist-sp800-61r3",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "nist-sp800-61r3"
+   ]
+  },
+  {
+   "id": "t08",
+   "file": "questions.yaml",
+   "question": "What is the 3-2-1-1-0 backup rule?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "t09",
+   "file": "questions.yaml",
+   "question": "How can an attacker use a Windows scheduled task for fileless persistence, and why doesn't a reboot remove it?",
+   "group_ranks": [
+    1,
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "ms-windows-auditing",
+    "dynamic-ir",
+    "ms-windows-auditing"
+   ]
+  },
+  {
+   "id": "t10",
+   "file": "questions.yaml",
+   "question": "What does the DAIR model diagram show?",
+   "group_ranks": [
+    5
+   ],
+   "complete5": true,
+   "rr5": 0.2,
+   "first": 5,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "t11",
+   "file": "questions.yaml",
+   "question": "How do DAIR activities line up with the six NIST CSF 2.0 Functions that SP 800-61r3 uses for incident response?",
+   "group_ranks": [
+    1,
+    31
+   ],
+   "complete5": false,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "nist-sp800-61r3",
+    "nist-sp800-61r3"
+   ]
+  },
+  {
+   "id": "t12",
+   "file": "questions.yaml",
+   "question": "A SaaS CRM vendor says it had a breach affecting our customer data. How should we verify and triage before escalating?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "t14",
+   "file": "questions.yaml",
+   "question": "How is mean time to detect (MTTD) calculated?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "t15",
+   "file": "questions.yaml",
+   "question": "According to NIST SP 800-61r3, who besides the incident handlers takes part in incident response?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "nist-sp800-61r3",
+    "dynamic-ir",
+    "dynamic-ir",
+    "nist-sp800-61r3",
+    "nist-sp800-61r3"
+   ]
+  },
+  {
+   "id": "h01",
+   "file": "questions.yaml",
+   "question": "After a phishing compromise the attacker registered their own MFA device. What identity persistence should cloud responders look for?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "ms-defender",
+    "dynamic-ir",
+    "ms-defender",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "h02",
+   "file": "questions.yaml",
+   "question": "Can we use our identity provider to cut a compromised account off from all SaaS applications at once, and what are the caveats?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "ms-defender",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "h03",
+   "file": "questions.yaml",
+   "question": "How can we isolate a compromised Azure VM while keeping it running for forensic observation?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "dynamic-ir",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "h04",
+   "file": "questions.yaml",
+   "question": "Before restoring from backups after a ransomware attack, how do we choose a safe restore point?",
+   "group_ranks": [
+    5
+   ],
+   "complete5": true,
+   "rr5": 0.2,
+   "first": 5,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "h05",
+   "file": "questions.yaml",
+   "question": "What does NIST SP 800-61r3 say about executing the incident response plan with third parties (RS.MA-01)?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "nist-sp800-61r3",
+    "cisa-ir-playbooks",
+    "dynamic-ir",
+    "nist-sp800-61r3",
+    "nist-sp800-61r3"
+   ]
+  },
+  {
+   "id": "h06",
+   "file": "questions.yaml",
+   "question": "A vendor's software update shipped with a backdoor and we run that software internally. How does the book characterize this and how should eradication proceed?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "cisa-stopransomware",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "h07",
+   "file": "questions.yaml",
+   "question": "How does NIST SP 800-61 Revision 3 differ from Revision 2 in its incident response model?",
+   "group_ranks": [
+    1,
+    36
+   ],
+   "complete5": false,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "nist-sp800-61r3",
+    "nist-sp800-61r3"
+   ]
+  },
+  {
+   "id": "h10",
+   "file": "questions.yaml",
+   "question": "How long do access, refresh and SAML tokens typically live, and how is each revoked?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "ms-learn-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "m01",
+   "file": "questions-ms.yaml",
+   "question": "How do I revoke a compromised Entra ID user's refresh tokens with Microsoft Graph PowerShell?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "dynamic-ir",
+    "ms-learn-ir",
+    "ms-defender",
+    "ms-learn-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "m02",
+   "file": "questions-ms.yaml",
+   "question": "Why reset an on-premises Active Directory user's password twice when cutting off a compromised account?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-learn-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "m03",
+   "file": "questions-ms.yaml",
+   "question": "Which detections should alert us to a possible stolen and replayed session token?",
+   "group_ranks": [
+    5
+   ],
+   "complete5": true,
+   "rr5": 0.2,
+   "first": 5,
+   "top5_packs": [
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-defender",
+    "ms-learn-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "m04",
+   "file": "questions-ms.yaml",
+   "question": "How many break-glass accounts should we keep for Microsoft Entra, and what kind of accounts should they be?",
+   "group_ranks": [
+    9
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 9,
+   "top5_packs": [
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "m05",
+   "file": "questions-ms.yaml",
+   "question": "How does an illicit OAuth consent grant attack typically unfold?",
+   "group_ranks": [
+    3
+   ],
+   "complete5": true,
+   "rr5": 0.3333333333333333,
+   "first": 3,
+   "top5_packs": [
+    "ms-defender",
+    "ms-defender",
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "m06",
+   "file": "questions-ms.yaml",
+   "question": "What Sentinel KQL query lists sign-ins from a suspicious attacker IP address?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-learn-ir",
+    "ms-sentinel",
+    "ms-defender",
+    "ms-learn-ir",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "m07",
+   "file": "questions-ms.yaml",
+   "question": "What do Microsoft's guidance and the Dynamic Incident Response book each say about revoking sessions and refresh tokens after an account takeover?",
+   "group_ranks": [
+    28,
+    1
+   ],
+   "complete5": false,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "v01",
+   "file": "questions-vendor.yaml",
+   "question": "How do I isolate a compromised device from the network with Microsoft Defender for Endpoint, and what can it still reach while isolated?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-defender",
+    "ms-defender",
+    "ms-defender",
+    "ms-defender",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "v02",
+   "file": "questions-vendor.yaml",
+   "question": "Which Defender advanced hunting table holds process creation events, and which column has the full command line?",
+   "group_ranks": [
+    25
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 25,
+   "top5_packs": [
+    "ms-defender",
+    "ms-defender",
+    "ms-defender",
+    "ms-windows-auditing",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "v03",
+   "file": "questions-vendor.yaml",
+   "question": "While hunting in Microsoft Sentinel, how do I keep an interesting query result so I can come back to it and investigate later?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "ms-sentinel",
+    "ms-sentinel",
+    "ms-sentinel",
+    "ms-sentinel",
+    "ms-sentinel"
+   ]
+  },
+  {
+   "id": "v04",
+   "file": "questions-vendor.yaml",
+   "question": "By default, how far back can we search the Microsoft 365 audit log with Audit (Standard)?",
+   "group_ranks": [
+    7
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 7,
+   "top5_packs": [
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange"
+   ]
+  },
+  {
+   "id": "v05",
+   "file": "questions-vendor.yaml",
+   "question": "After evicting an attacker from a mailbox, how do I use audit records to work out which messages they accessed?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange"
+   ]
+  },
+  {
+   "id": "v06",
+   "file": "questions-vendor.yaml",
+   "question": "In Windows security event 4624, what does logon type 10 mean?",
+   "group_ranks": [
+    4
+   ],
+   "complete5": true,
+   "rr5": 0.25,
+   "first": 4,
+   "top5_packs": [
+    "ms-windows-auditing",
+    "ms-windows-auditing",
+    "ms-windows-auditing",
+    "ms-windows-auditing",
+    "ms-windows-auditing"
+   ]
+  },
+  {
+   "id": "v07",
+   "file": "questions-vendor.yaml",
+   "question": "In a failed logon event 4625, what does status 0xC000006A indicate, and when is it worth alerting on?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-windows-auditing",
+    "ms-windows-auditing",
+    "ms-windows-auditing",
+    "ms-windows-auditing",
+    "ms-windows-auditing"
+   ]
+  },
+  {
+   "id": "v08",
+   "file": "questions-vendor.yaml",
+   "question": "GuardDuty reports that an IAM user's access keys may be compromised. What remediation steps does AWS recommend?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir"
+   ]
+  },
+  {
+   "id": "v09",
+   "file": "questions-vendor.yaml",
+   "question": "In an AWS CloudTrail record, what does a userIdentity type of AssumedRole mean?",
+   "group_ranks": [
+    3
+   ],
+   "complete5": true,
+   "rr5": 0.3333333333333333,
+   "first": 3,
+   "top5_packs": [
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir"
+   ]
+  },
+  {
+   "id": "v10",
+   "file": "questions-vendor.yaml",
+   "question": "Which fields does the default VPC flow log record format contain?",
+   "group_ranks": [
+    20
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 20,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "aws-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "v11",
+   "file": "questions-vendor.yaml",
+   "question": "What do the Dynamic Incident Response book and Microsoft Defender for Endpoint each say about isolating a compromised machine from the network?",
+   "group_ranks": [
+    7,
+    23
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 7,
+   "top5_packs": [
+    "ms-defender",
+    "ms-azure-ir",
+    "dynamic-ir",
+    "ms-defender",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "c01",
+   "file": "questions-cisa.yaml",
+   "question": "How quickly must a federal civilian agency notify CISA after it determines that an incident has occurred?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks"
+   ]
+  },
+  {
+   "id": "c02",
+   "file": "questions-cisa.yaml",
+   "question": "According to CISA's playbook, what should the post-incident lessons-learned review cover?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "c03",
+   "file": "questions-cisa.yaml",
+   "question": "In CISA's incident response checklist, what are the steps to declare an incident?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks"
+   ]
+  },
+  {
+   "id": "c04",
+   "file": "questions-cisa.yaml",
+   "question": "What is the first thing to do with systems affected by a ransomware attack?",
+   "group_ranks": [
+    10
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 10,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "c05",
+   "file": "questions-cisa.yaml",
+   "question": "If we cannot disconnect a ransomware-infected device from the network, what should we do?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "cisa-stopransomware",
+    "ms-azure-ir",
+    "dynamic-ir",
+    "ms-azure-ir",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "c06",
+   "file": "questions-cisa.yaml",
+   "question": "How should backups be kept so that they survive a ransomware attack?",
+   "group_ranks": [
+    23
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 23,
+   "top5_packs": [
+    "dynamic-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "c07",
+   "file": "questions-cisa.yaml",
+   "question": "What do the #StopRansomware Guide and the Dynamic Incident Response book each recommend for systems that ransomware is actively encrypting?",
+   "group_ranks": [
+    9,
+    19
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 9,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "dynamic-ir",
+    "cisa-stopransomware",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "xt01",
+   "file": "questions-x-tuning.yaml",
+   "question": "How do I get Azure resource logs and the activity log into a Log Analytics workspace?",
+   "group_ranks": [
+    null
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": null,
+   "top5_packs": [
+    "ms-learn-ir",
+    "ms-azure-ir",
+    "ms-learn-ir",
+    "ms-learn-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "xt02",
+   "file": "questions-x-tuning.yaml",
+   "question": "What extra protection can stop an attacker with admin rights from disabling Azure Backup protection?",
+   "group_ranks": [
+    null
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": null,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "xt03",
+   "file": "questions-x-tuning.yaml",
+   "question": "How can we tell who accessed secrets in an Azure key vault and when?",
+   "group_ranks": [
+    25
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 25,
+   "top5_packs": [
+    "ms-defender",
+    "ms-defender",
+    "ms-defender",
+    "ms-azure-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "xt04",
+   "file": "questions-x-tuning.yaml",
+   "question": "What does Google Cloud's Event Threat Detection do?",
+   "group_ranks": [
+    9
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 9,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "dynamic-ir",
+    "gcp-security-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "xt05",
+   "file": "questions-x-tuning.yaml",
+   "question": "What should an incident response plan cover for cryptocurrency mining attacks on Google Cloud?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "xt06",
+   "file": "questions-x-tuning.yaml",
+   "question": "What gcloud command snapshots a Compute Engine disk?",
+   "group_ranks": [
+    23
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 23,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "xt07",
+   "file": "questions-x-tuning.yaml",
+   "question": "What are the four Traffic Light Protocol labels?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "first-standards",
+    "first-standards",
+    "gcp-security-ir",
+    "first-standards",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "xt08",
+   "file": "questions-x-tuning.yaml",
+   "question": "How is a CSIRT different from a PSIRT?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "first-standards",
+    "first-standards",
+    "first-standards",
+    "first-standards",
+    "first-standards"
+   ]
+  },
+  {
+   "id": "xt09",
+   "file": "questions-x-tuning.yaml",
+   "question": "What is an archive copy in digital forensics terminology?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics"
+   ]
+  },
+  {
+   "id": "xt10",
+   "file": "questions-x-tuning.yaml",
+   "question": "How should a forensic examination report explain its results?",
+   "group_ranks": [
+    5
+   ],
+   "complete5": true,
+   "rr5": 0.2,
+   "first": 5,
+   "top5_packs": [
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics"
+   ]
+  },
+  {
+   "id": "xt11",
+   "file": "questions-x-tuning.yaml",
+   "question": "Why does acquiring a Mac depend on whether it has a T2 chip or Apple Silicon?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics"
+   ]
+  },
+  {
+   "id": "xt12",
+   "file": "questions-x-tuning.yaml",
+   "question": "What network flow logging do AWS and Google Cloud offer for investigating VPC traffic?",
+   "group_ranks": [
+    3,
+    4
+   ],
+   "complete5": true,
+   "rr5": 0.3333333333333333,
+   "first": 3,
+   "top5_packs": [
+    "gcp-security-ir",
+    "dynamic-ir",
+    "aws-security-ir",
+    "gcp-security-ir",
+    "aws-security-ir"
+   ]
+  },
+  {
+   "id": "x01",
+   "file": "questions-x.yaml",
+   "question": "We need forensic copies of an Azure VM's disks that will hold up legally. What does the process look like?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir"
+   ]
+  },
+  {
+   "id": "x02",
+   "file": "questions-x.yaml",
+   "question": "Which Azure log shows who created or changed resources, like a new VM or a Key Vault access policy change?",
+   "group_ranks": [
+    4
+   ],
+   "complete5": true,
+   "rr5": 0.25,
+   "first": 4,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "x03",
+   "file": "questions-x.yaml",
+   "question": "A Google Cloud service account key was pushed to a public GitHub repo. What do we do right now?",
+   "group_ranks": [
+    19
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 19,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "x04",
+   "file": "questions-x.yaml",
+   "question": "Why can't we see who read objects in our Google Cloud project \u2014 are data reads logged by default?",
+   "group_ranks": [
+    21
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 21,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "x05",
+   "file": "questions-x.yaml",
+   "question": "GuardDuty says temporary EC2 instance credentials are being used from outside AWS. What does that finding mean?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir",
+    "aws-security-ir"
+   ]
+  },
+  {
+   "id": "x06",
+   "file": "questions-x.yaml",
+   "question": "How do we permanently remove a phishing email from every mailbox in Microsoft 365?",
+   "group_ranks": [
+    21
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 21,
+   "top5_packs": [
+    "ms-purview-exchange",
+    "ms-defender",
+    "ms-purview-exchange",
+    "ms-purview-exchange",
+    "ms-purview-exchange"
+   ]
+  },
+  {
+   "id": "x07",
+   "file": "questions-x.yaml",
+   "question": "During a phishing investigation, how do we check whether the attacker set up mail forwarding or inbox rules?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-learn-ir",
+    "ms-defender",
+    "ms-defender",
+    "dynamic-ir",
+    "ms-learn-ir"
+   ]
+  },
+  {
+   "id": "x08",
+   "file": "questions-x.yaml",
+   "question": "Which Windows Security event ID tells us a new service was installed on a host?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-windows-auditing",
+    "ms-defender",
+    "ms-windows-auditing",
+    "ms-defender",
+    "ms-windows-auditing"
+   ]
+  },
+  {
+   "id": "x09",
+   "file": "questions-x.yaml",
+   "question": "A partner sent us a report marked TLP:AMBER+STRICT. Can we share it with our clients?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "first-standards",
+    "first-standards",
+    "ms-sentinel",
+    "ms-purview-exchange",
+    "ms-defender"
+   ]
+  },
+  {
+   "id": "x10",
+   "file": "questions-x.yaml",
+   "question": "What does the Attack Requirements metric mean in CVSS v4.0?",
+   "group_ranks": [
+    2
+   ],
+   "complete5": true,
+   "rr5": 0.5,
+   "first": 2,
+   "top5_packs": [
+    "first-standards",
+    "first-standards",
+    "first-standards",
+    "dynamic-ir",
+    "first-standards"
+   ]
+  },
+  {
+   "id": "x11",
+   "file": "questions-x.yaml",
+   "question": "Under the FIRST CSIRT Services Framework, what functions make up incident coordination?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "first-standards",
+    "first-standards",
+    "first-standards",
+    "first-standards",
+    "first-standards"
+   ]
+  },
+  {
+   "id": "x12",
+   "file": "questions-x.yaml",
+   "question": "What is a live acquisition, and when would we use one instead of pulling the plug?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics"
+   ]
+  },
+  {
+   "id": "x13",
+   "file": "questions-x.yaml",
+   "question": "After remotely collecting evidence from an endpoint, what do we need to document about the acquisition?",
+   "group_ranks": [
+    4
+   ],
+   "complete5": true,
+   "rr5": 0.25,
+   "first": 4,
+   "top5_packs": [
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics",
+    "swgde-forensics"
+   ]
+  },
+  {
+   "id": "x14",
+   "file": "questions-x.yaml",
+   "question": "Before we contact the customer about their cloud account, how do we make sure the cloud provider doesn't lose the data?",
+   "group_ranks": [
+    13
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 13,
+   "top5_packs": [
+    "gcp-security-ir",
+    "gcp-security-ir",
+    "swgde-forensics",
+    "ms-azure-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "x15",
+   "file": "questions-x.yaml",
+   "question": "How are federal agencies supposed to find out about vulnerabilities that are being actively exploited?",
+   "group_ranks": [
+    3
+   ],
+   "complete5": true,
+   "rr5": 0.3333333333333333,
+   "first": 3,
+   "top5_packs": [
+    "cisa-ir-playbooks",
+    "dynamic-ir",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks",
+    "cisa-ir-playbooks"
+   ]
+  },
+  {
+   "id": "x16",
+   "file": "questions-x.yaml",
+   "question": "Why should we grab a memory image before shutting down a compromised Windows machine?",
+   "group_ranks": [
+    1
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "dynamic-ir",
+    "dynamic-ir",
+    "swgde-forensics",
+    "swgde-forensics",
+    "dynamic-ir"
+   ]
+  },
+  {
+   "id": "x17",
+   "file": "questions-x.yaml",
+   "question": "How can we capture full network packets from a suspicious cloud VM in Azure and in Google Cloud?",
+   "group_ranks": [
+    1,
+    5
+   ],
+   "complete5": true,
+   "rr5": 1.0,
+   "first": 1,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "x18",
+   "file": "questions-x.yaml",
+   "question": "How do Azure and Google Cloud protect stored data and backups from being deleted by an attacker?",
+   "group_ranks": [
+    28,
+    null
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 28,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "gcp-security-ir"
+   ]
+  },
+  {
+   "id": "x19",
+   "file": "questions-x.yaml",
+   "question": "What do the Dynamic Incident Response book and SWGDE say about chain of custody for collected evidence?",
+   "group_ranks": [
+    9,
+    19
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": 9,
+   "top5_packs": [
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "ms-azure-ir",
+    "dynamic-ir",
+    "swgde-forensics"
+   ]
+  },
+  {
+   "id": "x20",
+   "file": "questions-x.yaml",
+   "question": "Compare how Google Cloud and Microsoft Entra handle cutting off a compromised account's access.",
+   "group_ranks": [
+    null,
+    null
+   ],
+   "complete5": false,
+   "rr5": 0.0,
+   "first": null,
+   "top5_packs": [
+    "ms-defender",
+    "gcp-security-ir",
+    "dynamic-ir",
+    "ms-learn-ir",
+    "ms-azure-ir"
+   ]
+  }
+ ],
+ "per_source": {
+  "multi_source_questions": 11,
+  "complete_per_source": 7,
+  "rows": [
+   {
+    "id": "t09",
+    "sources": [
+     "dynamic-ir"
+    ],
+    "named": false,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "t11",
+    "sources": [
+     "dynamic-ir",
+     "nist-sp800-61r3"
+    ],
+    "named": false,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "h07",
+    "sources": [
+     "dynamic-ir",
+     "nist-sp800-61r3"
+    ],
+    "named": false,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "m07",
+    "sources": [
+     "dynamic-ir",
+     "ms-learn-ir"
+    ],
+    "named": true,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "v11",
+    "sources": [
+     "dynamic-ir",
+     "ms-defender"
+    ],
+    "named": true,
+    "groups_found": [
+     true,
+     false
+    ],
+    "complete": false
+   },
+   {
+    "id": "c07",
+    "sources": [
+     "dynamic-ir",
+     "cisa-stopransomware"
+    ],
+    "named": true,
+    "groups_found": [
+     false,
+     false
+    ],
+    "complete": false
+   },
+   {
+    "id": "xt12",
+    "sources": [
+     "gcp-security-ir",
+     "aws-security-ir"
+    ],
+    "named": true,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "x17",
+    "sources": [
+     "gcp-security-ir",
+     "ms-azure-ir"
+    ],
+    "named": true,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "x18",
+    "sources": [
+     "gcp-security-ir",
+     "ms-azure-ir"
+    ],
+    "named": true,
+    "groups_found": [
+     false,
+     true
+    ],
+    "complete": false
+   },
+   {
+    "id": "x19",
+    "sources": [
+     "dynamic-ir",
+     "swgde-forensics"
+    ],
+    "named": true,
+    "groups_found": [
+     true,
+     true
+    ],
+    "complete": true
+   },
+   {
+    "id": "x20",
+    "sources": [
+     "ms-learn-ir",
+     "gcp-security-ir"
+    ],
+    "named": true,
+    "groups_found": [
+     false,
+     true
+    ],
+    "complete": false
+   }
+  ]
+ }
+}

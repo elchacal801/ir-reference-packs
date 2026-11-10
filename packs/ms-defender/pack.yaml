@@ -1,0 +1,84 @@
+# Reference-pack contract: Microsoft Learn: Microsoft Defender investigation, response and advanced hunting. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: ms-defender
+pack_version: "0.1.0"
+title: "Microsoft Learn: Microsoft Defender investigation, response and advanced hunting"
+description: >-
+  Microsoft Learn articles on investigating and responding with Microsoft Defender: Defender XDR incidents, alerts,
+  automated investigation and response, advanced hunting (including the schema reference) and threat intelligence;
+  Defender for Endpoint investigation and response actions; Defender for Identity security alerts and investigation;
+  Defender for Office 365 investigation, remediation and step-by-step guides; Defender for Cloud Apps threat
+  detection and investigation; and Defender for Cloud security alerts and response. Captured as HTML on 2026-10-25;
+  each article's source commit and update time are recorded so later changes can be detected. The article list is
+  generated from the published tables of contents (recipe.yaml discovery rules; articles.yaml).
+source:
+  title: "Microsoft Learn: Microsoft Defender XDR, Endpoint, Identity, Office 365, Cloud Apps and Cloud documentation (investigation and response)"
+  authors: []
+  publisher: "Microsoft"
+  url: "https://learn.microsoft.com/en-us/defender-xdr/investigate-incidents"
+  landing_page: "https://learn.microsoft.com/en-us/defender-xdr/"
+  edition: "Microsoft Learn snapshot 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # continuously updated web documentation; per-article update times are in sources.lock.json
+  retrieval_date: "2026-10-25"
+  inputs:                   # one locked input per article: articles.yaml and sources.lock.json list them
+    - source_id: ms-defender/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    Vendor documentation that changes frequently. Product names, portal paths, cmdlets and table schemas are
+    specific to the capture date; check `irpacks check-updates ms-defender` before relying on procedural details.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: section_anchor
+  locator: "published article URL with the section's heading anchor, the article's last update time and source commit"
+  format: "Microsoft, “{article}”, “{section}”, Microsoft Learn (updated {updated_at}; source commit {commit}), {url}#{anchor}"
+  notes: "Web articles are not paginated; never cite page numbers for this pack."
+applicability:
+  - incident-response
+  - security-operations
+  - threat-hunting
+  - endpoint
+  - identity
+  - email
+  - cloud
+  - microsoft-365
+  - microsoft-defender
+retrieval:
+  source_aliases:
+    - "Microsoft Defender"
+    - "Defender XDR"
+    - "Microsoft 365 Defender"
+    - "Defender for Endpoint"
+    - "MDE"
+    - "Defender for Identity"
+    - "Defender for Office 365"
+    - "Defender for Cloud Apps"
+    - "Defender for Cloud"
+    - "advanced hunting"
+authority_class: vendor_documentation
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_only
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "Web documentation: superseded continuously by later revisions of each article. See the update workflow."
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Maintainer decision (2026-10-25): Microsoft Learn articles are treated as publicly redistributable with
+    attribution, like the MicrosoftDocs repositories that state a license (CC BY 4.0 for documentation in azure-docs
+    and microsoft-365-docs; MIT in entra-docs). The source repository of each article is named in source-map.json
+    (original_content_git_url); for most docsets it is not public, so no license file was read for them.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

@@ -1,0 +1,74 @@
+# Reference-pack contract: Microsoft Learn: Microsoft Purview audit, investigations and Exchange Online monitoring. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: ms-purview-exchange
+pack_version: "0.1.0"
+title: "Microsoft Learn: Microsoft Purview audit, investigations and Exchange Online monitoring"
+description: >-
+  Microsoft Learn articles on the Microsoft 365 evidence sources responders use: Microsoft Purview Audit (searching
+  the unified audit log, audited activities, retention), Data Security Investigations, eDiscovery search and purge,
+  and Exchange Online monitoring (message trace, mail flow reports) and security and compliance features. Captured
+  as HTML on 2026-10-25; each article's source commit and update time are recorded so later changes can be detected.
+  The article list is generated from the published tables of contents (recipe.yaml discovery rules; articles.yaml).
+source:
+  title: "Microsoft Learn: Microsoft Purview and Exchange Online documentation (audit, investigation and monitoring)"
+  authors: []
+  publisher: "Microsoft"
+  url: "https://learn.microsoft.com/en-us/purview/audit-search"
+  landing_page: "https://learn.microsoft.com/en-us/purview/"
+  edition: "Microsoft Learn snapshot 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # continuously updated web documentation; per-article update times are in sources.lock.json
+  retrieval_date: "2026-10-25"
+  inputs:                   # one locked input per article: articles.yaml and sources.lock.json list them
+    - source_id: ms-purview-exchange/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    Vendor documentation that changes frequently. Product names, portal paths, cmdlets and table schemas are
+    specific to the capture date; check `irpacks check-updates ms-purview-exchange` before relying on procedural details.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: section_anchor
+  locator: "published article URL with the section's heading anchor, the article's last update time and source commit"
+  format: "Microsoft, “{article}”, “{section}”, Microsoft Learn (updated {updated_at}; source commit {commit}), {url}#{anchor}"
+  notes: "Web articles are not paginated; never cite page numbers for this pack."
+applicability:
+  - incident-response
+  - audit-logs
+  - email
+  - microsoft-365
+  - exchange-online
+  - data-security
+retrieval:
+  source_aliases:
+    - "Microsoft Purview"
+    - "Purview"
+    - "unified audit log"
+    - "Exchange Online"
+    - "message trace"
+authority_class: vendor_documentation
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_only
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "Web documentation: superseded continuously by later revisions of each article. See the update workflow."
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Maintainer decision (2026-10-25): Microsoft Learn articles are treated as publicly redistributable with
+    attribution, like the MicrosoftDocs repositories that state a license (CC BY 4.0 for documentation in azure-docs
+    and microsoft-365-docs; MIT in entra-docs). The source repository of each article is named in source-map.json
+    (original_content_git_url); for most docsets it is not public, so no license file was read for them.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

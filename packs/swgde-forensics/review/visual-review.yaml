@@ -1,0 +1,18 @@
+# Rendered-page cross-checks for swgde-forensics documents: each page was rendered (pypdfium2) and compared with the
+# elements built from it. Reviewer: Claude (AI agent); not a human review.
+articles: []
+pages:
+  - {unit: swgde-22-f-003, page: 7, label: "5", reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass_after_fix,
+     notes: "Section 7 bulleted list with a nested 'o' list; a wrapped nested item was first split into a paragraph (loose list line spacing) — fixed: an unfinished sentence continues within 2.2 line pitches."}
+  - {unit: swgde-16-f-001, page: 29, label: "27", reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass_after_fix,
+     notes: "7.12.3 Basic Commands table drawn as shaded row bands: first read as many one-row tables, the bold column headers as headings, the section heading absorbed into the header — fixed by table assembly. Remaining: the grep/sed/awk cell (three commands sharing one wrapped description) is split into three rows; all text kept."}
+  - {unit: swgde-17-f-002, page: 6, label: "4", reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass,
+     notes: "Document without an outline: numbered headings 4.1-4.3 and 5 become sections; the paragraph running over from page 5 is joined."}
+  - {unit: swgde-23-f-005, page: 11, label: "9", reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass,
+     notes: "Ruled two-column FileVault scenario table read cell by cell with its header row; 8.2.1/8.2.2 headings."}
+  - {unit: swgde-model-sop, page: 13, label: "13", reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass,
+     notes: "Three-level nesting (bullet > numbered > lettered) matches the page; the bold run-in label 'Procedures:' is joined with the sentence after it."}
+  - {unit: swgde-22-f-003, page: 1, label: null, reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass_after_fix,
+     notes: "Cover page (kept as the front-matter section, as the SWGDE redistribution policy requires): disclaimer, redistribution policy with its three numbered conditions, requests for modification. The justified 'Requests for Modification' paragraph with two links was first read as a four-column table: Word draws white boxes behind runs of text, and table detection took them for cells (same on the covers of 23-F-004, 23-F-005 and 21-F-001). Fixed: white fills are not table structure; it now reads as a paragraph and a lettered list of 8 items."}
+  - {unit: swgde-16-f-001, page: 14, label: "12", reviewer: "Claude (AI agent)", date: "2026-10-25", result: pass_after_fix,
+     notes: "Two-column artifact table (Machine ID, User Group Lists, Users with Admin Privileges, Auto-Mounted File Systems, Auto Mounted Encrypted File Systems) with alternating shaded bands. First read as 13 rows (one per wrapped line, from white text backgrounds), and on other Linux pages rows were repeated in a second table. Fixed: white fills ignored, a 6 pt sliver column beside a rule merged, overlapping tables never re-read a line. Now 5 rows, each wrapped cell joined; across the pack no word was lost and only repeated rows were dropped."}

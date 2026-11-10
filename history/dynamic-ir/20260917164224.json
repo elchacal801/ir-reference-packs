@@ -1,0 +1,3650 @@
+{
+  "schema_version": 1,
+  "pack_id": "dynamic-ir",
+  "document_id": "dynamic-ir:20260917164224",
+  "edition_id": "20260917164224",
+  "recorded_at": "2026-10-25T14:55:29Z",
+  "built_at": "2026-10-25T14:03:31Z",
+  "units": [
+    {
+      "unit_id": "fm-front-matter",
+      "title": "Front Matter",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "57733c0c0aa4afbda4988dbf4ce41de6e24373aedd31cd168160ac899ac24a44",
+      "sections": []
+    },
+    {
+      "unit_id": "fm-table-of-contents",
+      "title": "Table of Contents",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "f445b7cd1e34f4cd9ede9cb7278d0123f56f1bdc6b77e5bb453c793ea3451b42",
+      "sections": []
+    },
+    {
+      "unit_id": "fm-praise-for-dynamic-incident-response",
+      "title": null,
+      "redacted": true,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "2870b250965b059fa9c09783d95fd740e50e35c2dddeb18bb78ed007e1688b23",
+      "sections": []
+    },
+    {
+      "unit_id": "fm-foreword",
+      "title": null,
+      "redacted": true,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "ad488021816822305aa08de180a465af80eddbfd49b1ee88000535466e6f0bb5",
+      "sections": []
+    },
+    {
+      "unit_id": "fm-preface",
+      "title": "Preface",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "964fbc3c4a0bc2fb518a554725f15a4b85cbf3f108b002380fbccce945d06c98",
+      "sections": []
+    },
+    {
+      "unit_id": "part1",
+      "title": "Part 1: Elements of Incident Response",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e388e85a0c86a04059bfc2288f9f8564f97e96b975c454736da57d46a2e3cd21",
+      "sections": [
+        {
+          "id": "ch01",
+          "title": "1. Case Study: Supply Chain Calamity",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "ch01.s01",
+          "title": "Jordan",
+          "hash": "00bbc0428d4909c3cefa91c2724586bdf9905261860cbd75cfb022c14d5a71b9"
+        },
+        {
+          "id": "ch01.s02",
+          "title": "Pyrix",
+          "hash": "daa02d53547e6cff31f0d72ec239090c3062bd9c2176461ccd6ded4764c6a62f"
+        },
+        {
+          "id": "ch01.s02.s01",
+          "title": "Lateral Movement",
+          "hash": "b351af163c786d08a5dfc2a36ac41be81dc7682db44f6455dbe8e9f57f143005"
+        },
+        {
+          "id": "ch01.s02.s02",
+          "title": "Cloud Pivot",
+          "hash": "d792b29c2c871ef658658ed732b6fc4e98f21cd3c1de4ae3306bf5bafef01fd0"
+        },
+        {
+          "id": "ch01.s02.s03",
+          "title": "Exfiltration",
+          "hash": "522b2b1552b0068f24f56a2fba21ea1b4aedb7afabb4f61c17c868f4266aa620"
+        },
+        {
+          "id": "ch01.s03",
+          "title": "Sam",
+          "hash": "e5620d0b46da0ee45602a5eb18d2a36a94ea93efb2b02463c53141e14af1d331"
+        },
+        {
+          "id": "ch01.s03.s01",
+          "title": "Identification",
+          "hash": "524e57f677201591f600350d7d9468a880df23d190a559659961653244b0b04d"
+        },
+        {
+          "id": "ch01.s03.s02",
+          "title": "Containment",
+          "hash": "2f0aca7d2450e68f87693e3348eb17ab12e8f439c576a6d5cab21deb154d7e07"
+        },
+        {
+          "id": "ch01.s03.s03",
+          "title": "Eradication",
+          "hash": "b01e99104700bc8fa8944628046e3d4bdedab8078b8ce15b8a2a44896cb96366"
+        },
+        {
+          "id": "ch01.s03.s04",
+          "title": "Recovery",
+          "hash": "b961a33e45bffcec093f9b57ac298c4e9d140a6323943def742f785d05e3c723"
+        },
+        {
+          "id": "ch01.s03.s05",
+          "title": "Lessons Learned",
+          "hash": "572ef78262ce49bb9d9a72587290347ede795034bfa78f49185a93ca1e97f3e9"
+        },
+        {
+          "id": "ch01.s03.s06",
+          "title": "What Remained",
+          "hash": "b2e540852a5a2c99dec98a1bc476205dbe3a13ef686b4c17520753600959f499"
+        },
+        {
+          "id": "ch02",
+          "title": "2. Introduction",
+          "hash": "5e489587f91e4e9873ebff114c2f236ba5bc3a873bd20fadaffc3d966618fd06"
+        },
+        {
+          "id": "ch02.s01",
+          "title": "The Need for Incident Response",
+          "hash": "e2d9df900139acdd385348f38ae07564f3d25be63b325dd24592eccd72ab0aca"
+        },
+        {
+          "id": "ch02.s02",
+          "title": "The Purpose of This Book",
+          "hash": "a9fd1f9534e23c66161c57d73f45da66c48c1bd76c9ee1311cc5bd83f8cb9e44"
+        },
+        {
+          "id": "ch02.s03",
+          "title": "Changing Demands of the Incident Response Function",
+          "hash": "3b6c914ea638e14864a6df820ca68e3e33f8026c8c26cfcb32b6330de2a2fa29"
+        },
+        {
+          "id": "ch02.s04",
+          "title": "A Path Forward",
+          "hash": "0390a111af8823dfd74db7d4b8a6ebe9168c96df7003e24cd10ff097c0148351"
+        },
+        {
+          "id": "ch03",
+          "title": "3. A Short History of Incident Response",
+          "hash": "5e9c1ea35ee74e91c6f9d9e13845f477e2762c8e496013ba026bfe62e2c69884"
+        },
+        {
+          "id": "ch03.s01",
+          "title": "Early Cybersecurity Incidents",
+          "hash": "066389a42da0e01baa005dd64f1b4c9533a25eb85a94ac310d533c03daec83fa"
+        },
+        {
+          "id": "ch03.s02",
+          "title": "Development of Incident Response Models",
+          "hash": "0a9904c0657df936e1299067030668b8f1a2a7b2e67cbd692c5bacbe49c8ae30"
+        },
+        {
+          "id": "ch03.s02.s01",
+          "title": "CERT and CIAC",
+          "hash": "1fb6fe20f9efaf1d041749131d54a02c2b2a9b43ed3cd9230c04be16085ccbe7"
+        },
+        {
+          "id": "ch03.s02.s02",
+          "title": "Later Developments: US Navy, SANS, and NIST",
+          "hash": "c66995c1a1e6cc415fc3178c73289d60aea4aad012f507084801bd1b1eb45acc"
+        },
+        {
+          "id": "ch03.s03",
+          "title": "From These Foundations",
+          "hash": "2c6958dc23e50c313af8458186215ac9c725733e69e943c36dea9dea9a7469e9"
+        },
+        {
+          "id": "ch04",
+          "title": "4. Getting Started",
+          "hash": "4fd5bc6e98a71b82a8895095cb8f75fe4d8ae0dd738d5150f77637ff0ea08220"
+        },
+        {
+          "id": "ch04.s01",
+          "title": "Incident",
+          "hash": "247617a308b14e2e6c2210be3e1aeaa81ad7cfb2ff8a3248ce7f41ff6b9b6491"
+        },
+        {
+          "id": "ch04.s01.s01",
+          "title": "Malicious Incidents",
+          "hash": "87ead0faf7a565881167170b5a5acb590750bc1eb09dd904dedba254f2e0fbea"
+        },
+        {
+          "id": "ch04.s01.s02",
+          "title": "Accidental Incidents",
+          "hash": "2fbcc486a0fb17a323b566d375c755c4b610b9b673e0829c2d2e68ab079f5a32"
+        },
+        {
+          "id": "ch04.s01.s03",
+          "title": "Environmental Incidents",
+          "hash": "222f1c1b0ec94809b790f0b87557a75cebe0020d24a6c6f92af6b77a63b2a4d6"
+        },
+        {
+          "id": "ch04.s02",
+          "title": "Event",
+          "hash": "aa1cd7244a77a7c2d2cdf4ca66cc84a39f99138dcee5996c2921125ad27fa92a"
+        },
+        {
+          "id": "ch04.s03",
+          "title": "Event of Interest",
+          "hash": "d3e4b3f3cd0271560d745356ba2e858c1177f8fc3033a09f071ec802e6b51124"
+        },
+        {
+          "id": "ch04.s04",
+          "title": "Indicator of Compromise",
+          "hash": "9343a87e1fc9a3644111472eb6a0b353ed31653e5f68996459034b43128107d9"
+        },
+        {
+          "id": "ch04.s05",
+          "title": "Mean Time To Detect",
+          "hash": "50c467f0739c9c60fa6e54f44cc91fc1cf139ce554c9b85a0f65bffc519c8282"
+        },
+        {
+          "id": "ch04.s05.s01",
+          "title": "Challenges with MTTD Measurement",
+          "hash": "afc2bfa7a9d438ccdf13140321910549d51e1b4d20699e8a389b3a70fe1cf84e"
+        },
+        {
+          "id": "ch04.s06",
+          "title": "Mean Time To Respond",
+          "hash": "91fa7bebb51ca1db5f74945db12b755b660225fe352fda060a199d5bf1ea816e"
+        },
+        {
+          "id": "ch04.s06.s01",
+          "title": "Challenges with MTTR Measurement",
+          "hash": "575da29dc342304c748f5af871892cad430495609cafd176c90cef20aec000f2"
+        },
+        {
+          "id": "ch04.s07",
+          "title": "Incident Management and Response",
+          "hash": "9634c48de8316cd7d46830b8d5e739460314e66f9097a886c8cd1fbf52446f7d"
+        },
+        {
+          "id": "ch04.s07.s01",
+          "title": "Incident Response",
+          "hash": "35090820b748a05dcc41b4ebfcd53e0ac5e32c2af0aa70d0f7b32435dd54d8be"
+        },
+        {
+          "id": "ch04.s07.s02",
+          "title": "Incident Management",
+          "hash": "11fef8994dccd91994e680fa5dd5311349ace5ba45e089a377c69f45e04898cc"
+        },
+        {
+          "id": "ch05",
+          "title": "5. Incident Response Models and Their Limitations",
+          "hash": "ecb667ce490d42b828f2dea7ec03da0c1ba0f5da4aebae1535ba3df02020d825"
+        },
+        {
+          "id": "ch05.s01",
+          "title": "The Classic Model: PICERL",
+          "hash": "9a2dd1515c18afbc82ad970f876f6fa81550cba2d64b00c493a590bf06b91380"
+        },
+        {
+          "id": "ch05.s02",
+          "title": "The NIST Model: SP 800-61",
+          "hash": "9715c741670f3f1dd43213f286d051121d7bdca8f87a5cae9ef224e781bbcac7"
+        },
+        {
+          "id": "ch05.s03",
+          "title": "NIST SP 800-61 Revision 3 and the Cybersecurity Framework",
+          "hash": "1d885410d758d19e5763db5213db84cc095433d8c0e7c1340cef2727b9aecd36"
+        },
+        {
+          "id": "ch05.s04",
+          "title": "Variations on the Classic Model",
+          "hash": "3b9cb04a98a219ce6ca299ca8e0da6426f74290cad64ca0e59a6b3f4a33dcda6"
+        },
+        {
+          "id": "ch05.s05",
+          "title": "Shortcomings in Existing Models",
+          "hash": "d167a1d7cad3e342412dab0e6a816464d0dab54b49a17d11d00d44b14a65655f"
+        },
+        {
+          "id": "ch05.s05.s01",
+          "title": "Insufficient Emphasis on Scoping",
+          "hash": "961fc00e811804a46b87d4a57c4320ba6c79c67654d5e13d9b1249d9d717da82"
+        },
+        {
+          "id": "ch05.s05.s02",
+          "title": "Emphasis on Linear Models",
+          "hash": "6467c4bfc8b79921f5aaae1717f86348b95f12e204f59b50a641da0d577c8c9d"
+        },
+        {
+          "id": "ch05.s05.s03",
+          "title": "Inadequate Resource Prioritization Guidance",
+          "hash": "f0ea2b749c54bbba3c96aba1e6788fdbeb021802be2eab987506b91b4f7aef78"
+        },
+        {
+          "id": "ch05.s05.s04",
+          "title": "Lack of Incident Verification Requirements",
+          "hash": "aee68eca22374bf29569555eb0d9030e9c27e4ac372d3703ae1def754742af5a"
+        },
+        {
+          "id": "ch05.s05.s05",
+          "title": "Lack of Root Cause Analysis",
+          "hash": "2ed4e2503ce19e5d32bea046235376047ec77cd813fcc2fe5b94195bb11bd049"
+        },
+        {
+          "id": "ch05.s06",
+          "title": "The Need for a Modern Approach",
+          "hash": "07bb6d8a2a5e138ef9acb7db87114e37416f74f3df010150d47b8c000cfed3c6"
+        }
+      ]
+    },
+    {
+      "unit_id": "part2",
+      "title": "Part 2: A Dynamic Approach to Incident Response",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "75f9c3b6deb548462112a3e18ad466a359f8ffb18f06e09a29adfe2df84b6931",
+      "sections": [
+        {
+          "id": "ch06",
+          "title": "6. A Dynamic Approach to Incident Response",
+          "hash": "44d3c5282f8b1754dd77279a8eecd7b26c156313e0af43a113660f9e782542bf"
+        },
+        {
+          "id": "ch06.s01",
+          "title": "Waypoints, Outcomes, and Actions",
+          "hash": "4e04e12d4450f8ae4cc6ff289dedac7c1c82de51504ea1deaeaed34f8e504c9f"
+        },
+        {
+          "id": "ch06.s02",
+          "title": "Coordinating with Decision Makers",
+          "hash": "83716269a43d9595e9819cd8e9a1683e6f47bdac0e1623a817381b37908bae5c"
+        },
+        {
+          "id": "ch06.s03",
+          "title": "New Waypoints: Verify and Triage, and Scoping",
+          "hash": "87b5a7b2f91e4d4476f3235ddf649698980f2f3ed88e20144403dfed474605c4"
+        },
+        {
+          "id": "ch06.s04",
+          "title": "Scope",
+          "hash": "89dbcf445a5f84a7225a7fc004d5182558d0c9a00305283c95e1044ff9988042"
+        },
+        {
+          "id": "ch06.s05",
+          "title": "Response Actions Loop",
+          "hash": "66535b98d627373a6f1a446e7f15280540bcc0cfaac1e9224b883e4992267adf"
+        },
+        {
+          "id": "ch06.s06",
+          "title": "Reviewing the DAIR Model",
+          "hash": "8820a69c04db27fdf7995ce6d1040683f03b1be0424ab3a988acfad7cc61d53b"
+        },
+        {
+          "id": "ch07",
+          "title": "7. Prepare Activity",
+          "hash": "1b5878e7a4800ebbd81efa5b852688e0464bc5e9f7ea9c7d732c23bf83de82ce"
+        },
+        {
+          "id": "ch07.s01",
+          "title": "Prepare Objectives",
+          "hash": "6e64346bfb4ad24df80336185c1abe9e10f435dd4438fba5aacfc95e0e345bea"
+        },
+        {
+          "id": "ch07.s02",
+          "title": "Preparation Strategies",
+          "hash": "f94ad09586f0033236820b44d2ff559ac5b0047aaab054f2190ab064512deb59"
+        },
+        {
+          "id": "ch07.s02.s01",
+          "title": "Prepare the Organization",
+          "hash": "5907be1d4995e8c100f0d083122121e62839567bb3e41a1ba81b89ee959dafff"
+        },
+        {
+          "id": "ch07.s02.s01.s01",
+          "title": "Develop Organizational Policies",
+          "hash": "bfd539bab067584703b041be5c9cd2b24584098b777d3bc5d082ece413ce404b"
+        },
+        {
+          "id": "ch07.s02.s01.s02",
+          "title": "Develop Management Support",
+          "hash": "3345703b5fda5c688f88d20d99bf32c90ce8375963c684c63f29bb97760db5ce"
+        },
+        {
+          "id": "ch07.s02.s01.s03",
+          "title": "Identify Risk Assessment and Classification Processes",
+          "hash": "801b2b478c639b6f61f041f952dcac49cb95edd186e500bbfd1c1359d30ecb45"
+        },
+        {
+          "id": "ch07.s02.s01.s04",
+          "title": "Develop an Incident Communications Plan",
+          "hash": "2c1240639d65e32dfd984f4419032657f591cba40401f6e4be98e1920a1266fa"
+        },
+        {
+          "id": "ch07.s02.s01.s04.s01",
+          "title": "Establish Communication Channels",
+          "hash": "71d1e8915c7276bb29e0cf4e4c6a42c1b795afac90c1bd2bb8f6e09900dcaea6"
+        },
+        {
+          "id": "ch07.s02.s01.s04.s02",
+          "title": "Document Contact Information",
+          "hash": "dd0d3fa78689863f773d417a1010f88e0b848e25324794d9c8ed1e42de64137b"
+        },
+        {
+          "id": "ch07.s02.s01.s04.s03",
+          "title": "Establish External Reporting Channels",
+          "hash": "bc954bfe5a0121b02294265e672bd3c94f86e751dca27259c97ca767a000ac53"
+        },
+        {
+          "id": "ch07.s02.s01.s04.s04",
+          "title": "Establish Reporting Procedures",
+          "hash": "331747bb5d0fd435c3d32110670deff077836ed50b2a6ff0304d5453e5caaf5e"
+        },
+        {
+          "id": "ch07.s02.s01.s04.s05",
+          "title": "Develop an Emergency Communication Plan",
+          "hash": "b00fb45db8fdde3128472ae9097f77f0b49a1b6de9d9056506376bd91d32aeaf"
+        },
+        {
+          "id": "ch07.s02.s01.s05",
+          "title": "Establish the Incident Response Team",
+          "hash": "4596c92a54d06e9f3966b147df2d5add360af98d39c4df6ef901abd2eefb1807"
+        },
+        {
+          "id": "ch07.s02.s01.s06",
+          "title": "Identify a Platform for Incident Tracking",
+          "hash": "84d56da39482f60f7d577b91753e0643c784535b61a7807c8ff57bdf0bd46c16"
+        },
+        {
+          "id": "ch07.s02.s01.s07",
+          "title": "Account for Cyber Insurance Requirements",
+          "hash": "5fe095a9fc82e65fd6eb9e4f2f3c9706f28548d3d434aaf361ead3575445a8f7"
+        },
+        {
+          "id": "ch07.s02.s01.s08",
+          "title": "Implement Security Awareness Training",
+          "hash": "27b74975966186382e4f5100d2113e1ea01ce51b0dec3b47b68a4394e6badadf"
+        },
+        {
+          "id": "ch07.s02.s02",
+          "title": "Prepare the Incident Response Team",
+          "hash": "98cb384f9a214b6a81ed9ebfdf822c81c4e0c791f6caabc0e2dc9fb11fed0994"
+        },
+        {
+          "id": "ch07.s02.s02.s01",
+          "title": "Train the Incident Response Team",
+          "hash": "a9507fe89fb564e10074eef6640288e4f6411aa53c63b0d43cdf47ba7a1d3745"
+        },
+        {
+          "id": "ch07.s02.s02.s02",
+          "title": "Develop and Validate System Backup and Recovery Procedures",
+          "hash": "ce9e6a31cd9c62fdf1fd156f6acd63cffc4e96756227a2ce245fb40433abe6ca"
+        },
+        {
+          "id": "ch07.s02.s02.s03",
+          "title": "Cultivate Relationships with Essential Personnel",
+          "hash": "f619400c810910f1ec80906d41b33bbf2ca28e8ad116c8719056017db5dea1f3"
+        },
+        {
+          "id": "ch07.s02.s02.s04",
+          "title": "Document Incident Response Decision Authority",
+          "hash": "9ffe087827bbc28f3b82b49f7716aa563017f003e7ef5b9fb2de26f92bafecc7"
+        },
+        {
+          "id": "ch07.s02.s02.s05",
+          "title": "Develop Playbooks for Common Incidents",
+          "hash": "8036223b4a5ddcb7a13437f035edf6de603903a7ac8a1ff9f4758c3a59412916"
+        },
+        {
+          "id": "ch07.s02.s02.s06",
+          "title": "Prepare Resources for Response Actions",
+          "hash": "d3616796540b27c5beaa6f978581757c966b176dac40de8528cf44c59ad3359f"
+        },
+        {
+          "id": "ch07.s02.s02.s06.s01",
+          "title": "Forensic Workstations",
+          "hash": "798c5852531da4b4593aec119604b714273c988ed59c3e6683f5cb7640ddcd3d"
+        },
+        {
+          "id": "ch07.s02.s02.s06.s02",
+          "title": "Evidence Collection Tools",
+          "hash": "c57fb46af57338c75ba8e1b430391210d3bab4e14f0d3d66c6ecc49faaa789a4"
+        },
+        {
+          "id": "ch07.s02.s02.s06.s03",
+          "title": "Analysis Tools",
+          "hash": "3d28f4d527e809c26f458e06587efbb48dcfd85b22f13571b684cf24423f3e2f"
+        },
+        {
+          "id": "ch07.s02.s02.s06.s04",
+          "title": "Evidence Storage",
+          "hash": "de56b06379d00dde200c71a7b4feca7d3f1eca38fbf0d3c439a38eb8fb40885a"
+        },
+        {
+          "id": "ch07.s02.s02.s06.s05",
+          "title": "Jump Bag/Go Kit",
+          "hash": "793d7949f0ab08413360aa3fbab3ff3fbb79e0144f338bb58af8e2c441de1441"
+        },
+        {
+          "id": "ch07.s02.s02.s07",
+          "title": "Prepare Access to Systems",
+          "hash": "5f9559851541066e8f0d1eb507097d697232a18237ccac9e345c9616e882505d"
+        },
+        {
+          "id": "ch07.s02.s02.s08",
+          "title": "Conduct Tabletop Exercises and Incident Response Drills",
+          "hash": "faabb518396733cccc6e95afd4d91ed279518da91bfc9a09881f0c795a41eb77"
+        },
+        {
+          "id": "ch07.s02.s03",
+          "title": "Proactive Prevention and Detection",
+          "hash": "4b9c4293f78fcc4668696bfe5e62a478778f79f653b03f47ffc192f402b82155"
+        },
+        {
+          "id": "ch07.s02.s03.s01",
+          "title": "Implement Cyber Threat Intelligence (CTI) Capabilities",
+          "hash": "c1828f57fbb42f0a84a96514b64f463b1e4cbd182f655fbbd2756dd6e05d0feb"
+        },
+        {
+          "id": "ch07.s02.s03.s01.s01",
+          "title": "Standardized Threat Intelligence with STIX",
+          "hash": "35383649b2c6680db9f78d438e2f98577ebd9d539290a424ce8956691ec5af63"
+        },
+        {
+          "id": "ch07.s02.s03.s01.s02",
+          "title": "CTI Platforms",
+          "hash": "4c59396faf2a113dec176360f51be0ce007f4b0be061cdf9ab3aa58e22a2f163"
+        },
+        {
+          "id": "ch07.s02.s03.s02",
+          "title": "Develop Processes and Procedures for Software Management",
+          "hash": "f98397499d0cdced5f0801a1b6189c0e76c08c0f9b2bff2b210f87546cf6893f"
+        },
+        {
+          "id": "ch07.s02.s03.s02.s01",
+          "title": "Core Software Management Areas: Patch, Config, and Inventory",
+          "hash": "ed3cf61a2d3ff8fd92eb77f4cbab0350477de0ad2dc1974a9e6c94699e5cabab"
+        },
+        {
+          "id": "ch07.s02.s03.s02.s02",
+          "title": "Supply Chain Security and End-of-Life Management",
+          "hash": "d21c3542e567e3c773a9701be8feb176fcd11f603ec3ad245c495e1771c3d77e"
+        },
+        {
+          "id": "ch07.s02.s03.s03",
+          "title": "Apply System Hardening Processes",
+          "hash": "c810d6c959b119afbe2061eebe373ca352f62d46bf9ef230da05a43b4f636d63"
+        },
+        {
+          "id": "ch07.s02.s03.s04",
+          "title": "Implement Endpoint-Based Security Monitoring and Threat Detection",
+          "hash": "a685ba8a76cd97cf2bdcae1de8e848df7a7ff1f86e93a0a89d3c14c02280b1d8"
+        },
+        {
+          "id": "ch07.s02.s03.s05",
+          "title": "Deploy Sysmon for Enhanced Windows Telemetry",
+          "hash": "9fdbaffe15e2aae57d8e4cd0c0f3bb6aa358b2b435a6e5939509f351bcb08c4a"
+        },
+        {
+          "id": "ch07.s02.s03.s06",
+          "title": "Implement Network Security Monitoring and Threat Detection",
+          "hash": "ce538a91f48b16f1b97bdc2f269d102a6c0852fd4908fbf917006e5796341e2d"
+        },
+        {
+          "id": "ch07.s02.s03.s06.s01",
+          "title": "Full Packet Capture",
+          "hash": "ac88b31e01529878ea86037363ef5415f2836d1cbe8607f622066080d52e1150"
+        },
+        {
+          "id": "ch07.s02.s03.s06.s02",
+          "title": "Network Flow Monitoring",
+          "hash": "596208c60b1172b4c130310ce06a1199ae3b456bf810b0dc07545856417c891e"
+        },
+        {
+          "id": "ch07.s02.s03.s06.s03",
+          "title": "Extended Berkeley Packet Filter (eBPF)",
+          "hash": "a5e2ceb4b84fd721a215a7127e3c5451be8b32e17d4814f6374e985c63a95d76"
+        },
+        {
+          "id": "ch07.s02.s03.s06.s04",
+          "title": "Network Detection and Response (NDR)",
+          "hash": "2e13f683f1100715470b8af660182fbff384c19fbb6c83b47d23731b676f4298"
+        },
+        {
+          "id": "ch07.s02.s03.s07",
+          "title": "Invest in Detection Engineering",
+          "hash": "580007dc3ea49dc490fabf462aa7dcc04dd19be0189685d386c99a1c091011c6"
+        },
+        {
+          "id": "ch07.s02.s03.s08",
+          "title": "Establish a Threat Hunting Program",
+          "hash": "f5799bb9516593348b3bccd1810a70e085925841b7ec6ef276216493e62c975b"
+        },
+        {
+          "id": "ch07.s02.s03.s09",
+          "title": "Catalog All Critical Data, Systems, and Infrastructure",
+          "hash": "ddbd3f6bb258915cb88ccd2882dad7fdd245efb89a84b1d912cc7b5e9d980300"
+        },
+        {
+          "id": "ch07.s02.s03.s10",
+          "title": "Monitor the Attack Surface",
+          "hash": "b32dfa124952b1788b0653271ed88288bd984b051a83b328a1112441aae5e64e"
+        },
+        {
+          "id": "ch07.s02.s03.s11",
+          "title": "Assess Security Posture Through Adversary Simulation",
+          "hash": "7f4ab702c752d4de3ed7612f31c6082caf35ed1c6a39f2a49ba152140a374b19"
+        },
+        {
+          "id": "ch07.s02.s03.s12",
+          "title": "Collect and Retain Logging Information",
+          "hash": "3f3892dabfd55503d8fc0ec6df62c673576d2c0b8e77cd284a7c5b6139c62f1b"
+        },
+        {
+          "id": "ch07.s03",
+          "title": "Preparation Challenges",
+          "hash": "4d05c824ab74daa158bd9be8086ebcc4783c1c0834cc3fa6343c10a4b6fe02e0"
+        },
+        {
+          "id": "ch07.s03.s01",
+          "title": "Resource Constraints",
+          "hash": "f88502163dca91ec707d6bac39e9a80df365adeb78e4b24f84ee9f4fa34f3b92"
+        },
+        {
+          "id": "ch07.s03.s02",
+          "title": "Maintaining Readiness During Quiet Periods",
+          "hash": "f809c1141c6daf988dc980b4be6fb3d8d3b65c0013d44e0d0260e2846c755af8"
+        },
+        {
+          "id": "ch07.s03.s03",
+          "title": "Keeping Plans and Playbooks Current",
+          "hash": "bbbb5e7d379158fe90f84eab71baac189c26dd799316baef62d3e88dadb4f1c7"
+        },
+        {
+          "id": "ch07.s03.s04",
+          "title": "Organizational Change and Turnover",
+          "hash": "245d3a63835cc4e8877370bc58067e9ad854b4bd56b43ee28243e8394c3dad35"
+        },
+        {
+          "id": "ch07.s03.s05",
+          "title": "Demonstrating Value Without Incidents",
+          "hash": "6c1a406676c680514237cfd0950707874c10cb2839fda25a97b4d74df308c227"
+        },
+        {
+          "id": "ch07.s04",
+          "title": "Prepare Activity Examples",
+          "hash": "a34554b0f003d3bd7dfd63a7f82299cfc9e45fba00857d612ef31d3079da8eed"
+        },
+        {
+          "id": "ch07.s04.s01",
+          "title": "Building the Bridge Before the Flood",
+          "hash": "1d891509bda3ee0a93353b1a39529b61792ca40ccec880e67dddf691511167cc"
+        },
+        {
+          "id": "ch07.s04.s02",
+          "title": "Intelligence-Driven Detection",
+          "hash": "3571b21cb5db9f95b7e2aeb7a6a8da7c7c90a062f6a294f5a2065cbef3e60e22"
+        },
+        {
+          "id": "ch07.s05",
+          "title": "Prepare: Step-by-Step",
+          "hash": "cef8a99b653afe5a1eb237b3fc2c68c901593fc71e3d6d6a635656cbfeb71d87"
+        },
+        {
+          "id": "ch07.s05.s01",
+          "title": "Step 1. Prepare the Organization",
+          "hash": "66a0fd75f4a03274d1caff8e7acefa15a3bc76283e1089864d18b403e97b99e5"
+        },
+        {
+          "id": "ch07.s05.s02",
+          "title": "Step 2. Prepare the Incident Response Team",
+          "hash": "15bd2ee25a0d7da8bbb16e3de1d2fe40314de2b2ec9826084b6989ccebea945e"
+        },
+        {
+          "id": "ch07.s05.s03",
+          "title": "Step 3. Proactive Prevention and Detection",
+          "hash": "5c87f6b8df3fdedaef7ce2e515907d810b16c649f1e4a0d9cf3ad6a5edde8ee5"
+        },
+        {
+          "id": "ch08",
+          "title": "8. Detect Activity",
+          "hash": "6a9adb0706470040de5a98e4cf90ecf6206f682e9b9bfd9872d54248c081001c"
+        },
+        {
+          "id": "ch08.s01",
+          "title": "Detection Methodologies",
+          "hash": "77bac64263378289849524e14ba37537cc29d6e1e85cb64e45bfa49d70234780"
+        },
+        {
+          "id": "ch08.s01.s01",
+          "title": "Signature-Based Detection",
+          "hash": "208b41980bcda24210a252947da0473093e5fabe92e43a5d3e01d8b317f71550"
+        },
+        {
+          "id": "ch08.s01.s02",
+          "title": "Behavioral Detection",
+          "hash": "36a56eca6726c4b8d24d7eeedc41710d91145cf0d81789212914d93b4fb514b1"
+        },
+        {
+          "id": "ch08.s01.s03",
+          "title": "Machine Learning Detection",
+          "hash": "7b5ea634838b19a5f079904e34a414d25c3114f3a51244c0d0d4b6323bfd78d6"
+        },
+        {
+          "id": "ch08.s01.s04",
+          "title": "Hybrid Detection Approaches",
+          "hash": "8e440f90dcbe1b2b79886c87ee47aa8028ccc02bab0f3969b34eaebf98caf636"
+        },
+        {
+          "id": "ch08.s02",
+          "title": "Active vs. Passive Detection",
+          "hash": "b10a3637a16207d9f7fc7554612d196065af66f1df0f85dc420135430460f91f"
+        },
+        {
+          "id": "ch08.s03",
+          "title": "Detection Data Sources",
+          "hash": "b6b34563f51484c21c3673c80f623c0352e735c9ec7300339eb409b7e072df9a"
+        },
+        {
+          "id": "ch08.s03.s01",
+          "title": "Technical Detection Sources",
+          "hash": "d131a58359f0e0fa73e1ff7c1c3c0f0ad41819e614f9e8fade243f2d4b83449b"
+        },
+        {
+          "id": "ch08.s03.s02",
+          "title": "Human Detection Sources",
+          "hash": "778560d226f6119d72e5ce783407a9312b88df78a33fc70d6d95d324d61df66e"
+        },
+        {
+          "id": "ch08.s03.s03",
+          "title": "Cloud-Native Detection Sources",
+          "hash": "33f23628bd9ca3a285a897bf9f14e6e476b7f5e1644b476f013f54c8ff94f57e"
+        },
+        {
+          "id": "ch08.s03.s03.s01",
+          "title": "Container and Kubernetes Detection",
+          "hash": "af624dff54d49439b826f421cac953b2693ff2c7d00422b79a93ba44603df570"
+        },
+        {
+          "id": "ch08.s03.s03.s02",
+          "title": "Serverless and Microservices Detection",
+          "hash": "6ed9125a7ff8e7704df5045670a2f31a4c487a7bca49f64f46cedf777a1e894e"
+        },
+        {
+          "id": "ch08.s03.s03.s03",
+          "title": "Hybrid Cloud",
+          "hash": "cce7cf4437c2cd424213eb7a3d610cf2e1f0a99f9d172acc3b55395fd9668a2c"
+        },
+        {
+          "id": "ch08.s04",
+          "title": "Challenges in Detection",
+          "hash": "ba760a425417ce885670d10912da5047254dbf3791b9d160ed7f5c3baa4b5634"
+        },
+        {
+          "id": "ch08.s04.s01",
+          "title": "Data Volume and Velocity",
+          "hash": "192fd1445b20631fdfad6a80ee40cff4c1403e43972275daf4ec187e674d8d36"
+        },
+        {
+          "id": "ch08.s04.s02",
+          "title": "Encrypted Traffic",
+          "hash": "9e6b0905471e80d6365cfe76b19b7cc1d5f762b1a7f64b8ded8fd2bb70918dcd"
+        },
+        {
+          "id": "ch08.s04.s03",
+          "title": "Adversary Evasion",
+          "hash": "74ee8fc5abd345c58578a3df0c3a2d5fd0202bd3400496152f9c0ac3b572e572"
+        },
+        {
+          "id": "ch08.s04.s04",
+          "title": "Skills Gap",
+          "hash": "481c39bb516fdabbb784c1334d870ae85cd89becb18d5f45baabeb0dee573676"
+        },
+        {
+          "id": "ch08.s05",
+          "title": "Detect Activity Examples",
+          "hash": "c1c182bdbe37f83bd966d2d2d5b13f6c9662e61fee32574023adde50046df866"
+        },
+        {
+          "id": "ch08.s05.s01",
+          "title": "The External Breach Hunter",
+          "hash": "05ca13a4ed63753bf93253e3603050ea4f53fdf61cf95d04d683c01ca0b3aed6"
+        },
+        {
+          "id": "ch08.s05.s02",
+          "title": "The SIEM Wizard",
+          "hash": "d5b5655d205341c3e4a0b775ed64dfa8f7d4389cb48bf5ce3a8addd438e0e1b7"
+        },
+        {
+          "id": "ch08.s06",
+          "title": "Detect: Step-by-Step",
+          "hash": "e1212aed3762b4786dca0d2cbaaf6c35736dae0a02c5f032e490daa77f13d03b"
+        },
+        {
+          "id": "ch08.s06.s01",
+          "title": "Step 1. Select and Combine Detection Methodologies",
+          "hash": "5026b3cc337e13abfc0a4e51fbfdd53eaed1dce5f8672e1d225addb86ac2389f"
+        },
+        {
+          "id": "ch08.s06.s02",
+          "title": "Step 2. Operate Detection Data Sources",
+          "hash": "e9a881a09133256cef6d8a56e00d957e3226255ee05f47f6c627f8080e28a91e"
+        },
+        {
+          "id": "ch08.s06.s03",
+          "title": "Step 3. Adapt Detection to Cloud-Native Environments",
+          "hash": "bfff2f3c1f1f4b410a01528afd73a691efe18c9d0d26c77c2d6238e91358bfa5"
+        },
+        {
+          "id": "ch08.s06.s04",
+          "title": "Step 4. Implement Data Reduction and Prioritization Strategies",
+          "hash": "1771c898686451798080481957d396095fa58018402d2d2024397f9d78ea5c21"
+        },
+        {
+          "id": "ch08.s06.s05",
+          "title": "Step 5. Conduct Active Threat Hunting",
+          "hash": "9173933797bf7b755d95bddcd8b8fdfa0486c89f4fb2314f663fbe108a0babd9"
+        },
+        {
+          "id": "ch08.s06.s06",
+          "title": "Step 6. Monitor Passive Detection Sources",
+          "hash": "4ed881d1e6c968e2a5d0bd890fbfb85d4af389a88a6856b7b26a2ea8e2fbd4ad"
+        },
+        {
+          "id": "ch08.s06.s07",
+          "title": "Step 7. Respond to Detection Events",
+          "hash": "d229a76419446ff9c9c1eb9c87c199c1524a281ddc08c557f7cf2baa3f883001"
+        },
+        {
+          "id": "ch08.s06.s08",
+          "title": "Step 8. Continuously Improve Detection Capabilities",
+          "hash": "890a6387ad0e810610bb588707e84e99c7711cc1668be2e35cc453010774359a"
+        },
+        {
+          "id": "ch09",
+          "title": "9. Verify and Triage Activities",
+          "hash": "b42533d2399390cda9c2728ff9f3607d3518ad8174ac254949e01697f51bd83f"
+        },
+        {
+          "id": "ch09.s01",
+          "title": "The Importance of Verification",
+          "hash": "91f885856ff06709a8936adc49e8b1e7e4fb54e30fe7cfc15860b25aade22daa"
+        },
+        {
+          "id": "ch09.s02",
+          "title": "Verification Response Actions",
+          "hash": "e3d203f09333455d12dd1edf395da36c5ce23b7419422385aadec53df842de4e"
+        },
+        {
+          "id": "ch09.s03",
+          "title": "Documentation",
+          "hash": "d6c8c35b3edbda3f2642113c377cf2219ba636c544721a27337e1967aef2179d"
+        },
+        {
+          "id": "ch09.s04",
+          "title": "Initial Risk Assessment",
+          "hash": "33d82585c126bfd19df2ddd560d23f10d0eaef9d0709d785d37c6a5d6ca47c25"
+        },
+        {
+          "id": "ch09.s05",
+          "title": "Verification and Cyber Threat Intelligence",
+          "hash": "0d50f5cca39c0d7a3164e358eb57f5c748de72ca7dbda10c9d84a35a91714508"
+        },
+        {
+          "id": "ch09.s05.s01",
+          "title": "EOI Validation and Enrichment",
+          "hash": "b1611f7c1b5e953d18eb1e496413cb8c094c2695bb77e999f8e08345235b5fc3"
+        },
+        {
+          "id": "ch09.s05.s02",
+          "title": "Informing Initial Risk Classification",
+          "hash": "c26bcb3b9871e97ce98a63fcb692928aa9394b085f085c3802178d197c8a9993"
+        },
+        {
+          "id": "ch09.s05.s03",
+          "title": "Pivoting to Related Indicators",
+          "hash": "05c10e7c4eee011ce6a3c6279d671605aa878c06e9b5fe11017fe6916b3ecfde"
+        },
+        {
+          "id": "ch09.s06",
+          "title": "Verification Activity Examples",
+          "hash": "4631131095883366a9c36654e262910362b3e72b2578a5b13032dbe09221273b"
+        },
+        {
+          "id": "ch09.s06.s01",
+          "title": "The Unresponsive WordPress Site",
+          "hash": "870fb7dc739f6e988f9f947f58d5c3f59486e98b44426cd3d4adc5fc7bf9ea99"
+        },
+        {
+          "id": "ch09.s06.s02",
+          "title": "The Unpaid Toll",
+          "hash": "a344896836f005d34c65f9a2004a9034b285d6ae2c83f78d8ea73981d8bf08df"
+        },
+        {
+          "id": "ch09.s06.s03",
+          "title": "The Simple, Secure Storage Bucket",
+          "hash": "37a5bbdbefaa6227b2ba35b6f77bfea705f13d48b35b8aaf5fd1fe485f8283ca"
+        },
+        {
+          "id": "ch09.s07",
+          "title": "Triage Activity",
+          "hash": "736285acd3ce506868016d6ced12813b50a280deb01822d1265258afdd5a9a9e"
+        },
+        {
+          "id": "ch09.s07.s01",
+          "title": "Presenting the Incident",
+          "hash": "980d4a1a5cb7c990df080e76d505960a21f696b8a57a9e4ae6d31a666d59a2c0"
+        },
+        {
+          "id": "ch09.s08",
+          "title": "Triage Example: The Third-Party Vendor Breach",
+          "hash": "a69eb5a646080b89e340006a4312b78c71a41c62c9a097cfc1f10891a143bab2"
+        },
+        {
+          "id": "ch09.s09",
+          "title": "Verify and Triage: Step-by-Step",
+          "hash": "e795884ca16f1b798c0c7b9552523de08f5c421afa2647715e7dceb5951ee36f"
+        },
+        {
+          "id": "ch09.s09.s01",
+          "title": "Step 1. Document the Incident Details",
+          "hash": "456af8cf199ba7e800a677955e5dbff15ed6337c0003ae04d065278a90138b86"
+        },
+        {
+          "id": "ch09.s09.s02",
+          "title": "Step 2. Enrich Events of Interest with Cyber Threat Intelligence",
+          "hash": "20f85b2683d76e081ca132f8f3e199b9419a9559e96f657fe7fba79bf5f5f7e5"
+        },
+        {
+          "id": "ch09.s09.s03",
+          "title": "Step 3. Perform an Initial Risk Assessment",
+          "hash": "ceccf184afeb219b0e28c3c8a3bb287e6e6aa374f037176759c84b120ddcd629"
+        },
+        {
+          "id": "ch09.s09.s04",
+          "title": "Step 4. Verify the Incident",
+          "hash": "11ee8044e50821a552a59601541f5fd666a37322de8d4467659e1ae8cd3d209f"
+        },
+        {
+          "id": "ch09.s09.s05",
+          "title": "Step 5. Triage by Presenting to Decision-Makers",
+          "hash": "939d90138ff91cf231b069d1af20bdbbfcae1d99c9a572a7c00ac4731229b112"
+        },
+        {
+          "id": "ch09.s09.s06",
+          "title": "Step 6. Work with Decision-Makers on Response Actions and Resource Allocation",
+          "hash": "9647170c93a37fe47cf79fb18cb1f88f6d1612db94ee5164aacca2381291d54e"
+        },
+        {
+          "id": "ch09.s09.s07",
+          "title": "Step 7. Review and Improve the Verification and Triage Process",
+          "hash": "1d41869d48ebc58b37029bc6d5535c9011f135adcaed4dfd5dbbcc6975fce53f"
+        },
+        {
+          "id": "ch10",
+          "title": "10. Response Actions Loop",
+          "hash": "0f9e675a0779f9bd8773c373cdca2ee390ed6cd03187d446bf6dccf790bd4d60"
+        },
+        {
+          "id": "ch10.s01",
+          "title": "On the Iterative Nature of Incident Response",
+          "hash": "9f0a1447bb5c64b501493adfac503c9e7a5ef1af4f52d6a5ebe1e65930a06414"
+        },
+        {
+          "id": "ch10.s02",
+          "title": "The Four Response Actions Loop Activities",
+          "hash": "4a7047cc228e3ee45c04e5ff5e1d7be17a035ff852ea0d1d8f7a039359e3ec99"
+        },
+        {
+          "id": "ch10.s02.s01",
+          "title": "Scope: Understanding Breadth",
+          "hash": "3557e0bd27e2814622c5dac3189e4ee71a201841ccbf25b413264ded50a6939c"
+        },
+        {
+          "id": "ch10.s02.s02",
+          "title": "Contain: Stopping the Bleeding",
+          "hash": "bdbf6ef04f01c34f3feed5a875fce84bc40980b3bdb3a5be68e42ff3e1594b45"
+        },
+        {
+          "id": "ch10.s02.s03",
+          "title": "Eradicate: Removing the Threat",
+          "hash": "55904c946ecf20f5f312b453e44c154f25784cc2f4ebe099f43603c262884014"
+        },
+        {
+          "id": "ch10.s02.s04",
+          "title": "Recover: Restoring Operations",
+          "hash": "ec82f04699d5c6631bead255c59e0946cd0557bea4981acad230f421b170a208"
+        },
+        {
+          "id": "ch10.s03",
+          "title": "Iteration Triggers",
+          "hash": "7e8babed78ee8a819f62e04c3753c66ad8aadf9aefe21cbb78df3e570d49fb54"
+        },
+        {
+          "id": "ch10.s03.s01",
+          "title": "New Indicators of Compromise",
+          "hash": "e2513b50fc8e98faee7535bbdc14b2166a782d0610379f40691faa2ca79a6f93"
+        },
+        {
+          "id": "ch10.s03.s02",
+          "title": "Scope Expansion",
+          "hash": "1705cbce645a9ec844f1e5b09a34f87a77e2c2ee9b4155ba53cd8514081e96fc"
+        },
+        {
+          "id": "ch10.s03.s03",
+          "title": "Incomplete Eradication",
+          "hash": "339eb7a8398a597dc9754d0fc819d4bc69472db57d9603556f6c3a6a1cec4d92"
+        },
+        {
+          "id": "ch10.s03.s04",
+          "title": "Evidence Analysis Revelations",
+          "hash": "e527ec15063af5c6abe26308c2693472750e7f87adcb8f8c87d691b6c7318610"
+        },
+        {
+          "id": "ch10.s03.s05",
+          "title": "Changing Business Priorities and Obligations",
+          "hash": "b522ea7268e2f4ef7373f4f6bbaa9e0438c923d71228649541fa18536a78890a"
+        },
+        {
+          "id": "ch10.s03.s06",
+          "title": "Stakeholder Communication",
+          "hash": "ab31a0bad7fdc1652f7bcc3c289881d66e200653f180d0f321834584c6a6652c"
+        },
+        {
+          "id": "ch10.s04",
+          "title": "Documentation and Communication",
+          "hash": "43b06a6e76e1ab7e561838241a16dd989c16967559b5ae90f5f08659efc07d03"
+        },
+        {
+          "id": "ch10.s04.s01",
+          "title": "Decision Documentation",
+          "hash": "cb1430a89b19ed4308d33b73e863a90ca0c8322008a5035e3a14a1d6aa97b8c4"
+        },
+        {
+          "id": "ch10.s04.s02",
+          "title": "Impact Assessment",
+          "hash": "65234921fbc60e28330ac607d7f095502cac301cc4081d857292a96bb6a64a09"
+        },
+        {
+          "id": "ch10.s05",
+          "title": "Knowing When to Stop",
+          "hash": "9b0e12ad5296f79fa8e4ab069094f0671382075f7caaa638d18a0835b1cf1318"
+        },
+        {
+          "id": "ch10.s06",
+          "title": "Practical Considerations",
+          "hash": "1c5fdc59fa44e928e8b8287107a41174bcb2834148537c65a844dd29e2f2b25a"
+        },
+        {
+          "id": "ch10.s07",
+          "title": "Response Actions Loop: Step-by-Step",
+          "hash": "245424c29ce1712b860a9d725502c1d1d93e7371be61a84af3fb040e0d8b88af"
+        },
+        {
+          "id": "ch10.s07.s01",
+          "title": "Step 1. Run the Loop Expecting Each Activity to Deepen Across Iterations",
+          "hash": "953445b4342b7392239ea4cedb8cb8d63a0e59d7c26a810d71d807b5cc9840d0"
+        },
+        {
+          "id": "ch10.s07.s02",
+          "title": "Step 2. Identify Iteration Triggers Requiring Additional Response Cycles",
+          "hash": "e9a627947891a45ec8bdaa44a43ea6caa01cce6f5ed340e0143f36cd2901e601"
+        },
+        {
+          "id": "ch10.s07.s03",
+          "title": "Step 3. Maintain Cross-Phase Documentation and Communication",
+          "hash": "b51d14a128f8d71dce021ca1a982d224cc2401b121dc8b1de0877e06e29372ae"
+        },
+        {
+          "id": "ch10.s07.s04",
+          "title": "Step 4. Build Cumulative Understanding Across Iterations",
+          "hash": "1ec4ef2118085410499231a617079ed4501828fb3ddaa72c99f315f1b2a0a172"
+        },
+        {
+          "id": "ch10.s07.s05",
+          "title": "Step 5. Monitor for Technical Indicators of Resolution",
+          "hash": "a81c0819879f9dc77b0700577b5687fc6ca29c9bd05ecc823c75d5a0b4db9064"
+        },
+        {
+          "id": "ch10.s07.s06",
+          "title": "Step 6. Assess Business Indicators for Loop Conclusion",
+          "hash": "f6690e2e45f215fdfaf85efd3ca2e45ef221e82d1f071b9a93c1392a166483b6"
+        },
+        {
+          "id": "ch10.s07.s07",
+          "title": "Step 7. Engage Decision-Makers for Loop Exit Determination",
+          "hash": "7c60ca2869b08e3d90f29f7896e4fb1341ddd14a4800977b027ded107943c183"
+        },
+        {
+          "id": "ch10.s07.s08",
+          "title": "Step 8. Address Practical Considerations Throughout Iterations",
+          "hash": "a0102cba09a2f8bfea04254d9c5e4fcbaa0ba91ec9c0a57fa4caa2652403c531"
+        },
+        {
+          "id": "ch11",
+          "title": "11. Scope Activity",
+          "hash": "89e3ec2c8fac713ec4582292f6954e8e8ce9bc61d7f930ba2b139b3f7ab27f9e"
+        },
+        {
+          "id": "ch11.s01",
+          "title": "The Purpose of Scoping",
+          "hash": "6b20f0885bd26cd1108e84666ebeca9892ac0100ebaecfec78fe0e6a79e02411"
+        },
+        {
+          "id": "ch11.s02",
+          "title": "Indicators of Compromise in Scoping",
+          "hash": "92ac0b2dc11823fad6b56c0a9681e8070dfa3b6f81c27d439a297e90d55601bb"
+        },
+        {
+          "id": "ch11.s02.s01",
+          "title": "Technical IOCs",
+          "hash": "ac3d90d8af58f16b1e7f1fe03e597fdc47925b7a506d62325999fa17dd635bf0"
+        },
+        {
+          "id": "ch11.s02.s02",
+          "title": "Behavioral IOCs",
+          "hash": "f4e193b7c1caceeb18c90aa46ae8386a4dc36f6de98886adc27d19b9a69ef91b"
+        },
+        {
+          "id": "ch11.s03",
+          "title": "Scoping Methodologies",
+          "hash": "f88dde3f5896aebcd2d05467f5ef5c780ab79c98aa5d331b0954fe3f1bc89ab3"
+        },
+        {
+          "id": "ch11.s03.s01",
+          "title": "Enterprise-Wide Hunting",
+          "hash": "84fbf3896d7fec6d83f54cb1142d0465fedd8ea7a5f38c2885b9d86a4503f3fd"
+        },
+        {
+          "id": "ch11.s03.s02",
+          "title": "Progressive Scoping",
+          "hash": "8b25db2b276b4e0f6ef63270551c0efdaef94dfb6905a79279a77e70e3977f3a"
+        },
+        {
+          "id": "ch11.s04",
+          "title": "Timeline Reconstruction",
+          "hash": "770c17c48db1c63da796fffd0e6acfaea2ca977373c823610a02bba31105909d"
+        },
+        {
+          "id": "ch11.s05",
+          "title": "Scoping Challenges",
+          "hash": "417204f2e38f19ec810031b6885e6692e5ef6f157394abf231380586f2f1a8c9"
+        },
+        {
+          "id": "ch11.s05.s01",
+          "title": "Visibility Gaps",
+          "hash": "22f612b1b9da0ea361ee004f3b8e8b08b398199c7e73939c84e61ec7fdd7607f"
+        },
+        {
+          "id": "ch11.s05.s02",
+          "title": "Anti-Forensic Techniques",
+          "hash": "910d479deea9805d1bfbcdb2a8df5d16120466befc441fbdde937c212add24df"
+        },
+        {
+          "id": "ch11.s05.s03",
+          "title": "Scale and Complexity",
+          "hash": "bd0e6a9c1ecff0435357ef4e7c09462197e96f861bb05e5de421e4daed44c8ee"
+        },
+        {
+          "id": "ch11.s06",
+          "title": "Integration with Response Activities",
+          "hash": "ca5a8b71c49d560cd2b051bab2d368303612011df7a7bc117eb4db3d983cf25d"
+        },
+        {
+          "id": "ch11.s07",
+          "title": "Scope Activity Examples",
+          "hash": "78252eb8fc6d12de4c0622f883613a4095e3ef82bb38bbc8a0bf2494388c76fb"
+        },
+        {
+          "id": "ch11.s07.s01",
+          "title": "The LinkedIn Attachment",
+          "hash": "4da99bbb4da778fef6de53a27512346f3c764322b2b65634705a48c3bdab5ec9"
+        },
+        {
+          "id": "ch11.s07.s02",
+          "title": "The Cloud Storage Exfiltration",
+          "hash": "310e40e4b6a2394b31a9088d4bdd57dd609b87b690abb9deba658e9477791bdd"
+        },
+        {
+          "id": "ch11.s08",
+          "title": "Scope: Step-by-Step",
+          "hash": "4554bdd2c9485236cd43cabe7ce60a6bcd7ed000eb0f9e8c9832d22eaa4c45d9"
+        },
+        {
+          "id": "ch11.s08.s01",
+          "title": "Step 1. Identify Indicators of Compromise from Detection and Verification",
+          "hash": "4bfb233e35ed917bf1d6eef2fac30de45c6d8683f7005da938ab00c4a87c3b13"
+        },
+        {
+          "id": "ch11.s08.s02",
+          "title": "Step 2. Conduct Enterprise-Wide Hunting for Identified IOCs",
+          "hash": "723fb3f03918ae21fe4541b72af25a2334620eb2400c07623f46ed65b85ddda2"
+        },
+        {
+          "id": "ch11.s08.s03",
+          "title": "Step 3. Apply Progressive Scoping Methodology",
+          "hash": "f31049b87eccb78ef90708709e42e97f902af633b0ed6ae0990073f6230304d0"
+        },
+        {
+          "id": "ch11.s08.s04",
+          "title": "Step 4. Reconstruct the Attack Timeline",
+          "hash": "e8f8710954b7df1fd76e0fd32dae966ac68e99f9e8b6de3c80467cf67dd6d56d"
+        },
+        {
+          "id": "ch11.s08.s05",
+          "title": "Step 5. Document Scoping Findings",
+          "hash": "04620de5d11f30095ba970a2ceab62f47b8a574462028887b3b1691ed43720e9"
+        },
+        {
+          "id": "ch11.s08.s06",
+          "title": "Step 6. Address Scoping Challenges",
+          "hash": "ea83721b9547ebbd93ea5693b70b63c279c1b73c5e6f731577da1aa79f952e57"
+        },
+        {
+          "id": "ch11.s08.s07",
+          "title": "Step 7. Prepare Scoping Results for Containment, Eradication, and Recovery",
+          "hash": "687aab53b8ede3ba080eb5b50dde45be4c67aa15a0ee939a44162895d2cd9fd4"
+        },
+        {
+          "id": "ch12",
+          "title": "12. Contain Activity",
+          "hash": "fcee754606d803ae7721942794d57bd95d20096a0608fa221aa68d2a7de03861"
+        },
+        {
+          "id": "ch12.s01",
+          "title": "Containment Objectives",
+          "hash": "cc16a26ee76ce8264d11afd03ac68d8028784d25baa2cb75246c1e22611dd36c"
+        },
+        {
+          "id": "ch12.s01.s01",
+          "title": "Stopping Attacker Activity",
+          "hash": "aa2099a46ecea6d721250ea68ee33764a33d9aa5d9f64c942b1801853201ad0b"
+        },
+        {
+          "id": "ch12.s01.s02",
+          "title": "Evidence Collection and Preservation",
+          "hash": "f3b0890bcbc3bae86bb85630a55d5f28c31416f591823b023e075730b8087aa8"
+        },
+        {
+          "id": "ch12.s02",
+          "title": "Containment Strategies",
+          "hash": "97d85b0825a5f2981e6225e4fcb0f4461366caa499269a79be00ed860f35cccb"
+        },
+        {
+          "id": "ch12.s02.s01",
+          "title": "Passive Containment",
+          "hash": "814ec5a9fc5644894707564dfb8479c7452392cc087488d3dba40c49babf2187"
+        },
+        {
+          "id": "ch12.s02.s02",
+          "title": "Active Containment",
+          "hash": "ec418cf99cc63e89551a178a33e6d157e7c92b31427aa7cd7cd399a544bfb27e"
+        },
+        {
+          "id": "ch12.s02.s03",
+          "title": "Adaptive Containment",
+          "hash": "51ecccf81afdf0098b3993ff0d6d7887ddd8ad4a93780abf1707045c1a361e1f"
+        },
+        {
+          "id": "ch12.s03",
+          "title": "Timing and Coordination",
+          "hash": "e53eedbf3da0e97c5da88c4e5b3c46d1710b2259118ea9bc270fda8d41930f20"
+        },
+        {
+          "id": "ch12.s03.s01",
+          "title": "Immediate Containment Triggers",
+          "hash": "315f64a79da17155dacbdab8e6820b7ba984206d7e92ed5948acd523e138b3d3"
+        },
+        {
+          "id": "ch12.s03.s02",
+          "title": "Coordinated Containment",
+          "hash": "04f8783f28ec986ebdd3208cb1677bf77c51703f5766140d03c35f397bbb429d"
+        },
+        {
+          "id": "ch12.s03.s02.s01",
+          "title": "Simultaneous Isolation",
+          "hash": "aab2d15c7e8e4e0734721a723957951b7d49922f7e59523e0b3c475494f70a42"
+        },
+        {
+          "id": "ch12.s03.s02.s02",
+          "title": "Credential and Infrastructure Coordination",
+          "hash": "9277b5a76dee256da9cbf7ae108c7e14c4298a4096a6d54c2b040b49f3e87c02"
+        },
+        {
+          "id": "ch12.s04",
+          "title": "Technical Implementation",
+          "hash": "98b0a99dd7447b053791e177f1e846b02ed6aea2fea4c6ce712b86b9ee14a808"
+        },
+        {
+          "id": "ch12.s04.s01",
+          "title": "Network-Level Containment",
+          "hash": "e35a1d0afc7e03f747f063fe69d6f9c73a70756f2ae88678bf9fa9d38fc02688"
+        },
+        {
+          "id": "ch12.s04.s01.s01",
+          "title": "Network Isolation Techniques",
+          "hash": "1568cd2ea10070e40077d84b7dbb3828f64916403ac50be9b8e3588c9bdec475"
+        },
+        {
+          "id": "ch12.s04.s01.s02",
+          "title": "DNS Sinkholes",
+          "hash": "cd6139edc39a80e1a3e32ad1c9b896772c3120afc41e423e89351f810d62f5c9"
+        },
+        {
+          "id": "ch12.s04.s01.s03",
+          "title": "DNS Over HTTPS and Sinkhole Limitations",
+          "hash": "8ad60c9a36cfedfb8f1308ebafbc1a0f9c71f18883e0a83bc3016dc8480f4c6e"
+        },
+        {
+          "id": "ch12.s04.s02",
+          "title": "Host-Level Containment",
+          "hash": "0957668ad6d910400c9c8018932b07b93604fa247db177533f2576a06e30a747"
+        },
+        {
+          "id": "ch12.s04.s03",
+          "title": "Application-Level Containment",
+          "hash": "782c8281377dcab0762086fc79595acb87a95260f06e6609fc2e08a5d84970f2"
+        },
+        {
+          "id": "ch12.s04.s04",
+          "title": "Identity and Access Management Containment",
+          "hash": "ed1db2f6b3e2a04b3e6ae2816bcfd992fbb2ec62ce36aa61dc342ed792d1b88f"
+        },
+        {
+          "id": "ch12.s04.s04.s01",
+          "title": "Credential Revocation",
+          "hash": "f3b83ab97b3ae8c57b7acea57e2f48467c8d19e3333ba3e964730343a7845a50"
+        },
+        {
+          "id": "ch12.s04.s04.s02",
+          "title": "Active Session Termination",
+          "hash": "d2eefc4f0b9d42a31a72daa5594eb66a192db7836d869586403c88dcc82ae68a"
+        },
+        {
+          "id": "ch12.s04.s04.s03",
+          "title": "Refresh Token and Persistent Credential Revocation",
+          "hash": "b8298df94f025a25009610c9d68f37c4b39b5f6387d8834ef3a0f34ff796b015"
+        },
+        {
+          "id": "ch12.s04.s04.s04",
+          "title": "Conditional Access Policy Implementation",
+          "hash": "669e05be68763785bd36b275671c22b23b4ca0261ee0f0de7a36a0226b33f576"
+        },
+        {
+          "id": "ch12.s04.s04.s05",
+          "title": "Multi-Application Containment Through SSO",
+          "hash": "2fc57c3b01648c9c7c34a163ad4dd9c017f885ad23df9bb43961a955e756cc15"
+        },
+        {
+          "id": "ch12.s04.s04.s06",
+          "title": "Session Management Across Hybrid Environments",
+          "hash": "658be526cf5af754b461e3bc2540d7c7dee032735bd8504e3ac682de7d9d8753"
+        },
+        {
+          "id": "ch12.s05",
+          "title": "Evidence Collection During Containment",
+          "hash": "5f4d5400e71166f4dabd6e22b7232854c3018f2053ceb76e7a28de59a85cbcfb"
+        },
+        {
+          "id": "ch12.s05.s01",
+          "title": "Prioritized Collection",
+          "hash": "3c4011403537d829bf16c52a388506fa9829b068db64d4c4b9f28e34547fa7ff"
+        },
+        {
+          "id": "ch12.s05.s01.s01",
+          "title": "Volatile Data Collection",
+          "hash": "ee5d0f4b0aff5bc7926a9128a1f10cd2a8a382ce97fcb8c45b39133601a9bb89"
+        },
+        {
+          "id": "ch12.s05.s01.s02",
+          "title": "Persistent and Log-Based Evidence",
+          "hash": "0e1689f3b45be02040b00fae0156d80d9311338a8b9d6f1944bdbbb3fd649391"
+        },
+        {
+          "id": "ch12.s06",
+          "title": "Cloud Containment",
+          "hash": "11c719b6f9967fbf3cbb89403083f07c3fc1c5a8a314b773da45e577bc3e8268"
+        },
+        {
+          "id": "ch12.s06.s01",
+          "title": "Cloud Security Demarcation",
+          "hash": "040cc14dd846fc6f68e51dc049d39d08b8b59aa22cf863ea134005a839ba8a1e"
+        },
+        {
+          "id": "ch12.s06.s02",
+          "title": "Cloud Containment Objectives",
+          "hash": "eb62254208d1b5fbb98ed8b535137e199e5ade485633233c8674836693527f72"
+        },
+        {
+          "id": "ch12.s06.s03",
+          "title": "Identity-First Containment",
+          "hash": "aac1d55fcba24afcf8b2b4cf469c9dafc07642cb5f94c2b6bdd5b27ccc9236b6"
+        },
+        {
+          "id": "ch12.s06.s04",
+          "title": "Network Isolation Containment",
+          "hash": "b4b82a755f96da473318a151757dae0badff96dc75ff31b8db13f859bcfeacb8"
+        },
+        {
+          "id": "ch12.s06.s05",
+          "title": "Resource Tagging for Containment Visibility",
+          "hash": "43818a6a15c18d4fb8e0abbf94e81dff05f539baade1e8ee207da5a74fb6dd9d"
+        },
+        {
+          "id": "ch12.s06.s06",
+          "title": "IaaS Termination Protection",
+          "hash": "7a4b821b0784af8007e249b27834deb433d9e339e060eec81403e6c78af7873f"
+        },
+        {
+          "id": "ch12.s06.s07",
+          "title": "SaaS Platform Containment",
+          "hash": "40800e583f6fd40c31b31642901b2a4c1e751e40fadf34583ea38ad55ea34645"
+        },
+        {
+          "id": "ch12.s06.s08",
+          "title": "Third-Party Integration Containment",
+          "hash": "4b99a895a46d77f46061c980e1e620addc2f9dc3d2839950bd4a44277a3a9687"
+        },
+        {
+          "id": "ch12.s07",
+          "title": "Containment Challenges",
+          "hash": "a8e7d49381fbd347b77aa97dc7f64f779c7ad98703be2ff5d862a9d5cc522106"
+        },
+        {
+          "id": "ch12.s07.s01",
+          "title": "Cloud and Hybrid Environments",
+          "hash": "c9f37724b52a1c9c22c60d8b01a65652a99c7fef9b3e0799b29e33494304765e"
+        },
+        {
+          "id": "ch12.s07.s01.s01",
+          "title": "API-Based Isolation",
+          "hash": "26af03a447ff7e02bf0668416ea94825289826d2f2ce784a006e7cd7e12bb3de"
+        },
+        {
+          "id": "ch12.s07.s01.s02",
+          "title": "Serverless Containment",
+          "hash": "e21208154bbb8a165d1665bd62ce6d3530996534a85a27c40cde249b40a5b76a"
+        },
+        {
+          "id": "ch12.s07.s01.s03",
+          "title": "Multi-Cloud Coordination",
+          "hash": "6fd474e05a93f7a015f7cdba28f07b11ad6215c7ad692a0cc22908cfaf629c38"
+        },
+        {
+          "id": "ch12.s07.s02",
+          "title": "Encrypted Communications",
+          "hash": "f518911e691b470f57d8de6696c367e16878087584f5985b03d528ac101c68e5"
+        },
+        {
+          "id": "ch12.s07.s03",
+          "title": "Remote Worker Environments",
+          "hash": "fd7309b9ded7c101fccd45574b89d25be3cc4c48cc2db91ea444d045d6f4e735"
+        },
+        {
+          "id": "ch12.s07.s03.s01",
+          "title": "Network Visibility and Endpoint Controls",
+          "hash": "e4ec9a14af8703824e9f6757cbc073faf60b6abc80d601017eb9cea2921ba333"
+        },
+        {
+          "id": "ch12.s07.s03.s02",
+          "title": "Personal Device Contamination",
+          "hash": "798b4ba0af72a2b344d509cc4759da3721225235ad787e2bd74e3f9feb1ed32f"
+        },
+        {
+          "id": "ch12.s07.s03.s03",
+          "title": "Home Network Compromise",
+          "hash": "152937cb27ce5b121bd40538784e280f2b40732fa69ad3e5ab03d919d5c92c89"
+        },
+        {
+          "id": "ch12.s07.s03.s04",
+          "title": "Access and Recovery",
+          "hash": "e2e011a22af522b0427149192c4ffda68b093ee5c51bdf7096c28b14b588d332"
+        },
+        {
+          "id": "ch12.s07.s04",
+          "title": "Beyond Traditional Host Compromise",
+          "hash": "97652fa0bfe8ae153fc818b6a485b87f0ec0e2eeef4a5535ac32b621dd6aa99a"
+        },
+        {
+          "id": "ch12.s07.s04.s01",
+          "title": "Business Email Compromise",
+          "hash": "a5591ce0d2e42d566258753ef1aa4b35f339e1ef13584a6c1d99eca32a8d95d8"
+        },
+        {
+          "id": "ch12.s07.s04.s02",
+          "title": "Supply Chain Incidents",
+          "hash": "b1bc0e34c4f59f0f3ae430b2d833565ee10cb214d4783820ad9fdee66b792760"
+        },
+        {
+          "id": "ch12.s07.s04.s03",
+          "title": "Partner Ecosystem Breaches",
+          "hash": "2cf0df3808dbcfd752e2e0214ecd8ce5e7749ef19ba5dd42b3a0c5835a42b0cb"
+        },
+        {
+          "id": "ch12.s08",
+          "title": "Containment Validation",
+          "hash": "26f98947c359d479195542691f8f749f8b7460d81ac19d042d5be38d0d456bd8"
+        },
+        {
+          "id": "ch12.s09",
+          "title": "Contain Activity Examples",
+          "hash": "6010323a461009eb1e256d7f54daf88583a3a02d6572eadb7a11e547e1ea90ac"
+        },
+        {
+          "id": "ch12.s09.s01",
+          "title": "The Multi-Tenant Credential Exposure",
+          "hash": "7bccc0eba74feb1e6b6f08cae615cfc681e448124e710e1737abb0c9d8663d12"
+        },
+        {
+          "id": "ch12.s09.s02",
+          "title": "The Ransomware Rapid Response",
+          "hash": "5ea3dbf811ef1f4c05ed37a048f6fb11ab760aecca434dbf4920574fd36592b9"
+        },
+        {
+          "id": "ch12.s10",
+          "title": "Contain: Step-by-Step",
+          "hash": "ae9b06a679c2b3f7caf36051c7a5276422a36c9836840259e15a74a7b61c721b"
+        },
+        {
+          "id": "ch12.s10.s01",
+          "title": "Step 1. Assess Containment Urgency and Strategy",
+          "hash": "1fdf5b8c7163068cf5232c065f8aed51b7c411b6612e929ebf08366e2ea990c7"
+        },
+        {
+          "id": "ch12.s10.s02",
+          "title": "Step 2. Implement Identity and Access Containment",
+          "hash": "0c23fc733b6b4e13760269e096fd04519f525731b3489d32e02a66299baf1369"
+        },
+        {
+          "id": "ch12.s10.s03",
+          "title": "Step 3. Implement Network and Host Containment",
+          "hash": "fed04c1933c4a808b4cdb13d739dcbdd43885665f6549719f05e96da5848f7d3"
+        },
+        {
+          "id": "ch12.s10.s04",
+          "title": "Step 4. Implement Cloud-Specific Containment",
+          "hash": "fd20902dd3f3d06299e4134bbc82b16f66982c540144700afb99611b5a8ad8c9"
+        },
+        {
+          "id": "ch12.s10.s05",
+          "title": "Step 5. Address Remote Work and Modern Environment Challenges",
+          "hash": "7b0011dd964e6dd865281a526ccfb280880a5a51bd4a7d6e84eacf1bdc9d3eca"
+        },
+        {
+          "id": "ch12.s10.s06",
+          "title": "Step 6. Collect and Preserve Evidence",
+          "hash": "59c7692f9589d462c31d23ff35b855eedcc2ccd533560b8f9545e27850b03c45"
+        },
+        {
+          "id": "ch12.s10.s07",
+          "title": "Step 7. Validate Containment Effectiveness",
+          "hash": "667bcb09318fe16dd0ad014f424317ae111ee1055b418b913bf063a9fc1c101c"
+        },
+        {
+          "id": "ch12.s10.s08",
+          "title": "Step 8. Document Containment Actions and Communicate Status",
+          "hash": "338348466523a75ee38bb0a5ee70445f431a781203d4958371dc4232745dea85"
+        },
+        {
+          "id": "ch13",
+          "title": "13. Eradicate Activity",
+          "hash": "e5c990b7c2515934d5098f8246558bb2e0c76b2bef78faa9052750944be95c09"
+        },
+        {
+          "id": "ch13.s01",
+          "title": "Eradicate Objectives",
+          "hash": "bf33f79b4c4f52bb807ca7e4c626388277cb689203e716f30ac8d4da6a985a0c"
+        },
+        {
+          "id": "ch13.s01.s01",
+          "title": "Preventing Incident Recurrence Through Investigation",
+          "hash": "30ff0c5f47f82c67d479759deca0e7c10075ae10857e4d3a78e5f81dc19a3dd4"
+        },
+        {
+          "id": "ch13.s01.s02",
+          "title": "Investigation During Eradication",
+          "hash": "24280de204f38ae99c01435fed55e8bec3bccfaa7b36ac9b937a4834b66253fe"
+        },
+        {
+          "id": "ch13.s01.s02.s01",
+          "title": "Short-Form Investigation to Inform Eradication",
+          "hash": "e2dd7e2ddf24962ac177d2b3681516d569dab7453e24396f073e7cef8a6e49ff"
+        },
+        {
+          "id": "ch13.s01.s02.s02",
+          "title": "Long-Form Investigation for Comprehensive Understanding",
+          "hash": "e1669a18ef1ceea1d9ac079ffcaab91776bd82984ff9a2863aec1226fc128f18"
+        },
+        {
+          "id": "ch13.s01.s03",
+          "title": "Pursuing Root Cause Analysis",
+          "hash": "3bfaa1e44724291ec252589bee0e5607c0226a22f873fc50176f814ed0693a58"
+        },
+        {
+          "id": "ch13.s01.s03.s01",
+          "title": "Assessing Root Cause",
+          "hash": "6b122d2ed716a837ae6048a8d9217c87bec5974d7b61aa92c9bf75893342e84d"
+        },
+        {
+          "id": "ch13.s01.s03.s02",
+          "title": "Root Cause Analysis Example: Public S3 Bucket Exposure",
+          "hash": "3a00ad9ededc51ccef0bc5bd2df0edbaf03f76dc62b4ef5911d18be303b81e11"
+        },
+        {
+          "id": "ch13.s01.s03.s03",
+          "title": "Fishbone Diagram Mapping",
+          "hash": "cce36aa412cf0773e9a6e2878e1511e407e0e44c3d558bf90759c412a1777ff0"
+        },
+        {
+          "id": "ch13.s02",
+          "title": "Investigation Techniques for Eradication",
+          "hash": "0d9036fc298214aa99c87368e7af988bbe30799e1465f6386e09f726cb4cc7fd"
+        },
+        {
+          "id": "ch13.s02.s01",
+          "title": "Log Investigation",
+          "hash": "b5b50407d1a968e9de227cdcc2251035c534a09a208e93512ceae3bb24f56e1c"
+        },
+        {
+          "id": "ch13.s02.s01.s01",
+          "title": "Sigma for Log Analysis",
+          "hash": "4dff5255d89fe737e97cbb339373d01818860f454d9002afb7598bd6b418bbfa"
+        },
+        {
+          "id": "ch13.s02.s01.s02",
+          "title": "SIEM for Log Investigation",
+          "hash": "38dbba65939b2c7d5c69c562fe56a9db0791effcdb48df2638ce4dfcf131be7b"
+        },
+        {
+          "id": "ch13.s02.s02",
+          "title": "Live Investigation",
+          "hash": "a8c5b6069e63a953fdca5badcf7edaec141dc705fc1fa979cbd53e25fb6a016f"
+        },
+        {
+          "id": "ch13.s02.s03",
+          "title": "Endpoint Telemetry Investigation Tools",
+          "hash": "d2bab253a20e6ba9b41e6594085fc4db7e8a8e30cb0eea8355ac7e79a5a62d47"
+        },
+        {
+          "id": "ch13.s02.s03.s01",
+          "title": "Velociraptor IOC Analysis Example",
+          "hash": "60001f3287813ad5921bf8f011a90407fff245801811264c777ced1dcd73f1c0"
+        },
+        {
+          "id": "ch13.s02.s04",
+          "title": "Memory Investigation",
+          "hash": "9bafcb9e5bcf429e745539f6cc419ebf7240777cce535ed06ead8daff75d4081"
+        },
+        {
+          "id": "ch13.s02.s04.s01",
+          "title": "Process-Specific Memory Investigation",
+          "hash": "a1f4a38a90936e1e6c6ab9c195d6ef98a77f69a2115cfd0effe97f084e304384"
+        },
+        {
+          "id": "ch13.s02.s04.s02",
+          "title": "Whole-System Memory Investigation",
+          "hash": "ca199bfa4023f13798e79e4fae026a31b2f66d891d92a75c9d156b8bc5ab13d9"
+        },
+        {
+          "id": "ch13.s02.s04.s02.s01",
+          "title": "Capturing and Analyzing Memory with Volatility",
+          "hash": "380d74e5f3eed4dc0985bd83f9a4f7258aa80edb54db4983f1708cab1724554e"
+        },
+        {
+          "id": "ch13.s02.s04.s02.s02",
+          "title": "Browsing Memory Artifacts with MemProcFS",
+          "hash": "bd0312b0133909b53eeb692edca60c03e0eba293d169500fc10af6533d8cf20e"
+        },
+        {
+          "id": "ch13.s02.s05",
+          "title": "Network Investigation",
+          "hash": "6a1033351241c557877bd01cfad57cefd4546b24dd05b0432b7954064de23dc5"
+        },
+        {
+          "id": "ch13.s02.s05.s01",
+          "title": "Network Data Sources",
+          "hash": "58a79585e53cd916e031e9869cdcfe9074305f9d5163d6431b2d1c9bb86c1d27"
+        },
+        {
+          "id": "ch13.s02.s05.s02",
+          "title": "Network Detection and Response Platforms",
+          "hash": "2d20cfededefc02ac3841253f4b9dc81cef5b7dfb160c2b02f5de020a7bc9111"
+        },
+        {
+          "id": "ch13.s02.s05.s03",
+          "title": "Network Data for Connection Mapping",
+          "hash": "b137fe3615aa00e8efa6924b38d0311367d0d3d482c0aa89144eefc8ed69c109"
+        },
+        {
+          "id": "ch13.s02.s06",
+          "title": "Malware Investigation",
+          "hash": "800324a338cd5e61690786d9ceda27f5a3ade0f0dfb89ebf013326260d6dbc6a"
+        },
+        {
+          "id": "ch13.s02.s06.s01",
+          "title": "Static Analysis",
+          "hash": "a361512231f378def7b5d5db3218208db85a2d2689529e8ff8ac164a202f3c4f"
+        },
+        {
+          "id": "ch13.s02.s06.s02",
+          "title": "Dynamic Analysis",
+          "hash": "ba86fa2ff4d6beaec0ac7075591d5aff9aaf565dbeb7919b5e7dd45c7a675582"
+        },
+        {
+          "id": "ch13.s02.s06.s03",
+          "title": "Practical Limitations",
+          "hash": "19f658cc35189f850c04202ee1013eecdd11f9f7b2dcd1f47649cdc59f165e46"
+        },
+        {
+          "id": "ch13.s02.s07",
+          "title": "Business Email Compromise Investigation",
+          "hash": "42992be9f9e9b337d2c14daa628f7c20dc145f45940d82df38927847845f17e0"
+        },
+        {
+          "id": "ch13.s02.s07.s01",
+          "title": "Email System Investigation",
+          "hash": "1f2ee7f0c9ecc7fe0d6db43e1d875111e4642487127d76808ca85c43ffa50220"
+        },
+        {
+          "id": "ch13.s02.s07.s02",
+          "title": "Identity and Access Investigation",
+          "hash": "ee45b9ec33e3e6a7eec32131ffcce0fc82f49a61ac4fe732a992c5e6151ee5ec"
+        },
+        {
+          "id": "ch13.s02.s07.s03",
+          "title": "Financial Transaction Investigation",
+          "hash": "beca2c84b91dba15203df965c15ef7face863050b0c7cb05f6c839d67907dcab"
+        },
+        {
+          "id": "ch13.s02.s07.s04",
+          "title": "Victim by Proxy",
+          "hash": "b9d242a85506082f8c155ba040d42a33310ec0e74e10dff84e2e075eda4daa78"
+        },
+        {
+          "id": "ch13.s02.s08",
+          "title": "Insider Threat Investigation",
+          "hash": "62405b7e46c67768f94f85d187521bd8853ea45c15f582f78a559fdbb1bd07ac"
+        },
+        {
+          "id": "ch13.s02.s09",
+          "title": "Supplier and Supply Chain Investigation",
+          "hash": "3648c7190baa980b38560532a35ef860e483050190c5150f3d0b0bffd9b4baf4"
+        },
+        {
+          "id": "ch13.s02.s09.s01",
+          "title": "Software Supply Chain Compromises",
+          "hash": "ba3cdfce4fbbb63b7a22e5ed4f745f167d4143d3577a471926021a8d9da0f30b"
+        },
+        {
+          "id": "ch13.s02.s09.s02",
+          "title": "Hardware Supply Chain Attacks",
+          "hash": "bfad39f6624f2c72e896b5886a6c8245b61b75d8248fe37bf8cd817e92157252"
+        },
+        {
+          "id": "ch13.s02.s09.s03",
+          "title": "SaaS Vendor Compromises",
+          "hash": "cba356b577e6fe979199e4992640a596bcdec68f7816feeeebd79f5b52c5b8f4"
+        },
+        {
+          "id": "ch13.s02.s09.s04",
+          "title": "Managed Service Provider and Staff Access Compromises",
+          "hash": "2963ea1670767df7d8b9402193591e25f1287e4b131ba637a96609afcc22a9e3"
+        },
+        {
+          "id": "ch13.s02.s10",
+          "title": "Cloud Investigation",
+          "hash": "81e0ac347cc3ecb6e4cf5b906f8e6664931fdca2e76183a4dcb8d2c91bb6a548"
+        },
+        {
+          "id": "ch13.s02.s10.s01",
+          "title": "IaaS Investigation and Eradication",
+          "hash": "9293fa2173c09e0c3b5028457f6717a4f484006429ab0fade177236e3ca3a8a8"
+        },
+        {
+          "id": "ch13.s02.s10.s01.s01",
+          "title": "Cloud Control Plane Investigation",
+          "hash": "672f66919cfccbbff603f047b19d12f1c486248ac06ac6aec945c26d9ca4d016"
+        },
+        {
+          "id": "ch13.s02.s10.s01.s02",
+          "title": "Infrastructure Investigation",
+          "hash": "bf0fd7767ae9fe7bec268b81a25a1236d730d32ffbd472f2fb2a40150c9b8f16"
+        },
+        {
+          "id": "ch13.s02.s10.s02",
+          "title": "SaaS Investigation and Eradication",
+          "hash": "a4aba84b92b5b35e1e9b604e290425bf7f3605097ae7ecb14c9924e7e53da982"
+        },
+        {
+          "id": "ch13.s03",
+          "title": "Eradicate Attacker Access",
+          "hash": "2670a36b031f2307c76e1eabc5616374381331a1b633a86885d0338ff91cae36"
+        },
+        {
+          "id": "ch13.s03.s01",
+          "title": "Removing Persistence Mechanisms",
+          "hash": "ecb448d2c79af51b79cbb1db580154cea1cd297beb36b9bc9c483e1cd7708604"
+        },
+        {
+          "id": "ch13.s03.s01.s01",
+          "title": "Windows Persistence Removal Considerations",
+          "hash": "851003cbdc65648d5ee1a1afbc9b7e54cf28224c07078778b1662f6bab5f2ba2"
+        },
+        {
+          "id": "ch13.s03.s01.s02",
+          "title": "Linux Persistence Removal Considerations",
+          "hash": "9d25d4fd5e484f86ae3a3b0c4ff39564742cc1269accde66d160801fa05e09e2"
+        },
+        {
+          "id": "ch13.s03.s01.s03",
+          "title": "Web Shell Removal",
+          "hash": "8c57c203b58324234e8ebdf965b8dd9ff455c927eaed257fed87a6e8822717a9"
+        },
+        {
+          "id": "ch13.s03.s01.s04",
+          "title": "Cloud Persistence Removal",
+          "hash": "58c6585ac353c2c4222da19e3651c504ec603188d8973395fb464db870febdfd"
+        },
+        {
+          "id": "ch13.s03.s01.s04.s01",
+          "title": "Lambda/Serverless Functions",
+          "hash": "28f727b80e4e3f66a84f7cceba5b8211f529c2c56e9ff74debf26faaae147b84"
+        },
+        {
+          "id": "ch13.s03.s01.s04.s02",
+          "title": "IAM Policy Modifications",
+          "hash": "882194adf1130eba05cf81d7f416e8f00c103773d84aca3708e136adde4a0bb6"
+        },
+        {
+          "id": "ch13.s03.s01.s04.s03",
+          "title": "Container Image Modifications",
+          "hash": "fc50745d204c7bcbfb82e6bdd15e26091151c7944290272ba1a34c1e352523a9"
+        },
+        {
+          "id": "ch13.s03.s02",
+          "title": "Account and Identity Remediation",
+          "hash": "50f6b52de69c7b534b92f25cef2287f1065c43df9589ef6437be58bccb340ae2"
+        },
+        {
+          "id": "ch13.s03.s02.s01",
+          "title": "Local Account and Credential Remediation",
+          "hash": "4c8db958e858f7b97e39e36d6b2eed8b5174e40cfdf36bfb6d4c3f981a10f97b"
+        },
+        {
+          "id": "ch13.s03.s02.s02",
+          "title": "Active Directory Account and Credential Remediation",
+          "hash": "915c703c49c0d61d88ac1fc17b785edb7e227824a718138d0a9b90fbfbec92c6"
+        },
+        {
+          "id": "ch13.s03.s02.s02.s01",
+          "title": "Phase 1: Privileged Account Reset",
+          "hash": "71625e0a2324d12cbccc3a9b2c2a0d68ed808b42abe89a50ff54892ac6c798ab"
+        },
+        {
+          "id": "ch13.s03.s02.s02.s02",
+          "title": "Phase 2: Service Account and Identity Infrastructure Reset",
+          "hash": "7a7e4d356292ba6915c912990bf18b341d37255a436fcab45311b89acd83c376"
+        },
+        {
+          "id": "ch13.s03.s02.s02.s03",
+          "title": "Phase 3: General User Account Reset",
+          "hash": "b2f47c845fe63b8aa778ab4f6cca223fe0429dd243f3e9a3e3ade86f598029cb"
+        },
+        {
+          "id": "ch13.s03.s02.s03",
+          "title": "Krbtgt Account Reset",
+          "hash": "101afb55f738682ca96f5e82603045893dcda341f903f4bab3cfdffe46eca02d"
+        },
+        {
+          "id": "ch13.s03.s02.s03.s01",
+          "title": "Multi-Domain Forest Considerations",
+          "hash": "ab31c469447c209d9d8c8f4efa1ef8334c643684d31b5f5b9083cfe9c2f6bffc"
+        },
+        {
+          "id": "ch13.s03.s02.s04",
+          "title": "Domain Controller Machine Account Reset",
+          "hash": "95a5dca6d3a8ec516f3b1622e138d141d1db208bc5d575a6002e8f5b2c7e36a9"
+        },
+        {
+          "id": "ch13.s03.s02.s05",
+          "title": "Trust Password Reset",
+          "hash": "f282f8455d431f90dfdcbf0b5d56c220cbb153523f36325f91433553147fc8ec"
+        },
+        {
+          "id": "ch13.s03.s02.s06",
+          "title": "Disabling Unconstrained Delegation",
+          "hash": "6522749e761909734582b73c263c10d4ecde7eb1b5f2d33959165a1ea794c0df"
+        },
+        {
+          "id": "ch13.s03.s02.s07",
+          "title": "Hybrid and Entra ID Remediation",
+          "hash": "6cfd8c9c1dbf13ff52db204a8efdca1349b255f071c124646f709c873c448771"
+        },
+        {
+          "id": "ch13.s03.s02.s07.s01",
+          "title": "Entra ID Session and Token Revocation",
+          "hash": "e378cf4a13fd74b15b3e42902424885239180538ef0f4b6755aa3e14afd59c75"
+        },
+        {
+          "id": "ch13.s03.s02.s07.s02",
+          "title": "Entra Connect and Directory Synchronization",
+          "hash": "c62ff44fba539f06087cd9323e5263d548bcf7dc21ba97288e78b83437d51eb7"
+        },
+        {
+          "id": "ch13.s03.s02.s08",
+          "title": "Session and Token Revocation",
+          "hash": "c2a753f9d935b3c7b2d11a933667547aa1d89720ab6bc8e74f25893314950fdd"
+        },
+        {
+          "id": "ch13.s03.s02.s09",
+          "title": "OAuth Application and Consent Revocation",
+          "hash": "9a63fec168d385a28af71b24a2bef76af84b5ca7201e12e5421e12abc8df618b"
+        },
+        {
+          "id": "ch13.s03.s02.s10",
+          "title": "Personal Access Tokens and Long-Lived Credentials",
+          "hash": "ce332efa50693cd7d30a2fa6368859a22a130ca5bc4c6089b3c71a14d0baaecc"
+        },
+        {
+          "id": "ch13.s03.s02.s11",
+          "title": "API Keys and Service Credentials",
+          "hash": "a3cb017109ddb2830cfc9707687e18b9d9f9af9ad8d58b015cacd511926f76a1"
+        },
+        {
+          "id": "ch13.s03.s03",
+          "title": "Targeted Removal vs. System Rebuild",
+          "hash": "a8b2bc45c3d57eab2ef55fce4a3dca99a12e963e82ebd8b8879308e2cc4725fa"
+        },
+        {
+          "id": "ch13.s03.s04",
+          "title": "Vulnerability Remediation",
+          "hash": "5052faee146008aa2eb04ba41089ac015713f0dd4521c7da8eecbcf267830d06"
+        },
+        {
+          "id": "ch13.s03.s04.s01",
+          "title": "Identifying Exploited Vulnerabilities",
+          "hash": "219d7c3a1ca6374ab51abc83738ca59cc2f7d57d5868f888b08c6fe9f49272fe"
+        },
+        {
+          "id": "ch13.s03.s04.s02",
+          "title": "Patch Management During Eradication",
+          "hash": "5091d9ac44e15c0972ff2fd522a25ec5b21b3b66ea4c7859992110c760b6392d"
+        },
+        {
+          "id": "ch13.s03.s04.s03",
+          "title": "Addressing Unpatchable Systems",
+          "hash": "7d7c0fa6004b38a9f72d7a8c298786d9395823c5c746060f92811dbaea91494f"
+        },
+        {
+          "id": "ch13.s03.s04.s04",
+          "title": "Broader Vulnerability Assessment",
+          "hash": "457807744206aa4c1744185ebbc9049dba7a6a41b51654e531334651bbeb8210"
+        },
+        {
+          "id": "ch13.s03.s04.s05",
+          "title": "Configuration Hardening",
+          "hash": "6cf2ee8d4c328a0c95f061e4f47c899f261e2ef36a9037f5bd946fca80ff253f"
+        },
+        {
+          "id": "ch13.s03.s04.s05.s01",
+          "title": "Harden System Configurations",
+          "hash": "f678d451a8900402515fd3386da82bcb2aa4ddaaf04f8bd258d5b10ffd2cd5f8"
+        },
+        {
+          "id": "ch13.s04",
+          "title": "Eradication Challenges",
+          "hash": "464454fa5dde6cdfc03392b20232687451e0f783c281f47ea36be3eb18e55c3c"
+        },
+        {
+          "id": "ch13.s04.s01",
+          "title": "Living Off the Land",
+          "hash": "7a534f52aa6bd13507ffe3933a1c40b045f66a38de397505aa717795c790730b"
+        },
+        {
+          "id": "ch13.s04.s02",
+          "title": "Fileless Malware",
+          "hash": "0f7abb38ca8437107e7858ecdb261b386b957d1d0af0a90797b62845ac416297"
+        },
+        {
+          "id": "ch13.s04.s03",
+          "title": "Legitimate Remote Monitoring and Management Tool Investigation",
+          "hash": "0fd5c9f163e70a97941e887d0e917449e03d7dd82b0e92392f5203e578457a5c"
+        },
+        {
+          "id": "ch13.s04.s04",
+          "title": "Cross-Trust Boundary Threat Investigation",
+          "hash": "325ddf8354b7e72a6ea8b3ed3bda53fd1a38e668404a4e734d1d60314c727192"
+        },
+        {
+          "id": "ch13.s05",
+          "title": "Eradicate Activity Examples",
+          "hash": "91cf1ab4518b6d95ee8cf43cf3c12699f0fb8b8831611e72a49199fad72cf1c4"
+        },
+        {
+          "id": "ch13.s05.s01",
+          "title": "The Memory Forensics Discovery",
+          "hash": "6299b94f75709c98268d6a9854073c874b11c059960522fc18d678c6e17cd79f"
+        },
+        {
+          "id": "ch13.s05.s02",
+          "title": "The Coordinated Credential Reset",
+          "hash": "c1f4af0e86566fd6a7a45edd3d7900003d74957ac85ecca803e8b8cd4375350a"
+        },
+        {
+          "id": "ch13.s06",
+          "title": "Eradicate: Step-by-Step",
+          "hash": "16d4f61527b530fbdab707e59f2be60333a989e0858de35e68cc2110e6a20dba"
+        },
+        {
+          "id": "ch13.s06.s01",
+          "title": "Step 1. Conduct Short-Form Investigation to Inform Eradication",
+          "hash": "ac9ed999ecb3a6a03b20875d521c8aabfdadac35206258f74a121ad07b75ede8"
+        },
+        {
+          "id": "ch13.s06.s02",
+          "title": "Step 2. Perform Root Cause Analysis",
+          "hash": "a336b7b9258f752869793aa43c66abe2c21256252599b22523e2d35b4e5a0c64"
+        },
+        {
+          "id": "ch13.s06.s03",
+          "title": "Step 3. Remove Persistence Mechanisms",
+          "hash": "5b3c83d6408c52bb579dafff513154e798a31251153f78be6056f6c96d643464"
+        },
+        {
+          "id": "ch13.s06.s04",
+          "title": "Step 4. Remediate Accounts and Identity Systems",
+          "hash": "3f51c87d493e2da1df008b6153821ecddaa3cf763000e619884c22bf630820f7"
+        },
+        {
+          "id": "ch13.s06.s05",
+          "title": "Step 5. Execute Targeted Removal or Rebuild",
+          "hash": "f881e8d88deb0fce037bc8ecdc934b810a301d0f754786a8294e16066d556328"
+        },
+        {
+          "id": "ch13.s06.s06",
+          "title": "Step 6. Remediate Vulnerabilities",
+          "hash": "8e562ad6af0a985374b58392c6bd4a614534218ff97bb2e70e7d135829792a18"
+        },
+        {
+          "id": "ch13.s06.s07",
+          "title": "Step 7. Address Eradication Challenges",
+          "hash": "d931d12ebccde724a0b5842144badec177e9aa2fda51fe643420e12f17851a5d"
+        },
+        {
+          "id": "ch13.s06.s08",
+          "title": "Step 8. Validate Eradication Success",
+          "hash": "f539b5e98ee107784face33bbd521334041f13cacb6a47ddc3f56cc43feb7b6a"
+        },
+        {
+          "id": "ch13.s06.s09",
+          "title": "Step 9. Document Eradication Actions",
+          "hash": "1b1d10764b917cacf3eb8170e6d7c73e3dbc27ce45e0bf6b857f11bb8f52eeb6"
+        },
+        {
+          "id": "ch14",
+          "title": "14. Recover Activity",
+          "hash": "6478de7540fd0ac3233e41027896b40aa59a231f033dcd8961357ec9f447ace0"
+        },
+        {
+          "id": "ch14.s01",
+          "title": "Recovery Objectives",
+          "hash": "3cc37e018aab449b3ab15bf4c5d6d95f6179bc24c669eb115d7eb49e98a8eb20"
+        },
+        {
+          "id": "ch14.s01.s01",
+          "title": "Pre-Restoration Verification",
+          "hash": "7ef932af9d34d69858a68091e73edac3096b7617ee41cbba13cff636203b303a"
+        },
+        {
+          "id": "ch14.s01.s02",
+          "title": "System Validation Testing",
+          "hash": "07cc77b6b955a8c35c58c9a2d7384b5ece1a545cf5e03b939a010e2c20391322"
+        },
+        {
+          "id": "ch14.s01.s03",
+          "title": "System Owner Acceptance",
+          "hash": "a760dfb383f9a07c70c8cc39f8c5b21b7edf1e554981fff0db2d101f12165b1a"
+        },
+        {
+          "id": "ch14.s01.s04",
+          "title": "Enhanced Monitoring Configuration",
+          "hash": "8644a1b775b5e61499756ad23e03b52e45e3a14c71da1a949bd986586d746e65"
+        },
+        {
+          "id": "ch14.s01.s04.s01",
+          "title": "Configuring Platform-Specific Logging and Auditing",
+          "hash": "98d7d30a60c1c46b3314e9e2f82778233669e0fadc55d1361ca7f04876c1f810"
+        },
+        {
+          "id": "ch14.s01.s04.s02",
+          "title": "Establishing Custom Detection and Monitoring Duration",
+          "hash": "9fd229be7c11ba12c6496b8871ea845494a34b3fa5210396fe2ea1ced9c5894a"
+        },
+        {
+          "id": "ch14.s01.s05",
+          "title": "Coordinated Production Restoration",
+          "hash": "4b18cf2cb16eb3e3e034feb7d8a4e34af65283920580360cdcff228904fc98dc"
+        },
+        {
+          "id": "ch14.s01.s06",
+          "title": "Containment Action Removal",
+          "hash": "fa0eac70d4083ff8eb3a81481be8b62567fd8469e6c3fafb12f1201ac5f7ba1f"
+        },
+        {
+          "id": "ch14.s01.s07",
+          "title": "Metrics Capture",
+          "hash": "a0a21ca9d7227c53719f09279bc1230a00f7fba4d6b6b051a8022749060841e4"
+        },
+        {
+          "id": "ch14.s02",
+          "title": "Recovery Strategies",
+          "hash": "443e1f094210738edb78498f4456c66cd0d21ce69037a6a5a37d642396a604b7"
+        },
+        {
+          "id": "ch14.s02.s01",
+          "title": "Phased Recovery",
+          "hash": "efc00be2126afb4a6ba29843b4bc356f696652dcc6a06c3494d79af1904176cf"
+        },
+        {
+          "id": "ch14.s02.s02",
+          "title": "Coordinated Recovery",
+          "hash": "9555514f79a5b39f53cb08f74342601d812c05e7dcfcc30600aabdc011b3899b"
+        },
+        {
+          "id": "ch14.s02.s03",
+          "title": "Scheduling Considerations",
+          "hash": "e58aa8ed04ad1bfb90081cfbc0f7999e50cc2a38fe5f77131732309c6e0c7491"
+        },
+        {
+          "id": "ch14.s02.s04",
+          "title": "Cloud Recovery Considerations",
+          "hash": "55508a99eadd59447569eb9c247171b7c2ff2dcaed968c38d69d0b31d8d99193"
+        },
+        {
+          "id": "ch14.s03",
+          "title": "Recovery Challenges",
+          "hash": "427a4637b970db11cf2af049782baf2792b17354584af84ef3e9b48143b47663"
+        },
+        {
+          "id": "ch14.s03.s01",
+          "title": "Data Loss from Clean-Backup Recovery",
+          "hash": "dca441cc2af27a83cf77f92e1e34161b8cdaeb373c62a9034c5d3d62e3e0846a"
+        },
+        {
+          "id": "ch14.s03.s02",
+          "title": "Business Pressure for Rapid Restoration",
+          "hash": "ad65c8787ea1c9177284df8d7a0edad8a960e7338b92e8399b36129e31b36a6a"
+        },
+        {
+          "id": "ch14.s03.s03",
+          "title": "Eradication Verification Uncertainty",
+          "hash": "6e0cb8d2107024b0cd1f2021b0a05e688f749c0498d58672cb2edd6387270072"
+        },
+        {
+          "id": "ch14.s03.s04",
+          "title": "Coordination Complexity",
+          "hash": "78b9c2a92c99303ad7bab77ecf5829f7495be51703d7237f5b02b525b94e976e"
+        },
+        {
+          "id": "ch14.s03.s05",
+          "title": "User Communication and Expectations",
+          "hash": "33c90eeaf317d5c7729122b095f4b75a91d5f1d2ff595e7aa42c94359d50f8bb"
+        },
+        {
+          "id": "ch14.s03.s06",
+          "title": "Post-Recovery Problem Attribution",
+          "hash": "408202fc19df49090a3b8b0dce347539bf9b3c38cfbdbace199360f36eb891cc"
+        },
+        {
+          "id": "ch14.s04",
+          "title": "Recovery Activity Example",
+          "hash": "43dff6d2d47826b211b1d832d8e28126dd9e007632c69665ad1f1c6edb5ab687"
+        },
+        {
+          "id": "ch14.s04.s01",
+          "title": "Phased Recovery of a Domain Controller Environment",
+          "hash": "002668246843a53a1b20e30b1108e43fd7ab8ad0282db4d6d96e71cef540bc1f"
+        },
+        {
+          "id": "ch14.s05",
+          "title": "Recover: Step-by-Step",
+          "hash": "cbbb6fd9ad4da391a098437988f628d1c38a358215435efbae6bf649cfd28cad"
+        },
+        {
+          "id": "ch14.s05.s01",
+          "title": "Step 1. Conduct Pre-Restoration Verification",
+          "hash": "b446e634df6668e2823874fe448e2b878d7b86fb7b0984c126d499bd3dfb69dd"
+        },
+        {
+          "id": "ch14.s05.s02",
+          "title": "Step 2. Perform System Validation Testing",
+          "hash": "e8827d00aa8745b2213de3039168b578b58e160554cf4a996d9bbdb943f12804"
+        },
+        {
+          "id": "ch14.s05.s03",
+          "title": "Step 3. Obtain System Owner Acceptance",
+          "hash": "226de5c131d89dec60473c423924d7d4dc907271ce479f8c1da7cf9484d42ba6"
+        },
+        {
+          "id": "ch14.s05.s04",
+          "title": "Step 4. Configure Enhanced Monitoring",
+          "hash": "24299783277a3583f06e585d6dd7e6a65f797325cc95c519b3c67171867c52cf"
+        },
+        {
+          "id": "ch14.s05.s05",
+          "title": "Step 5. Execute Coordinated Production Restoration",
+          "hash": "e2990f220f8579ff66a4df472f3ef78f07438b05ae7e6256cffb2ffaad857971"
+        },
+        {
+          "id": "ch14.s05.s06",
+          "title": "Step 6. Remove Containment Measures",
+          "hash": "5a2dfb83dc42d6f23a2def9516248664b4fe56c11e2311f6fe2126a8800ca11e"
+        },
+        {
+          "id": "ch14.s05.s07",
+          "title": "Step 7. Capture Recovery Metrics",
+          "hash": "8359ee11d9e33ce5230bd7ab7fc7df20834a20cbbb90eb787bf5c5cee6c95685"
+        },
+        {
+          "id": "ch15",
+          "title": "15. Debrief Activity",
+          "hash": "94c610582e9610f42f8762df2130220b440abcc35cd9925f6f70526850cf780e"
+        },
+        {
+          "id": "ch15.s01",
+          "title": "Debrief Objectives",
+          "hash": "ae7dee773baeae49742c241d377bbc8c9cd6f04dd7cf0fe88a93056d7dc8539a"
+        },
+        {
+          "id": "ch15.s01.s01",
+          "title": "Incident Closure",
+          "hash": "b7ef46fff31b6fbea0fa9d78b56f1cc66c8fefe2856e008d8c41c9bd5be8f65d"
+        },
+        {
+          "id": "ch15.s01.s02",
+          "title": "Organizational Learning",
+          "hash": "9a518a17cc01608589dc199b0e3755e343522606adf6d090298b2ff8b26f9c95"
+        },
+        {
+          "id": "ch15.s02",
+          "title": "Debrief Strategies",
+          "hash": "79d9f4d5242b03bfe434f2d3bfc583b733e9d2595cc87878e37a3fff72d26ebc"
+        },
+        {
+          "id": "ch15.s02.s01",
+          "title": "Transitioning to Debrief",
+          "hash": "ba24ec0b8190b8c25e648035f16ad2bdaea134871e1b48a52930d38ad0069135"
+        },
+        {
+          "id": "ch15.s02.s02",
+          "title": "Managing Temporary Assets",
+          "hash": "01142b0484c8fa90be6f086a28ac19bb446d4d2e3417a593f456cbed338c0a64"
+        },
+        {
+          "id": "ch15.s02.s02.s01",
+          "title": "Forensic Evidence Retention",
+          "hash": "eef1f7c74380b6d29ddaa03dc4b55fdbb45ca944ec2f6d5f26a5ed25eb8307c8"
+        },
+        {
+          "id": "ch15.s02.s02.s02",
+          "title": "Temporary Accounts and Monitoring",
+          "hash": "5894e3507ab0e5ebe11957bafbd1278368c40fa53bc8f0cef9ad477d79719e5e"
+        },
+        {
+          "id": "ch15.s02.s02.s03",
+          "title": "Enhanced Monitoring Configurations",
+          "hash": "85d2520e23e4c99e87e0cc129aa444d242d03299c9644217b733c9ebdb1b5de6"
+        },
+        {
+          "id": "ch15.s02.s03",
+          "title": "Consolidating Incident Documentation",
+          "hash": "4a1eeb6c372aff6f7d2b886a63e4f33fccafb921c3967474422e3c5fef07985a"
+        },
+        {
+          "id": "ch15.s02.s04",
+          "title": "Capturing Incident Metrics",
+          "hash": "d73e64c29b59ed0f5801b66f447497540a0e44ba6e12647026ac093e511b8dae"
+        },
+        {
+          "id": "ch15.s02.s05",
+          "title": "Conducting the After-Action Review",
+          "hash": "3696812832a48cf84dd84ba06c8d92769ea70b0e15d8f9ea9a42d4d800730d97"
+        },
+        {
+          "id": "ch15.s02.s06",
+          "title": "Driving Organizational Improvement",
+          "hash": "2bf18a19cbd55a3ddeffc921bed6dc61fa18f659052f6b3ff1b0f01177277b70"
+        },
+        {
+          "id": "ch15.s02.s07",
+          "title": "Developing the Incident Report",
+          "hash": "924a7c47028cf00ee4fdfcc223ad5fc78873a0309c619aea821b07d03d314dab"
+        },
+        {
+          "id": "ch15.s02.s07.s01",
+          "title": "Report Audience",
+          "hash": "6a7b1e654dd19640ca6ad358f2c9e01feae48add00e7dc35e51c53f9fd772e5f"
+        },
+        {
+          "id": "ch15.s02.s07.s02",
+          "title": "Report Contents",
+          "hash": "744211e1ed3229e09d50edc23c3fb2e97a26b0faa3379a22f2cd1957a26780e9"
+        },
+        {
+          "id": "ch15.s02.s07.s03",
+          "title": "Two-Report Approach",
+          "hash": "a17d8350bd31b0e9956de7ac7fa1ea8e2a8d97ffbb76ffc09c56352fde205a29"
+        },
+        {
+          "id": "ch15.s02.s07.s03.s01",
+          "title": "Incident Summary Report",
+          "hash": "367091d44715c20e7b4443b798bcd1bf66208d5cfb6dc4395d374e78c1879177"
+        },
+        {
+          "id": "ch15.s02.s07.s03.s02",
+          "title": "Technical Incident Response Report",
+          "hash": "4ea2965ff25b0c66fd219dd05aff339b19abd6294444ec6fc786c23fb74ecb2c"
+        },
+        {
+          "id": "ch15.s02.s08",
+          "title": "Presenting Findings and Recommendations",
+          "hash": "68c02aa375cfd600e67e65041f2ae70653ea4e6a343a4c4f41b28a8111e2a74f"
+        },
+        {
+          "id": "ch15.s02.s08.s01",
+          "title": "Session Objectives",
+          "hash": "9d69a0605b5f3872c13f88ac720d437723850c4066ae49d0a95c90a51601792f"
+        },
+        {
+          "id": "ch15.s02.s08.s02",
+          "title": "Attendees and Roles",
+          "hash": "fbd2d309582d483f7b5f66c5eb9fbc165946350ad9e120a28bf41534d6e31092"
+        },
+        {
+          "id": "ch15.s02.s08.s03",
+          "title": "Follow-Up and Accountability",
+          "hash": "be7959d5db2720b3185e4980ac0686b7b7693dfb1845aca396f0955291ebb75e"
+        },
+        {
+          "id": "ch15.s03",
+          "title": "Debrief Challenges",
+          "hash": "2f81c01a3b4f604b46fa9f5ea63bee2cc25578ef47b2aa4bffcada5289dffc17"
+        },
+        {
+          "id": "ch15.s03.s01",
+          "title": "Incomplete Documentation",
+          "hash": "8378f89def64bcfcd20c153f19f9268b96cf291529b4ef4f375e995c59471f89"
+        },
+        {
+          "id": "ch15.s03.s02",
+          "title": "Organizational Attention and Priority",
+          "hash": "5f27040ffbc037b5b14b355988dbac542c795429197a3b96fc93b244aa5af7de"
+        },
+        {
+          "id": "ch15.s03.s03",
+          "title": "Blame and Accountability Dynamics",
+          "hash": "f9bd16c29edb93c64b5d7d3f2ce3f9b4e8286d036dc095d2527d19162d94cf05"
+        },
+        {
+          "id": "ch15.s03.s04",
+          "title": "Legal and Regulatory Constraints",
+          "hash": "b77ed854f16f3af2d7cfee57126d849675ecb7acb68e951962a1e5cbcc438ea7"
+        },
+        {
+          "id": "ch15.s03.s05",
+          "title": "Resource Constraints",
+          "hash": "e50a0b02c83b9fc51f29d11c1a023b9fe2f4630474e5ac3aa2ba991db3bc89e4"
+        },
+        {
+          "id": "ch15.s04",
+          "title": "Debrief Activity Examples",
+          "hash": "93d4ea5271b90db456dee61b5d31d65e0eaa872410aca6830fa5e77d958e18d9"
+        },
+        {
+          "id": "ch15.s04.s01",
+          "title": "The Compromised SaaS Account",
+          "hash": "19a6b2778884c729201d301f3e3f96c6b145b47068deacfb77ce0a655f16be0b"
+        },
+        {
+          "id": "ch15.s04.s02",
+          "title": "The Healthcare Ransomware Recovery",
+          "hash": "b88d418c63dc79a6c80e4068c648df35e3f814b6eb7a055b4866df702abfee3f"
+        },
+        {
+          "id": "ch15.s04.s02.s01",
+          "title": "Phase 1: Documentation Consolidation",
+          "hash": "a9d8acef0b3f970d8f7fccb685af4a0e2cad259981ca6b7e7e4a235402bfc104"
+        },
+        {
+          "id": "ch15.s04.s02.s02",
+          "title": "Phase 2: After-Action Review",
+          "hash": "db7e88af05dd0f12b5b86a8961fc4ef719454d2facfa72995ed08b920f7c05c0"
+        },
+        {
+          "id": "ch15.s04.s02.s03",
+          "title": "Phase 3: Documentation and Presentation",
+          "hash": "749dd72a32df11f81ac8336ebff7d699c76ebaf193a4534a1ae77ec75df60d86"
+        },
+        {
+          "id": "ch15.s04.s02.s04",
+          "title": "Sustaining Momentum",
+          "hash": "2da9d1c2793458534453e51a922e8e4035cf6565ea105ef8cc37fe8ac1137d6a"
+        },
+        {
+          "id": "ch15.s05",
+          "title": "Debrief: Step-by-Step",
+          "hash": "62a0032b789bcb2e6084de9f252975dbe36f61b6744d8e27335cfa42c1a238be"
+        },
+        {
+          "id": "ch15.s05.s01",
+          "title": "Step 1. Determine Debrief Scope and Documentation Requirements",
+          "hash": "9a028724d53684f44657cafdc3efba8174e88746658652ba1194f2a114db90a9"
+        },
+        {
+          "id": "ch15.s05.s02",
+          "title": "Step 2. Manage Temporary Assets Created During Response",
+          "hash": "c9402713134e9d839890eacf9145618b166735c9d580744f91d4f46ebf10a633"
+        },
+        {
+          "id": "ch15.s05.s03",
+          "title": "Step 3. Consolidate Incident Documentation",
+          "hash": "fcd7dcaac376fece4d2f17bc9c64928733c6fc7f0e9fb6a6813ae52ada861e07"
+        },
+        {
+          "id": "ch15.s05.s04",
+          "title": "Step 4. Capture Incident Metrics",
+          "hash": "ef70e361b842d70d2dbb07a610e59fa2b03183af8a7acfc03a91ad87520716ad"
+        },
+        {
+          "id": "ch15.s05.s05",
+          "title": "Step 5. Conduct After-Action Review",
+          "hash": "40e2667b17363a77a6978d6bb8fae7fad80e1b428c6d6f684e0318fc2e3d6704"
+        },
+        {
+          "id": "ch15.s05.s06",
+          "title": "Step 6. Develop Incident Reports (When Required)",
+          "hash": "8f3e75e7290750c752aa8fac7ff6650916277cf0aa2918dda87c85a9fe24346d"
+        },
+        {
+          "id": "ch15.s05.s07",
+          "title": "Step 7. Present Findings and Recommendations to Stakeholders",
+          "hash": "01a40d4ef215868316e5bfbcc2d2e9670d71b786e919a0406cfe821e44d0de49"
+        },
+        {
+          "id": "ch15.s05.s08",
+          "title": "Step 8. Drive Organizational Improvement",
+          "hash": "0ded73128f85fd5595312fbd1bf05855fd64fca72d0fb55b62f3665ec3ec8721"
+        }
+      ]
+    },
+    {
+      "unit_id": "part3",
+      "title": "Part 3: Special Considerations in Incident Response",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "3a8507dca12cd35e31f168d44afd91d5452baa2524374c1ed38719e664060fec",
+      "sections": [
+        {
+          "id": "ch16",
+          "title": "16. Accelerating Incident Response with AI",
+          "hash": "6e56931acaf1944ef6e850fbd92087ddbe26bf37eeb7940bb83bffb8b5031e9f"
+        },
+        {
+          "id": "ch16.s01",
+          "title": "Introduction",
+          "hash": "bba847bb9b059dc94ab19dbe4721faf0e7750efcfda5ddf8d4be0810cffc97ab"
+        },
+        {
+          "id": "ch16.s01.s01",
+          "title": "Opportunities and Cautions",
+          "hash": "fecdffa8a39e34ee08eda4ef01df90d2a0ecda81a00d51ce52a07d8e8111303a"
+        },
+        {
+          "id": "ch16.s01.s02",
+          "title": "Data Handling Considerations",
+          "hash": "80a47daa8d2e37655ad65ca0e79b610bef47ac2d4646d80311af1f0e7f43cdbd"
+        },
+        {
+          "id": "ch16.s01.s02.s01",
+          "title": "Frontier Models",
+          "hash": "a5f5bd5b14f3fd3e1fb0a077c99d8dcd2b031fd71dc8af7139f907f270cabcab"
+        },
+        {
+          "id": "ch16.s01.s02.s02",
+          "title": "Open-Weight Models",
+          "hash": "9dfb9a2301a7673f81374a8c6fad65c1aa9897aa7263be016dfe4f39a7641347"
+        },
+        {
+          "id": "ch16.s01.s03",
+          "title": "Chapter Organization",
+          "hash": "c8cf47d06b85792f1988da9d37647d7256f5a66f2d70a907eb7bc145fc9f35fd"
+        },
+        {
+          "id": "ch16.s02",
+          "title": "Prompting Foundations",
+          "hash": "797add85192706c2f217d609f33e1a634583ba04883c5d208cdf269637db1132"
+        },
+        {
+          "id": "ch16.s02.s01",
+          "title": "Quick Prompting Tips",
+          "hash": "1ce27720a317e14f877da8cb5c355bbafc1e2b20ef3879369bb52682f2fd475e"
+        },
+        {
+          "id": "ch16.s02.s02",
+          "title": "Structured Prompts for Complex Tasks",
+          "hash": "b952bb5bc3e82186d03fb99dc77ac67d000dd9cc9daebf14e16be7d887473e39"
+        },
+        {
+          "id": "ch16.s03",
+          "title": "Foundational Use Cases",
+          "hash": "365e1637957ff55807f273ebfd8f60edfc331de8be847f184d9bad1ea460b1e9"
+        },
+        {
+          "id": "ch16.s03.s01",
+          "title": "Code Analysis and Deobfuscation",
+          "hash": "c51b56cdf28d2bd5e10ac7f5768c231ab0da8227296f62eb42c9c1ad5736150c"
+        },
+        {
+          "id": "ch16.s03.s01.s01",
+          "title": "Analyzing Obfuscated PowerShell",
+          "hash": "7e1333671a60ac6e1b79eddee54cf9670a168fa1f707a055e7ad8c568cffa03e"
+        },
+        {
+          "id": "ch16.s03.s01.s02",
+          "title": "Iterative Analysis for Complex Artifacts",
+          "hash": "65304f38910b62ffc4b584e717fb250137556ef3d9a67af15783acafcc70810a"
+        },
+        {
+          "id": "ch16.s03.s02",
+          "title": "Log Analysis and Anomaly Detection",
+          "hash": "cf8a67fe8653e6eb8bfefa015ba96efe00c75981518d213304a1d8e02b2e2221"
+        },
+        {
+          "id": "ch16.s03.s02.s01",
+          "title": "Use Cases for AI Log Analysis",
+          "hash": "5b30851b2e79eac4b3855c368d881f0f4420895cc618036dd20c373db3e9f35c"
+        },
+        {
+          "id": "ch16.s03.s02.s01.s01",
+          "title": "Initial Orientation",
+          "hash": "0132210f7b1253244f308a462935a4816f56ba5e9b9ef20dd20ec7450f4fc16c"
+        },
+        {
+          "id": "ch16.s03.s02.s01.s02",
+          "title": "Anomaly Identification",
+          "hash": "22a35515c9a0a950bb5e4f85c50de38847027af98653f8d260190d1a0a2a1c22"
+        },
+        {
+          "id": "ch16.s03.s02.s01.s03",
+          "title": "Report Preparation",
+          "hash": "c6bab370a221713560e656d18c250694e60111dab3a6625fec8354fa120b1338"
+        },
+        {
+          "id": "ch16.s03.s02.s01.s04",
+          "title": "Query Generation",
+          "hash": "a43193f63c814d539d8e9a4dc00949784f0f71bd7fb7ec4410df9b0c69fffbfd"
+        },
+        {
+          "id": "ch16.s03.s02.s02",
+          "title": "Initial Log Triage: Microsoft 365 Authentication Logs",
+          "hash": "c64b2c0670ef0176211608bb58d33c16fa3fdad8116c968554597aeb0a8cf42e"
+        },
+        {
+          "id": "ch16.s03.s02.s03",
+          "title": "Beaconing Detection: Network Proxy Data",
+          "hash": "b8baf9b1c697cddbe5c8ac39de5b4cd6ae9610b36070665dab1ecb9b741ad115"
+        },
+        {
+          "id": "ch16.s03.s02.s04",
+          "title": "Limitations and Considerations",
+          "hash": "1e11215fdbed411d209d491c5b7c5f128ce0acb0e882432c6ae53a464e8ae411"
+        },
+        {
+          "id": "ch16.s03.s02.s04.s01",
+          "title": "Incomplete Detection",
+          "hash": "3922c78b0fa3418f7ea0f0826910634e1fc16c4aa00a54e24576d3bb12fa2055"
+        },
+        {
+          "id": "ch16.s03.s02.s04.s02",
+          "title": "False Positive Risk",
+          "hash": "c63e24be5b84394393306bea73bde3c51c793c1ac34e00a026cd2a0c1613c797"
+        },
+        {
+          "id": "ch16.s03.s02.s04.s03",
+          "title": "Lack of Definitive Conclusions",
+          "hash": "d2d4a91c47ed43694317134ed51f8fbac5f925623199eb0128453ea44fdf7f1e"
+        },
+        {
+          "id": "ch16.s03.s02.s04.s04",
+          "title": "Context Window Constraints",
+          "hash": "949791612925a5d9a7fc85435359f097f75f9308e9db677d7340267c4d4c788e"
+        },
+        {
+          "id": "ch16.s03.s03",
+          "title": "Translating Technical Findings for Stakeholders",
+          "hash": "7696a627596f984b17bd84050f4777f642b7a5b8fd4706c1a45a16f5820259fb"
+        },
+        {
+          "id": "ch16.s03.s03.s01",
+          "title": "Executive Summary Generation",
+          "hash": "b5b72edc17d04a80d3ad62e73c2595fb602e05dbe70b31d3aec771257af610ce"
+        },
+        {
+          "id": "ch16.s04",
+          "title": "Intermediate Use Cases",
+          "hash": "18be7b7376de4ecb0ebe3346a82151b32bb44f04bb77e6cab521e537162556c1"
+        },
+        {
+          "id": "ch16.s04.s01",
+          "title": "Generating Incident Response Playbooks",
+          "hash": "8399818945de22fec0e8296afa1af874974ee10344d2e2c61743328a6250df43"
+        },
+        {
+          "id": "ch16.s04.s01.s01",
+          "title": "Structured Prompt for Playbook Generation",
+          "hash": "ef788f43c6722b5b5411d858b7ba41ec4fa2f84089e2a06f0588954325f7a46d"
+        },
+        {
+          "id": "ch16.s04.s01.s02",
+          "title": "Refining Generated Playbooks",
+          "hash": "e54be030b76f10f4305333487d1e7c37af40847b7f6dc8825ec854eb6c9b040a"
+        },
+        {
+          "id": "ch16.s04.s02",
+          "title": "Drafting Incident Reports",
+          "hash": "6e6c275b361891afc01cb5bff0a764d40ba8a45aa97f5855f6506be62c061c54"
+        },
+        {
+          "id": "ch16.s04.s02.s01",
+          "title": "Report Draft Generation",
+          "hash": "613e4d961c65768e706657338d7b58ad289667a1e1786f1ddad4cceb767392c0"
+        },
+        {
+          "id": "ch16.s04.s02.s02",
+          "title": "Enhancing Report Quality with Specialized Knowledge",
+          "hash": "f55be9b589306b7f63673d52c694a7713200876048e1f8381480cb31fa115a42"
+        },
+        {
+          "id": "ch16.s04.s02.s02.s01",
+          "title": "Specialized Knowledge Integration with MCP",
+          "hash": "f14d891d5ca90d8bdb1dc17df99468bc204a56e66087f16849a5db593eed8429"
+        },
+        {
+          "id": "ch16.s04.s02.s02.s02",
+          "title": "Zeltser IR Report Guidance",
+          "hash": "6dec4521eaebbe18c22c82acbfcf2cd91727658eec70c94ac82691306fb002f3"
+        },
+        {
+          "id": "ch16.s04.s03",
+          "title": "Creating Tabletop Exercise Scenarios",
+          "hash": "d5ce27cfd4eb2c4ac4a879b43f43529b32a42e807170894313d2487c7b900e81"
+        },
+        {
+          "id": "ch16.s04.s03.s01",
+          "title": "Generating Scenario Ideas",
+          "hash": "c089e2980a28bfe9116cddcc95f891b5315b9d1d389e89b91d293b6a92ab3ec9"
+        },
+        {
+          "id": "ch16.s04.s03.s02",
+          "title": "Organizationally-Grounded Scenarios",
+          "hash": "65da6aabeb06bf3fb985a72942b9c41389efd877017d5b53e037e1db27bf7e1f"
+        },
+        {
+          "id": "ch16.s04.s03.s03",
+          "title": "Gamified, Interactive Exercise Generation with Twine",
+          "hash": "e445e6d8cc739d0b8e799f87528ba0697f4a2263ec6603f704a67fc8bed36822"
+        },
+        {
+          "id": "ch16.s05",
+          "title": "Advanced Use Cases",
+          "hash": "f44def2344baee9e7f0e6d609c6f027ffd9198942c0616c87826063ef74f4842"
+        },
+        {
+          "id": "ch16.s05.s01",
+          "title": "Model Context Protocol for Defensive Operations",
+          "hash": "3dfb9e186da206c15b4adb4fddc8079c724e8a4740ee7d482e52f8a05f54d4ba"
+        },
+        {
+          "id": "ch16.s05.s01.s01",
+          "title": "Understanding MCP Architecture",
+          "hash": "b3fa3c646b69ec77ae451caaa9f6c1220a321d05fadb017106683d8b152443c7"
+        },
+        {
+          "id": "ch16.s05.s01.s02",
+          "title": "Defensive Applications",
+          "hash": "cadd19c559baa8dee71191cb8ac847c76fad3332252c490b5beb98d9b19c0a8c"
+        },
+        {
+          "id": "ch16.s05.s01.s02.s01",
+          "title": "Natural Language Threat Hunting",
+          "hash": "51dbd010954cad4900d39f49084d68f6d0a57385f32d63d5be13eb36a9af1667"
+        },
+        {
+          "id": "ch16.s05.s01.s02.s02",
+          "title": "Automated Enrichment",
+          "hash": "77178bcc032d0f89c1112e6d8086636bf5dbb62bd4d1991af257d5abc2575ef1"
+        },
+        {
+          "id": "ch16.s05.s01.s02.s03",
+          "title": "Cross-Platform Correlation",
+          "hash": "11c76f3309e23350adca063e8df8701b9ad9252302fb15f79541408ce116df84"
+        },
+        {
+          "id": "ch16.s05.s01.s02.s04",
+          "title": "Incident Documentation",
+          "hash": "9a78f257e9d08a7e7dda0889debcda9605c6fd66c03fc58b47f7c587f2224ee2"
+        },
+        {
+          "id": "ch16.s05.s01.s03",
+          "title": "Security Considerations",
+          "hash": "4e2a56ebcad754685fb3f6e1196c0c070290c61906c77b7302b377d12db91733"
+        },
+        {
+          "id": "ch16.s05.s01.s03.s01",
+          "title": "Prompt Injection",
+          "hash": "1c492cfa9ad35becd2f2aace6049ed2e8bb191957a15533e27e30870e57437b8"
+        },
+        {
+          "id": "ch16.s05.s01.s03.s02",
+          "title": "Access Control",
+          "hash": "c4c7344c157f801aa685f1cdae8f67ea8624300f478d48ea0e0fa0ed4c521b67"
+        },
+        {
+          "id": "ch16.s05.s01.s03.s03",
+          "title": "Audit Logging",
+          "hash": "b825295f09514966e505f8c360d76de1a905b6d929704c10de0da734614a8c3e"
+        },
+        {
+          "id": "ch16.s05.s01.s03.s04",
+          "title": "Data Exposure",
+          "hash": "4c45f6f762955d8d54c4a4d223ed43bb1d6040fcec9b2342f5328fb0111c995b"
+        },
+        {
+          "id": "ch16.s05.s01.s04",
+          "title": "MCP Integration for Threat Hunting",
+          "hash": "1db3148dab53e2146d13097e53917f46c2aba4f402b756078df23f995b291879"
+        },
+        {
+          "id": "ch16.s05.s02",
+          "title": "Forensic Analysis Acceleration with Protocol SIFT",
+          "hash": "8d90728306d66dd86c504f55d85a673b56a6b82b31f38fe1c6adccfaf600fdeb"
+        },
+        {
+          "id": "ch16.s05.s02.s01",
+          "title": "Autonomous Adversaries",
+          "hash": "b8403497edfdaef4154fda3c044a96aa0c1676d0d864c41588984f0fad86d45c"
+        },
+        {
+          "id": "ch16.s05.s02.s02",
+          "title": "Accelerating Forensic Investigations",
+          "hash": "5f7539deca08120b58c5e9577d3cc844e612da927ba8f16874714e0e973248ab"
+        },
+        {
+          "id": "ch16.s05.s02.s03",
+          "title": "From Tool Use to Tool Orchestration",
+          "hash": "de2b72bab80ba76a595bede2556b1565ccc2062dc109d9355486ad5d6a88b368"
+        },
+        {
+          "id": "ch16.s05.s02.s04",
+          "title": "Trust Mechanisms in Autonomous Forensics",
+          "hash": "d8366e4ffddc48c3fbd6e336e8401a96f771fd6b7c4b49f1256b18529b891870"
+        },
+        {
+          "id": "ch16.s05.s02.s04.s01",
+          "title": "Inference Constraint",
+          "hash": "b2455760f62eda10a4c4d5f97df0a3ea5b115c95127343e5c375531678c790f4"
+        },
+        {
+          "id": "ch16.s05.s02.s04.s02",
+          "title": "Human in the Loop (HITL)",
+          "hash": "a98329a4b309b7cfcb17ea3c7fd7a3dad2a8197c1313dc6615bfb98256fe144b"
+        },
+        {
+          "id": "ch16.s05.s02.s04.s03",
+          "title": "Forensically Sound Tools",
+          "hash": "775cee9fa43935d8036b01bd614b203378bb965f491bae9bf67745f294e4cd0c"
+        },
+        {
+          "id": "ch16.s05.s02.s04.s04",
+          "title": "Auditability and Documentation",
+          "hash": "2d1f0d49ccc26bea31f48f253f6fd1dffd1a17adf20d40f251cb9a250a944983"
+        },
+        {
+          "id": "ch16.s06",
+          "title": "Operational Considerations",
+          "hash": "c116b8fcee6a0bdb9381dbf05026d40247e1e17ef718fe6b3e2cd91223ac2424"
+        },
+        {
+          "id": "ch16.s06.s01",
+          "title": "Verification and Trust",
+          "hash": "254cda7dd1d09ba50a1000acfd990066a2b312d1912dc575af5472963519c655"
+        },
+        {
+          "id": "ch16.s06.s02",
+          "title": "Documentation Practices",
+          "hash": "d0e87944fde4acdfa397f85d360555be36d6aaec5bdaefdabe4c276448138cf7"
+        },
+        {
+          "id": "ch16.s06.s03",
+          "title": "Building Organizational Capability",
+          "hash": "aca0a8732b518b72401d8a0bee672b3b86d4b9d52983b54fe4f76cbd5e45d0df"
+        },
+        {
+          "id": "ch16.s06.s03.s01",
+          "title": "Prompt Libraries",
+          "hash": "073c90d9cbec64d2f31af93ec78fd7474a15594f5c3cad66d66b043ea6416fa3"
+        },
+        {
+          "id": "ch16.s06.s03.s01.s01",
+          "title": "Skill Files and Prompt Library Integration",
+          "hash": "cae62cd07c8cefe4f5d19086f0246910d73d7c22666529b90c92bc0e4e445c1f"
+        },
+        {
+          "id": "ch16.s06.s03.s02",
+          "title": "Use Case Documentation",
+          "hash": "7dc010af0d78427e121b5041eb391d300337157e1a60bb19b953a1a0a5d4abae"
+        },
+        {
+          "id": "ch16.s06.s03.s03",
+          "title": "Training",
+          "hash": "2438cdf49b44df255a48b22104124b0a0663bff805fcaaab57a0150326fdf128"
+        },
+        {
+          "id": "ch16.s06.s03.s03.s01",
+          "title": "Structured Learning Paths",
+          "hash": "99748f9385624027e323e26a131900cd47d3a1ba697e58c0ce1bbf511be96fd1"
+        },
+        {
+          "id": "ch16.s06.s03.s03.s02",
+          "title": "Practical Training Exercises",
+          "hash": "a9ad92f54556f62723b8bd38f3f361a26483dcdfc278fda5d1a33814d65bb607"
+        },
+        {
+          "id": "ch16.s06.s03.s03.s03",
+          "title": "Cross-Training Considerations",
+          "hash": "0f909ac48ee74bc50deae4b1821a78e10bd5c563d72bf5facd94dd41fd82f529"
+        },
+        {
+          "id": "ch16.s07",
+          "title": "Looking Forward",
+          "hash": "289ed7a7056c4c6f659284ee2e1d504e1f899b6bf9167a675b3a65e4363870e6"
+        },
+        {
+          "id": "ch17",
+          "title": "17. Incident Response for Ransomware",
+          "hash": "65eff22c69dc1518519a70bd31c4b45aa8cc516dfbbcbd7abc0a659596a77b6b"
+        },
+        {
+          "id": "ch17.s01",
+          "title": "Ransomware Introduction",
+          "hash": "a5da58f337a0fb4f52c6eb4e2a232edb8d32d56726256b9d4d2a745e654139a6"
+        },
+        {
+          "id": "ch17.s01.s01",
+          "title": "Ransomware Attack Trends",
+          "hash": "19589dd5af20847d3acb08554927eee8386a541f52034c404e30d42f8ed10b94"
+        },
+        {
+          "id": "ch17.s01.s02",
+          "title": "Attack Differentiation",
+          "hash": "830121dcf0efa44d62f26a6e4d4d9b4f62eb1ee934dc8e28fd95bc2c70c7ef09"
+        },
+        {
+          "id": "ch17.s01.s02.s01",
+          "title": "Human-Operated Ransomware (HumOR)",
+          "hash": "3ba22fa2254e0f20673751fd606556e87e7f15c6fb01550fe59214c0fa44d5c2"
+        },
+        {
+          "id": "ch17.s01.s02.s02",
+          "title": "Automated or Mass-Distributed Ransomware",
+          "hash": "ad4c58f0a0ca7aa63c7a1bb34f5586d86de184f9c16a61f8cefa207574a0a1c7"
+        },
+        {
+          "id": "ch17.s01.s02.s03",
+          "title": "Encryptionless Extortion",
+          "hash": "1c10ed42a60e4c7efc4501d94400a377b82b921f2a41298d78ae8c344b273d52"
+        },
+        {
+          "id": "ch17.s01.s02.s04",
+          "title": "Pseudo-Ransomware and Wipers",
+          "hash": "6065901859d9cf742c493d42f22cc504355c7b1ac80aa4cbeac9a8acede731a0"
+        },
+        {
+          "id": "ch17.s01.s03",
+          "title": "Multi-Vector Extortion Campaigns",
+          "hash": "cec379eeed4e3a5294a30d249ee2623225145100c754abd84e44772ed0c6d99b"
+        },
+        {
+          "id": "ch17.s02",
+          "title": "Prepare",
+          "hash": "3ce523eb0c1ed3e868d8da9d7da5711542f5256585edce0925a6bb3dca7d8b34"
+        },
+        {
+          "id": "ch17.s02.s01",
+          "title": "Crisis Communications and Public Relations",
+          "hash": "2d40ee696935a99c59e858dfb77b9c04924248b90c29acdda279f2e850ff2145"
+        },
+        {
+          "id": "ch17.s02.s02",
+          "title": "CTI for Ransomware",
+          "hash": "c237161d15258a83e1c83a182aae1aa0108ff9f965db3b4f40b46062aa1b8dca"
+        },
+        {
+          "id": "ch17.s02.s03",
+          "title": "Employee Training and Awareness",
+          "hash": "3a55ca07df29a944d5c1bab21b73662d21a7d720055140d990294761b6d4a94f"
+        },
+        {
+          "id": "ch17.s02.s04",
+          "title": "Identity, Access, and Tier-0 Protection",
+          "hash": "ea96880ec48796222a99db05c98bdd8496048d2f06804e8a6f0f1177f7c54ad8"
+        },
+        {
+          "id": "ch17.s02.s05",
+          "title": "Backups",
+          "hash": "663bdcb54bd02b64abc161cf30b8b13e45f1420ceeeb128c28a16815d0130ed4"
+        },
+        {
+          "id": "ch17.s02.s05.s01",
+          "title": "Ransomware-Resistant Backup Strategies",
+          "hash": "6a1fcaca54703663bd26fe98977f4ac5a9a6b0587d56d26b733cdf9d65734e89"
+        },
+        {
+          "id": "ch17.s02.s05.s02",
+          "title": "The 3-2-1-1-0 Backup Rule",
+          "hash": "a9e12b2b9addf306976b300bb5ba27002df522ddc931ba762155cb9549ed50e2"
+        },
+        {
+          "id": "ch17.s02.s05.s03",
+          "title": "Backups Are Your Last Line of Defense",
+          "hash": "1f6c735db62d15d0679ddf2edce7896e3ae814e478c345b4fd320d37e9632f63"
+        },
+        {
+          "id": "ch17.s03",
+          "title": "Verify/Triage",
+          "hash": "07877bb8b71655778f9d8a3f6417d09b302e7cea7b0a9791e59bb5d747354d8d"
+        },
+        {
+          "id": "ch17.s03.s01",
+          "title": "Ransomware Verification Indicators",
+          "hash": "ef4f43f9c1b1adce23cfb79646c7b0cf771cfa4903aa48a83c9f17c9cdb92038"
+        },
+        {
+          "id": "ch17.s03.s02",
+          "title": "Distinguishing Attack Types",
+          "hash": "1a84a5203d731100c1cf96c95921bea5e9a061d40317cc986cad49d871a09f5f"
+        },
+        {
+          "id": "ch17.s03.s03",
+          "title": "Communicating with Decision Makers",
+          "hash": "a2aa2d11ad4c85219da6272b8d448b8455639f0aad3c4be4ebb81df3c4bcf90a"
+        },
+        {
+          "id": "ch17.s03.s04",
+          "title": "Resource Planning for Extended Response",
+          "hash": "f234fad827b2bc35451e2facc20974de2069cbdefa30ce2aef19fea3a1e38767"
+        },
+        {
+          "id": "ch17.s04",
+          "title": "Scope",
+          "hash": "143323f6666ec3bf2d89aac316766678f41d7e660ca0c1d5718362acea14d606"
+        },
+        {
+          "id": "ch17.s04.s01",
+          "title": "Framework for Ransomware Scoping",
+          "hash": "d511064534dc742d1293797d233f64758d019e33a79652509cc3c2fb052a9921"
+        },
+        {
+          "id": "ch17.s04.s02",
+          "title": "Scoping Activities for Ransomware",
+          "hash": "bdda4d07062159c02a51c08d838b2b5c5c1d31027f44dbc31ed543a8459b6f10"
+        },
+        {
+          "id": "ch17.s05",
+          "title": "Eradicate",
+          "hash": "11fe67e55362dbc251dcf50a6068e894f8aa93fe61856fe5971cdb6758066825"
+        },
+        {
+          "id": "ch17.s05.s01",
+          "title": "Assessing Data Access and Exfiltration",
+          "hash": "b348d0b605ba4a80a4f53506133700e9fadb8e73eb753428feb0f73246ba3d1a"
+        },
+        {
+          "id": "ch17.s05.s02",
+          "title": "Investigative Techniques for Data Exfiltration Hunting",
+          "hash": "930af7ecab2da576dd0d3530e572006ae0459c343881825500109d56adc19a14"
+        },
+        {
+          "id": "ch17.s05.s03",
+          "title": "Data Exfiltration Detection Strategies",
+          "hash": "131db7c9c4684dbf9aba1545038e26589a4d27584c2bdf2a6a4110ab4eb6c24a"
+        },
+        {
+          "id": "ch17.s05.s04",
+          "title": "Decryption Possibilities",
+          "hash": "de5cda41b97fb5db41b868599d848eae316a7ce8706d7278af32af624b0df6e6"
+        },
+        {
+          "id": "ch17.s05.s04.s01",
+          "title": "Decryption Assessment Process",
+          "hash": "ddc5a98d6606ee6e1fe19a99542434c98e77769f9d400dcf381b1e571ae88929"
+        },
+        {
+          "id": "ch17.s06",
+          "title": "Recover",
+          "hash": "74dedc4dddc8d390390e45cee742b73bef5b6a0584fb66fdf475f34d37b0fc33"
+        },
+        {
+          "id": "ch17.s06.s01",
+          "title": "Recovery Planning and Prioritization",
+          "hash": "10e80b493d7b0c5f48efa2a95b230096263348b060829e4dd78b13302c4545df"
+        },
+        {
+          "id": "ch17.s06.s02",
+          "title": "Restoration from Backups",
+          "hash": "802ea1eb070447549aa4fe8d85c0d50a1ff19b85713a55eb28f2a33ec39116d4"
+        },
+        {
+          "id": "ch17.s06.s03",
+          "title": "System Rebuild",
+          "hash": "5c32384740d01a28e7d5923080329b92868c13bd934c328626a016e6e3c717e7"
+        },
+        {
+          "id": "ch17.s06.s04",
+          "title": "Watching for Attacker Return",
+          "hash": "bd58bef35c95208314245384c86df3995e7665a034a0fbc1d8ced9bfbcab986e"
+        },
+        {
+          "id": "ch17.s06.s05",
+          "title": "Communication During Recovery",
+          "hash": "6169e28e8f8bf077f1307e1c9c57ec59cefc593392a55898f4c766ee377ac058"
+        },
+        {
+          "id": "ch17.s06.s05.s01",
+          "title": "Internal Communication Efforts",
+          "hash": "20e19253e5ad5939deec175189982652af7527350bd3ccbf61d5eb10004d87b9"
+        },
+        {
+          "id": "ch17.s06.s05.s02",
+          "title": "External Communication Efforts",
+          "hash": "c13e2cee9d0c3af2755ce2ffb13b4b9dca7e34cae4e1e4aeb49f49190ce77828"
+        },
+        {
+          "id": "ch17.s07",
+          "title": "Debrief",
+          "hash": "2674565a75dc19191fb707c0f020653070733598b932c7b8eb421fd02ff0bd3c"
+        },
+        {
+          "id": "ch17.s07.s01",
+          "title": "Ransomware-Specific Debrief Questions",
+          "hash": "1cc2fbc3ae4941fe31e77d162c00a265518004b56da5879f203e07e71662cacf"
+        },
+        {
+          "id": "ch17.s07.s02",
+          "title": "Ransomware-Specific Metrics",
+          "hash": "04fe4b16e2ad15417152d3dd67345cabd226b76096c5a001af9bfd8644af8bab"
+        },
+        {
+          "id": "ch17.s08",
+          "title": "Final Considerations",
+          "hash": "da9a9176a78d5ec74e733277c651ef605dc8f718099a0bc0d7e8f8d7ee79fec5"
+        },
+        {
+          "id": "ch17.s08.s01",
+          "title": "The Human Element",
+          "hash": "487e72baf7694b599b79ca7107e5cf688eccb00b459cb9c3c2dfaf8b79178b0d"
+        },
+        {
+          "id": "ch17.s08.s02",
+          "title": "Legal and Regulatory Complexity",
+          "hash": "655e0c9318edaf5061c2bec343cd0ec51f35fdd53a4090e9db4dd1ce63d8172d"
+        },
+        {
+          "id": "ch17.s08.s03",
+          "title": "AI as an Evolving Threat",
+          "hash": "7de2571872a5e11afea73b440bfb9d31082737c4f722ba7f1e4b6dc1fc26abe2"
+        },
+        {
+          "id": "ch17.s08.s03.s01",
+          "title": "AI Across the Attack Lifecycle",
+          "hash": "2127b3b83e4ddedd9ae0677303438ae419b86af692ef62ceba21503048844b41"
+        },
+        {
+          "id": "ch17.s08.s03.s02",
+          "title": "AI-Optimized Extortion",
+          "hash": "adb039fd2348b701984c0489cb5197ca2e09d04e6e9a0d0bc0b4d90393de6c1e"
+        },
+        {
+          "id": "ch17.s08.s03.s03",
+          "title": "AI-Generated Ransomware Development",
+          "hash": "c10670bc48a2e7e8bdf0915fe2a7856a3b32baa81e5d5e50df41beb6044f8f31"
+        },
+        {
+          "id": "ch17.s08.s03.s04",
+          "title": "AI for Defenders",
+          "hash": "9df17a1ff583fa81a2d592fa7c304d4219afb667f223546f0206067af871a5d0"
+        },
+        {
+          "id": "ch17.s08.s04",
+          "title": "Recovery Is Not the End",
+          "hash": "e5b89f81403c47155eb8d45fd99cfef8c672e8c3ea3ac521ea761ac4b7e6ec9e"
+        },
+        {
+          "id": "ch17.s08.s04.s01",
+          "title": "Regulatory and Legal Exposure",
+          "hash": "88c9efc2abd746edf84e8423c91c5341a57f2b6918b9f14d48366aca4765718e"
+        },
+        {
+          "id": "ch17.s08.s04.s02",
+          "title": "Insurance Resolution",
+          "hash": "07a37c88701aa762e7afa6b849b4459be0ad68450a2321c30f9e6f85cea56fc7"
+        },
+        {
+          "id": "ch17.s08.s04.s03",
+          "title": "Stakeholder Confidence",
+          "hash": "6ee3efdcc71c71475dd94c12f25c884e867b011d986a06f4151608f4776c059c"
+        },
+        {
+          "id": "ch17.s08.s04.s04",
+          "title": "Ongoing Extortion Risk",
+          "hash": "6ec292021c893119f2212c28b3589636474760302f0d7104578537b88ff0dd9d"
+        },
+        {
+          "id": "ch17.s08.s05",
+          "title": "Prevention Remains Essential",
+          "hash": "3a7fab084ebd9d21d1e8c3e0674ae6d2490b64837ba271619537e9c8b97b6c6f"
+        },
+        {
+          "id": "ch18",
+          "title": "18. Incident Response for Cloud Systems",
+          "hash": "95d60d85c8e2ff7fe1d477035518c4e9282f1e81153b589e21386970c2c307aa"
+        },
+        {
+          "id": "ch18.s01",
+          "title": "Cloud Introduction",
+          "hash": "f2f1f21ac7d5235542fe619c6b685dc263aaca142d6a1510b2973bbdea97f8f9"
+        },
+        {
+          "id": "ch18.s01.s01",
+          "title": "Common Cloud Attacks",
+          "hash": "0d95e608c3e776e0a570b7a32c7cf68231c9cbe473f8e128bb559eb54472f741"
+        },
+        {
+          "id": "ch18.s01.s01.s01",
+          "title": "Initial Access Vectors",
+          "hash": "b25c05a19b21f0ebd05f0e4aab82f827af8236a013cb3c0d65bc1febb4b2f3af"
+        },
+        {
+          "id": "ch18.s01.s01.s02",
+          "title": "Impacts",
+          "hash": "1ee99fb5453eae9df91d5c2393fcc399f1fe07f725f1aed3d9518919addee8b6"
+        },
+        {
+          "id": "ch18.s02",
+          "title": "Prepare",
+          "hash": "529e68b99b4b1ad2b5213f6273a08eb3734a65df949f1c5452e3a2ae160c63db"
+        },
+        {
+          "id": "ch18.s02.s01",
+          "title": "Logging",
+          "hash": "4daf7029fe0b8fa338e44e6062d46f9212d3c71e42d76e887c54fe14438f79ae"
+        },
+        {
+          "id": "ch18.s02.s02",
+          "title": "Permissions",
+          "hash": "2b9afcb69d61cc54274405585131183a09ed4edce9497548835f0950cf6f8a8b"
+        },
+        {
+          "id": "ch18.s03",
+          "title": "Detect",
+          "hash": "5f451558549d5ecc73e32c176336c5ea992eafcc419311e6c5ca8fdf5ee958f3"
+        },
+        {
+          "id": "ch18.s03.s01",
+          "title": "Cloud-Native Detection Tooling",
+          "hash": "9cb80fcaebbd7c6ea6038cf55711ccdc9d651161353e2fddbe87f1844a2d9e72"
+        },
+        {
+          "id": "ch18.s03.s01.s01",
+          "title": "Detection Tooling for AWS",
+          "hash": "956793069d21e9c751942178230069281b8aa737f5ea839fdc5316b930aa50e8"
+        },
+        {
+          "id": "ch18.s03.s01.s02",
+          "title": "Detection Tooling for Azure",
+          "hash": "e02eb6bcd7077b8aeebfb36267e79be7b49e17d79ead85f3f82839e3d7c89055"
+        },
+        {
+          "id": "ch18.s03.s01.s03",
+          "title": "Detection Tooling for Google Cloud",
+          "hash": "437210dc9f74d316949b6d39f66485b702337d7adf81adb64c7260604afd0f8a"
+        },
+        {
+          "id": "ch18.s03.s01.s04",
+          "title": "What Cloud-Native Detection Misses",
+          "hash": "b535686fc1dba6e6ea78f7209c194e510d7b614392ef6c1f2be840ae1d57e1c0"
+        },
+        {
+          "id": "ch18.s04",
+          "title": "Response Actions",
+          "hash": "8b540f2e40fc4043553d6054a124d03bdb703c9ccb0da4a16d725aad66132834"
+        },
+        {
+          "id": "ch18.s04.s01",
+          "title": "Scoping Cloud Incidents",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "ch18.s04.s01.s01",
+          "title": "Scoping Questions",
+          "hash": "8475ad4ddf9c766699469018cb97eecdac689abd97f088f97431a9187fbe89af"
+        },
+        {
+          "id": "ch18.s04.s01.s02",
+          "title": "Log Sources",
+          "hash": "4e74689e584ab6169b5108c1f83b3e281ca7f75f3390975f525edaf9b3b7c7c9"
+        },
+        {
+          "id": "ch18.s04.s02",
+          "title": "Isolating Compromised Resources",
+          "hash": "b597a6b5fe49b51b5daafff2575c5e7fc5f6a38ca853b71fd1e065630ebdf51a"
+        },
+        {
+          "id": "ch18.s04.s02.s01",
+          "title": "Virtual Machine Isolation",
+          "hash": "cb0befcc19166e0a2784c0ecda349b45242caf2d77f5a34bbd0184461af97ec6"
+        },
+        {
+          "id": "ch18.s04.s02.s02",
+          "title": "Storage Account and Bucket Remediation",
+          "hash": "171ff0d35488ec93e0b67183de679715c61cdd5a0254e3ab0a2cbb805a8ca35d"
+        },
+        {
+          "id": "ch18.s04.s03",
+          "title": "Eradicating Cloud Persistence",
+          "hash": "01df6d53ddab98fb5ac227734a39e5ab1f81ba4f18abe0ad950e77ce593a8d84"
+        },
+        {
+          "id": "ch18.s04.s03.s01",
+          "title": "Identity and Access Management",
+          "hash": "11469b4930078151794b301f06ffefa425f6f5f98c3c70ef6e5242c081b643ce"
+        },
+        {
+          "id": "ch18.s04.s03.s02",
+          "title": "Compute and Workloads",
+          "hash": "9e2774b4644d5e3f51f37e85f0921dac43c4a628d6472fedd669c07f5c9fdc27"
+        },
+        {
+          "id": "ch18.s04.s03.s03",
+          "title": "Networking",
+          "hash": "8642dc5f679e259f295af3c3720e467c537b1483cad739a1b5f9f5e8a6b5aa46"
+        },
+        {
+          "id": "ch18.s04.s04",
+          "title": "Automated Response Capabilities",
+          "hash": "e618759c2a77465df3f5a3d272baaffa2691bf9533b9fec42f0d9bbe3341f9f5"
+        },
+        {
+          "id": "ch18.s05",
+          "title": "Debrief",
+          "hash": "539ce9c069c342a7f9c0c27103e9acf1d9a4e679f5572a80a60b12f9779f6433"
+        },
+        {
+          "id": "ch18.s05.s01",
+          "title": "Cloud-Specific Debrief Questions",
+          "hash": "bf11954421cab13c14b561bd29c14215712225497bb3720ef0614d7c8f8e58a9"
+        },
+        {
+          "id": "ch18.s05.s02",
+          "title": "Leveraging the Cloud for Incident Response",
+          "hash": "a31352c595972629250eecc1c62f00f7fa2662ff2d41c3e6bb6c4984ee9e083e"
+        },
+        {
+          "id": "ch18.s05.s02.s01",
+          "title": "Cloud Infrastructure for Forensic Workstations",
+          "hash": "1edd451d8c101513dda018284a74d894c623da01d96cfa25c73c697cde6fff3d"
+        },
+        {
+          "id": "ch18.s05.s02.s02",
+          "title": "Secure, Read-Only Log Storage",
+          "hash": "8b3167d2037ecce32886d6a3b31db93a35a2c5ffacdd0dfc042aace5360dae62"
+        },
+        {
+          "id": "ch18.s05.s02.s03",
+          "title": "Network Logging with VPC Flow Logs",
+          "hash": "a122a27f108806fa4d591688f909748f76223a18fcb35b4dcb722bc03390ad82"
+        },
+        {
+          "id": "ch18.s05.s02.s04",
+          "title": "Containers and Serverless for Forensic Tooling",
+          "hash": "fc6528aebcc6345788301290f7864ab814daab5eb9c46ff9aeb72820f0eb2ebf"
+        },
+        {
+          "id": "ch18.s06",
+          "title": "Final Considerations",
+          "hash": "4b029651542bc56dbece17b7420066d2639fa8eec02b193d5454b447dc89a97d"
+        },
+        {
+          "id": "ch18.s06.s01",
+          "title": "Multi-Cloud Environments",
+          "hash": "a79bcb57166f9944a800a70206cdafd025db7a774c901b227ebbac78663cd998"
+        },
+        {
+          "id": "ch18.s06.s02",
+          "title": "Evolution of Cloud Incident Response",
+          "hash": "b93e1de5c624e608a300564104aa377379341ea74e5f9ce51e9f5aed928165ed"
+        },
+        {
+          "id": "ch19",
+          "title": "19. Incident Response for Operational Technology",
+          "hash": "c5853412e373192e09abf49ef0c3f727ef398824835f8a15cca39681f139de58"
+        },
+        {
+          "id": "ch19.s01",
+          "title": "IT and OT Differences",
+          "hash": "26d5c25d4c981f796fe10bd9c50791d368afc876252dbf4ab4f22e3269717c72"
+        },
+        {
+          "id": "ch19.s01.s01",
+          "title": "Incident Response Execution in OT Environments",
+          "hash": "6773b26a9f1cee0e9a754f21c66f921c0231a163af60059bd3f52974971dc484"
+        },
+        {
+          "id": "ch19.s01.s02",
+          "title": "Safety as the Primary Mission in OT Security",
+          "hash": "67996fb4fb150114c32cfb881527335c239c9669db6ba378e23c2b2f9c69c647"
+        },
+        {
+          "id": "ch19.s01.s03",
+          "title": "Required Skillsets for OT Defenders and Responders",
+          "hash": "4781efdb84b1e4d77cb68ff1d7e03dc8ce58e65357e305d7cd2bc64c6656dee0"
+        },
+        {
+          "id": "ch19.s01.s04",
+          "title": "Vendor Support and Industrial System Lifecycle Constraints",
+          "hash": "353dfb6811b78a4cb50bcb3f4f13aeb7443f07e05c5160f8f951e23b7fdc8f72"
+        },
+        {
+          "id": "ch19.s01.s05",
+          "title": "Industrial System Design and Network Architecture Differences",
+          "hash": "b98a79cbc7cbf32a719620d6fe2d12d8dc3e959618a0387a4904fa9c9f9171d5"
+        },
+        {
+          "id": "ch19.s01.s06",
+          "title": "Security Control Design and Operational Risk Tolerance",
+          "hash": "ca5480658ee9c47372ad3cbe4c5dc68f983a464e637b46a2ccc51758080bed57"
+        },
+        {
+          "id": "ch19.s01.s07",
+          "title": "IT and OT Impacts Compared",
+          "hash": "1da032624e4fb53e505daa4404edfc6b3c8ad70b6fb2fc3880973deee86057df"
+        },
+        {
+          "id": "ch19.s02",
+          "title": "The Purpose of OT Incident Response",
+          "hash": "cab5832f42f36541fddea20608f5631de1158292588edd945ad47bdcfc0ffe32"
+        },
+        {
+          "id": "ch19.s03",
+          "title": "Common OT Assets",
+          "hash": "0b8ad4db908ce00ab8807d2e5f74f4a09b12b03ea518779dcf0d034bf2e9050d"
+        },
+        {
+          "id": "ch19.s03.s01",
+          "title": "Non-Traditional Operating System OT Assets",
+          "hash": "8ce4eba0eedc9a2b8f5fe9eae3257863fa8f86b012237b11e6d97730cbf9278e"
+        },
+        {
+          "id": "ch19.s03.s02",
+          "title": "Traditional Operating System-Based OT Assets",
+          "hash": "b928d6ad00a9f40d7f4b994692290b68fb57de7cb0a21a4df9a5faf27e0073f2"
+        },
+        {
+          "id": "ch19.s04",
+          "title": "Benefits of DAIR for OT Incident Response",
+          "hash": "fad25d1d8e516ecdd4f3220e4f6f037b6be1f6de875b414b34c745a2a776ca47"
+        },
+        {
+          "id": "ch19.s05",
+          "title": "Common Types of OT Incidents",
+          "hash": "bf703ac99d932fba5aeeec7b26d6bd38091bf4ecba480118c6546c410a3a6b06"
+        },
+        {
+          "id": "ch19.s06",
+          "title": "Verify and Triage for OT",
+          "hash": "90285e1c5692299c56f44f25e11dc91a18cb7f61240f29ced4bb87d5754d6edf"
+        },
+        {
+          "id": "ch19.s06.s01",
+          "title": "Traditional vs. New Forensic Areas",
+          "hash": "53abe5af92cbb25b2da6c62a86559c0d11a5dc84e03b1c1eff86f5dd3bd3576c"
+        },
+        {
+          "id": "ch19.s06.s02",
+          "title": "Common OT Incident Data Sources",
+          "hash": "2d4349d63de597f279b9b944466c7227c05e5dda46b1089bdc2a18784372e331"
+        },
+        {
+          "id": "ch19.s07",
+          "title": "Scope",
+          "hash": "2d8b22975a7cd53d43b6689e30e0a27e7240f3833e1715e1e90e137eb2f4c1f4"
+        },
+        {
+          "id": "ch19.s08",
+          "title": "Containment",
+          "hash": "c4763bff4f0dadcb76c62b39b347ab08b2e00701c6f2a9c0e5267bbd42e677f1"
+        },
+        {
+          "id": "ch19.s08.s01",
+          "title": "Island Mode",
+          "hash": "df8dee32baa3357910bb11db6e22992c793aaee10048dd84524541493354dbc9"
+        },
+        {
+          "id": "ch19.s09",
+          "title": "Eradicate",
+          "hash": "f61f251a93097143bc9b2bb02fef92f241bd68d4ee8e7e4e028c3e80169c25f6"
+        },
+        {
+          "id": "ch19.s10",
+          "title": "Recover",
+          "hash": "93a4b7f1bf2d99b5ed87e05b0828a3f600ac3481a42f321e825d203d8084d5d5"
+        },
+        {
+          "id": "ch19.s11",
+          "title": "Debrief",
+          "hash": "55d90569c8ade4ee9cb6e9be963726e29c0427f1471ff4034fca40bed0ab9df0"
+        },
+        {
+          "id": "ch19.s11.s01",
+          "title": "OT-Specific Debrief Questions",
+          "hash": "8887faeb9b2f388506c9f6fb9b8b359134dfce1413f3e30d295318fe68cb9be3"
+        },
+        {
+          "id": "ch19.s11.s02",
+          "title": "Engineering and Architecture Improvements",
+          "hash": "13aef19ead794f5ecdd8170bc1aaf174222d20c250a013fc92feaa4390db89eb"
+        },
+        {
+          "id": "ch19.s12",
+          "title": "The Five ICS Cybersecurity Critical Controls",
+          "hash": "2f15290243f2f4c7bd854931f0091f4abe2b772d7ace50cd12f4ced9a46fb527"
+        },
+        {
+          "id": "ch19.s12.s01",
+          "title": "#1 ICS-Specific Incident Response",
+          "hash": "2f97b3f0a66402e7b39d63242aba9192243b69115f59c5c04ce52428d442dcc2"
+        },
+        {
+          "id": "ch19.s12.s02",
+          "title": "#2 Defensible Control System Network Architecture",
+          "hash": "20222a05e22940058d481c2c2a4edc8d8b663b88e59c0a5ff1564cba5522f779"
+        },
+        {
+          "id": "ch19.s12.s03",
+          "title": "#3 OT Network Visibility and Monitoring",
+          "hash": "07a902d178432b8afe1b0124cc7c01e4fc1cc71011005961a6f5556867ce0601"
+        },
+        {
+          "id": "ch19.s12.s04",
+          "title": "#4 Secure Remote Access",
+          "hash": "986f727cfd8fa5a0766d8bb84e15a42dd3a1fe9503d9f82eae66c111901d3924"
+        },
+        {
+          "id": "ch19.s12.s05",
+          "title": "#5 Risk-Based Vulnerability Management",
+          "hash": "6ee1ce8b7730db60d392f1345fac385e9e086dd269028e3d532c1c915782d49b"
+        },
+        {
+          "id": "ch20",
+          "title": "20. Integrating DAIR with NIST CSF 2.0",
+          "hash": "e45e8bb13d15ec9cf8a2574ee1c99a9b894b2d731cacac6b827d2b28345e0031"
+        },
+        {
+          "id": "ch20.s01",
+          "title": "Understanding NIST SP 800-61 R3 and CSF 2.0",
+          "hash": "88fd0d6fec792c160b844abb0ff1419ff7b37b1add6d66f38a00922cf9742e65"
+        },
+        {
+          "id": "ch20.s01.s01",
+          "title": "The Six CSF Functions",
+          "hash": "ee22a8f19ef077a2387897f080240bed3f543b9296f9a4e31915b104e19abdf3"
+        },
+        {
+          "id": "ch20.s01.s01.s01",
+          "title": "Govern (GV)",
+          "hash": "76d8022c742278b5e164e15b18f577263b78e11b58133d4f562aa5b6586af7d7"
+        },
+        {
+          "id": "ch20.s01.s01.s02",
+          "title": "Identify (ID)",
+          "hash": "d5911890695d661794462e885252113ef626740eade575dc22afb11ac98b7bde"
+        },
+        {
+          "id": "ch20.s01.s01.s03",
+          "title": "Protect (PR)",
+          "hash": "768f65fd1e0a32f728e209bc8857139e442fd9d219081588dfc483badcd7e7a6"
+        },
+        {
+          "id": "ch20.s01.s01.s04",
+          "title": "Detect (DE)",
+          "hash": "ca9cde63a75d1c62cfb209aed117c80a648c2cd9eb659bbdc325594cf29a25ad"
+        },
+        {
+          "id": "ch20.s01.s01.s05",
+          "title": "Respond (RS)",
+          "hash": "181758cf703ff115045aa678efe9f3964866b91e373276a5ec24eb4c0e06ffba"
+        },
+        {
+          "id": "ch20.s01.s01.s06",
+          "title": "Recover (RC)",
+          "hash": "19303eb5cf3a612cd8dbe0456963b9b1644c08b2de8156be1db9f5c50bb80345"
+        },
+        {
+          "id": "ch20.s01.s02",
+          "title": "What Compliance Requires",
+          "hash": "872fe7389e258a2f9c2484868bb33b3b048058f862f70ec20d1c0a0bfdba3129"
+        },
+        {
+          "id": "ch20.s02",
+          "title": "DAIR as CSF 2.0 Implementation",
+          "hash": "c3c2c0bb1b55df6e71e9cb997ff3b4ae9cc84696b95886f2988b6880f840f469"
+        },
+        {
+          "id": "ch20.s02.s01",
+          "title": "Mapping DAIR Activities to CSF Functions",
+          "hash": "f98515a64e460214926553f35c7f5f1146ac39692ee30e5e8c12c925cc811937"
+        },
+        {
+          "id": "ch20.s02.s02",
+          "title": "The Value of Iterative Response for Compliance",
+          "hash": "fe45702fc9d0dfe6b31ce5fa92518dca37e641f7454472129b067280aed85c7b"
+        },
+        {
+          "id": "ch20.s02.s03",
+          "title": "Decision Maker Integration and the Govern Function",
+          "hash": "0c8f41a7da7064dda1f8373933eabd109e3531fe49e123a908da86b13ce51c47"
+        },
+        {
+          "id": "ch20.s03",
+          "title": "Meeting Compliance Through DAIR Activities",
+          "hash": "667d6b45b44ca5a04d87c1f6264cac122cd8e10dffd27a16ad8263b746375e5d"
+        },
+        {
+          "id": "ch20.s03.s01",
+          "title": "Compliance Artifacts from DAIR Activities",
+          "hash": "e975bf40d7b9c6ba4b9fa3f8d90669e0df8eb2a66e52f66778515d92e7bdd1e3"
+        },
+        {
+          "id": "ch20.s03.s02",
+          "title": "Demonstrating Control Effectiveness",
+          "hash": "49a020333fb5e70cd06a9a7bdb63af84f1569acfbf3aed9c5d8dab706a2807b1"
+        },
+        {
+          "id": "ch20.s03.s03",
+          "title": "Satisfying Audit Requirements",
+          "hash": "728143d1be644eea6eeb7a187f458310f517af79787a1701466fb56fbd334052"
+        },
+        {
+          "id": "ch20.s04",
+          "title": "Incident Tracking Platform Configuration",
+          "hash": "844548f20a9c8af6217e7eb7cb4059f432caa5751877b2e4c126eb7e14cf75e7"
+        },
+        {
+          "id": "ch20.s04.s01",
+          "title": "Ticketing and Case Management",
+          "hash": "189c93cf197a13793023bb16f89390ab0e379001716b899caa1a8f4f87be996b"
+        },
+        {
+          "id": "ch20.s04.s02",
+          "title": "Communication Templates",
+          "hash": "1743bffcde01db0e2add82a1be01ad5ef166b4b213e5f49c6305445cf526361e"
+        },
+        {
+          "id": "ch20.s05",
+          "title": "Integrating DAIR with NIST CSF 2.0",
+          "hash": "1f773b3e9e4294fba0aff99d4f00697c252480beacd2a536f73bfa6d0482b69a"
+        }
+      ]
+    },
+    {
+      "unit_id": "bm-afterword",
+      "title": "Afterword",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "5f66034426f26f6f186e8ee681ce1ddcd2618b978aa20fedd270709e880ab40e",
+      "sections": []
+    },
+    {
+      "unit_id": "bm-index",
+      "title": "Index",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e6a5d4e5f320c2ef1b6a500ced7f4e58d5f6dcc79141fb39a8e718034ee0d367",
+      "sections": []
+    },
+    {
+      "unit_id": "bm-colophon",
+      "title": "Colophon",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "131c86c72581e0d13d5ffe48952bc740188fc9507ce351d506d28919a382eada",
+      "sections": []
+    }
+  ]
+}

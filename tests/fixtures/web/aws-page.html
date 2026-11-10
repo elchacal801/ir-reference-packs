@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rotating example credentials - Example Service</title>
+<meta name="product" content="Example Service User Guide">
+<meta name="description" content="Synthetic test page in AWS documentation markup.">
+<meta name="guide-locale" content="en_us">
+<script>window.tracking = "not part of the article";</script>
+</head><body class="awsdocs awsui"><div class="awsdocs-container"><awsui-app-layout id="app-layout"><div id="main-column"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><div id="main"><div id="main-content" class="awsui-util-container"><div id="main-col-body">
+<awsdocs-language-banner data-service="example"></awsdocs-language-banner>
+<h1 class="topictitle" id="rotate-example-credentials">Rotating example credentials</h1>
+<div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div>
+<p>When an example key may be exposed, rotate it
+				and review what it was used for. Long lines in the source
+				are wrapped.</p>
+<div class="highlights" id="inline-topiclist"><h6>Topics</h6><ul><li><a href="./other.html">Other page</a></li></ul></div>
+<h2 id="identify-the-key">Identify the key</h2>
+<div class="procedure"><h6>To find the key owner</h6><ol><li class="step"><p>Open the console.</p></li><li class="step"><p>Search for the key ID.</p><pre class="programlisting"><code class="nohighlight">example-cli list-keys --user alice</code></pre></li></ol></div>
+<div class="awsdocs-note awsdocs-warning"><div class="awsdocs-note-title"><awsui-icon name="status-warning"></awsui-icon><h6>Warning</h6></div><div class="awsdocs-note-text"><p>Deleting a key in use stops the workload that uses it.</p></div></div>
+<h2 id="key-fields">Key fields</h2>
+<div class="variablelist"><dl>
+<dt><span class="term"><b><code class="code">keyId</code></b></span></dt><dd><p>The identifier of the key.</p></dd>
+<dt><span class="term"><b><code class="code">status</code></b></span></dt><dd><p>Either Active or Inactive.</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Inactive keys cannot sign requests.</p></li></ul></div></dd>
+</dl></div>
+<h3 id="key-states">Key states</h3>
+<div class="table-container"><div class="table-contents"><table><thead><tr><th>State</th><th>Meaning</th></tr></thead><tbody><tr><td>Active</td><td>Can sign requests</td></tr></tbody></table></div></div>
+<awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{this.search}}"></awsdocs-thumb-feedback>
+</div></div></div></div></awsdocs-view></div></awsui-app-layout></div></body></html>

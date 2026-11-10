@@ -1,0 +1,28 @@
+# Content-rights record for the gcp-security-ir pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: gcp-security-ir
+content_license:
+  spdx: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  statement: >-
+    Each captured page's footer states: "Except as otherwise noted, the content of this page is licensed under the
+    Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For
+    details, see the Google Developers Site Policies." The statement is recorded per page (source-map.json,
+    page_license), and a page whose footer names another license is flagged as a major issue at build time.
+  suggested_attribution: >-
+    Google Cloud, "<page title>", Google Cloud documentation, <url> (last updated <date>). Licensed under CC BY 4.0;
+    code samples under Apache 2.0.
+  exclusions:
+    - "Google and Google Cloud trademarks, logos and product names are not licensed by this pack."
+    - "Diagrams and screenshots were not captured; figures carry alt text and a link to the published image only."
+    - "Code samples are licensed under the Apache License 2.0, not CC BY 4.0."
+default_state: redistributable
+default_basis: >-
+  CC BY 4.0, per each page's footer ("Except as otherwise noted, the content of this page is licensed under the
+  Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License").
+rules:
+  - id: images-not-captured
+    match: {type: figure}
+    state: metadata_only
+    reason: "Image bytes were not captured; alt text and link only."
+overrides: []

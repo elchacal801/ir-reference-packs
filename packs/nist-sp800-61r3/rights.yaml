@@ -1,0 +1,24 @@
+# Content-rights record for the nist-sp800-61r3 pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: nist-sp800-61r3
+content_license:
+  spdx: null
+  url: null
+  statement: >-
+    "This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to
+    copyright in the United States." (PDF p. 3, Authority). U.S. government work; foreign rights may differ.
+  suggested_attribution: >-
+    Nelson A, Rekhi S, Souppaya M, Scarfone K (2025) Incident Response Recommendations and Considerations for
+    Cybersecurity Risk Management: A CSF 2.0 Community Profile. (National Institute of Standards and Technology,
+    Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-61r3. https://doi.org/10.6028/NIST.SP.800-61r3
+  exclusions:
+    - "Use of NIST material does not imply endorsement by NIST."
+    - "Agency seals and logos (e.g. the Department of Commerce logo) are not redistributed."
+default_state: redistributable
+default_basis: "U.S. government work not subject to copyright in the United States (PDF p. 3)"
+rules:
+  - id: commerce-logo
+    match: {type: figure, within: fm-front-matter}
+    state: metadata_only
+    reason: "Department of Commerce logo (agency insignia)."
+overrides: []

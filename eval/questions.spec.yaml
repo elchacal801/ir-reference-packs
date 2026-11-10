@@ -1,0 +1,220 @@
+# Authoring spec for the evaluation set (25 questions: 15 tuning, 10 held-out).
+# `uv run python eval/build_questions.py` turns this into eval/questions.yaml by attaching verbatim quotes and
+# page locators taken from the canonical documents, so evidence cannot be paraphrased by mistake.
+#
+# Evidence model: `evidence` is a list of groups; a group is satisfied when ANY of its alternatives is
+# contained in a retrieved chunk (element id in source_element_ids; for table rows also the native locator).
+# A question is "evidence-complete@k" only when ALL groups are satisfied within the top k.
+# Evidence was chosen by reading the cited elements (exact-phrase lookup with eval/find_evidence.py), not from
+# search rankings. Scenarios are synthetic. Held-out questions must not be used for tuning.
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-25"
+questions:
+  # ------------------------------------------------------------------ tuning (15)
+  - id: t01
+    split: tuning
+    scenario: endpoint
+    kinds: [exact_term, procedure]
+    question: "What is a DNS sinkhole and how can it be used to contain malware command-and-control traffic?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch12.s04.s01.s02.p01}, {pack: dynamic-ir, element_id: ch12.s04.s01.s02.p02}]
+    rationale: "12.4 'DNS Sinkholes' defines the technique and gives the C2 redirection example."
+  - id: t02
+    split: tuning
+    scenario: phishing_ato
+    kinds: [paraphrase, procedure]
+    question: "A phished user's Microsoft 365 account was taken over. Resetting the password is not enough — how do we terminate the attacker's existing sessions and tokens?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s03.s02.s07.s01.p01}, {pack: dynamic-ir, element_id: ch13.s03.s02.s07.s01.lst01.c01}]
+    rationale: "'Entra ID Session and Token Revocation': password reset alone is insufficient; revoke refresh tokens (Listing 95)."
+  - id: t03
+    split: tuning
+    scenario: malicious_application
+    kinds: [paraphrase]
+    question: "How should responders handle malicious OAuth applications that a compromised user consented to?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s03.s02.s09.p01}, {pack: dynamic-ir, element_id: ch13.s03.s02.s09.p02}]
+    rationale: "'OAuth Application and Consent Revocation': review apps authorized by compromised accounts and revoke unauthorized consents."
+  - id: t04
+    split: tuning
+    scenario: endpoint
+    kinds: [procedure, requires_context]
+    question: "What steps confirm that containment actually worked?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch12.s10.s07.l01.i01}, {pack: dynamic-ir, element_id: ch12.s10.s07.l01.i02}]
+    requires_context: true
+    rationale: "Contain: Step-by-Step, 'Step 7. Validate Containment Effectiveness'."
+  - id: t05
+    split: tuning
+    scenario: ransomware
+    kinds: [table, paraphrase]
+    question: "Which situations call for immediate containment instead of continued monitoring and intelligence gathering?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch12.s03.s01.t01}, {pack: dynamic-ir, element_id: ch12.s03.s01.p03}]
+    rationale: "Table 17 'Considerations for Immediate Containment' and the active-data-destruction paragraph."
+  - id: t06
+    split: tuning
+    scenario: none
+    kinds: [exact_term, table, native_locator]
+    question: "What does NIST SP 800-61r3 recommend for continuous monitoring (DE.CM)?"
+    evidence:
+      - [{pack: nist-sp800-61r3, element_id: sec3.s02.t01, native_locator: "csf2:DE.CM"}]
+    rationale: "Table 3 row DE.CM (Continuous Monitoring), recommendations R1/C1/R2."
+  - id: t07
+    split: tuning
+    scenario: none
+    kinds: [table, paraphrase]
+    question: "Which CSF 2.0 Functions correspond to the Preparation phase of the older SP 800-61 incident response life cycle?"
+    evidence:
+      - [{pack: nist-sp800-61r3, element_id: sec2.s01.t01}]
+    rationale: "Table 1 maps Preparation to Govern, Identify (all Categories) and Protect."
+  - id: t08
+    split: tuning
+    scenario: ransomware
+    kinds: [exact_term]
+    question: "What is the 3-2-1-1-0 backup rule?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch17.s02.s05.s02.p01}, {pack: dynamic-ir, element_id: ch17.s02.s05.s02.l01.i04}]
+    rationale: "17.2 'The 3-2-1-1-0 Backup Rule' paragraph and list."
+  - id: t09
+    split: tuning
+    scenario: endpoint
+    kinds: [paraphrase, code]
+    question: "How can an attacker use a Windows scheduled task for fileless persistence, and why doesn't a reboot remove it?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s04.s02.p02}, {pack: dynamic-ir, element_id: ch13.s04.s02.lst01.c01}]
+      - [{pack: dynamic-ir, element_id: ch13.s04.s02.p04}]
+    rationale: "13.4 'Fileless Malware': schtasks example (Listing 105) and the reboot/persistence paragraph."
+  - id: t10
+    split: tuning
+    scenario: none
+    kinds: [figure, needs_visual]
+    question: "What does the DAIR model diagram show?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch06.f01}, {pack: dynamic-ir, element_id: ch06.p02}]
+    needs_visual: true
+    rationale: "Figure 22 (DAIR) introduced in Chapter 6; the diagram itself is an image."
+  - id: t11
+    split: tuning
+    scenario: none
+    kinds: [cross_source, table]
+    question: "How do DAIR activities line up with the six NIST CSF 2.0 Functions that SP 800-61r3 uses for incident response?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch20.s02.s01.t01}, {pack: dynamic-ir, element_id: ch20.s02.s01.p01}]
+      - [{pack: nist-sp800-61r3, element_id: sec2.s01.p05}, {pack: nist-sp800-61r3, element_id: sec2.s01.p04}]
+    rationale: "Table 61 (DAIR to CSF) plus NIST 2.1's description of the six-Function model."
+  - id: t12
+    split: tuning
+    scenario: third_party
+    kinds: [paraphrase, procedure]
+    question: "A SaaS CRM vendor says it had a breach affecting our customer data. How should we verify and triage before escalating?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch09.s08.p01}, {pack: dynamic-ir, element_id: ch09.s08.l01.i01}]
+    rationale: "'Triage Example: The Third-Party Vendor Breach': gather independent evidence before escalation."
+  - id: t13
+    split: tuning
+    scenario: ransomware
+    kinds: [unanswerable]
+    answerable: false
+    question: "What is the SHA-256 hash of the LockBit 5.0 ransomware encryptor binary?"
+    evidence: []
+    rationale: "Neither pack mentions LockBit 5.0 or an encryptor hash (regex checks recorded in eval/README.md)."
+  - id: t14
+    split: tuning
+    scenario: none
+    kinds: [exact_term, formula]
+    question: "How is mean time to detect (MTTD) calculated?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch04.s05.p02}, {pack: dynamic-ir, element_id: ch04.s05.m01}]
+    rationale: "4.5 'Mean Time To Detect': total detection time divided by number of incidents."
+  - id: t15
+    split: tuning
+    scenario: none
+    kinds: [paraphrase, list]
+    question: "According to NIST SP 800-61r3, who besides the incident handlers takes part in incident response?"
+    evidence:
+      - [{pack: nist-sp800-61r3, element_id: sec2.s02.l01.i01}, {pack: nist-sp800-61r3, element_id: sec2.s02.l02.i02}, {pack: nist-sp800-61r3, element_id: sec2.s02.l02.i01}]
+    rationale: "2.2 roles: leadership, technology professionals, legal, public affairs, ..."
+  # ------------------------------------------------------------------ held-out (10)
+  - id: h01
+    split: heldout
+    scenario: phishing_ato
+    kinds: [paraphrase]
+    question: "After a phishing compromise the attacker registered their own MFA device. What identity persistence should cloud responders look for?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch18.s04.s03.s01.l01.i05}, {pack: dynamic-ir, element_id: ch18.s04.s03.s01.l01.i04}]
+    rationale: "18 'Identity and Access Management' persistence list (MFA changes, OAuth consent grants, ...)."
+  - id: h02
+    split: heldout
+    scenario: malicious_application
+    kinds: [paraphrase]
+    question: "Can we use our identity provider to cut a compromised account off from all SaaS applications at once, and what are the caveats?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch12.s04.s04.s05.p01}, {pack: dynamic-ir, element_id: ch12.s04.s04.s05.p02}]
+    rationale: "'Multi-Application Containment Through SSO' (hybrid/local accounts caveat)."
+  - id: h03
+    split: heldout
+    scenario: endpoint
+    kinds: [paraphrase, code]
+    question: "How can we isolate a compromised Azure VM while keeping it running for forensic observation?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch18.s04.s02.s01.p02}, {pack: dynamic-ir, element_id: ch18.s04.s02.s01.lst01.c01}, {pack: dynamic-ir, element_id: ch18.s04.s02.s01.p01}]
+    rationale: "Isolation NSG (Listing 145) keeps the VM running while cutting off the threat actor."
+  - id: h04
+    split: heldout
+    scenario: ransomware
+    kinds: [procedure, requires_context]
+    question: "Before restoring from backups after a ransomware attack, how do we choose a safe restore point?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch17.s06.s02.l01.i01}, {pack: dynamic-ir, element_id: ch17.s06.s02.p02}]
+    requires_context: true
+    rationale: "'Restoration from Backups': restore point must predate the compromise, not the encryption event."
+  - id: h05
+    split: heldout
+    scenario: third_party
+    kinds: [exact_term, table, native_locator]
+    question: "What does NIST SP 800-61r3 say about executing the incident response plan with third parties (RS.MA-01)?"
+    evidence:
+      - [{pack: nist-sp800-61r3, element_id: sec3.s02.t01, native_locator: "csf2:RS.MA-01"}]
+    rationale: "Table 3 row RS.MA-01."
+  - id: h06
+    split: heldout
+    scenario: third_party
+    kinds: [paraphrase]
+    question: "A vendor's software update shipped with a backdoor and we run that software internally. How does the book characterize this and how should eradication proceed?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s02.s09.s01.p01}, {pack: dynamic-ir, element_id: ch13.s02.s09.s01.p04}, {pack: dynamic-ir, element_id: ch13.s02.s09.s01.p05}]
+    rationale: "'Software Supply Chain Compromises' (13.2)."
+  - id: h07
+    split: heldout
+    scenario: none
+    kinds: [cross_source]
+    question: "How does NIST SP 800-61 Revision 3 differ from Revision 2 in its incident response model?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch05.s03.p01}, {pack: dynamic-ir, element_id: ch05.s03.p05}]
+      - [{pack: nist-sp800-61r3, element_id: sec2.s01.p03}, {pack: nist-sp800-61r3, element_id: sec2.s01.p04}, {pack: nist-sp800-61r3, element_id: sec2.s01.p05}]
+    rationale: "Book 5.3 (author's comparison) and NIST 2.1 (NIST's own description) — distinct authorities."
+  - id: h08
+    split: heldout
+    scenario: none
+    kinds: [unanswerable]
+    answerable: false
+    question: "What is the per-violation civil monetary penalty for willful neglect under HIPAA?"
+    evidence: []
+    rationale: "Neither pack gives HIPAA penalty tiers or amounts (regex checks in eval/README.md)."
+  - id: h09
+    split: heldout
+    scenario: endpoint
+    kinds: [unanswerable]
+    answerable: false
+    question: "What TCP port does a Cobalt Strike team server listen on by default?"
+    evidence: []
+    rationale: "Cobalt Strike is mentioned once (Conti leaks) but no port or team-server details."
+  - id: h10
+    split: heldout
+    scenario: phishing_ato
+    kinds: [table]
+    question: "How long do access, refresh and SAML tokens typically live, and how is each revoked?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch12.s04.s04.s03.t01}]
+    rationale: "Table 18 'Token Types and Revocation Considerations'."

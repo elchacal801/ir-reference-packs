@@ -1,0 +1,35 @@
+# Content-rights record for the swgde-forensics pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: swgde-forensics
+content_license:
+  spdx: null
+  url: https://www.swgde.org/
+  statement: >-
+    (Summarised, not quoted.) Each document's cover page carries a SWGDE redistribution policy. It permits
+    redistributing and using publicly posted SWGDE documents on three conditions: any copy of a document, or of part
+    of one, keeps the cover page with the SWGDE disclaimer; SWGDE's name and its contributors' names are not used to
+    endorse or promote products; and any reference to or quotation from a document gives its version number (or
+    creation date) and says whether it is a draft. The same page states that SWGDE owns the images, tables and
+    figures in its documents unless credited otherwise, and that using the logo or document content without SWGDE's
+    written permission infringes its intellectual property. SWGDE offers a notice-of-use / redistribution form.
+  suggested_attribution: >-
+    SWGDE, "<document title>", <document number>, version <version>, published (<date>), <url>. This document
+    includes a cover page with the SWGDE disclaimer.
+  exclusions:
+    - "The SWGDE name and logo are not licensed; SWGDE does not endorse this pack or any product."
+    - "Figures (including the SWGDE logo) were not captured."
+default_state: redistributable
+default_basis: >-
+  Maintainer decision (2026-10-25): SWGDE documents are treated as publicly redistributable under the SWGDE
+  Redistribution Policy printed on each document's cover page. Its conditions are met as follows: every unit keeps
+  its cover page, with the Disclaimer Regarding Use and the policy, as its front-matter section, in the local build
+  and the public candidate; no SWGDE name or logo is used to endorse anything, and the pack states that SWGDE does
+  not endorse it; every citation gives the document number, version, status (published) and date. The cover page's
+  intellectual-property statement (content used without written permission) was weighed by the maintainer against
+  the policy's grant.
+rules:
+  - id: images-not-captured
+    match: {type: figure}
+    state: metadata_only
+    reason: "Image bytes were not captured (logos, diagrams)."
+overrides: []

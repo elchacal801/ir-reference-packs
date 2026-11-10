@@ -1,0 +1,214 @@
+# Book-to-ATT&CK mappings for the dynamic-ir pack. Stored in THIS repository; nothing here is a Countermap or MITRE
+# edge. Validate with:  uv run irpacks validate-mappings examples/countermap/mappings/dynamic-ir-attack.yaml \
+#                         --countermap-db <cm.db>
+# Schema: schemas/framework-mappings.schema.json
+schema_version: 1
+mapping_set: dynamic-ir-attack
+description: >-
+  Associations between canonical elements of "Dynamic Incident Response" (edition 20260917164224) and MITRE ATT&CK
+  Enterprise technique IDs, used by the synthetic account-takeover example. Every entry carries a provenance label.
+pack:
+  pack_id: dynamic-ir
+  document_id: "dynamic-ir:20260917164224"
+framework_snapshot:
+  tool: countermap
+  tool_version: "0.2.2"
+  datasets:
+    attack-enterprise: "20.0"
+  notes: >-
+    IDs and names were validated against a local Countermap database built from countermap-sources.lock.json at
+    Countermap commit 06e5ee7c50e79c10f7683cc6b07b06bd026ad0c5. Revoked IDs are errors (e.g. T1656 resolves to
+    T1684.001 in ATT&CK 20.0), never silently rewritten.
+provenance_labels:
+  source_explicit: The book text itself names this ATT&CK ID at the cited element (quoted in `evidence`).
+  analyst_mapping: >-
+    An analyst judged that the cited passage addresses this technique. The book does not state the association; it
+    is not an official Countermap, MITRE ATT&CK or D3FEND relationship. Review status is recorded per entry.
+  derived: Computed mechanically from other entries in this file by the stated rule (no new judgment).
+mappings:
+  # --- source_explicit: IDs printed in the book -------------------------------------------------------------
+  - id: m001
+    element_id: ch07.s02.s01.s06.sb01.p02
+    framework: attack
+    framework_id: T1059
+    framework_name: Command and Scripting Interpreter
+    provenance: source_explicit
+    relation: names_as_example
+    evidence: "such as T1059 for Command and Scripting Interpreter"
+  - id: m002
+    element_id: ch07.s02.s01.s06.sb01.p02
+    framework: attack
+    framework_id: T1078
+    framework_name: Valid Accounts
+    provenance: source_explicit
+    relation: names_as_example
+    evidence: "T1078 for Valid Accounts"
+  - id: m003
+    element_id: ch13.s02.s03.s01.lst02.c01
+    framework: attack
+    framework_id: T1485
+    framework_name: Data Destruction
+    provenance: source_explicit
+    relation: references
+    evidence: "https://attack.mitre.org/techniques/T1485/"
+    notes: Reference URL inside a Velociraptor artifact listing.
+  - id: m004
+    element_id: ch13.s02.s03.s01.lst02.c01
+    framework: attack
+    framework_id: T1070.004
+    framework_name: File Deletion
+    provenance: source_explicit
+    relation: references
+    evidence: "https://attack.mitre.org/techniques/T1070/004/"
+    notes: Reference URL inside a Velociraptor artifact listing.
+  - id: m005
+    element_id: ch16.s06.s03.s01.s01.lst01.c01
+    framework: attack
+    framework_id: T1204.002
+    framework_name: Malicious File
+    provenance: source_explicit
+    relation: references
+    evidence: "https://attack.mitre.org/techniques/T1204/002/"
+    notes: Reference URL inside a Sigma rule listing.
+
+  # --- analyst_mapping: judgments for the account-takeover example (unreviewed) ------------------------------
+  - id: m010
+    element_id: ch12.s07.s04.s01.p03
+    framework: attack
+    framework_id: T1539
+    framework_name: Steal Web Session Cookie
+    provenance: analyst_mapping
+    relation: describes_technique
+    rationale: Names a session-cookie grabber on the user's endpoint as a common way attackers obtain cloud access.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m011
+    element_id: ch12.s04.s04.s02.p01
+    framework: attack
+    framework_id: T1550.004
+    framework_name: Web Session Cookie
+    provenance: analyst_mapping
+    relation: describes_containment_or_eradication
+    rationale: >-
+      Instructs force-terminating active sessions so attackers cannot keep using authenticated sessions that survive
+      password changes, which is the containment for replayed session material.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m012
+    element_id: ch12.s04.s04.s03.p01
+    framework: attack
+    framework_id: T1550.001
+    framework_name: Application Access Token
+    provenance: analyst_mapping
+    relation: describes_containment_or_eradication
+    rationale: Describes revoking OAuth refresh tokens that let attackers mint new access tokens after password resets.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m013
+    element_id: ch18.s04.s03.s01.l01.i05
+    framework: attack
+    framework_id: T1098.005
+    framework_name: Device Registration
+    provenance: analyst_mapping
+    relation: describes_detection_or_investigation
+    rationale: Lists MFA configuration changes, including registering attacker-controlled devices, as an IAM area to examine.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m014
+    element_id: ch13.s02.s07.s01.p01
+    framework: attack
+    framework_id: T1114.003
+    framework_name: Email Forwarding Rule
+    provenance: analyst_mapping
+    relation: describes_detection_or_investigation
+    rationale: Directs examination of inbox rules that automatically forward copies of incoming email to external addresses.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m015
+    element_id: ch13.s02.s07.s01.p01
+    framework: attack
+    framework_id: T1564.008
+    framework_name: Email Hiding Rules
+    provenance: analyst_mapping
+    relation: describes_detection_or_investigation
+    rationale: Describes rules that delete messages from specific senders or move them to obscure folders so victims do not notice.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m016
+    element_id: ch13.s02.s07.s02.p01
+    framework: attack
+    framework_id: T1528
+    framework_name: Steal Application Access Token
+    provenance: analyst_mapping
+    relation: describes_detection_or_investigation
+    rationale: Describes OAuth consent phishing in which victims grant malicious applications persistent mailbox access.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m017
+    element_id: ch12.s07.s04.s01.p01
+    framework: attack
+    framework_id: T1684.001
+    framework_name: Impersonation
+    provenance: analyst_mapping
+    relation: describes_technique
+    rationale: Describes compromised accounts sending fraudulent messages, such as wire transfer requests, to commit fraud.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m018
+    element_id: ch13.s02.s07.s04.p01
+    framework: attack
+    framework_id: T1684.001
+    framework_name: Impersonation
+    provenance: analyst_mapping
+    relation: describes_technique
+    rationale: Describes an attacker in a supplier's mailbox inserting messages into an established payment thread.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+  - id: m019
+    element_id: ch13.s02.s07.s03.p05
+    framework: attack
+    framework_id: T1657
+    framework_name: Financial Theft
+    provenance: analyst_mapping
+    relation: describes_detection_or_investigation
+    rationale: Directs tracing fraudulent transactions, wire transfer requests, invoice payments and vendor payment changes.
+    analyst: "Claude (AI agent) for the maintainer"
+    review_status: unreviewed
+
+  # --- derived: parent techniques of the sub-technique entries above ------------------------------------------
+  - id: m030
+    element_id: ch12.s04.s04.s02.p01
+    framework: attack
+    framework_id: T1550
+    framework_name: Use Alternate Authentication Material
+    provenance: derived
+    relation: describes_containment_or_eradication
+    derived_from: [m011]
+    rule: parent_of_subtechnique
+  - id: m031
+    element_id: ch18.s04.s03.s01.l01.i05
+    framework: attack
+    framework_id: T1098
+    framework_name: Account Manipulation
+    provenance: derived
+    relation: describes_detection_or_investigation
+    derived_from: [m013]
+    rule: parent_of_subtechnique
+  - id: m032
+    element_id: ch13.s02.s07.s01.p01
+    framework: attack
+    framework_id: T1114
+    framework_name: Email Collection
+    provenance: derived
+    relation: describes_detection_or_investigation
+    derived_from: [m014]
+    rule: parent_of_subtechnique
+  - id: m033
+    element_id: ch13.s02.s07.s01.p01
+    framework: attack
+    framework_id: T1564
+    framework_name: Hide Artifacts
+    provenance: derived
+    relation: describes_detection_or_investigation
+    derived_from: [m015]
+    rule: parent_of_subtechnique

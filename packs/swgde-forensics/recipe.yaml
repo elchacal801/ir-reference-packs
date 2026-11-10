@@ -1,0 +1,185 @@
+# Build recipe for the swgde-forensics pack: SWGDE best-practice documents (PDF), one unit per document, converted
+# from the page layout (route pdf_collection_layout; src/irpacks/route_layout.py). The PDFs are untagged (re-distilled
+# through Ghostscript) or Word-tagged without a usable hierarchy, so structure comes from the layout and the PDF outline.
+# Each document is its own source identity; `irpacks check-updates swgde-forensics` compares HTTP validators.
+# Selection: the current SWGDE documents an incident responder uses for evidence acquisition, preservation,
+# examination and reporting (Forensics and Quality & Standards committees); audio, image, video, vehicle, IoT,
+# skimmer and other device-specific documents are left out.
+route: pdf_collection_layout
+inputs:
+  snapshot: "2026-10-25"
+# Every document is taken from SWGDE's published complete listing, not the drafts for public comment. Citations
+# state it, as the SWGDE redistribution policy asks of any reference or quotation (version and draft status).
+document_status: published
+printed_labels:
+  pattern: 'Page (\d+) of \d+'
+artifacts:
+- source_id: swgde-forensics/22-f-003/2026-10-25
+  role: authoritative
+  unit_id: swgde-22-f-003
+  url: https://www.swgde.org/wp-content/uploads/2025/03/2025-03-04-Best-Practices-for-Remote-Collection-of-Digital-Evidence-from-an-Endpoint-22-F-003-2.0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2025-03-04-Best-Practices-for-Remote-Collection-of-Digital-Evidence-from-an-Endpoint-22-F-003-2.0.pdf
+  media_type: application/pdf
+  title: Best Practices for Remote Collection of Digital Evidence from an Endpoint
+  document_number: 22-F-003-2.0
+  version: '2.0'
+  document_date: '2025-03-04'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/22-f-003-best-practices-for-remote-collection-of-digital-evidence-from-an-endpoint/
+- source_id: swgde-forensics/23-f-004/2026-10-25
+  role: authoritative
+  unit_id: swgde-23-f-004
+  url: https://www.swgde.org/wp-content/uploads/2025/02/SWGDE-23-F-004-1.1-Best-Practices-for-Digital-Evidence-Acquisition-Preservation-and-Analysis-from-Cloud-Service-Providers.pdf
+  local_path: input/swgde-forensics/2026-10-25/SWGDE-23-F-004-1.1-Best-Practices-for-Digital-Evidence-Acquisition-Preservation-and-Analysis-from-Cloud-Service-Providers.pdf
+  media_type: application/pdf
+  title: Best Practices for Digital Evidence Acquisition, Preservation, and Analysis from Cloud Service Providers
+  document_number: 23-F-004-1.1
+  version: '1.1'
+  document_date: '2025-01-13'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/23-f-004-best-practices-for-digital-evidence-acquisition-preservation-and-analysis-from-cloud-service-providers/
+- source_id: swgde-forensics/16-f-002/2026-10-25
+  role: authoritative
+  unit_id: swgde-16-f-002
+  url: https://www.swgde.org/wp-content/uploads/2026/02/SWGDE-16-F-002-2.1-Considerations-for-Required-Minimization-of-Digital-Evidence-Seizure.pdf
+  local_path: input/swgde-forensics/2026-10-25/SWGDE-16-F-002-2.1-Considerations-for-Required-Minimization-of-Digital-Evidence-Seizure.pdf
+  media_type: application/pdf
+  title: Considerations for Required Minimization of Digital Evidence Seizure
+  document_number: 16-F-002-2.1
+  version: '2.1'
+  document_date: '2024-08-05'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/16-f-002-considerations-for-required-minimization-of-digital-evidence-seizure/
+- source_id: swgde-forensics/23-f-005/2026-10-25
+  role: authoritative
+  unit_id: swgde-23-f-005
+  url: https://www.swgde.org/wp-content/uploads/2024/04/2024-03-15-SWGDE-Best-Practices-Apple-MacOS-Forensic-Acquisition-23-F-005-1.0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2024-03-15-SWGDE-Best-Practices-Apple-MacOS-Forensic-Acquisition-23-F-005-1.0.pdf
+  media_type: application/pdf
+  title: Best Practices Apple MacOS Forensic Acquisition
+  document_number: 23-F-005-1.0
+  version: '1.0'
+  document_date: '2024-03-15'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/23-f-005-swgde-best-practices-apple-macos-forensic-acquisition/
+- source_id: swgde-forensics/21-f-001/2026-10-25
+  role: authoritative
+  unit_id: swgde-21-f-001
+  url: https://www.swgde.org/wp-content/uploads/2024/04/2024-03-15-SWGDE-Best-Practices-for-Acquiring-Online-Content-21-F-001-1.1.pdf
+  local_path: input/swgde-forensics/2026-10-25/2024-03-15-SWGDE-Best-Practices-for-Acquiring-Online-Content-21-F-001-1.1.pdf
+  media_type: application/pdf
+  title: Best Practices for Acquiring Online Content
+  document_number: 21-F-001-1.1
+  version: '1.1'
+  document_date: '2024-03-15'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/21-f-001-best-practices-for-acquiring-online-content/
+- source_id: swgde-forensics/17-f-002/2026-10-25
+  role: authoritative
+  unit_id: swgde-17-f-002
+  url: https://www.swgde.org/wp-content/uploads/2024/03/2023-06-15-SWGDE-Best-Practices-for-Computer-Forensic-Acquisitions-17-F-002-2.0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2023-06-15-SWGDE-Best-Practices-for-Computer-Forensic-Acquisitions-17-F-002-2.0.pdf
+  media_type: application/pdf
+  title: Best Practices for Computer Forensic Acquisitions
+  document_number: 17-F-002-2.0
+  version: '2.0'
+  document_date: '2023-06-15'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/17-f-002-best-practices-for-computer-forensic-acquisitions/
+- source_id: swgde-forensics/16-f-001/2026-10-25
+  role: authoritative
+  unit_id: swgde-16-f-001
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2023-03-31-SWGDE-Linux-Technical-Notes-16-F-001-2.0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2023-03-31-SWGDE-Linux-Technical-Notes-16-F-001-2.0.pdf
+  media_type: application/pdf
+  title: Linux Technical Notes
+  document_number: 16-F-001-2.0
+  version: '2.0'
+  document_date: '2023-03-31'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/16-f-001-linux-tech-notes/
+- source_id: swgde-forensics/archiving/2026-10-25
+  role: authoritative
+  unit_id: swgde-archiving
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2020-09-17-SWGDE-Best-Practices-for-Archiving-Digital-and-Multimedia-Evidence_v1.0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2020-09-17-SWGDE-Best-Practices-for-Archiving-Digital-and-Multimedia-Evidence_v1.0.pdf
+  media_type: application/pdf
+  title: Best Practices for Archiving Digital and Multimedia Evidence
+  version: '1.0'
+  document_date: '2020-09-17'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/19-f-003-swgde-best-practices-for-archiving-digital-and-multimedia-evidence/
+- source_id: swgde-forensics/mobile-analysis/2026-10-25
+  role: authoritative
+  unit_id: swgde-mobile-analysis
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2020-09-17-SWGDE-Best-Practices-for-Mobile-Device-Forensic-Analysis_v1.0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2020-09-17-SWGDE-Best-Practices-for-Mobile-Device-Forensic-Analysis_v1.0.pdf
+  media_type: application/pdf
+  title: Best Practices for Mobile Device Forensic Analysis
+  version: '1.0'
+  document_date: '2020-09-17'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/20-f-005-swgde-best-practices-for-mobile-device-forensic-analysis/
+- source_id: swgde-forensics/report-writing/2026-10-25
+  role: authoritative
+  unit_id: swgde-report-writing
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2018-11-20-SWGDE-Requirements-for-Report-Writin.pdf
+  local_path: input/swgde-forensics/2026-10-25/2018-11-20-SWGDE-Requirements-for-Report-Writin.pdf
+  media_type: application/pdf
+  title: Requirements for Report Writing in Digital and Multimedia Forensics
+  version: '1.0'
+  document_date: '2018-11-20'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/18-q-002-swgde-requirements-for-report-writing-in-digital-and-multimedia-forensics/
+- source_id: swgde-forensics/computer-examination/2026-10-25
+  role: authoritative
+  unit_id: swgde-computer-examination
+  url: https://www.swgde.org/wp-content/uploads/2024/05/2018-07-11-SWGDE-Best-Practices-for-Computer-Fo.pdf
+  local_path: input/swgde-forensics/2026-10-25/2018-07-11-SWGDE-Best-Practices-for-Computer-Fo.pdf
+  media_type: application/pdf
+  title: Best Practices for Computer Forensic Examination
+  version: '1.0'
+  document_date: '2018-07-11'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/18-f-001-swgde-best-practices-for-computer-forensic-examination/
+- source_id: swgde-forensics/collection-myths-vs-facts/2026-10-25
+  role: authoritative
+  unit_id: swgde-collection-myths-vs-facts
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2017-07-18-SWGDE-Collection-of-Digital-and-Multimedia-Evidence-Myths-vs-Facts_v1-2.pdf
+  local_path: input/swgde-forensics/2026-10-25/2017-07-18-SWGDE-Collection-of-Digital-and-Multimedia-Evidence-Myths-vs-Facts_v1-2.pdf
+  media_type: application/pdf
+  title: Collection of Digital and Multimedia Evidence Myths vs Facts
+  version: '1.2'
+  document_date: '2017-07-18'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/16-q-003-swgde-collection-of-digital-and-multimedia-evidence-myths-vs-facts/
+- source_id: swgde-forensics/glossary/2026-10-25
+  role: authoritative
+  unit_id: swgde-glossary
+  url: https://www.swgde.org/wp-content/uploads/2024/03/2016-06-23-SWGDE-Digital-and-Multimedia-Evidence-Glossary_v3-0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2016-06-23-SWGDE-Digital-and-Multimedia-Evidence-Glossary_v3-0.pdf
+  media_type: application/pdf
+  title: Digital and Multimedia Evidence Glossary
+  version: '3.0'
+  document_date: '2016-06-23'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/05-f-001-swgde-digital-multimedia-evidence-glossary/
+- source_id: swgde-forensics/model-sop/2026-10-25
+  role: authoritative
+  unit_id: swgde-model-sop
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2012-09-13-SWGDE-Model-SOP-for-Computer-Forensics-V3-0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2012-09-13-SWGDE-Model-SOP-for-Computer-Forensics-V3-0.pdf
+  media_type: application/pdf
+  title: Model SOP for Computer Forensics
+  version: '3.0'
+  document_date: '2012-09-13'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/12-f-001-swgde-model-standard-operation-procedures-for-computer-forensics/
+- source_id: swgde-forensics/data-integrity/2026-10-25
+  role: authoritative
+  unit_id: swgde-data-integrity
+  url: https://www.swgde.org/wp-content/uploads/2023/11/2006-04-12-SWGDE-Data-Integrity-Within-Computer-Forensics-V1-0.pdf
+  local_path: input/swgde-forensics/2026-10-25/2006-04-12-SWGDE-Data-Integrity-Within-Computer-Forensics-V1-0.pdf
+  media_type: application/pdf
+  title: Data Integrity Within Computer Forensics
+  version: '1.0'
+  document_date: '2006-04-12'
+  landing_page: https://www.swgde.org/documents/published-complete-listing/06-f-001-swgde-data-integrity-within-computer-forensics/
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules:
+    # The same SWGDE cover page (disclaimer, redistribution policy, requests for modification) opens every document:
+    # kept, but out of default retrieval so it does not match in fifteen places.
+    - {within_pattern: '\.front-matter$', corpus: front_matter, include: false, reason: "SWGDE cover page and notices (identical in every document) and tables of contents"}

@@ -1,0 +1,63 @@
+# Build recipe for the ms-learn-ir pack: published Microsoft Learn articles, captured as HTML snapshots.
+# Each article is its own source identity (one capture date); the page's git_commit_id / updated_at / ms.date
+# metadata is recorded in sources.lock.json and drives change detection (irpacks check-updates).
+#
+# The article list is generated: `irpacks sources discover ms-learn-ir` applies the discovery rules below to the
+# published tables of contents and writes articles.yaml (existing unit IDs are kept). Review its diff, then lock.
+route: learn_html_pages
+inputs:
+  snapshot: "2026-11-10"
+artifacts_file: articles.yaml
+discovery:
+  base: https://learn.microsoft.com/en-us/
+  rules:
+    # Microsoft security operations: incident response process and playbooks. In November 2026 Microsoft moved this
+    # guide from security/operations (whose TOC is gone) into the Zero Trust docset's SecOps discipline; the old URLs
+    # redirect, and discovery carries each moved article's unit ID over to its new URL.
+    - toc: security/zero-trust
+      prefix: secops
+      docset: security
+      include: ['^Security adoption framework \(SAF\) > Security disciplines > SecOps( >|$)',
+                '^Minimize damage from incidents( >|$)']
+      exclude: ['workshop']
+      url_prefix: https://learn.microsoft.com/en-us/security/
+    # Microsoft Entra security operations guide and other identity-security architecture guidance.
+    - toc: entra/architecture
+      prefix: entra
+      docset: entra
+      include: ['> Security( >|$)']
+      url_prefix: https://learn.microsoft.com/en-us/entra/
+    # Identity Protection: risk detections, investigation and remediation.
+    - toc: entra/id-protection
+      prefix: entra
+      docset: entra
+      include: ['.*']
+      exclude: ['Pricing', 'Service updates', 'Stack Overflow', 'feedback forum', 'Q&A', 'Microsoft Graph APIs']
+      url_prefix: https://learn.microsoft.com/en-us/entra/
+    # Sign-in, audit and activity logs: the evidence sources for identity investigations.
+    - toc: entra/identity/monitoring-health
+      prefix: entra
+      docset: entra
+      include: ['.*']
+      exclude: ['Microsoft Entra Health', 'Recommendations', 'SLA performance', 'Usage and insights', 'Sign-up',
+                'Microsoft Graph APIs', 'Identity Secure Score']
+      url_prefix: https://learn.microsoft.com/en-us/entra/
+  pinned:  # response procedures outside the selected TOC sections
+    - {url: https://learn.microsoft.com/en-us/entra/identity/users/users-revoke-access, prefix: entra, docset: entra}
+    - {url: https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access,
+       prefix: entra, docset: entra}
+    # still published, but no longer in a TOC since the November 2026 move of the security operations guide
+    - {url: https://learn.microsoft.com/en-us/security/zero-trust/siem-xdr-implement, prefix: secops, docset: security}
+    - {url: https://learn.microsoft.com/en-us/security/zero-trust/respond-incident-defender, prefix: secops, docset: security}
+    - {url: https://learn.microsoft.com/en-us/security/zero-trust/respond-incident-azure, prefix: secops, docset: security}
+    - {url: https://learn.microsoft.com/en-us/security/ransomware/incident-response-playbook-dart-ransomware-approach,
+       prefix: secops, docset: security}
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []

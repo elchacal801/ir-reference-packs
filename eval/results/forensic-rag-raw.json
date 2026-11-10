@@ -1,0 +1,208 @@
+{
+  "backend": "forensic-rag",
+  "details": {
+    "tool": "sift-mcp forensic-rag (rag-mcp)",
+    "rag_mcp_version": "0.6.5.1",
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "model_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "chromadb": "1.5.9",
+    "sentence_transformers": "6.2.0",
+    "torch": "2.14.1+cu130",
+    "device": "cpu",
+    "python": "3.12.3",
+    "cpu": "x86_64",
+    "cpu_count": 4,
+    "top_k": 5,
+    "records_indexed": 763,
+    "records_written": 763,
+    "build_seconds": 253.2,
+    "index_load_seconds": 0.2,
+    "query_latency_ms_median": 81.5,
+    "query_latency_ms_max": 110.2,
+    "peak_rss_mb": 1904,
+    "index_disk_mb": 18.1,
+    "settings": "forensic-rag defaults: cosine HNSW, keyword boost 1.15, MITRE query augmentation, no tuning",
+    "max_seq_length_tokens": 512,
+    "offline": {
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    }
+  },
+  "results": {
+    "t01": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s01.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s01.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s06.s07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s05.s01.p07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s05.s01:0"
+    ],
+    "t02": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s07.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s05.s02.p10:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s05.s02.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s02.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s02.s01:0"
+    ],
+    "t03": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s09:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s08:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch08.s05.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s01.s01.sb01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.fn29:0"
+    ],
+    "t04": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch14.s05.s06:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s08:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s09.p01:0"
+    ],
+    "t05": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s02.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.p01:0"
+    ],
+    "t06": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s08:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch14.s01.s04.s01.a03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch14.s05.s04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s03.s05:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s07:0"
+    ],
+    "t07": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.s01:0",
+      "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s02.t01:2",
+      "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s02.t01:6",
+      "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0"
+    ],
+    "t08": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s06.s02:0"
+    ],
+    "t09": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s04.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s06.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s01.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s06.s07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s01.s04:0"
+    ],
+    "t10": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch06.s06:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s03.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch11.p01:0"
+    ],
+    "t11": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s05:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.s01:0"
+    ],
+    "t12": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch09.s08:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch15.s04.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s04.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch09.s06.s03.p05:0"
+    ],
+    "t13": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s01.s02.s04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s05.s04.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.fn01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s05.s04.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch16.s03.s01.s02.q01:0"
+    ],
+    "t14": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch04.s05:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch04.s06.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch04.s06.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch15.s05.s04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch04.s06.s01.sb01:0"
+    ],
+    "t15": [
+      "nist-sp800-61r3:800-61r3:7cde9a0b:sec2.s02.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+      "nist-sp800-61r3:800-61r3:7cde9a0b:sec2.s02.p04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch03.fn01:0"
+    ],
+    "h01": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s01.s01.sb01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s03.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s01.s01.p06:0"
+    ],
+    "h02": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s05:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s10.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.p01:0"
+    ],
+    "h03": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch11.s07.s02.p07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s10.s01.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s03.s02.p05:0"
+    ],
+    "h04": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s06.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s06.s03:0"
+    ],
+    "h05": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch03.fn01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch03.s03:0"
+    ],
+    "h06": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s01.p07:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s03.s02.s02.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s02:0"
+    ],
+    "h07": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch03.s02.s02.p04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch03.s03:0"
+    ],
+    "h08": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s08.s04.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.s01.p05:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch17.s08.s04.s04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch15.s03.s04:0",
+      "dynamic-ir:20260917164224:7cde9a0b:bm-afterword.p01:0"
+    ],
+    "h09": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s05.s01.lst02:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch01.s01.p09:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch01.s01.p14:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s05.s01.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s05.s01.s01:0"
+    ],
+    "h10": [
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s03:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s08:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s10.p01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s07.s01:0",
+      "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s02.p01:0"
+    ]
+  }
+}

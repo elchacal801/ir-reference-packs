@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "pack_id": "nist-sp800-61r3",
+  "document_id": "nist-sp800-61r3:800-61r3",
+  "edition_id": "800-61r3",
+  "recorded_at": "2026-10-25T14:55:30Z",
+  "built_at": "2026-10-25T14:01:13Z",
+  "units": [
+    {
+      "unit_id": "fm-front-matter",
+      "title": "Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "fcaaca3b25f8ab5a1639bfc4eea3746d835ad04543689ceb8befa94a94e93a2e",
+      "sections": [
+        {
+          "id": "fm-front-matter.s01",
+          "title": "Authority",
+          "hash": "9a748185c8cc0295ce8f230dc5e4813424f07a4a721704c366b691902519bb15"
+        },
+        {
+          "id": "fm-front-matter.s02",
+          "title": "NIST Technical Series Policies",
+          "hash": "cf18b5305ff2705c3ad445545d7d4321069010a33204af3c6bcad06ebd59d9b0"
+        },
+        {
+          "id": "fm-front-matter.s03",
+          "title": "Publication History",
+          "hash": "b2032293c90b3b94638f7401287d182162461eb75dbad210c1a73f0249c5fa37"
+        },
+        {
+          "id": "fm-front-matter.s04",
+          "title": "How to Cite this NIST Technical Series Publication",
+          "hash": "82ed2921c8a37e55f01e17dcdbff759bcd35af1ddbc1fca47382c37aa99a03da"
+        },
+        {
+          "id": "fm-front-matter.s05",
+          "title": "Author ORCID iDs",
+          "hash": "e4ec72a6de6b370fde02509ad4b03d82ffed3b3f2784c9aaeb5a90fc57fd83dd"
+        },
+        {
+          "id": "fm-front-matter.s06",
+          "title": "Contact Information",
+          "hash": "f569e657486952610eabf4e2f5907159b5dd82b5171e40ca25b394f81efbecba"
+        },
+        {
+          "id": "fm-front-matter.s07",
+          "title": "Additional Information",
+          "hash": "9f18491059ca5c7ba164d26d7793a8473d27512cd2dd0acc0b628aeab3edf2a9"
+        },
+        {
+          "id": "fm-front-matter.s08",
+          "title": "All comments are subject to release under the Freedom of Information Act (FOIA).",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "fm-front-matter.s09",
+          "title": "Abstract",
+          "hash": "fd934d9d5ada69bb9d5f764a1e895d3f715168a7ca5b48fd87e2e4d2ba2f76e3"
+        },
+        {
+          "id": "fm-front-matter.s10",
+          "title": "Keywords",
+          "hash": "d38ccb5f569be45ca67d35eeacf9629be587798b9da656ac6e66920b555c2ede"
+        },
+        {
+          "id": "fm-front-matter.s11",
+          "title": "Reports on Computer Systems Technology",
+          "hash": "9ccf2b08bb60a1f93d13b6f3eeb61260c3355f5e50df901f5b3ee18a29c2a8b3"
+        },
+        {
+          "id": "fm-front-matter.s12",
+          "title": "Supplemental Content",
+          "hash": "dec25469f744a39f436c36532178ceea0b36556af9fa8c83417ac77c18372444"
+        },
+        {
+          "id": "fm-front-matter.s13",
+          "title": "Audience",
+          "hash": "22c09c438b337ecf06f46e7f739a4b2f3b0299c9697804943547811ff69b3406"
+        },
+        {
+          "id": "fm-front-matter.s14",
+          "title": "Trademark Information",
+          "hash": "26bec33887624cdaaeac02386ef6102c6c4970e46bc047b54b66dfed250fbf60"
+        },
+        {
+          "id": "fm-front-matter.s15",
+          "title": "Patent Disclosure Notice",
+          "hash": "ffb98b02f377017d72341ac5eb95e7c6364abbe929aac4b24ab3b65f422c762f"
+        }
+      ]
+    },
+    {
+      "unit_id": "fm-table-of-contents",
+      "title": "Table of Contents",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "98c3ef2a146989e747e8bfe1530a24ccd345b2d3281177806f3091597a5b24ae",
+      "sections": []
+    },
+    {
+      "unit_id": "fm-executive-summary",
+      "title": "Executive Summary",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "f019ee8fd14e0d3683ec1be9dbf1acaf9e009067f8ede82776a1f8087dae1981",
+      "sections": []
+    },
+    {
+      "unit_id": "sec1",
+      "title": "1. Introduction",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "4e5016fb91831a8ba91e9ac186c24e285ca249970307c1c7d3f8bccb4bead273",
+      "sections": [
+        {
+          "id": "sec1.s01",
+          "title": "1.1. Purpose and Scope",
+          "hash": "1ca14a7194c9d3e79e5417695e86289babcd741bc26de0d5dfb8b4acae3e0929"
+        },
+        {
+          "id": "sec1.s02",
+          "title": "1.2. Document Structure",
+          "hash": "d77c30263142a6886e8b240896b8383020eb1d6f6c16f1ab3cad7d54a0af23b9"
+        }
+      ]
+    },
+    {
+      "unit_id": "sec2",
+      "title": "2. Incident Response as Part of Cybersecurity Risk Management",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "0a6ef3c34ff32fa6cab8c7cf2e4fa10101616383ea056f93e82e5f1f0f375a56",
+      "sections": [
+        {
+          "id": "sec2.s01",
+          "title": "2.1. Incident Response Life Cycle Model",
+          "hash": "494f5065fc459b95ddb0ab1e6f639169721c5e6af58eed1d4a48bb6e7e0056da"
+        },
+        {
+          "id": "sec2.s02",
+          "title": "2.2. Incident Response Roles and Responsibilities",
+          "hash": "f5a39ff0d74b619c358a51981877e09a7a4e6552de4ede75e3ca34558049f8a3"
+        },
+        {
+          "id": "sec2.s03",
+          "title": "2.3. Incident Response Policies, Processes, and Procedures",
+          "hash": "3539ba55106143ad5ff84139254e58d47879b630176386c7c47347ec295e02d7"
+        }
+      ]
+    },
+    {
+      "unit_id": "sec3",
+      "title": "3. CSF 2.0 Community Profile for Cyber Incident Risk Management",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "256cbda5a03326be8b614b443b177b58b9fc188cb5a112be489ce7e62f03b87d",
+      "sections": [
+        {
+          "id": "sec3.s01",
+          "title": "3.1. Preparation and Lessons Learned",
+          "hash": "cee33edf2857e1192f0e1f720e7d78c8dda3f03d0bf7ff76cb6003f92dd824c8"
+        },
+        {
+          "id": "sec3.s02",
+          "title": "3.2. Incident Response",
+          "hash": "9896e38d4fcff2753b5449377015170822294dd67a6c5a5560a4cf066e41a0f6"
+        }
+      ]
+    },
+    {
+      "unit_id": "bm-references",
+      "title": "References",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "7108e82cac1644e9a209bf96bf88f57d144488826b9be57ad24e4e55e26369bb",
+      "sections": []
+    },
+    {
+      "unit_id": "bm-appendix-a-list-of-symbols-abbreviations",
+      "title": "Appendix A. List of Symbols, Abbreviations, and Acronyms",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "1ac65cae9295c645ed5c5d5ab1fdbd0eebfab70f634c5b45f43a59d867836f55",
+      "sections": []
+    },
+    {
+      "unit_id": "bm-appendix-b-glossary",
+      "title": "Appendix B. Glossary",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "9dd3c56e537abea06d4bcb294ec4f9091b6c5fc631b923b8cad7e2284a61370f",
+      "sections": []
+    },
+    {
+      "unit_id": "bm-appendix-c-change-log",
+      "title": "Appendix C. Change Log",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "8054a4dfaf8ebf64a14934e89f84d8a1a87505c4199c77f42a74cdd5e3e90fcb",
+      "sections": []
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Build recipe for the ms-defender pack: published Microsoft Learn articles, captured as HTML snapshots.
+# Each article is its own source identity (one capture date); its git_commit_id / updated_at / ms.date metadata is
+# recorded in sources.lock.json and drives change detection (irpacks check-updates).
+#
+# The article list is generated: `irpacks sources discover ms-defender` applies the discovery rules below to the
+# published tables of contents and writes articles.yaml (existing unit IDs are kept). Review its diff, then lock.
+# Selection: the sections a responder uses (investigate, respond, hunt, alert and log references); deployment,
+# licensing, configuration and API-reference sections are left out.
+route: learn_html_pages
+inputs:
+  snapshot: "2026-10-25"
+artifacts_file: articles.yaml
+discovery:
+  base: https://learn.microsoft.com/en-us/
+  rules:
+    - toc: defender-xdr
+      prefix: xdr
+      include: ['> (Investigate and respond|Automate investigation and response|Analyze data and hunt for threats|Threat intelligence)( >|$)',
+                '> Security operations guide( >|$)']
+    - toc: defender-endpoint
+      prefix: mde
+      include: ['> (Investigate and respond to threats|Defender for Endpoint Security Operations Guide)( >|$)']
+    - toc: defender-for-identity
+      prefix: mdi
+      include: ['alert', 'Investigate', 'Remediation actions', 'Monitored activities', 'SIEM log reference',
+                'Operations guide', 'Network Name Resolution', 'Security posture assessments']
+      exclude: ['Deploy a sensor', '> Settings( >|$)']
+    - toc: defender-office-365
+      prefix: mdo
+      include: ['> (Investigate and Respond|Step-by-step guides)( >|$)']
+    - toc: defender-cloud-apps
+      prefix: mdca
+      include: ['> (Investigate threats|Investigate alerts|Respond to threats|Configure threat detection|Operations guide|Manage events with SIEM solutions)( >|$)',
+                'OAuth app threat detection']
+    - toc: azure/defender-for-cloud
+      prefix: mdc
+      docset: defender-for-cloud
+      include: ['Security alerts and incidents', 'Manage and respond to security alerts', 'Automate and export responses',
+                'Alerts schemas', 'Handle Defender for', 'Respond to Microsoft Defender for DNS', 'Investigate .*alerts',
+                'Understand security threats and alerts', 'alert suppression', 'Validate alert configuration']
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []

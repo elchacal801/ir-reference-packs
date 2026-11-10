@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical document (document.json)",
+  "type": "object",
+  "required": ["schema_version", "document_id", "pack_id", "pack_version", "edition_id", "title", "authors", "route",
+               "sources", "coordinate_convention", "root_id", "page_labels", "element_count", "elements"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "document_id": {"type": "string"},
+    "pack_id": {"type": "string"},
+    "pack_version": {"type": "string"},
+    "edition_id": {"type": "string"},
+    "title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "edition_statement": {"type": ["string", "null"]},
+    "route": {"type": "string"},
+    "variant": {"enum": ["local", "public"]},
+    "sources": {"type": "object"},
+    "coordinate_convention": {"type": "string"},
+    "page_numbering": {"type": "object"},
+    "root_id": {"type": "string"},
+    "page_labels": {"type": "array", "items": {"type": "object", "required": ["page", "label"],
+      "properties": {"page": {"type": "integer", "minimum": 1}, "label": {"type": ["string", "null"]}}}},
+    "element_count": {"type": "integer"},
+    "omitted": {"type": "array"},
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "order", "parent_id", "children", "anchor", "text", "md", "attrs", "source_spans",
+                     "mapping_status", "extraction", "content_hash", "rights"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "type": {"enum": ["document", "division", "part", "chapter", "section", "heading", "paragraph", "list",
+                            "list_item", "code", "listing", "table", "figure", "caption", "admonition", "sidebar",
+                            "quote", "math", "footnote", "block_title", "attribution", "open_block", "example",
+                            "callout_list", "dlist", "dlist_item", "thematic_break", "unknown_block", "toc_entry",
+                            "index_entry", "pdf_text", "omitted"]},
+          "order": {"type": "integer", "minimum": 0},
+          "parent_id": {"type": ["string", "null"]},
+          "children": {"type": "array", "items": {"type": "string"}},
+          "anchor": {"type": ["string", "null"]},
+          "text": {"type": "string"},
+          "md": {"type": "string"},
+          "attrs": {"type": "object"},
+          "source_spans": {"type": "array", "items": {"$ref": "#/$defs/span"}},
+          "mapping_status": {"enum": ["verified", "verified_with_differences", "pdf_text_fallback", "pdf_only",
+                                      "verified_image", "position_inferred", "visually_verified", "unverified",
+                                      "aggregate", "not_applicable", "native_structure", "omitted"]},
+          "extraction": {"type": ["object", "null"]},
+          "content_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "rights": {"type": "object", "required": ["state", "rule"],
+                     "properties": {"state": {"enum": ["redistributable", "metadata_only", "user_supplied_local", "pending_review"]},
+                                    "rule": {"type": "string"}, "basis": {"type": ["string", "null"]},
+                                    "reason": {"type": ["string", "null"]}}}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "span": {
+      "type": "object",
+      "required": ["locator_type", "mapping_status"],
+      "properties": {
+        "locator_type": {"enum": ["pdf_page", "section_anchor", "native_record_id"]},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "page_label": {"type": ["string", "null"]},
+        "bbox": {"type": ["array", "null"], "items": {"type": "number"}, "minItems": 4, "maxItems": 4},
+        "coords": {"type": ["string", "null"]},
+        "role": {"type": ["string", "null"]},
+        "n_key_chars": {"type": ["integer", "null"]},
+        "native_locator": {"type": ["string", "null"]},
+        "mapping_status": {"type": "string"}
+      }
+    }
+  }
+}

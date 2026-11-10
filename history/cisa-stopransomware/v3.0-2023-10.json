@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "pack_id": "cisa-stopransomware",
+  "document_id": "cisa-stopransomware:v3.0-2023-10",
+  "edition_id": "v3.0-2023-10",
+  "recorded_at": "2026-10-25T17:33:40Z",
+  "built_at": "2026-10-25T17:33:38Z",
+  "units": [
+    {
+      "unit_id": "fm-front-matter",
+      "title": "Front Matter",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "b848396c0c00ee3a13bba877829756d8ceb007b45f5245383b08534c09dbaa60",
+      "sections": []
+    },
+    {
+      "unit_id": "change-record",
+      "title": "Change Record",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "ef001aea3aff32528e9f96bd17a11e2533cc692052a240bcd557fb9c4796cc78",
+      "sections": []
+    },
+    {
+      "unit_id": "introduction",
+      "title": "INTRODUCTION",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "f8a54c1c389df06b9deba24e9fa52270ceed15e94dde1d50deb3b1f05172c852",
+      "sections": [
+        {
+          "id": "introduction.s01",
+          "title": "What’s New",
+          "hash": "b505c560bfad8367c395ba649a929b80d5d30fcdff628352e5f9a0520829176b"
+        }
+      ]
+    },
+    {
+      "unit_id": "part-1-ransomware-and-data-extortion-pre",
+      "title": "Part 1: Ransomware and Data Extortion Preparation, Prevention, and Mitigation Best Practices",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "fe075004a7776e96da645c11bc259b246fa4a0de4117cc06322322f02f754c46",
+      "sections": [
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s01",
+          "title": "Preparing for Ransomware and Data Extortion Incidents",
+          "hash": "dcfe162dd51443a75db79cf4d1be3d5a6f508b1ef8a92cd9fa506d71a928e45f"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02",
+          "title": "Preventing and Mitigating Ransomware and Data Extortion Incidents",
+          "hash": "6e6bb8f423e391301f1e4b703885591412c3885872c01adda7ab0fa529497efc"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02.s01",
+          "title": "Initial Access Vector: Internet-Facing Vulnerabilities and Misconfigurations",
+          "hash": "75f4cc088f16e08c0e1ddd2c398c9f93f2c11c5cfb6bb8c131db7913e67ac12c"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02.s02",
+          "title": "Initial Access Vector: Compromised Credentials",
+          "hash": "1aeb6c2c9881e474d87b4e4c40902ee2653cad119a20e23479c0ca57d8890bb6"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02.s03",
+          "title": "Initial Access Vector: Phishing",
+          "hash": "b879f50aba22f2bdcc3ec8114270f191c02c0e46793ce6a4e7fe5d205c5e9012"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02.s04",
+          "title": "Initial Access Vector: Precursor Malware Infection",
+          "hash": "1d3081d7e97258513640e588a97b13901c6c25de0dce5307d2831ccd943fe8c9"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02.s05",
+          "title": "Initial Access Vector: Advanced Forms of Social Engineering",
+          "hash": "21f93e17cd370fa4232cf4a601b957bf668073bc51b121ff1876bff595647093"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s02.s06",
+          "title": "Initial Access Vector: Third Parties and Managed Service Providers",
+          "hash": "e1c15a9466b901a9705f48eaf8ed7a62aa7296d0450fb5f4678f583437f30948"
+        },
+        {
+          "id": "part-1-ransomware-and-data-extortion-pre.s03",
+          "title": "General Best Practices and Hardening Guidance",
+          "hash": "93ae7e66e8a3b4a86edb0972bfa4889aed407114203dde2ce8307ffc178a2bbf"
+        }
+      ]
+    },
+    {
+      "unit_id": "part-2-ransomware-and-data-extortion-res",
+      "title": "Part 2: Ransomware and Data Extortion Response Checklist",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "ffb6c6c79f56e4cd1499defec83165e5d83f476c5b4e5077d5699dede0e2a2c5",
+      "sections": [
+        {
+          "id": "part-2-ransomware-and-data-extortion-res.s01",
+          "title": "Detection and Analysis",
+          "hash": "9a09836ef6d83a064406427150a11da98b8406001c1004456202e56b8b12a104"
+        },
+        {
+          "id": "part-2-ransomware-and-data-extortion-res.s02",
+          "title": "Reporting and Notification",
+          "hash": "6d3d1149b53958760143092e098c31cd7879a1ead886f7941d30a4e2594d4944"
+        },
+        {
+          "id": "part-2-ransomware-and-data-extortion-res.s03",
+          "title": "Containment and Eradication",
+          "hash": "e2b6c519731db36df837bcdd5c4883c08846ee7c58e4a8ead21b045bdf15914c"
+        },
+        {
+          "id": "part-2-ransomware-and-data-extortion-res.s04",
+          "title": "Recovery and Post-Incident Activity",
+          "hash": "5ac1ca9a08062816be43328ae24e30f75afd88f6175781e6655e3b7508fbed98"
+        }
+      ]
+    },
+    {
+      "unit_id": "contact-information",
+      "title": "Contact Information",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "482dfa5c7739e9ccf5149e02b380adf430e643008f505efa44e5e8511aa79aad",
+      "sections": [
+        {
+          "id": "contact-information.s01",
+          "title": "Federal Asset Response Contacts",
+          "hash": "8863a1835690937987424da902c40ddeb6c99291052c58334f5f791f28792e02"
+        },
+        {
+          "id": "contact-information.s02",
+          "title": "Federal Threat Response Contacts",
+          "hash": "4ff2e2b4161937953a343a4c1ae33f161f98e483ab543efe0954775a517dfed7"
+        },
+        {
+          "id": "contact-information.s03",
+          "title": "Other Federal Response Contacts",
+          "hash": "7b7b0b829aa15e48faa26f658be1b83e932922c5de776b405ae8f72f86ad0098"
+        },
+        {
+          "id": "contact-information.s04",
+          "title": "Other Response Contacts",
+          "hash": "841f47142da847f6abe9a0443fe933c7059373fd4e44f0bcca8a9466d847ea7b"
+        }
+      ]
+    },
+    {
+      "unit_id": "resources",
+      "title": "RESOURCES",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "resources.s01",
+          "title": "CISA No-Cost Resources",
+          "hash": "a62f29a9f1c521a0dcd5f2d524f5fa363bc0c1088c63cf1e470af44f13c6713b"
+        },
+        {
+          "id": "resources.s01.s01",
+          "title": "Contacts:",
+          "hash": "fe0c12e5ac5f69ee8774a418b06266d7d2acaa9d6784d29df89a5a048c0c793f"
+        },
+        {
+          "id": "resources.s02",
+          "title": "Ransomware Quick References",
+          "hash": "2b05b27989561b60250fb794dbfe6e33b4a14f72b78b2128ccf1a865d62d59cb"
+        },
+        {
+          "id": "resources.s03",
+          "title": "Additional Resources",
+          "hash": "7d616750e3e1f5b01ac6dc995b60e4b8263a6d1fdbf53d4df98a5cc123180e3a"
+        }
+      ]
+    },
+    {
+      "unit_id": "disclaimer-of-endorsement",
+      "title": "DISCLAIMER OF ENDORSEMENT",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "c5ce48dc402574aec81edab1538485a01c3d0b5cc9ec53353688334ded6709f0",
+      "sections": []
+    },
+    {
+      "unit_id": "purpose",
+      "title": "PURPOSE",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "9d443d1fe397d4bc4fdee8ae1ea9e01705b0034a937b2ca086fbdac958c89e15",
+      "sections": []
+    },
+    {
+      "unit_id": "acknowledgements",
+      "title": "ACKNOWLEDGEMENTS",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "0163d7afa4906e3d02147d50d63e67ecdc991094280caab70f3ceeac214ad403",
+      "sections": []
+    }
+  ]
+}

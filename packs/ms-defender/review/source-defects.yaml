@@ -1,0 +1,16 @@
+# Suspected defects in the published source, preserved exactly as published (the conversion never "fixes" source
+# text). Each entry was checked against the captured HTML. Reported upstream: no (publication actions are out of scope).
+schema_version: 1
+pack_id: ms-defender
+defects:
+  - element_id: mdc-alerts-resource-manager.resource-manager-alerts.p02
+    pdf_page: null
+    page_label: null
+    description: >-
+      Defender for Cloud "Alerts for Resource Manager": the heading "PREVIEW â€“ Suspicious management session using
+      Azure portal detected" contains "â€“", an en dash (UTF-8) mis-decoded as Windows-1252, and the heading has no
+      anchor id. Both are present in the captured page bytes from learn.microsoft.com. With no published anchor to
+      cite, the heading is kept in place as a bold paragraph inside the preceding section.
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Preserved as published; read 'â€“' as an en dash."

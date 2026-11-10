@@ -1,0 +1,79 @@
+# Held-out questions for the ms-learn-ir pack (added 2026-10-25, after the ranking configuration was frozen).
+# Run once with the frozen configuration; never used for tuning. Resolve with:
+#   uv run python eval/build_questions.py --spec eval/questions-ms.spec.yaml
+# Evidence was chosen by reading the cited elements (exact-phrase lookup), not from search rankings.
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-25"
+packs: [dynamic-ir, nist-sp800-61r3, ms-learn-ir]
+# The security-docset articles are not cleared for redistribution: record only a hash of their evidence quotes.
+quotes: withhold_unredistributable
+questions:
+  - id: m01
+    split: ms-heldout
+    scenario: phishing_ato
+    kinds: [exact_term, procedure]
+    question: "How do I revoke a compromised Entra ID user's refresh tokens with Microsoft Graph PowerShell?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: entra-revoke-access.microsoft-entra-environment.l02.i02},
+         {pack: ms-learn-ir, element_id: entra-revoke-access.microsoft-entra-environment.l02.i02.c01}]
+    rationale: "Revoke user access, Microsoft Entra environment step 2: Revoke-MgUserSignInSession."
+  - id: m02
+    split: ms-heldout
+    scenario: hybrid_identity
+    kinds: [paraphrase]
+    question: "Why reset an on-premises Active Directory user's password twice when cutting off a compromised account?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: entra-revoke-access.on-premises-active-directory-environment.l01.i02.a01.p01}]
+    rationale: "Note under step 2: mitigates pass-the-hash and on-premises replication delays."
+  - id: m03
+    split: ms-heldout
+    scenario: token_theft
+    kinds: [paraphrase]
+    question: "Which detections should alert us to a possible stolen and replayed session token?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: ms-ir-token-theft.investigation-triggers.l03.i01}]
+    rationale: "Token theft playbook, investigation-triggers section: the first listed detection (offline anomalous-token detection)."
+  - id: m04
+    split: ms-heldout
+    scenario: emergency_access
+    kinds: [paraphrase]
+    question: "How many break-glass accounts should we keep for Microsoft Entra, and what kind of accounts should they be?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: entra-emergency-access.create-emergency-access-accounts.p01},
+         {pack: ms-learn-ir, element_id: entra-emergency-access.security-guardrails-summary.l01.i01}]
+    rationale: "Create two or more cloud-only emergency access accounts (*.onmicrosoft.com, not federated)."
+  - id: m05
+    split: ms-heldout
+    scenario: malicious_application
+    kinds: [procedure]
+    question: "How does an illicit OAuth consent grant attack typically unfold?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: ms-ir-app-consent.attack-techniques.l01.i01}]
+    rationale: "App consent grant playbook, attack-techniques section: the first item of the list describing the attack sequence."
+  - id: m06
+    split: ms-heldout
+    scenario: token_theft
+    kinds: [exact_term]
+    question: "What Sentinel KQL query lists sign-ins from a suspicious attacker IP address?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: ms-ir-token-theft.attacker-ip-address-or-user-agent-string-authentications.c02}]
+    rationale: "Token theft playbook, attacker IP address section: the second code block (a SigninLogs query filtered on IP address)."
+  - id: m07
+    split: ms-heldout
+    scenario: phishing_ato
+    kinds: [cross_source]
+    question: "What do Microsoft's guidance and the Dynamic Incident Response book each say about revoking sessions and refresh tokens after an account takeover?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: entra-revoke-access.microsoft-entra-environment.l02.i02},
+         {pack: ms-learn-ir, element_id: entra-revoke-access.microsoft-entra-environment.l02.i02.c01}]
+      - [{pack: dynamic-ir, element_id: ch13.s03.s02.s07.s01.p01},
+         {pack: dynamic-ir, element_id: ch12.s04.s04.s03.p01}]
+    rationale: "One Microsoft step (Revoke-MgUserSignInSession) and one book passage (Entra ID session and token revocation / refresh token revocation)."
+  - id: m08
+    split: ms-heldout
+    scenario: token_theft
+    kinds: [unanswerable]
+    answerable: false
+    question: "What is the default lifetime of a Microsoft Entra primary refresh token (PRT)?"
+    evidence: []
+    rationale: "PRT is mentioned (token theft triggers, device checklist) but no pack states its lifetime; regex check of all three packs for PRT near lifetime/valid/days/expire found none."

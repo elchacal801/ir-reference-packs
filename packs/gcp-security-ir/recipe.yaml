@@ -1,0 +1,77 @@
+# Build recipe for the gcp-security-ir pack: published Google Cloud documentation pages (DevSite), captured as HTML.
+# Each page is its own source identity (one capture date). Google publishes no source commit; the footer's update
+# date and a hash of the page body drive change detection (irpacks check-updates).
+#
+# The page list is generated: `irpacks sources discover gcp-security-ir` reads the side navigation of the page each
+# rule names (DevSite publishes no TOC file), applies the rules below and writes articles.yaml (existing unit IDs are
+# kept). Review its diff, then lock.
+# Selection: Google's data incident response process and incident preparation/response guides; Security Command
+# Center threat detection and its "investigate and respond to threats" guides; Cloud Audit Logs; VPC Flow Logs and
+# Packet Mirroring; disk snapshots for evidence; service-account key response; Cloud Storage recovery controls; and
+# the architecture guides on security log analytics and incident management.
+route: gcp_docs_html
+inputs:
+  snapshot: "2026-10-25"
+artifacts_file: articles.yaml
+discovery:
+  base: https://docs.cloud.google.com/
+  rules:
+    - toc: docs/security/incident-response
+      prefix: gcpsec
+      docset: security
+      include: ['^Google Cloud data management > Data incident response process$', '^Incident preparation >',
+                '^Incident response >', '^Minimum viable secure platform > Monitoring, logging, and alerting$']
+    - toc: security-command-center/docs/how-to-investigate-threats
+      prefix: scc
+      docset: security-command-center
+      include: ['^Investigate and respond to threats >', '^Detect threats > Threat detection in Security Command Center$',
+                '^Detect threats > .* > (Event Threat Detection|Virtual Machine Threat Detection|Container Threat Detection|Cloud Run Threat Detection|Sensitive Actions Service) overview$',
+                '> Inspect a VM for signs of kernel memory tampering$', '^Detect threats > Identify correlated threats > Correlated Threats overview$',
+                '^Work with findings > Overview of findings > (Overview of the finding lifecycle|Findings classes|Finding severities|Finding states)$']
+    - toc: logging/docs/audit
+      prefix: audit
+      docset: logging
+      include: ['^Cloud Audit Logs overview$', '^Enable Data Access audit logs$', '^Audit logs in depth > (Understand audit logs|Best practices)$',
+                '> SQL queries for security insights$', '^Google Workspace audit logs > (Workspace audit logs overview|Login Audit samples)$']
+    - toc: vpc/docs/flow-logs
+      prefix: vpc
+      docset: vpc
+      include: ['^VPC Flow Logs > (Overview|About VPC Flow Logs records|Configure VPC Flow Logs|Access flow logs)$',
+                '^Packet Mirroring > (Overview|Use Packet Mirroring)$']
+    - toc: compute/docs/disks/create-snapshots
+      prefix: gce
+      docset: compute
+      url_prefix: https://docs.cloud.google.com/compute/docs/
+      include: ['^Back up disks > Back up a disk for disaster recovery > (About disk snapshots|Best practices for disk snapshots|Create disk snapshots)$',
+                '^Back up disks > Back up disks in place > (About instant snapshots|Create and manage instant snapshots)$',
+                '^Restore from a backup > Restore from a standard snapshot$', '> Linux VMs > Monitor OS Login audit logs$']
+      # not "Monitor logs > View audit logs": a catalogue of every audited API method (one heading per method)
+    - toc: iam/docs/best-practices-for-managing-service-account-keys
+      prefix: iam
+      docset: iam
+      include: ['> (Best practices for managing service account keys|Disable and enable service account keys|Create and delete service account keys)$',
+                '^Audit logging > Example logs for service accounts$', '^Monitor service account usage >']
+      # not "IAM API audit logging": a catalogue of audited API methods
+    - toc: storage/docs/soft-delete
+      prefix: gcs
+      docset: storage
+      include: ['^Recover deleted data > About soft delete$', '^Object Versioning > About Object Versioning$',
+                '^(Bucket Lock > About Bucket Lock|Object Retention Lock > About Object Retention Lock)$',
+                '^Cloud Audit Logs for Cloud Storage > Use Cloud Audit Logs with Cloud Storage$']
+    - toc: architecture/framework/security
+      prefix: gcparch
+      docset: architecture
+      url_prefix: https://docs.cloud.google.com/architecture/
+      include: ['^Security and IAM > Data and identity protection > Security log analytics in Google Cloud$',
+                '> Operational excellence > Manage incidents and problems$',
+                '> Enterprise foundations blueprint > Architecture > Detective controls$',
+                '> Security, privacy, and compliance > Shared responsibility and shared fate$']
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []

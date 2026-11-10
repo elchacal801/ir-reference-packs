@@ -1,0 +1,329 @@
+{
+  "run_at": "2026-10-25T19:12:11Z",
+  "backend": "local-fts5",
+  "label": null,
+  "split": "x-tuning",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions-x-tuning.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "2",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2
+    },
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 13,
+    "answerable": 12,
+    "unanswerable": 1,
+    "evidence_complete_at_5": "5/12",
+    "evidence_complete_at_5_rate": 0.417,
+    "mean_group_recall": 0.417,
+    "multi_evidence_questions": "0/1 complete",
+    "mrr": 0.333,
+    "citation_valid": "5/5",
+    "required_context_complete": "0/0",
+    "duplicate_results": "0/65",
+    "failures": [
+      "xt01",
+      "xt02",
+      "xt03",
+      "xt04",
+      "xt06",
+      "xt10",
+      "xt12"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "xt01",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-howto-integrate-activity-logs-with-azure-monitor-logs.create-a-log-analytics-workspace:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:netwatch-vnet-flow-logs-manage.enable-or-disable-traffic-analytics.p01:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-bring-your-own-ml.auto-export-instruction:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-application-provisioning-log-analytics.enabling-provisioning-logs-integration:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-management-monitoring-overview.activity-logging-and-auditing:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt02",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-10-25:7cde9a0b:mdi-accounts.identify-service-accounts-in-privileged-groups:0",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-find-ransomware.check-for-multiple-signs-of-ransomware-activity.c01:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.azure-backup:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdi-identity-infrastructure.remove-local-admins-on-identity-assets:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azblob-versioning-overview.feature-interactions:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt03",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-azure-key-vault.suspicious-secret-listing-and-query-in-a-key-vault:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-azure-key-vault.suspicious-policy-change-and-secret-query-in-a-key-vault:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:kv-howto-logging.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-azure-key-vault.unusual-user-accessed-a-key-vault:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:kv-key-vault-recovery.secrets-cli:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt04",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-10-25:7cde9a0b:first-psirt-services-framework-1-1.definitions.l01:1",
+        "first-standards:2026-10-25:7cde9a0b:first-psirt-services-framework-1-1.what-does-the-psirt-do.p01:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:scc-investigate-threat-findings.whats_next:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:scc-concepts-event-threat-detection-overview.log_types.p01:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-overview-workbooks.how-does-it-help-me:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt05",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-10-25:7cde9a0b:gcpsec-bps-for-protecting-against-cryptocurrency-attacks.update-incident-plan:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gcpsec-bps-for-protecting-against-cryptocurrency-attacks.implement-dr-plan:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gcpsec-bps-for-protecting-against-cryptocurrency-attacks.whats-next:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gcpsec-bps-for-protecting-against-cryptocurrency-attacks.p01:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gcpsec-respond-to-abuse-misuse.cryptocurrency-mining:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt06",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-10-25:7cde9a0b:gce-snapshot-best-practices.whats_next:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gce-snapshot-best-practices.freq-create-disks:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gce-snapshot-best-practices.enable_discard:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gce-restore-snapshot.create-vm-nonboot-disk.p05:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gce-snapshot-best-practices.freq_limits.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt07",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-10-25:7cde9a0b:first-tlp-2-0.introduction:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-activities.retention-policy-and-retention-label-activities:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-concept-identity-protection-risks.additional-risk-detected-sign-in:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-concept-sign-ins.what-are-the-types-of-sign-in-logs:0",
+        "first-standards:2026-10-25:7cde9a0b:first-tlp-2-0.usage.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt08",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-10-25:7cde9a0b:first-psirt-services-framework-1-1.purpose:0",
+        "first-standards:2026-10-25:7cde9a0b:first-csirt-services-framework-2-1.3-the-difference-between-a-csirt-and-a-psirt:0",
+        "first-standards:2026-10-25:7cde9a0b:first-psirt-services-framework-1-1.psirt-framework-structure:0",
+        "first-standards:2026-10-25:7cde9a0b:first-csirt-services-framework-2-1.7-3-2-function-vulnerability-root-cause-analysis:0",
+        "first-standards:2026-10-25:7cde9a0b:first-psirt-services-framework-1-1.stakeholders:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt09",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-glossary.archive-copy:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-archiving.s2:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azarch-forensics.scenario-details:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-archiving.s8-1:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-archiving.s8-2:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt10",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.s2:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-report-writing.s6:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-report-writing.s4:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-computer-examination.s3:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-computer-examination.s7:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt11",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s8-2-2:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s8-2.p01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s8-2-1:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s12-3:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s8-4:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt12",
+      "split": "x-tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s03.s06.s02:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:vpc-flow-logs.use_cases:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s05.s02.s03:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:netwatch-vnet-flow-logs-overview.platform-rules:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-logs-limitations.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "xt13",
+      "split": "x-tuning",
+      "answerable": false,
+      "returned": [
+        "ms-purview-exchange:2026-10-25:7cde9a0b:exo-app-based-auth-new-message-trace-cmds.write-the-c-code-to-call-get-messagetracev2get-messagetracedetailv2.p03:0",
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:change-record:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4688.l05:0",
+        "first-standards:2026-10-25:7cde9a0b:first-tlp-2-0.usage.p01:0",
+        "first-standards:2026-10-25:7cde9a0b:first-cvss-4-0-specification.table-6-confidentiality-impact-to-the-vulnerable-system-vc:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    }
+  ]
+}

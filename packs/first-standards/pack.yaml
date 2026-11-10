@@ -1,0 +1,78 @@
+# Reference-pack contract: FIRST standards and frameworks for incident response teams. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: first-standards
+pack_version: "0.1.0"
+title: "FIRST standards and frameworks for incident response teams"
+description: >-
+  Standards and frameworks of FIRST (the Forum of Incident Response and Security Teams), each published as one HTML
+  page on www.first.org: the Traffic Light Protocol (TLP) 2.0 definitions and usage guidance, the CSIRT Services
+  Framework 2.1, the PSIRT Services Framework 1.1, the Guidelines and Practices for Multi-Party Vulnerability
+  Coordination and Disclosure 1.1, the CVSS 4.0 specification and user guide, the CVSS 3.1 specification, and the
+  EthicsfIRST code of ethics. Captured as HTML; a hash of each page body is recorded so later changes can be
+  detected.
+source:
+  title: "FIRST standards and frameworks (TLP, CSIRT and PSIRT Services Frameworks, CVSS, multi-party coordination, EthicsfIRST)"
+  authors: []
+  publisher: "FIRST.Org, Inc. (Forum of Incident Response and Security Teams)"
+  url: "https://www.first.org/standards/"
+  landing_page: "https://www.first.org/standards/"
+  edition: "www.first.org snapshot 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # each document states its own version (TLP 2.0, CSIRT Services Framework 2.1, CVSS 4.0 ...)
+  retrieval_date: "2026-10-25"
+  inputs:
+    - source_id: first-standards/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    The CSIRT Services Framework page is headed "Version 2.1 (for review purposes)" and links the PDF edition
+    (FIRST_CSIRT_Services_Framework_v2.1.0_bugfix1.pdf); the text here is the HTML page's. FIRST publishes no update
+    times: a change is detected by the page body hash only.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: section_anchor
+  locator: "published page URL with the section's heading anchor"
+  format: "FIRST, “{article}”, “{section}”, FIRST (captured {retrieval_date}), {url}#{anchor}"
+  notes: "Web pages are not paginated; never cite page numbers for this pack. Cite the document version stated in its text."
+applicability:
+  - incident-response
+  - information-sharing
+  - vulnerability-management
+  - csirt-operations
+  - coordination
+retrieval:
+  source_aliases:   # not "FIRST": aliases match case-insensitively, and "first" is an ordinary word in questions
+    - "FIRST.org"
+    - "Forum of Incident Response and Security Teams"
+    - "TLP"
+    - "Traffic Light Protocol"
+    - "CSIRT Services Framework"
+    - "PSIRT Services Framework"
+    - "CVSS"
+    - "EthicsfIRST"
+authority_class: community_standard
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_only
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "CVSS 3.1 is included alongside 4.0 because advisories still publish 3.1 scores."
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Maintainer decision (2026-10-25): treated as publicly redistributable with attribution. The pages are published
+    openly on www.first.org and state "All Rights Reserved" (FIRST.Org, Inc.); no open content license was located.
+    The CVSS documents license the scoring system for use with attribution ("CVSS is owned by FIRST and used by
+    permission"), which ATTRIBUTION.md carries.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

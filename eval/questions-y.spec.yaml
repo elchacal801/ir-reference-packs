@@ -1,0 +1,290 @@
+# Sealed held-out questions for ranking v4 (split y-heldout), written 2026-10-27 BEFORE any ranking v4 experiment and
+# before the practitioner test. Sealed: never used for tuning; run exactly once with the frozen v4 configuration, and
+# once with the frozen v3 configuration as the baseline. eval/diagnose_ranks.py refuses this split.
+# Resolve with:  uv run python eval/build_questions.py --spec eval/questions-y.spec.yaml
+# Phrased as a responder or an agent would ask during an incident, often without the documents' own terms (a "PHP
+# file that runs commands" for a web shell, "forged Kerberos tickets" for a krbtgt reset). Evidence was chosen by
+# exact-phrase and regex lookup over the canonical documents, never from the search index or search results. No
+# evidence element is used by any earlier set (questions.yaml, -ms, -vendor, -cisa, -x-tuning, -x).
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-27"
+packs: [dynamic-ir, nist-sp800-61r3, cisa-ir-playbooks, cisa-stopransomware, ms-learn-ir, ms-defender, ms-sentinel,
+        ms-purview-exchange, ms-windows-auditing, aws-security-ir, ms-azure-ir, gcp-security-ir, first-standards,
+        swgde-forensics]
+quotes: withhold_unredistributable
+questions:
+  - id: y01
+    split: y-heldout
+    scenario: endpoint_forensics
+    kinds: [paraphrase, table]
+    question: "We pulled a Defender for Endpoint investigation package from a Windows server. Which part of it shows how the attacker kept persistence?"
+    evidence:
+      - [{pack: ms-defender, element_id: mde-respond-machine-alerts.investigation-package-contents-for-windows-devices.t01}]
+    rationale: "Investigation package contents (Windows): the Autoruns folder holds the registry auto-start entry points that help identify the attacker's persistence."
+  - id: y02
+    split: y-heldout
+    scenario: cloud_investigation
+    kinds: [paraphrase]
+    question: "Nobody ever set up a CloudTrail trail in this AWS account. Can we still see who did what in the console last month?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: ct-view-cloudtrail-events.p01},
+         {pack: aws-security-ir, element_id: wasec-sec-detect-investigate-events-app-service-logging.implementation-guidance.l01.i01.p02},
+         {pack: aws-security-ir, element_id: sir-service-name-info-in-cloudtrail.p02}]
+    rationale: "CloudTrail event history is on by default and keeps the past 90 days of management events; a trail is needed beyond that."
+  - id: y03
+    split: y-heldout
+    scenario: cloud_hardening
+    kinds: [paraphrase]
+    question: "How do we stop anyone from creating new service account keys anywhere in our Google Cloud organization?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: gcpsec-bps-for-protecting-developer-credentials.restrict-service-account-keys.p02},
+         {pack: gcp-security-ir, element_id: iam-keys-create-delete.allow-creation.p01}]
+    rationale: "Enforce the iam.disableServiceAccountKeyCreation (and ...KeyUpload) organization policy constraints."
+  - id: y04
+    split: y-heldout
+    scenario: ransomware
+    kinds: [paraphrase]
+    question: "An attacker deleted our Azure Backup data. How long do we have to get it back?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: azbackup-secure-by-default.whats-soft-delete.p01},
+         {pack: ms-azure-ir, element_id: azbackup-secure-by-default.whats-soft-delete.l01.i04},
+         {pack: ms-azure-ir, element_id: azbackup-secure-backup.service-specific-security.l01.i03}]
+    rationale: "Soft delete keeps deleted backup data for 14 days by default, extendable to 180 days."
+  - id: y05
+    split: y-heldout
+    scenario: anti_forensics
+    kinds: [paraphrase]
+    question: "Which Windows Security event tells us that someone wiped the security log on a domain controller?"
+    evidence:
+      - [{pack: ms-windows-auditing, element_id: winaudit-event-1102.p03},
+         {pack: ms-windows-auditing, element_id: winaudit-event-1102.h01},
+         {pack: ms-windows-auditing, element_id: winaudit-other-events.l01.i02}]
+    rationale: "Event 1102(S): The audit log was cleared."
+  - id: y06
+    split: y-heldout
+    scenario: identity_compromise
+    kinds: [paraphrase]
+    question: "We think the attacker ran DCSync against our domain. What do we do about Kerberos tickets they could have forged?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s03.s02.s03.p02},
+         {pack: dynamic-ir, element_id: ch12.s03.s02.s02.p02},
+         {pack: dynamic-ir, element_id: ch13.s03.s02.s03.a01.p01}]
+    rationale: "Reset the krbtgt password twice, with appropriate delays (Krbtgt Account Reset; Golden Ticket credential reset order)."
+  - id: y07
+    split: y-heldout
+    scenario: threat_hunting
+    kinds: [paraphrase]
+    question: "Our Sentinel hunting query times out when we look back six months. How do we search the old archived logs?"
+    evidence:
+      - [{pack: ms-sentinel, element_id: sentinel-investigate-large-datasets.search-large-datasets.p01},
+         {pack: ms-sentinel, element_id: sentinel-search-jobs.p01},
+         {pack: ms-sentinel, element_id: sentinel-investigate-large-datasets.p02}]
+    rationale: "Run a search job to retrieve data in long-term retention when the 10-minute query time-out isn't enough."
+  - id: y08
+    split: y-heldout
+    scenario: ransomware
+    kinds: [paraphrase]
+    question: "Leadership is asking whether we should just pay the ransom. What does the #StopRansomware Guide say?"
+    evidence:
+      - [{pack: cisa-stopransomware, element_id: part-2-ransomware-and-data-extortion-res.p02},
+         {pack: cisa-stopransomware, element_id: part-2-ransomware-and-data-extortion-res.p03}]
+    rationale: "The authoring organizations do not recommend paying; paying may also pose sanctions risks."
+  - id: y09
+    split: y-heldout
+    scenario: vulnerability_management
+    kinds: [exact_term, table]
+    question: "A CVSS 4.0 vector shows E:X. What does that do to the score?"
+    evidence:
+      - [{pack: first-standards, element_id: first-cvss-4-0-specification.exploit-maturity-e.t01}]
+    rationale: "Exploit Maturity Not Defined (X) is the default and is treated as Attacked (A) when the score is calculated."
+  - id: y10
+    split: y-heldout
+    scenario: information_sharing
+    kinds: [paraphrase]
+    question: "A partner shared an advisory marked TLP:GREEN. Can we post it on our public blog?"
+    evidence:
+      - [{pack: first-standards, element_id: first-tlp-2-0.tlp-definitions.p06}]
+    rationale: "TLP:GREEN: limited disclosure within the community; not via publicly accessible channels."
+  - id: y11
+    split: y-heldout
+    scenario: evidence_collection
+    kinds: [paraphrase]
+    question: "We just seized an employee's phone in an insider case. How do we stop it from being wiped remotely before we image it?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-model-sop.scene-module-4-mobile-device-collection.l03.i03},
+         {pack: swgde-forensics, element_id: swgde-model-sop.lab-module-10-handheld-mobile-devices.l04.i01.l01.i02}]
+    rationale: "Block RF signals: airplane mode or an RF shielding (Faraday) bag."
+  - id: y12
+    split: y-heldout
+    scenario: evidence_collection
+    kinds: [paraphrase]
+    question: "Should our examiner work on the original drive or on a copy?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-computer-examination.s5.p02}]
+    rationale: "Protect originals with a write blocker; carry out static analysis on a copy of the original evidence."
+  - id: y13
+    split: y-heldout
+    scenario: evidence_collection
+    kinds: [paraphrase]
+    question: "How do we show later that our disk image hasn't been changed since we made it?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-17-f-002.s9.p01},
+         {pack: swgde-forensics, element_id: swgde-17-f-002.s8.p01}]
+    rationale: "Compute cryptographic hash values over the acquired data with a NIST-approved algorithm; verification compares hashes."
+  - id: y14
+    split: y-heldout
+    scenario: cloud_detection
+    kinds: [paraphrase]
+    question: "Someone made our S3 data publicly readable. Which GuardDuty finding would show who switched off the protection that blocks public access?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: gd-guardduty-finding-types-s3.policy-s3-accountblockpublicaccessdisabled_description.p02},
+         {pack: aws-security-ir, element_id: gd-guardduty-finding-types-s3.policy-s3-accountblockpublicaccessdisabled_description.h01},
+         {pack: aws-security-ir, element_id: gd-guardduty-finding-types-s3.policy-s3-bucketblockpublicaccessdisabled_description.p02},
+         {pack: aws-security-ir, element_id: gd-guardduty-finding-types-s3.policy-s3-bucketblockpublicaccessdisabled_description.h01}]
+    rationale: "Policy:S3/AccountBlockPublicAccessDisabled and Policy:S3/BucketBlockPublicAccessDisabled."
+  - id: y15
+    split: y-heldout
+    scenario: cryptomining
+    kinds: [paraphrase, table]
+    question: "Somebody launched a coin miner in a pod on our GKE cluster. Which Google Cloud detections would catch it?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: scc-concepts-event-threat-detection-overview.rules.t01},
+         {pack: gcp-security-ir, element_id: scc-concepts-container-threat-detection-overview.detectors.t01}]
+    rationale: "Event Threat Detection rules (pod named like a coin miner) and Container Threat Detection (crypto mining over Stratum)."
+  - id: y16
+    split: y-heldout
+    scenario: identity_compromise
+    kinds: [paraphrase]
+    question: "Entra ID keeps blocking one of our users as high risk. How can the user clear the risk on their own?"
+    evidence:
+      - [{pack: ms-learn-ir, element_id: entra-concept-identity-protection-policies.p04},
+         {pack: ms-learn-ir, element_id: entra-concept-identity-protection-user-experience.risk-self-remediation.p03}]
+    rationale: "Risk self-remediation: completing the required control (MFA, secure password change) remediates the risk."
+  - id: y17
+    split: y-heldout
+    scenario: eradication
+    kinds: [paraphrase]
+    question: "We found a rootkit on a server. Is reimaging it enough?"
+    evidence:
+      - [{pack: cisa-ir-playbooks, element_id: incident-response-playbook.s05.s01.s01.l01.i03},
+         {pack: cisa-ir-playbooks, element_id: appendix-b-incident-response-checklist.s03.s01.t01}]
+    rationale: "Rebuilding hardware is required when the incident involves rootkits (eradication; checklist step 8e)."
+  - id: y18
+    split: y-heldout
+    scenario: vulnerability_disclosure
+    kinds: [paraphrase]
+    question: "A researcher wants to publish details of a bug in our product. What does it mean to keep those details under embargo?"
+    evidence:
+      - [{pack: first-standards, element_id: first-psirt-services-framework-1-1.definitions.l01.i04},
+         {pack: first-standards, element_id: first-csirt-services-framework-2-1.annex-1-acknowledgments.l02.i13},
+         {pack: first-standards, element_id: first-multiparty-vulnerability-coordination-1-1.minimize-exposure-for-stakeholders.l01.i09}]
+    rationale: "Embargo: a hold on publishing vulnerability details until vendors can release fixes or mitigations."
+  - id: y19
+    split: y-heldout
+    scenario: web_compromise
+    kinds: [paraphrase]
+    question: "Attackers left a PHP file on our web server that lets them run commands. How do we get rid of it properly?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s03.s01.s03.p01},
+         {pack: dynamic-ir, element_id: ch13.s03.s01.s03.p02}]
+    rationale: "Web Shell Removal: remove the file and associated configuration or logs; shells may be standalone, embedded or configuration changes."
+  - id: y20
+    split: y-heldout
+    scenario: program_management
+    kinds: [paraphrase]
+    question: "Does NIST SP 800-61r3 require us to switch to its incident response model, or can we keep using ours?"
+    evidence:
+      - [{pack: nist-sp800-61r3, element_id: fm-executive-summary.p04}]
+    rationale: "Organizations should use the life cycle framework or model that suits them best; the document's model is based on CSF 2.0."
+  - id: y21
+    split: y-heldout
+    scenario: email_investigation
+    kinds: [paraphrase]
+    question: "How far back can we trace where an email went in Exchange Online?"
+    evidence:
+      - [{pack: ms-purview-exchange, element_id: purview-ediscovery-data-spillage-search-and-purge.step-5-use-message-trace-log-to-check-how-spilled-data-was-shared.p01}]
+    rationale: "Message trace retention: 30 days for real-time data and 90 days for historical data."
+  - id: y22
+    split: y-heldout
+    scenario: post_incident
+    kinds: [cross_source]
+    question: "What do NIST SP 800-61r3 and CISA's incident response playbook each say about lessons learned after an incident?"
+    evidence:
+      - [{pack: nist-sp800-61r3, element_id: sec1.p05},
+         {pack: nist-sp800-61r3, element_id: sec2.s01.p06}]
+      - [{pack: cisa-ir-playbooks, element_id: incident-response-playbook.s06.s02.p03},
+         {pack: cisa-ir-playbooks, element_id: appendix-b-incident-response-checklist.s04.s01.s03.t01}]
+    rationale: "NIST: lessons learned feed improvement (ID.IM). CISA: apply lessons learned; checklist 10i conducts the lessons-learned analysis."
+  - id: y23
+    split: y-heldout
+    scenario: containment
+    kinds: [cross_source]
+    question: "How do AWS and Azure each recommend cutting a compromised VM off the network while keeping it for investigation?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: sir-contain.supported-containment-actions.p02}]
+      - [{pack: ms-azure-ir, element_id: azsec-incident-response-overview.automate-containment-actions.l01.i02},
+         {pack: ms-azure-ir, element_id: azsec-ransomware-detect-respond.detecting-ransomware-attacks.l01.i06}]
+    rationale: "AWS: the instance stays running but its security groups are replaced to isolate it. Azure: modify NSG rules to isolate VMs while preserving investigation access; or isolate with Defender for Endpoint."
+  - id: y24
+    split: y-heldout
+    scenario: cloud_investigation
+    kinds: [cross_source]
+    question: "Which logs would show someone granting a new account admin permissions, in AWS and in Google Cloud?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: ct-cloudtrail-events.cloudtrail-management-events.l01.i01},
+         {pack: aws-security-ir, element_id: ct-logging-management-events-with-cloudtrail.logging-management-events.l01.i01}]
+      - [{pack: gcp-security-ir, element_id: audit-gsuite-audit-logging.log-types.p01},
+         {pack: gcp-security-ir, element_id: audit-analyze-audit-logs.about-audit-logs.l01.i01}]
+    rationale: "CloudTrail management events (e.g. IAM AttachRolePolicy). Admin Activity audit logs (record changes to IAM permissions; always written)."
+  - id: y25
+    split: y-heldout
+    scenario: eradication
+    kinds: [cross_source]
+    question: "Before we start eradication, what do the Dynamic Incident Response book and the CISA playbook say we need to have confirmed about the attacker's persistence?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s01.s01.l01.i04},
+         {pack: dynamic-ir, element_id: ch13.s01.s02.p01}]
+      - [{pack: cisa-ir-playbooks, element_id: incident-response-playbook.s05.p01}]
+    rationale: "Book: are all persistence mechanisms identified and removed; rushing eradication leaves persistent access. CISA: ensure all means of persistent access are accounted for before eradication."
+  - id: y26
+    split: y-heldout
+    scenario: legal_coordination
+    kinds: [cross_source]
+    question: "The FBI may ask us to hold off on cleanup. What do the book and the CISA playbook say about coordinating with law enforcement before eradication?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch10.s03.s05.p02}]
+      - [{pack: cisa-ir-playbooks, element_id: incident-response-playbook.s05.p02},
+         {pack: cisa-ir-playbooks, element_id: appendix-b-incident-response-checklist.s02.s01.t02}]
+    rationale: "Book: law enforcement may request preservation and deferred containment. CISA: coordinate with law enforcement before eradication; checklist 7c."
+  - id: y27
+    split: y-heldout
+    scenario: information_sharing
+    kinds: [unanswerable]
+    answerable: false
+    question: "What does TLP:BLACK mean, and who may we share it with?"
+    evidence: []
+    rationale: "TLP 2.0 has no TLP:BLACK label: a search over all packs for 'TLP:BLACK' (and 'TLP:WHITE') found no element."
+  - id: y28
+    split: y-heldout
+    scenario: evidence_collection
+    kinds: [unanswerable]
+    answerable: false
+    question: "How do we take a forensic image of a Chromebook?"
+    evidence: []
+    rationale: "Chromebooks appear only as ransomware-resilience controls (Google Cloud); a regex over all packs for acquisition, imaging or forensics near 'Chromebook' found no element."
+  - id: y29
+    split: y-heldout
+    scenario: program_management
+    kinds: [unanswerable]
+    answerable: false
+    question: "What changed in NIST SP 800-61 Revision 4?"
+    evidence: []
+    rationale: "No pack describes an 800-61 Revision 4: 'Revision 4', 'Rev. 4' and 'r4' match only NIST SP 800-40 Rev. 4 and recommendation labels (R4)."
+  - id: y30
+    split: y-heldout
+    scenario: identity_compromise
+    kinds: [unanswerable]
+    answerable: false
+    question: "How long does Okta keep System Log events by default?"
+    evidence: []
+    rationale: "Okta appears only in narrative examples (the book); a regex for Okta near retain, retention or System Log found no element."

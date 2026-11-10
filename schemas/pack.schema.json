@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ir-reference-packs/schemas/pack.schema.json",
+  "title": "Reference pack contract (pack.yaml)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "pack_id", "pack_version", "title", "source", "recipe", "rights", "citation",
+               "applicability", "authority_class", "owner", "review", "superseded", "distribution"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "pack_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,62}$"},
+    "pack_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.-]+)?$"},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": ["string", "null"]},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "authors", "publisher", "url", "edition", "edition_identifier", "publication_date",
+                   "retrieval_date", "inputs"],
+      "properties": {
+        "title": {"type": "string"},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "publisher": {"type": ["string", "null"]},
+        "url": {"type": ["string", "null"], "format": "uri"},
+        "landing_page": {"type": ["string", "null"]},
+        "edition": {"type": ["string", "null"]},
+        "edition_identifier": {"type": ["string", "null"]},
+        "publication_date": {"type": ["string", "null"], "description": "Date as stated by the source; null when not stated"},
+        "identifiers": {"type": "object", "additionalProperties": {"type": ["string", "null"]}},
+        "retrieval_date": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+        "inputs": {
+          "type": "array", "minItems": 1,
+          "items": {"type": "object", "additionalProperties": false, "required": ["source_id", "role"],
+                    "properties": {"source_id": {"type": "string"},
+                                   "role": {"enum": ["authoritative", "structured_candidate", "supplement", "landing_page", "reference_only"]}}}
+        },
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "recipe": {"type": "string", "description": "Path (relative to the pack directory) of the build recipe"},
+    "rights": {"type": "string", "description": "Path (relative to the pack directory) of the rights record"},
+    "citation": {
+      "type": "object", "additionalProperties": false, "required": ["scheme", "locator", "format"],
+      "properties": {
+        "scheme": {"enum": ["pdf_page", "section_anchor", "pdf_collection", "native_record_id"]},
+        "locator": {"type": "string"},
+        "format": {"type": "string"},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "applicability": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9:_-]*$"}},
+    "retrieval": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "source_aliases": {
+          "description": "Names a reader uses for this source ('According to <alias>, ...'). A query naming an alias reserves result slots for this pack; the alias itself is removed from the keyword query because a document rarely names itself.",
+          "type": "array", "items": {"type": "string", "minLength": 3}
+        }
+      }
+    },
+    "authority_class": {"enum": ["published_reference_guidance", "government_guidance", "vendor_documentation",
+                                 "community_standard", "organizational_policy", "analyst_annotation", "incident_evidence"]},
+    "owner": {"type": "object", "additionalProperties": false, "required": ["name", "role"],
+              "properties": {"name": {"type": "string"}, "role": {"type": "string"}, "contact": {"type": ["string", "null"]}}},
+    "review": {
+      "type": "object", "additionalProperties": false, "required": ["state", "date", "notes"],
+      "properties": {
+        "state": {"enum": ["unreviewed", "automated_checks_only", "automated_checks_and_sampled_visual_review",
+                           "maintainer_reviewed", "rejected"]},
+        "date": {"type": ["string", "null"]},
+        "reviewers": {"type": "array", "items": {"type": "string"}},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "superseded": {"type": "object", "additionalProperties": false, "required": ["state", "by"],
+                   "properties": {"state": {"type": "boolean"}, "by": {"type": ["string", "null"]},
+                                  "supersedes": {"type": ["string", "null"]}, "notes": {"type": ["string", "null"]}}},
+    "distribution": {
+      "type": "object", "additionalProperties": false, "required": ["content_license", "local_policy", "public_policy"],
+      "properties": {
+        "content_license": {"type": ["string", "null"]},
+        "content_license_url": {"type": ["string", "null"]},
+        "rights_basis": {"type": ["string", "null"]},
+        "local_policy": {"enum": ["complete_local_build", "user_supplied_local"]},
+        "public_policy": {"enum": ["full", "allowlisted_subset", "metadata_only", "none"]},
+        "source_bytes_in_public_archive": {"type": "boolean"},
+        "notes": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

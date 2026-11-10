@@ -1,0 +1,40 @@
+# Build recipe for the cisa-stopransomware pack: the tagged PDF's structure tree, with the PDF outline as hierarchy
+# (route tagged_pdf_structure, structure: outline). Printed page numbers come from the footer text.
+route: tagged_pdf_structure
+structure: outline
+printed_labels:
+  pattern: 'Page\s*\|\s*(\d+)'
+furniture_patterns: ['^TLP:CLEAR$']   # the TLP marking repeats on every page, sometimes inside the body area
+# Text printed underneath the cover artwork (invisible on the page, present in the text layer and tags) is not
+# reading text; see review/source-defects.yaml. Coordinates: PDF points, top-left origin.
+exclude_hidden_text:
+  - page: 1
+    bbox: [0, 200, 612, 360]
+    reason: "Hidden under the cover artwork: an earlier change record and its heading."
+inputs:
+  authoritative: cisa-stopransomware/pdf/v3.0-2023-10
+artifacts:
+  - source_id: cisa-stopransomware/pdf/v3.0-2023-10
+    role: authoritative
+    url: https://www.cisa.gov/stopransomware/ransomware-guide
+    resolved_from: https://www.cisa.gov/stopransomware/ransomware-guide
+    download: false   # the URL is the guide's landing page; no direct file URL could be verified from here
+    local_path: input/cisa-stopransomware/2026-10-25/CSI-StopRansomware-Guide.PDF
+    media_type: application/pdf
+    edition_stamp: "Change Record version 3.0, October 2023; PDF CreationDate 2023-10-19"
+    notes: >-
+      Supplied by the maintainer on 2026-10-25 as an upload: www.cisa.gov (and media.defense.gov) refuse requests
+      from the project's cloud environment, so these bytes were not fetched and their identity with the published
+      file is not verified. The URL is the guide's landing page (no direct file URL could be verified), recorded for
+      reference: `sources fetch` does not download it, and `check-updates` probes the landing page, not the file.
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules:
+    - {within: fm-front-matter, corpus: front_matter, include: false, reason: "cover page and change record (non-substantive front matter)"}
+    - {within: fm-table-of-contents, corpus: navigation, include: false, reason: "table of contents (navigation)"}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>Contain a compromised test account | Example Docs</title>
+<meta name="description" content="Synthetic fixture page in Microsoft Learn markup (written for irpacks tests)." />
+<meta name="ms.date" content="2026-01-15T00:00:00Z" />
+<meta name="ms.topic" content="how-to" />
+<meta name="document_id" content="00000000-0000-0000-0000-000000000001" />
+<meta name="updated_at" content="2026-03-02T09:30:00Z" />
+<meta name="git_commit_id" content="2222222222222222222222222222222222222222" />
+<meta name="source_path" content="docs/test/contain-account.md" />
+<script>window.analytics = "ignored";</script>
+</head>
+<body>
+<nav>Navigation that is not part of the article</nav>
+<main id="main">
+<div class="content"><h1 id="contain-a-compromised-test-account">Contain a compromised test account</h1></div>
+<div class="content">
+<p>This synthetic article describes how to contain a <strong>test</strong> account. See <a href="../other/page">the overview</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><input type="checkbox" disabled /> An account with the <em>Example Admin</em> role.</li>
+<li><input type="checkbox" disabled /> The <code>Example.Module</code> PowerShell module.</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li><p>Disable the account.</p>
+<pre><code class="lang-powershell">Disable-ExampleAccount -Identity testuser
+</code></pre>
+</li>
+<li><p>Revoke sessions.</p>
+<div class="WARNING"><p>Warning</p><p>Revoking sessions signs the user out of every device.</p></div>
+<pre><code class="lang-powershell">Revoke-ExampleSession -UserId testuser -All
+</code></pre>
+</li>
+</ol>
+<div class="NOTE"><p>Note</p><p>Sessions end within one hour.</p></div>
+<h3 id="verify">Verify revocation</h3>
+<p>Check the sign-in log for new sessions.</p>
+<table><thead><tr><th>Signal</th><th>Meaning</th></tr></thead>
+<tbody><tr><td>New sign-in</td><td>Revocation incomplete</td></tr></tbody></table>
+<h2 id="next-steps">Next steps</h2>
+<p><span class="mx-imgBorder"><a href="media/flow.png#lightbox"><img src="media/flow.png" alt="Flowchart of the containment steps." /></a></span></p>
+</div>
+</main>
+</body>
+</html>

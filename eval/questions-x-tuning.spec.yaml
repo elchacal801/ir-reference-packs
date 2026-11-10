@@ -1,0 +1,118 @@
+# Tuning questions for the packs added in iteration four (Azure, Google Cloud, FIRST, SWGDE), split x-tuning.
+# Written 2026-10-25 together with the sealed held-out set (questions-x.spec.yaml) and before any ranking v3
+# experiment. Unlike the held-out set, these may be used to choose the ranking. Evidence was chosen by reading the
+# cited elements (exact-phrase lookup); no evidence element is shared with the held-out set.
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-25"
+packs: [dynamic-ir, nist-sp800-61r3, cisa-ir-playbooks, cisa-stopransomware, ms-learn-ir, ms-defender, ms-sentinel,
+        ms-purview-exchange, ms-windows-auditing, aws-security-ir, ms-azure-ir, gcp-security-ir, first-standards,
+        swgde-forensics]
+quotes: withhold_unredistributable
+questions:
+  - id: xt01
+    split: x-tuning
+    scenario: cloud_investigation
+    kinds: [paraphrase]
+    question: "How do I get Azure resource logs and the activity log into a Log Analytics workspace?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: azmon-diagnostic-settings.p01}]
+    rationale: "Diagnostic settings collect resource logs and send metrics and the activity log to destinations."
+  - id: xt02
+    split: x-tuning
+    scenario: ransomware
+    kinds: [paraphrase]
+    question: "What extra protection can stop an attacker with admin rights from disabling Azure Backup protection?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: azbackup-security-overview.multi-user-authorization.p01}]
+    rationale: "Multi-user authorization (MUA) for Azure Backup protects critical vault operations."
+  - id: xt03
+    split: x-tuning
+    scenario: cloud_investigation
+    kinds: [paraphrase]
+    question: "How can we tell who accessed secrets in an Azure key vault and when?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: kv-logging.p01}]
+    rationale: "Key Vault logging records how, when and by whom key vaults are accessed."
+  - id: xt04
+    split: x-tuning
+    scenario: cloud_detection
+    kinds: [paraphrase]
+    question: "What does Google Cloud's Event Threat Detection do?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: scc-concepts-event-threat-detection-overview.what-is.p01}]
+    rationale: "Event Threat Detection monitors the organization or projects and identifies threats in near-real time."
+  - id: xt05
+    split: x-tuning
+    scenario: cryptomining
+    kinds: [paraphrase]
+    question: "What should an incident response plan cover for cryptocurrency mining attacks on Google Cloud?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: gcpsec-bps-for-protecting-against-cryptocurrency-attacks.update-incident-plan.l01.i04}]
+    rationale: "Update the incident plan: how to quarantine infected systems and restore from healthy backups (among other items)."
+  - id: xt06
+    split: x-tuning
+    scenario: cloud_forensics
+    kinds: [command]
+    question: "What gcloud command snapshots a Compute Engine disk?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: gce-create-snapshots.create_zonal_snapshot.l02.i01},
+         {pack: gcp-security-ir, element_id: gce-create-snapshots.create_zonal_snapshot.l02.i01.c01}]
+    rationale: "gcloud compute snapshots create SNAPSHOT_NAME --source-disk ..."
+  - id: xt07
+    split: x-tuning
+    scenario: information_sharing
+    kinds: [paraphrase]
+    question: "What are the four Traffic Light Protocol labels?"
+    evidence:
+      - [{pack: first-standards, element_id: first-tlp-2-0.introduction.p02}]
+    rationale: "TLP 2.0: TLP:RED, TLP:AMBER, TLP:GREEN, TLP:CLEAR."
+  - id: xt08
+    split: x-tuning
+    scenario: csirt_operations
+    kinds: [paraphrase]
+    question: "How is a CSIRT different from a PSIRT?"
+    evidence:
+      - [{pack: first-standards, element_id: first-csirt-services-framework-2-1.3-the-difference-between-a-csirt-and-a-psirt.p01}]
+    rationale: "CSIRT Services Framework §3: constituents and services differentiate CSIRTs from PSIRTs."
+  - id: xt09
+    split: x-tuning
+    scenario: evidence_collection
+    kinds: [paraphrase]
+    question: "What is an archive copy in digital forensics terminology?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-glossary.archive-copy.p01}]
+    rationale: "SWGDE glossary: a copy of data on media suitable for long-term storage, from which working copies are produced."
+  - id: xt10
+    split: x-tuning
+    scenario: reporting
+    kinds: [paraphrase]
+    question: "How should a forensic examination report explain its results?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-report-writing.s5-4.p01}]
+    rationale: "SWGDE report writing §5.4: results in clear, unambiguous terms a layperson can understand."
+  - id: xt11
+    split: x-tuning
+    scenario: evidence_collection
+    kinds: [paraphrase]
+    question: "Why does acquiring a Mac depend on whether it has a T2 chip or Apple Silicon?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-23-f-005.s6-3.p02},
+         {pack: swgde-forensics, element_id: swgde-23-f-005.s8-2.p01}]
+    rationale: "SWGDE 23-F-005: the three Mac architectures (no security chip, T2, Apple Silicon) are acquired differently; T2 and Apple Silicon are hardware encrypted."
+  - id: xt12
+    split: x-tuning
+    scenario: cloud_investigation
+    kinds: [cross_source]
+    question: "What network flow logging do AWS and Google Cloud offer for investigating VPC traffic?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: vpc-flow-logs.p01}]
+      - [{pack: gcp-security-ir, element_id: vpc-flow-logs.p01}]
+    rationale: "AWS VPC Flow Logs capture IP traffic of network interfaces; Google Cloud VPC Flow Logs sample packets into flow logs."
+  - id: xt13
+    split: x-tuning
+    scenario: information_sharing
+    kinds: [unanswerable]
+    answerable: false
+    question: "What new labels does TLP version 3.0 add?"
+    evidence: []
+    rationale: "No pack describes a TLP 3.0: a search over all packs for 'TLP 3', 'TLP version 3' and 'TLP v3' found no element."

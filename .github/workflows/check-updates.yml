@@ -1,0 +1,46 @@
+# Upstream change check: weekly (maintainer decision 2026-10-25) and on demand. For documents it compares HTTP
+# validators (ETag, Last-Modified, Content-Length) with sources.lock.json; for web articles it fetches each page,
+# compares its title, source commit, update time and article-body hash, and discards the page, and it compares the
+# published tables of contents with the pinned article lists (articles added or removed). Web packs with changes
+# also get a candidate build and a section-level change report against the tracked history record.
+# It uploads only the reports. It never modifies the lock or the recipes, commits nothing, and publishes nothing;
+# adopting an update is a reviewed change (docs/update-workflow.md).
+name: check-updates
+on:
+  schedule:
+    - cron: "34 12 * * 1"   # Mondays 12:34 UTC
+  workflow_dispatch:
+    inputs:
+      pack:
+        description: "pack id (a directory under packs/), or 'all'"
+        required: true
+        default: all
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - name: Check every selected pack against its sources
+        env:
+          PACK: ${{ inputs.pack || 'all' }}
+        run: |
+          if [ "$PACK" = "all" ]; then packs=$(ls packs); else packs="$PACK"; fi
+          for p in $packs; do
+            out=$(uv run irpacks check-updates "$p"); echo "$out" | tee -a update-summary.txt
+            # web packs with content changes or TOC drift: candidate build + change report (no adoption)
+            if echo "$out" | grep -q "content_changed\|new in TOC\|no longer in TOC" \
+               && grep -q "^route: \(learn_html_pages\|aws_docs_html\)" packs/"$p"/recipe.yaml; then
+              uv run irpacks refresh "$p" | tee -a update-summary.txt || true
+            fi
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: update-reports
+          path: |
+            update-summary.txt
+            build/updates/

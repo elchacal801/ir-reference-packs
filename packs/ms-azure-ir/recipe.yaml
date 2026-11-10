@@ -1,0 +1,98 @@
+# Build recipe for the ms-azure-ir pack: published Microsoft Learn articles, captured as HTML snapshots.
+# Each article is its own source identity (one capture date); its git_commit_id / updated_at / ms.date metadata is
+# recorded in sources.lock.json and drives change detection (irpacks check-updates).
+#
+# The article list is generated: `irpacks sources discover ms-azure-ir` applies the discovery rules below to the
+# published tables of contents and writes articles.yaml (existing unit IDs are kept). Review its diff, then lock.
+# Selection: what a responder needs in Azure: the IR and ransomware guidance, the logs to collect and read (and their
+# schemas), evidence acquisition (disk snapshots, VHD export, packet capture, Run Command) and recovery controls
+# (backup, soft delete, immutability). Deployment variants (ARM/Bicep/Terraform templates), SDK pages and earlier
+# benchmark versions are left out. Entra, Defender for Cloud and Sentinel articles are in their own packs.
+route: learn_html_pages
+inputs:
+  snapshot: "2026-10-25"
+artifacts_file: articles.yaml
+discovery:
+  base: https://learn.microsoft.com/en-us/
+  rules:
+    - toc: azure/security/fundamentals
+      prefix: azsec
+      docset: azure-security
+      include: ['^Shared responsibility > Shared responsibility in the cloud$', '^Detect and mitigate threats >',
+                '^Monitoring, auditing, and operations >']
+    - toc: security/benchmark/azure
+      prefix: mcsb
+      docset: security-benchmark
+      include: ['^Security controls \(MCSB v2\) > (Logging and Threat Detection|Incident Response)$']
+    - toc: azure/well-architected
+      prefix: waf
+      docset: well-architected
+      include: ['> SE:10 Monitoring and threat detection$', '> SE:12 Incident response$', '> OE:08 Incident response$',
+                '> Design guides > Incident management plan$']
+    - toc: azure/architecture
+      prefix: azarch
+      docset: architecture
+      include: ['> Security > Architectures > (Computer forensics|Ransomware-resilient backups)$']
+    - toc: azure/azure-monitor
+      prefix: azmon
+      docset: azure-monitor
+      include: ['^Data sources > (Activity logs|Resource logs)$', '> Diagnostic settings > Create or edit$',
+                '^Reference > Log sources > (Activity log schema|Resource log schemas)$',
+                '> Create alert rules > Activity log or health alerts$']
+    - toc: azure/network-watcher
+      prefix: netwatch
+      docset: network-watcher
+      include: ['^Network diagnostic tools > Packet capture > (Overview|Manage packet captures)$',
+                '> Analyze a packet capture > Inspect to find anomalies$',
+                '^Flow logs > (VNet flow logs|NSG flow logs) > Overview$', '^Flow logs > VNet flow logs > Manage VNet flow logs$',
+                '^Flow logs > Read flow logs$']
+    - toc: azure/key-vault/general
+      prefix: kv
+      docset: key-vault
+      include: ['^Concepts > Azure Key Vault logging$', '> Monitor and govern > (Enable logging|Recovery management with soft-delete and purge protection)$',
+                '^Reference > Monitoring Key Vault data reference$']
+    - toc: azure/ddos-protection
+      prefix: ddos
+      docset: ddos-protection
+      include: ['^Resiliency > (Components of a DDoS response strategy|Types of attacks)$',
+                '> Engage DDoS Rapid Response \(DRR\)$', '> View diagnostic logs in Log Analytics workspace$']
+    - toc: azure/firewall
+      prefix: azfw
+      docset: firewall
+      include: ['^Operational excellence > (Monitoring > Logs and metrics|Threat intelligence)$',
+                '> IDPS signature rule categories$']
+    - toc: azure/backup
+      prefix: azbackup
+      docset: backup
+      include: ['^Security and Ransomware protection > (Overview|Secure your Azure Backup deployment|FAQ-Protection against Ransomware|Best practices for backup data protection)$',
+                '^Security and Ransomware protection > Multi-user authorization > Overview$',
+                '^Security and Ransomware protection > Immutability > Overview$',
+                '^Security and Ransomware protection > Secure by default with soft delete > Overview of soft delete$',
+                '^Security and Ransomware protection > Ransomware protection > Integrate with Microsoft Defender',
+                '^Security and Ransomware protection > Threat Detection with Microsoft Defender for Cloud integration > Overview$',
+                '^Azure VM backup > Backup scenarios > Restore > About Azure VM restore$']
+    - toc: azure/storage/blobs
+      prefix: azblob
+      docset: storage
+      url_prefix: https://learn.microsoft.com/en-us/azure/storage/
+      include: ['^Blob Storage > Data protection > (Soft delete versus versioning|Versioning|Point-in-time-restore|Immutable storage)$',
+                '^Blob Storage > Data protection > Soft delete > (Soft delete for containers|Soft delete for blobs|Manage and restore soft-deleted blobs)$',
+                '^Blob Storage > Monitoring metrics and logs > (Monitor Blob Storage|Best practices for monitoring)$',
+                '^Blob Storage > Monitoring metrics and logs > Monitoring \(classic\) > Logs$',
+                '^Blob Storage > Reference > Monitoring Blob Storage data reference$']
+    - toc: azure/virtual-machines
+      prefix: azvm
+      docset: virtual-machines
+      include: ['^Disks > Backup and data protection > (Snapshot a disk|Create incremental snapshots)$',
+                '> Export to a storage account > Export a snapshot as a VHD to a storage account - CLI$',
+                '^Disks > Securely import/export a disk > Download a VHD > (Linux|Windows)$',
+                '^Instances > Run Command > Overview$']
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []

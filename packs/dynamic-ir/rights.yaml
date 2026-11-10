@@ -1,0 +1,42 @@
+# Content-rights record for the dynamic-ir pack (classification aid; not legal advice).
+# States: redistributable | metadata_only | user_supplied_local | pending_review.
+# First matching rule wins; `inherit: true` applies the rule to descendants.
+schema_version: 1
+pack_id: dynamic-ir
+content_license:
+  spdx: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  statement_location: {pdf_page: 3, page_label: "iii"}
+  suggested_attribution: >-
+    "Dynamic Incident Response: A Framework for Security Teams by Joshua Wright, © 2026 The Escal Institute of
+    Advanced Technologies, Inc. d/b/a SANS Institute, licensed under CC BY 4.0."
+  exclusions:
+    - "Third-party text, graphics, images, tables, charts or graphs (remain property of their owners)."
+    - "SANS name, logo and other trademarks are not licensed."
+default_state: redistributable
+default_basis: "CC BY 4.0 grant on the book's copyright page (PDF p. 3), attribution required"
+rules:
+  - id: cover-image
+    match: {element_id: fm-front-matter.f01}
+    state: metadata_only
+    reason: "Cover artwork; may include trademarked marks; rights not reviewed."
+  - id: praise-endorsements
+    match: {within: fm-praise-for-dynamic-incident-response}
+    state: pending_review
+    reason: "Endorsement quotations written by third parties."
+  - id: foreword-contributed
+    match: {within: fm-foreword}
+    state: pending_review
+    reason: "Foreword written by a contributor other than the author (signed John Strand); coverage by the CC BY grant not confirmed."
+  - id: attributed-quotations
+    match: {type: quote, has_attribution: true}
+    state: pending_review
+    inherit: true
+    reason: "Attributed quotation of third-party text; third-party text is excluded from the CC BY grant."
+  - id: images
+    match: {type: figure}
+    state: pending_review
+    reason: "Image authorship not reviewed; third-party screenshots and graphics are excluded from the CC BY grant. Caption text remains covered."
+# Maintainer decisions override rules, e.g.:
+# - {element_id: ch06.f01, state: redistributable, basis: "author-created diagram (reviewed)", reviewer: "...", date: "YYYY-MM-DD"}
+overrides: []

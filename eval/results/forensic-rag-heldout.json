@@ -1,0 +1,261 @@
+{
+  "run_at": "2026-10-25T13:33:21Z",
+  "backend": "forensic-rag",
+  "label": null,
+  "split": "heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "tool": "sift-mcp forensic-rag (rag-mcp)",
+    "rag_mcp_version": "0.6.5.1",
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "model_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "chromadb": "1.5.9",
+    "sentence_transformers": "6.2.0",
+    "torch": "2.14.1+cu130",
+    "device": "cpu",
+    "python": "3.12.3",
+    "cpu": "x86_64",
+    "cpu_count": 4,
+    "top_k": 5,
+    "records_indexed": 763,
+    "records_written": 763,
+    "build_seconds": 253.2,
+    "index_load_seconds": 0.2,
+    "query_latency_ms_median": 81.5,
+    "query_latency_ms_max": 110.2,
+    "peak_rss_mb": 1904,
+    "index_disk_mb": 18.1,
+    "settings": "forensic-rag defaults: cosine HNSW, keyword boost 1.15, MITRE query augmentation, no tuning",
+    "max_seq_length_tokens": 512,
+    "offline": {
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    }
+  },
+  "summary": {
+    "questions": 10,
+    "answerable": 8,
+    "unanswerable": 2,
+    "evidence_complete_at_5": "6/8",
+    "evidence_complete_at_5_rate": 0.75,
+    "mean_group_recall": 0.812,
+    "multi_evidence_questions": "0/1 complete",
+    "mrr": 0.812,
+    "citation_valid": "7/7",
+    "required_context_complete": "4/4",
+    "duplicate_results": "0/50",
+    "failures": [
+      "h05",
+      "h07"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "h01",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s01.s01.sb01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s03.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s01.s01.p06:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h02",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s05:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s10.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s07:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h03",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch11.s07.s02.p07:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s10.s01.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s03.s02.p05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h04",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s06.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s06.s03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h05",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch03.fn01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch03.s03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "h06",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s01.p07:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s03.s02.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h07",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch03.s02.s02.p04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch03.s03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h08",
+      "split": "heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s08.s04.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.s01.p05:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s08.s04.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch15.s03.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:bm-afterword.p01:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "h09",
+      "split": "heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s05.s01.lst02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch01.s01.p09:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch01.s01.p14:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s05.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s05.s01.s01:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "h10",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s08:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s10.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s07.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s02.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    }
+  ]
+}

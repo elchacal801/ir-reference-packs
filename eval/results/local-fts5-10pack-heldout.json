@@ -1,0 +1,253 @@
+{
+  "run_at": "2026-10-25T17:31:55Z",
+  "backend": "local-fts5",
+  "label": "ten-pack-index",
+  "split": "heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "2",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2
+    },
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 10,
+    "answerable": 8,
+    "unanswerable": 2,
+    "evidence_complete_at_5": "7/8",
+    "evidence_complete_at_5_rate": 0.875,
+    "mean_group_recall": 0.938,
+    "multi_evidence_questions": "0/1 complete",
+    "mrr": 0.692,
+    "citation_valid": "8/8",
+    "required_context_complete": "5/5",
+    "duplicate_results": "0/50",
+    "failures": [
+      "h07"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "h01",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s03.s01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdo-responding-to-a-compromised-email-account.step-3-review-the-mfa-registered-devices-for-the-affected-user:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdi-alerts-xdr.credential-access-alerts.t01:9",
+        "ms-defender:2026-10-25:7cde9a0b:mdi-alerts-xdr.persistence-alerts.t01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s01.s01.p06:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h02",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s10.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdi-hybrid-security.ensure-no-privileged-saas-app-accounts-exist-outside-of-idp-control:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h03",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s04:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-azure-vm-extensions.azure-vm-extensions-alerts.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch19.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h04",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s04.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s06.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s07.s02.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h05",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s01.t01:9",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s02.t01:2",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.s03:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:ms-ir-planning.key-microsoft-security-resources:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s01.s04.s05.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h06",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s03.s02.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s04.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h07",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch03.s02.s02.p04:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec1.s01:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec1.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h08",
+      "split": "heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s01.s07.p04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.s01.p05:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch15.s02.s07.s02:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-emergency-access.related-content:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-data-security-investigations-personal-data.p01:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "h09",
+      "split": "heldout",
+      "answerable": false,
+      "returned": [
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:part-2-ransomware-and-data-extortion-res.s01.l05:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s05.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s05.s01.lst02:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-5154.security-monitoring-recommendations:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-5154.p09:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "h10",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s04.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s07.s01:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-revoke-access.session-tokens-cookies:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:entra-revoke-access.access-tokens-and-refresh-tokens:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s10.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Visual review records for cisa-stopransomware (rendered pages viewed next to the extracted elements and Markdown).
+# Reviewer identity is recorded truthfully: these reviews were done by an AI agent, not a human.
+schema_version: 1
+pack_id: cisa-stopransomware
+source_sha256: e698e945c359af5c9becce1c4e64e19daf26af710977cc24080ccbce3334ff5b
+pages:
+  - {page: 1, label: null, reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches_with_noted_differences,
+     elements_checked: [fm-front-matter.p01, fm-front-matter.p02],
+     notes: "Cover: title and 'Publication: October 2023'. An older change record printed underneath the cover artwork (invisible) is excluded by the recipe (exclude_hidden_text). The TLP:CLEAR disclaimer at the foot of the cover is untagged in the source and is not in the converted text (coverage gap recorded)."}
+  - {page: 2, label: "2", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list and Markdown, result: matches,
+     elements_checked: [change-record.h01, change-record.t01],
+     notes: "Change Record table: versions 1.0 (September 2020), 2.0 (May 2023), 3.0 (October 2023) with bulleted change descriptions."}
+  - {page: 3, label: "3", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches,
+     elements_checked: [introduction.h01, introduction.p01, introduction.l01.i01, introduction.l02.i01, introduction.p07],
+     notes: "The JRTF sidebar box is tagged first and reads before the main column; the wrapped bullet 'Part 1: Ransomware and Data Extortion Prevention Best Practices' (tagged as two items) is joined back into one."}
+  - {page: 31, label: "31", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches,
+     elements_checked: [disclaimer-of-endorsement.p01, purpose.p01, acknowledgements.p01],
+     notes: "Disclaimer of endorsement, Purpose ('may be shared broadly'), Acknowledgements ('Microsoft contributed to this joint guide')."}

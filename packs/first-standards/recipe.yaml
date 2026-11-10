@@ -1,0 +1,29 @@
+# Build recipe for the first-standards pack: FIRST standards and frameworks published as single HTML pages on
+# www.first.org, captured as HTML snapshots. FIRST publishes no table of contents file, commit or update time: the
+# pages are pinned below, and a hash of each page body drives change detection (irpacks check-updates). Each
+# document's version is stated in its own text.
+route: first_org_html
+inputs:
+  snapshot: "2026-10-25"
+artifacts_file: articles.yaml
+discovery:
+  base: https://www.first.org/
+  rules: []
+  pinned:
+    - {url: "https://www.first.org/tlp/", prefix: first, docset: tlp, unit_id: first-tlp-2-0}
+    - {url: "https://www.first.org/standards/frameworks/csirts/csirt_services_framework_v2.1", prefix: first, docset: csirt-framework, unit_id: first-csirt-services-framework-2-1}
+    - {url: "https://www.first.org/standards/frameworks/psirts/psirt_services_framework_v1.1", prefix: first, docset: psirt-framework, unit_id: first-psirt-services-framework-1-1}
+    - {url: "https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1", prefix: first, docset: vulnerability-coordination, unit_id: first-multiparty-vulnerability-coordination-1-1}
+    - {url: "https://www.first.org/cvss/v4.0/specification-document", prefix: first, docset: cvss, unit_id: first-cvss-4-0-specification}
+    - {url: "https://www.first.org/cvss/v4.0/user-guide", prefix: first, docset: cvss, unit_id: first-cvss-4-0-user-guide}
+    - {url: "https://www.first.org/cvss/v3.1/specification-document", prefix: first, docset: cvss, unit_id: first-cvss-3-1-specification}
+    - {url: "https://www.first.org/global/sigs/ethics/ethics-first", prefix: first, docset: ethics, unit_id: first-ethicsfirst}
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []

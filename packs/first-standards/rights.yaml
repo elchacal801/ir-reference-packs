@@ -1,0 +1,34 @@
+# Content-rights record for the first-standards pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: first-standards
+content_license:
+  spdx: null
+  url: null
+  statement: >-
+    The pages carry "Copyright © 2015—2026 by Forum of Incident Response and Security Teams, Inc. All Rights
+    Reserved." No open content license was located on them. The CVSS documents add: "While FIRST owns all rights and
+    interest in CVSS, it licenses it to the public freely for use, subject to the conditions below. ... FIRST does,
+    however, require that any individual or entity using CVSS give proper attribution, where applicable, that CVSS is
+    owned by FIRST and used by permission. Further, FIRST requires as a condition of use that any individual or
+    entity which publishes CVSS data conforms to the guidelines described in this document and provides both the
+    score and the vector string" — a license to use the scoring system, not an explicit grant to redistribute the
+    documents.
+  suggested_attribution: >-
+    FIRST (Forum of Incident Response and Security Teams), "<document title>", <url> (captured <date>). Copyright
+    FIRST.Org, Inc. CVSS is owned by FIRST and used by permission.
+  exclusions:
+    - "FIRST, TLP and CVSS names and logos are not licensed by this pack."
+    - "Figures were not captured; they carry alt text and a link to the published image only."
+default_state: redistributable
+default_basis: >-
+  Maintainer decision (2026-10-25): the FIRST standards pages are treated as publicly redistributable with
+  attribution. They are published openly on www.first.org for use by the incident response community. The pages
+  state "All Rights Reserved" and no open content license was located; the CVSS documents license the scoring system
+  for use with attribution ("CVSS is owned by FIRST and used by permission"), which the suggested attribution and
+  ATTRIBUTION.md carry.
+rules:
+  - id: images-not-captured
+    match: {type: figure}
+    state: metadata_only
+    reason: "Image bytes were not captured; alt text and link only."
+overrides: []

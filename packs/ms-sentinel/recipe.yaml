@@ -1,0 +1,31 @@
+# Build recipe for the ms-sentinel pack: published Microsoft Learn articles, captured as HTML snapshots.
+# Each article is its own source identity (one capture date); its git_commit_id / updated_at / ms.date metadata is
+# recorded in sources.lock.json and drives change detection (irpacks check-updates).
+#
+# The article list is generated: `irpacks sources discover ms-sentinel` applies the discovery rules below to the
+# published tables of contents and writes articles.yaml (existing unit IDs are kept). Review its diff, then lock.
+# Selection: the sections a responder uses (investigate, respond, hunt, alert and log references); deployment,
+# licensing, configuration and API-reference sections are left out.
+route: learn_html_pages
+inputs:
+  snapshot: "2026-10-25"
+artifacts_file: articles.yaml
+discovery:
+  base: https://learn.microsoft.com/en-us/
+  rules:
+    - toc: azure/sentinel
+      prefix: sentinel
+      docset: sentinel
+      include: ['> (Hunt for threats|Investigate incidents|Automate responses|Integrate threat intelligence)( >|$)',
+                'Track and respond to threats with threat analytics', 'SIEM operations guide',
+                'User and Entity Behavior Analytics', 'Threat detection \(analytics\) rules', 'Handle false positives',
+                'Watchlists', 'Deploy and monitor decoy honeytokens', 'Data classification with entities']
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []

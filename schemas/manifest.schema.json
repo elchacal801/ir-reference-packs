@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Build manifest (manifest.json)",
+  "type": "object",
+  "required": ["schema_version", "pack_id", "pack_version", "document_id", "edition_id", "variant", "engine",
+               "inputs", "settings", "tools", "outputs", "counts", "status", "run"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "pack_id": {"type": "string"},
+    "pack_version": {"type": "string"},
+    "document_id": {"type": "string"},
+    "edition_id": {"type": "string"},
+    "variant": {"enum": ["local", "public"]},
+    "scope": {"type": ["object", "null"]},
+    "engine": {"type": "object", "required": ["name", "version"]},
+    "inputs": {"type": "array", "items": {"type": "object", "required": ["source_id", "role", "sha256", "verified"]}},
+    "settings": {"type": "object"},
+    "settings_hash": {"type": "string"},
+    "tools": {"type": "object"},
+    "outputs": {"type": "array", "items": {"type": "object", "required": ["path", "sha256", "bytes"]}},
+    "counts": {"type": "object"},
+    "status": {"type": "object", "required": ["local_source_coverage", "public_distribution", "extraction_fidelity",
+                                               "retrieval_evaluation", "operational_readiness"]},
+    "run": {"type": "object", "description": "Run-specific values (timestamps, durations); excluded from reproducibility comparisons"}
+  }
+}

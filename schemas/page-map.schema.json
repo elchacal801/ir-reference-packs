@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Page map (page-map.json): physical PDF pages, printed labels and elements",
+  "type": "object",
+  "required": ["schema_version", "document_id", "source_sha256", "coordinate_convention", "page_count", "label_ranges", "pages"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "document_id": {"type": "string"},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "coordinate_convention": {"type": "string"},
+    "page_count": {"type": "integer", "minimum": 1},
+    "label_ranges": {"type": "array", "items": {"type": "object",
+      "required": ["start_page", "end_page", "style", "first_label", "last_label"]}},
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "page_label", "width", "height", "content_class", "furniture", "images",
+                     "body_key_chars", "uncovered_key_chars", "uncovered_regions", "element_ids", "coverage_status"],
+        "properties": {
+          "page": {"type": "integer", "minimum": 1},
+          "page_label": {"type": ["string", "null"]},
+          "width": {"type": "number"},
+          "height": {"type": "number"},
+          "rotation": {"type": "integer"},
+          "content_class": {"enum": ["text", "text_and_images", "visual_only", "no_extractable_content"]},
+          "body_chars": {"type": "integer"},
+          "vector_objects": {"type": "integer"},
+          "furniture": {"type": "array"},
+          "images": {"type": "array"},
+          "body_key_chars": {"type": "integer"},
+          "uncovered_key_chars": {"type": "integer"},
+          "uncovered_regions": {"type": "array"},
+          "element_ids": {"type": "array", "items": {"type": "string"}},
+          "coverage_status": {"enum": ["text_covered", "text_with_explained_gaps", "visual_content", "intentionally_blank",
+                                       "unresolved", "out_of_scope"]},
+          "visual_review": {"type": ["object", "null"]}
+        }
+      }
+    }
+  }
+}

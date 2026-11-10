@@ -1,0 +1,115 @@
+# Held-out questions for the vendor documentation packs added 2026-10-25 (ms-defender, ms-sentinel,
+# ms-purview-exchange, ms-windows-auditing, aws-security-ir), written after the ranking configuration was frozen and
+# before any run. Run once with the frozen configuration; never used for tuning. Resolve with:
+#   uv run python eval/build_questions.py --spec eval/questions-vendor.spec.yaml
+# Evidence was chosen by reading the cited elements (exact-phrase lookup with eval/find_evidence.py), not from search
+# rankings. Rationales describe where the evidence is without quoting it.
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-25"
+packs: [dynamic-ir, ms-defender, ms-sentinel, ms-purview-exchange, ms-windows-auditing, aws-security-ir]
+# The AWS pages are not cleared for redistribution: record only a hash of their evidence quotes.
+quotes: withhold_unredistributable
+questions:
+  - id: v01
+    split: vendor-heldout
+    scenario: endpoint_containment
+    kinds: [procedure]
+    question: "How do I isolate a compromised device from the network with Microsoft Defender for Endpoint, and what can it still reach while isolated?"
+    evidence:
+      - [{pack: ms-defender, element_id: mde-respond-machine-alerts.isolate-devices-from-the-network.p01},
+         {pack: ms-defender, element_id: mde-respond-machine-alerts.isolate-devices-from-the-network.l01.i07}]
+    rationale: "Defender for Endpoint, Take response actions on a device, section on isolating devices: purpose of isolation and the list of what isolation keeps connected."
+  - id: v02
+    split: vendor-heldout
+    scenario: threat_hunting
+    kinds: [exact_term, table]
+    question: "Which Defender advanced hunting table holds process creation events, and which column has the full command line?"
+    evidence:
+      - [{pack: ms-defender, element_id: xdr-advanced-hunting-deviceprocessevents-table.t01}]
+    rationale: "Advanced hunting schema reference for the process events table: the column table, which lists the command-line column."
+  - id: v03
+    split: vendor-heldout
+    scenario: threat_hunting
+    kinds: [paraphrase, procedure]
+    question: "While hunting in Microsoft Sentinel, how do I keep an interesting query result so I can come back to it and investigate later?"
+    evidence:
+      - [{pack: ms-sentinel, element_id: sentinel-bookmarks.p01},
+         {pack: ms-sentinel, element_id: sentinel-bookmarks.add-a-bookmark-azure-portal-only.p01}]
+    rationale: "Sentinel hunting bookmarks article: what bookmarks preserve, and the procedure to add one."
+  - id: v04
+    split: vendor-heldout
+    scenario: m365_audit
+    kinds: [paraphrase]
+    question: "By default, how far back can we search the Microsoft 365 audit log with Audit (Standard)?"
+    evidence:
+      - [{pack: ms-purview-exchange, element_id: purview-audit-solutions-overview.audit-standard.l01.i08},
+         {pack: ms-purview-exchange, element_id: purview-audit-solutions-overview.audit-standard.a01.p01}]
+    rationale: "Purview auditing solutions overview, Audit (Standard) section: the default retention period and the note on when it changed."
+  - id: v05
+    split: vendor-heldout
+    scenario: phishing_ato
+    kinds: [procedure]
+    question: "After evicting an attacker from a mailbox, how do I use audit records to work out which messages they accessed?"
+    evidence:
+      - [{pack: ms-purview-exchange, element_id: purview-audit-log-investigate-accounts.use-mailitemsaccessed-audit-records-for-forensic-investigations.p02}]
+    rationale: "Investigating compromised accounts with the mailbox items accessed audit action: the forensic-investigation section and its steps."
+  - id: v06
+    split: vendor-heldout
+    scenario: windows_logons
+    kinds: [exact_term, table]
+    question: "In Windows security event 4624, what does logon type 10 mean?"
+    evidence:
+      - [{pack: ms-windows-auditing, element_id: winaudit-event-4624.logon-types-and-descriptions.t01}]
+    rationale: "Event 4624 reference: the logon types table."
+  - id: v07
+    split: vendor-heldout
+    scenario: windows_logons
+    kinds: [exact_term, table]
+    question: "In a failed logon event 4625, what does status 0xC000006A indicate, and when is it worth alerting on?"
+    evidence:
+      - [{pack: ms-windows-auditing, element_id: winaudit-event-4625.security-monitoring-recommendations.l02.i08.t01}]
+    rationale: "Event 4625 reference, security monitoring recommendations: the table of status codes to watch."
+  - id: v08
+    split: vendor-heldout
+    scenario: cloud_credentials
+    kinds: [procedure]
+    question: "GuardDuty reports that an IAM user's access keys may be compromised. What remediation steps does AWS recommend?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: gd-compromised-creds.p02},
+         {pack: aws-security-ir, element_id: gd-compromised-creds.l01.i01}]
+    rationale: "GuardDuty user guide, remediating potentially compromised AWS credentials: the lead-in and the first steps of the procedure."
+  - id: v09
+    split: vendor-heldout
+    scenario: cloud_logs
+    kinds: [exact_term]
+    question: "In an AWS CloudTrail record, what does a userIdentity type of AssumedRole mean?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-fields.l01.i01.l01.i03}]
+    rationale: "CloudTrail userIdentity element reference: the list of identity types."
+  - id: v10
+    split: vendor-heldout
+    scenario: cloud_logs
+    kinds: [table]
+    question: "Which fields does the default VPC flow log record format contain?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: vpc-flow-log-records.flow-logs-default.p01},
+         {pack: aws-security-ir, element_id: vpc-flow-log-records.flow-logs-fields.t01}]
+    rationale: "VPC Flow Logs records: the default-format section and the available-fields table."
+  - id: v11
+    split: vendor-heldout
+    scenario: endpoint_containment
+    kinds: [cross_source]
+    question: "What do the Dynamic Incident Response book and Microsoft Defender for Endpoint each say about isolating a compromised machine from the network?"
+    evidence:
+      - [{pack: ms-defender, element_id: mde-respond-machine-alerts.isolate-devices-from-the-network.p01}]
+      - [{pack: dynamic-ir, element_id: ch12.s01.s01.p02},
+         {pack: dynamic-ir, element_id: ch12.s01.s01.p01}]
+    rationale: "One Defender for Endpoint passage (device isolation) and one book passage (network isolation as a containment technique, ch12)."
+  - id: v12
+    split: vendor-heldout
+    scenario: windows_forensics
+    kinds: [unanswerable]
+    answerable: false
+    question: "What forensic artefacts can be recovered from the Windows hibernation file (hiberfil.sys)?"
+    evidence: []
+    rationale: "No pack mentions the hibernation file: a regex check of all eight packs for 'hibernat' or 'hiberfil' (text and table cells) found no element."

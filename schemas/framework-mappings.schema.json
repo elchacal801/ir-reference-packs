@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ir-reference-packs/schemas/framework-mappings.schema.json",
+  "title": "Pack element to framework ID mappings with provenance labels",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "mapping_set", "pack", "framework_snapshot", "provenance_labels", "mappings"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "mapping_set": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,62}$"},
+    "description": {"type": "string"},
+    "pack": {
+      "type": "object", "additionalProperties": false, "required": ["pack_id", "document_id"],
+      "properties": {"pack_id": {"type": "string"}, "document_id": {"type": "string"}}
+    },
+    "framework_snapshot": {
+      "type": "object", "additionalProperties": false, "required": ["tool", "tool_version", "datasets"],
+      "properties": {
+        "tool": {"type": "string"},
+        "tool_version": {"type": "string"},
+        "datasets": {"type": "object", "additionalProperties": {"type": "string"}, "minProperties": 1},
+        "notes": {"type": "string"}
+      }
+    },
+    "provenance_labels": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_explicit", "analyst_mapping", "derived"],
+      "properties": {
+        "source_explicit": {"type": "string"},
+        "analyst_mapping": {"type": "string"},
+        "derived": {"type": "string"}
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "element_id", "framework", "framework_id", "provenance", "relation"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^m[0-9]{3,}$"},
+          "element_id": {"type": "string"},
+          "framework": {"enum": ["attack"]},
+          "framework_id": {"type": "string", "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"},
+          "framework_name": {"type": "string"},
+          "provenance": {"enum": ["source_explicit", "analyst_mapping", "derived"]},
+          "relation": {"enum": ["names_as_example", "references", "describes_detection_or_investigation",
+                                "describes_containment_or_eradication", "describes_technique"]},
+          "evidence": {"type": "string"},
+          "rationale": {"type": "string"},
+          "analyst": {"type": "string"},
+          "review_status": {"enum": ["unreviewed", "reviewed", "disputed"]},
+          "derived_from": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "rule": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

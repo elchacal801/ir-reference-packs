@@ -1,0 +1,46 @@
+# Offline CI: unit and regression tests on the checked-in fixture only. No source documents are downloaded, no
+# packs are built from copyrighted inputs, and nothing is published. Network use is limited to installing the
+# locked Python dependencies.
+name: ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Install locked dependencies
+        run: uv sync --frozen --extra dev
+      - name: No source documents or build outputs are tracked
+        run: |
+          if git ls-files input build dist | grep -q .; then
+            echo "input/, build/ and dist/ must not be tracked"; git ls-files input build dist; exit 1
+          fi
+          if git ls-files | grep -Ei '\.(pdf|epub)$'; then echo "source documents must not be tracked"; exit 1; fi
+      - name: Schemas are valid JSON Schema
+        run: |
+          uv run python - <<'PY'
+          import json, pathlib, jsonschema
+          for p in sorted(pathlib.Path("schemas").glob("*.json")):
+              jsonschema.Draft202012Validator.check_schema(json.loads(p.read_text()))
+              print("ok", p)
+          PY
+      - name: Pack contracts validate
+        run: |
+          uv run python - <<'PY'
+          import json, pathlib, yaml, jsonschema
+          schema = json.loads(pathlib.Path("schemas/pack.schema.json").read_text())
+          for p in sorted(pathlib.Path("packs").glob("*/pack.yaml")):
+              jsonschema.validate(yaml.safe_load(p.read_text()), schema)
+              print("ok", p)
+          lock = json.loads(pathlib.Path("sources.lock.json").read_text())
+          jsonschema.validate(lock, json.loads(pathlib.Path("schemas/sources-lock.schema.json").read_text()))
+          print("ok sources.lock.json")
+          PY
+      - name: Tests (offline fixtures)
+        run: uv run pytest

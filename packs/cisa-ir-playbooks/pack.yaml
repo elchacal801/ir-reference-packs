@@ -1,0 +1,76 @@
+# Reference-pack contract: CISA Cybersecurity Incident & Vulnerability Response Playbooks (FCEB). Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: cisa-ir-playbooks
+pack_version: "0.1.0"
+title: "CISA Cybersecurity Incident & Vulnerability Response Playbooks (FCEB)"
+description: >-
+  CISA's operational procedures for planning and conducting cybersecurity incident and vulnerability response in
+  Federal Civilian Executive Branch information systems (Executive Order 14028, section 6): the incident response
+  playbook (preparation, detection and analysis, containment, eradication and recovery, post-incident activities,
+  coordination), the vulnerability response playbook, key terms, and the incident response and preparation
+  checklists. Converted from the tagged PDF's structure tree, with the PDF outline as hierarchy.
+source:
+  title: "Cybersecurity Incident & Vulnerability Response Playbooks: Operational Procedures for Planning and Conducting Cybersecurity Incident and Vulnerability Response Activities in FCEB Information Systems"
+  authors: []
+  publisher: "Cybersecurity and Infrastructure Security Agency (CISA)"
+  url: "https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf"
+  landing_page: "https://www.cisa.gov/resources-tools/resources/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks"
+  edition: "Publication: November 2021 (TLP:CLEAR file of 2024-08-23)"
+  edition_identifier: "2021-11"
+  publication_date: "2021-11"
+  retrieval_date: "2026-10-25"
+  inputs:
+    - source_id: cisa-ir-playbooks/pdf/2021-11
+      role: authoritative
+  notes: >-
+    Supplied by the maintainer on 2026-10-25 as an upload: www.cisa.gov (and media.defense.gov) refuse requests from
+    the project's cloud environment, so these bytes were not fetched from the URL below and their identity with the
+    published file is not verified. The URL is recorded for reference and update checks.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: pdf_page
+  locator: "one-based physical PDF page plus the printed page number read from the page footer"
+  format: "CISA, Cybersecurity Incident & Vulnerability Response Playbooks (November 2021), {section}, p. {printed} (PDF p. {pdf})"
+  notes: "The PDF has no page-label tree; printed numbers are read per page from footer text, never by offset."
+applicability:
+  - incident-response
+  - vulnerability-management
+  - us-federal
+  - governance
+  - coordination
+retrieval:
+  source_aliases:
+    - "CISA playbooks"
+    - "CISA incident response playbook"
+    - "Federal Government Cybersecurity Incident and Vulnerability Response Playbooks"
+    - "Cybersecurity Incident & Vulnerability Response Playbooks"
+    - "FCEB playbooks"
+    - "CISA"
+authority_class: government_guidance
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_and_sampled_visual_review
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks and rendered-page visual sampling; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: null
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    U.S. Government work by CISA. The document is marked TLP:CLEAR: "Disclosure is not limited ... TLP:CLEAR
+    information may be distributed without restriction" (PDF p. 1). The PDF's document properties carry a Microsoft
+    Information Protection label "For Official Use Only (FOUO)" set in 2020 (a Word-template leftover); the visible
+    marking is TLP:CLEAR and CISA publishes the document publicly, so the marking governs.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false
+  notes: "Source PDF bytes are not bundled. They were supplied by the maintainer; see source.notes."

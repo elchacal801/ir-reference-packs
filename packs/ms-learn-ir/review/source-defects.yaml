@@ -1,0 +1,18 @@
+# Suspected defects in the published source, preserved exactly as published (the conversion never "fixes" source
+# text). Each entry was checked against the captured HTML. Reported upstream: no (publication actions are out of scope).
+schema_version: 1
+pack_id: ms-learn-ir
+defects:
+  - element_id: ms-ir-phishing.step-5-contain-and-remediate.l01.i01
+    pdf_page: null
+    page_label: null
+    description: >-
+      Phishing investigation playbook, section "Step 5: Contain and remediate": the first two list items are
+      published as "Remove phishing messages from all mailboxesDisable or reset." and "compromised accounts.",
+      apparently two items ("Remove phishing messages from all mailboxes." and "Disable or reset compromised
+      accounts.") with the break in the wrong place (present in the captured HTML of learn.microsoft.com, source
+      commit 9a98124 of security-pr). The earlier defect in this playbook (a leaked Markdown fence in "Managed user")
+      went away when Microsoft rewrote the article and removed that section (snapshot 2026-11-10).
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Preserved as published; read the two items as the two actions above."

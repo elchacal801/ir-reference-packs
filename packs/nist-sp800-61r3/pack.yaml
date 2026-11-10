@@ -1,0 +1,72 @@
+# Reference-pack contract for NIST SP 800-61 Rev. 3. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: nist-sp800-61r3
+pack_version: "0.1.0"
+title: "NIST SP 800-61r3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management"
+description: >-
+  CSF 2.0 Community Profile for incident response (April 2025), converted from the tagged PDF's structure tree with
+  page provenance and CSF element identifiers as native locators on profile table rows.
+source:
+  title: "Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile"
+  authors: ["Alex Nelson", "Sanjay Rekhi", "Murugiah Souppaya", "Karen Scarfone"]
+  publisher: "National Institute of Standards and Technology (NIST)"
+  url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf"
+  landing_page: "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+  edition: "NIST SP 800-61 Revision 3 (final)"
+  edition_identifier: "800-61r3"
+  publication_date: "2025-04"   # 'April 2025' on the title page and the CSRC page
+  identifiers:
+    doi: "10.6028/NIST.SP.800-61r3"
+  retrieval_date: "2026-10-25"
+  inputs:
+    - source_id: nist-sp800-61r3/pdf/2025-04
+      role: authoritative
+  notes: "Supersedes SP 800-61 Rev. 2 (08/06/2012) per the CSRC publication page."
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: pdf_page
+  locator: "one-based physical PDF page plus the printed page number read from the page footer; CSF element IDs as native locators for profile rows"
+  format: "NIST SP 800-61r3 (April 2025), {section}, {csf_element}, p. {printed} (PDF p. {pdf})"
+  notes: "The PDF has no page-label tree; printed numbers are read per page from footer text, never by offset."
+applicability:
+  - incident-response
+  - nist-csf-2
+  - governance
+  - risk-management
+retrieval:
+  source_aliases:
+    - "NIST SP 800-61r3"
+    - "NIST SP 800-61"   # not plain "NIST": other packs cite NIST-approved algorithms and other NIST documents
+    - "NIST 800-61"
+    - "NIST SP 800-61 Rev. 3"
+    - "NIST SP 800-61 Revision 3"
+    - "SP 800-61r3"
+    - "SP 800-61 Rev. 3"
+    - "SP 800-61 Revision 3"
+    - "800-61r3"
+authority_class: government_guidance
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_and_sampled_visual_review
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks and rendered-page visual sampling; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: "NIST SP 800-61 Rev. 2 (2012)"
+  notes: null
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    PDF p. 3 (Authority): "This publication may be used by nongovernmental organizations on a voluntary basis and is
+    not subject to copyright in the United States." Attribution to NIST is requested by convention.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false
+  notes: "Source PDF bytes are not bundled; fetch from the official URL and verify the SHA-256 in sources.lock.json."

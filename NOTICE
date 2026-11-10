@@ -1,0 +1,33 @@
+ir-reference-packs
+Copyright 2026 Diego Parra
+
+This product's source code is licensed under the Apache License, Version 2.0
+(see LICENSE). The license applies to the project's own code, schemas, tests,
+and documentation only.
+
+Source content is NOT covered by the Apache License. Each reference pack
+records its own source license, rights basis, attribution, and exceptions in
+packs/<pack-id>/rights.yaml and in the built pack's ATTRIBUTION.md.
+
+- Dynamic Incident Response: A Framework for Security Teams, by Joshua Wright.
+  The book's copyright page states a Creative Commons Attribution 4.0
+  International license for covered content, excludes third-party material
+  from that grant, and grants no trademark rights. This project is not
+  affiliated with or endorsed by the author or SANS.
+- NIST SP 800-61 Rev. 3. See packs/nist-sp800-61r3/rights.yaml. Use of NIST
+  material does not imply endorsement by NIST.
+- Google Cloud documentation: content licensed under the Creative Commons
+  Attribution 4.0 License, code samples under the Apache 2.0 License, per
+  each page's footer. See packs/gcp-security-ir/rights.yaml.
+- FIRST standards (TLP, CSIRT and PSIRT Services Frameworks, CVSS,
+  EthicsfIRST): Copyright FIRST.Org, Inc. CVSS is owned by FIRST and used by
+  permission. See packs/first-standards/rights.yaml.
+- SWGDE documents: redistributed under the SWGDE Redistribution Policy. Each
+  document includes its SWGDE cover page with SWGDE's disclaimer;
+  citations give the version and state that the documents are published, not
+  drafts. SWGDE does not endorse this project. See
+  packs/swgde-forensics/rights.yaml.
+- Microsoft Learn, AWS and CISA content: see each pack's rights.yaml.
+
+Third-party Python dependencies are listed in uv.lock with their own licenses;
+see docs/dependency-licenses.md.

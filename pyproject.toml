@@ -1,0 +1,37 @@
+[project]
+name = "ir-reference-packs"
+version = "0.1.0.dev0"
+description = "Source-faithful incident-response reference packs with provenance, page-level citations, and context-preserving local retrieval."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{ name = "Diego Parra" }]
+dependencies = [
+  "pdfplumber==0.11.10",
+  "pdfminer.six==20260107",
+  "pypdfium2==5.14.0",
+  "lxml==6.1.3",
+  "jsonschema==4.26.0",
+  "PyYAML>=6.0",
+  "Pillow>=12.2.0",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp==2.3.0"]
+dense = ["onnxruntime==1.31.0", "tokenizers==0.23.3", "numpy>=2.3,<3"]
+dev = ["pytest>=8", "mcp==2.3.0"]
+
+[project.scripts]
+irpacks = "irpacks.cli:main"
+
+[build-system]
+requires = ["hatchling==1.28.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/irpacks"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

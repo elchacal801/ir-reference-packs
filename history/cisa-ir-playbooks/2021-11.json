@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "pack_id": "cisa-ir-playbooks",
+  "document_id": "cisa-ir-playbooks:2021-11",
+  "edition_id": "2021-11",
+  "recorded_at": "2026-10-25T17:33:40Z",
+  "built_at": "2026-10-25T17:33:37Z",
+  "units": [
+    {
+      "unit_id": "fm-front-matter",
+      "title": "Cybersecurity Incident & Vulnerability Response Playbooks",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "106dd94ec316030a37c55e8e3f0f38426ef279b1ad40c1db99186baa9228f4e9",
+      "sections": []
+    },
+    {
+      "unit_id": "fm-table-of-contents",
+      "title": "Table of Contents",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "4d0971acb4f7d5ead62d66fb92fb0befbae6969c20b64e6629f8ee0332ca3fd3",
+      "sections": []
+    },
+    {
+      "unit_id": "introduction",
+      "title": "INTRODUCTION",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "59660b01810e5d749280a5415283815952a51f014e9d00ed1c37d96147934e4e",
+      "sections": [
+        {
+          "id": "introduction.s01",
+          "title": "Overview",
+          "hash": "af984ac38626dbd84045310b01926a7ff5e16455fc27cac2bf26b766527c254a"
+        },
+        {
+          "id": "introduction.s02",
+          "title": "Scope",
+          "hash": "1a3821670dba37d9e9a1966d690452fb92ae21a2ee23b05ed5341211f03da2e8"
+        },
+        {
+          "id": "introduction.s03",
+          "title": "Audience",
+          "hash": "71704598eaa56ed24b546aa19df9fbc8fc2d685c47003493cf04e8a492a7e8bc"
+        }
+      ]
+    },
+    {
+      "unit_id": "incident-response-playbook",
+      "title": "INCIDENT RESPONSE PLAYBOOK",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "cfc634d42b4368f1776eb27b77768364fbd1f035132befeac46829f8992659d7",
+      "sections": [
+        {
+          "id": "incident-response-playbook.s01",
+          "title": "Incident Response Process",
+          "hash": "500f8b2441b5eba3abf2888f581b0143094ee3da50e70678f5fdab7c07952764"
+        },
+        {
+          "id": "incident-response-playbook.s02",
+          "title": "Preparation Phase",
+          "hash": "f91a713270987edeb76b5a9490fc2589e0fa0b783eb9b0f5ec697871f4b6b349"
+        },
+        {
+          "id": "incident-response-playbook.s02.s01",
+          "title": "Policies and Procedures",
+          "hash": "9e5989948c4f079e2007e6ab938f6e873e7d56b3afd639ef5fe2c3df85cefb72"
+        },
+        {
+          "id": "incident-response-playbook.s02.s02",
+          "title": "Instrumentation",
+          "hash": "b7269ae3e5a3f4d1382728bc1926116f3eb44641bf90728234ca3c8ee3cdab82"
+        },
+        {
+          "id": "incident-response-playbook.s02.s03",
+          "title": "Trained Response Personnel",
+          "hash": "b0a1391c6f196a5efc33fdd7f6c3e01d8a566b2b71fbeebe66807308c698184e"
+        },
+        {
+          "id": "incident-response-playbook.s02.s04",
+          "title": "COOP Planning Procedures",
+          "hash": "87120effc89081849a9d710c97be1db01ade527a7a8c83a10bfb8abbd40ba0a3"
+        },
+        {
+          "id": "incident-response-playbook.s02.s05",
+          "title": "COOP Testing Procedures",
+          "hash": "12b72ca8efc6e11ff07117a630d78bf0d2bd208e8eb92cc73f0f780473a562e1"
+        },
+        {
+          "id": "incident-response-playbook.s02.s06",
+          "title": "Cyber Threat Intelligence",
+          "hash": "6ede4fde0a34b4aab02a46c2b42d681a305c39840ef16f2f2142612644578ce1"
+        },
+        {
+          "id": "incident-response-playbook.s02.s07",
+          "title": "Active Defense",
+          "hash": "6085c37fde10e8074bf187824884dd0a4fea1f0439f1412cc98d33279b760f4e"
+        },
+        {
+          "id": "incident-response-playbook.s02.s08",
+          "title": "Communications and Logistics",
+          "hash": "fabf2010d6f0e01011a69fa66a7149f9299300a5d6b501f1e199e7e2b6928305"
+        },
+        {
+          "id": "incident-response-playbook.s02.s09",
+          "title": "Operational Security (OPSEC)",
+          "hash": "69f011a0d2ab452ba0c485ba46988d532780222438f9517f30f488232ce4d8e6"
+        },
+        {
+          "id": "incident-response-playbook.s02.s10",
+          "title": "Technical Infrastructure",
+          "hash": "b3792d21f2cbcdbfd2a25fc58847633d9e2a65c940dcde2667c2ec2ac5778472"
+        },
+        {
+          "id": "incident-response-playbook.s02.s11",
+          "title": "Detect Activity",
+          "hash": "da37dd4f53f6289320819f9c270dc25879b25250a2506f2941f6033b5762a017"
+        },
+        {
+          "id": "incident-response-playbook.s03",
+          "title": "Detection & Analysis",
+          "hash": "f0338ba2d7f21e6090240a266753b3e5d286f3ce776a96f66e73e1fd017c2c26"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01",
+          "title": "Detection& Analysis Activities",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s01",
+          "title": "Declare Incident",
+          "hash": "9b46cc45b5045cedbd74286fca8dc4bd9403482d4995628db939360c6d3a218e"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s02",
+          "title": "Determine Investigation Scope",
+          "hash": "af3d3a4ed0fe690c4596ccf98457b5bb6e39f72c0eedfeb6e50f654e4fd5baaa"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s03",
+          "title": "Collect and Preserve Data",
+          "hash": "9744cede045db2f4b4d4cf2b06b13a7fd96fac2348e4b8b957945395aefe2dd5"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04",
+          "title": "Perform Technical Analysis",
+          "hash": "6433d073fa11630cbe962eceaa83507a7768fbf2070462e92d13636af71fb42b"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04.s01",
+          "title": "Correlate Events and Document Timeline",
+          "hash": "ca24c3ea3a2934b68877f95941166b4315281fc028754498f7c6e3e7f24de1c0"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04.s02",
+          "title": "Identify Anomalous Activity",
+          "hash": "854ac75237db8b2577282a95995e5ea0c05149b99ab06e1e62f42f905488d0d8"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04.s03",
+          "title": "Identify Root Cause and Enabling Conditions",
+          "hash": "084fec2a24c1205fcd5d8ea583fee36501e26d5807fc19d63b24bf709053eaa2"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04.s04",
+          "title": "Gather Incident Indicators",
+          "hash": "c550cd0567ba5270bd6ab5757177bee44d9225bdcd98de561f24967a7500b06c"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04.s05",
+          "title": "Analyze for Common Adversary TTPs",
+          "hash": "d252993242d54083dea5ace608ddf5ed1f449a8a8ca5073808f923620e37ae68"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s04.s06",
+          "title": "Validate and Refine Investigation Scope",
+          "hash": "f356442f66fc7241547413bb7fe1f9d4701306ebcb55dcce80bd37ce27d7fc02"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s05",
+          "title": "Third-Party Analysis Support (if needed):",
+          "hash": "2e3d6418140c816a78fbeda8d95c57aad375b00e1d1ded421f77813013f66e40"
+        },
+        {
+          "id": "incident-response-playbook.s03.s01.s06",
+          "title": "Adjust Tools:",
+          "hash": "b78d81fb5276a61bbc2b9bfdccc828878423641581e888a53f1eae003f517fad"
+        },
+        {
+          "id": "incident-response-playbook.s04",
+          "title": "Containment",
+          "hash": "68c74f5182079cb3b655011298163e3595596e1f71f7fa4fcbd3c86965dcd468"
+        },
+        {
+          "id": "incident-response-playbook.s04.s01",
+          "title": "Considerations",
+          "hash": "42d93737365207a87a2aa619ad12e443d1d9e69d2af573a8ba1436f166c7e51e"
+        },
+        {
+          "id": "incident-response-playbook.s04.s02",
+          "title": "Containment Activities",
+          "hash": "22bbd1e893c98eb2c4bc4dae9835eef41b3cd04c36e86587881a3ac98e3e7e03"
+        },
+        {
+          "id": "incident-response-playbook.s05",
+          "title": "Eradication & Recovery",
+          "hash": "d25879f3721244ed4118775a49a398718667d3b341659205323f1d99465fdc22"
+        },
+        {
+          "id": "incident-response-playbook.s05.s01",
+          "title": "Execute Eradication Plan",
+          "hash": "9a47b7f22ed9b30ca7c1d7adb851aed29e16fa6ca0fab6aa100df6a20f9d7692"
+        },
+        {
+          "id": "incident-response-playbook.s05.s01.s01",
+          "title": "Eradication Activities",
+          "hash": "b4083c5ecd611452e26450311dcafa4d9cd2aaaece1b59fd469ee29ab24f489c"
+        },
+        {
+          "id": "incident-response-playbook.s05.s02",
+          "title": "Recover System(s) and Services",
+          "hash": "55200dc044e3dfa339ad0c74965f9fac837c30efd332462607b9dcddccddcdda"
+        },
+        {
+          "id": "incident-response-playbook.s06",
+          "title": "Post-Incident Activities",
+          "hash": "8b0244b9ed4f0177be9ec634c27f2e32fe22f731c416c25cf4f7e8093067c672"
+        },
+        {
+          "id": "incident-response-playbook.s06.s01",
+          "title": "Adjust Sensors, Alerts, and Log Collection",
+          "hash": "b17312d2b448f0d73fcb88411ca8c951a7b198ac187b3ea57cb6361a1c36aa95"
+        },
+        {
+          "id": "incident-response-playbook.s06.s02",
+          "title": "Finalize Reports",
+          "hash": "6ec18b0a242a0dbe40ab51b6447e9e77e749e1257625eadf12f63036786181cd"
+        },
+        {
+          "id": "incident-response-playbook.s06.s03",
+          "title": "Perform Hotwash",
+          "hash": "349ed2d5cb9c8909ea4f131e46b8e44f447cedf7c7749983c3bc91b038c0d8f4"
+        },
+        {
+          "id": "incident-response-playbook.s07",
+          "title": "Coordination",
+          "hash": "8c2994e4b507aab26b3f46789b2afe9cdca96abf5f433c00b928f3fdec4fe289"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01",
+          "title": "Coordination with CISA",
+          "hash": "d52189172f8003b0ef2ed4574a0c5f3e0a3efad6171bee1ff6408c035e5996da"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s01",
+          "title": "1) Inform and Update CISA",
+          "hash": "99442ba5059cef83017535ec85a1be440ebb2793aab073febe044e9261c0136e"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s02",
+          "title": "2) CISA Provides Incident Tracking and NCISS Rating",
+          "hash": "f66e40c827e1b51af369b13a8d55752bdac1233f5bd3a4bb4b681b6973482928"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s03",
+          "title": "3) Share IOCs, TTPs, data",
+          "hash": "079d3c9f4285d0770a2310e58b72c12fa5a0e0cc8dc22f8ba10ddc3b762d5dbb"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s04",
+          "title": "4) CISA Shares Coordinated Cyber Intelligence",
+          "hash": "62807efce6dadc5506d479f94b070f691582629b503892ade00ed32268afb2f1"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s05",
+          "title": "5) Report to Federal Law Enforcement",
+          "hash": "7a11981da0d8dce6504d240556ffa593b15773a4db2d49724e598ad6e062e5cd"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s06",
+          "title": "6) CISA Determines Escalation",
+          "hash": "ed36e55044093858c1a233bbe953736bcee967760945ec4f99b42af9b06c2368"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s07",
+          "title": "7) Provide Final Incident Report",
+          "hash": "c6c4097eab9eaa82aaadca428d0ab7a3765eaacf9228f5afcf6a60c082c40c58"
+        },
+        {
+          "id": "incident-response-playbook.s07.s01.s08",
+          "title": "8) CISA Conducts Verification and Validation",
+          "hash": "c76528c979d68e33e432d0efe6939df21f1fce81ca8d11ef90d9a9906a22bc3b"
+        },
+        {
+          "id": "incident-response-playbook.s07.s02",
+          "title": "Intergovernmental Coordination",
+          "hash": "7299083d08df81e0fd9e96103bbd78f8de6fcf2fa8ba96fb56dd5275f3cf0742"
+        }
+      ]
+    },
+    {
+      "unit_id": "vulnerability-response-playbook",
+      "title": "VULNERABILITY RESPONSE PLAYBOOK",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "258c5a37b97e120db94f7310c4054bb57fc71e5af25308bdae919557a312ccdc",
+      "sections": [
+        {
+          "id": "vulnerability-response-playbook.s01",
+          "title": "Preparation",
+          "hash": "333cc3e18b2e2006e1bec98d9151fc885364434a20c1f6faad6f8b30ebc0ea98"
+        },
+        {
+          "id": "vulnerability-response-playbook.s02",
+          "title": "Vulnerability Response Process",
+          "hash": "61466e7a1db73baa46ad9be9f2c3584de66ad3f811c37b25e5a416054c609dbd"
+        },
+        {
+          "id": "vulnerability-response-playbook.s03",
+          "title": "Identification",
+          "hash": "f48e5c9a9a213bc96583f6bfb8145a070627030b18cb4e37dd2e085f47cff11d"
+        },
+        {
+          "id": "vulnerability-response-playbook.s04",
+          "title": "Evaluation",
+          "hash": "4e03811d94ceb1a95354e7f24df940bd548e925b5dd83ac073b3858b17c23a69"
+        },
+        {
+          "id": "vulnerability-response-playbook.s05",
+          "title": "Remediation",
+          "hash": "e9a0995a9c54751ba7c52ec5b310c168d144413302e3b310a84890bcd84a83ac"
+        },
+        {
+          "id": "vulnerability-response-playbook.s06",
+          "title": "Reporting and Notification",
+          "hash": "da56ca292ea174611fe415c5197980e373120d177d788478ec783b672a548300"
+        }
+      ]
+    },
+    {
+      "unit_id": "appendix-a-key-terms",
+      "title": "APPENDIX A: KEY TERMS",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "4931a7846023432416f7a393eba08750f77574ddd18bde4ff9945a12909ff3ef",
+      "sections": []
+    },
+    {
+      "unit_id": "appendix-b-incident-response-checklist",
+      "title": "APPENDIX B: INCIDENT RESPONSE CHECKLIST",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "659f8e9e954814b8918e9502bf60bf8a471fda67b45635947256c51d37a8739f",
+      "sections": [
+        {
+          "id": "appendix-b-incident-response-checklist.s01",
+          "title": "Detection & Analysis",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s01",
+          "title": "1. Declare Incident",
+          "hash": "47bc041f63de2fcf8508f4cd8dd46ef38f147aff3dfd8a81c193ffc6467105b3"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s02",
+          "title": "2. Determine Investigation Scope",
+          "hash": "4fadd24d5c67d574f46d5bf9986653ecb6a3b331c332ee48f3659107a5e66424"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s03",
+          "title": "3. Collect and Preserve Data",
+          "hash": "9e52cbac6ed66214301312e255b0b915f5d2745ad2866a4c94f56e55d9b5fc85"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04",
+          "title": "4. Perform Technical Analysis",
+          "hash": "99313419ac78232ff9168340c6d88429f94e93e8b7459cb87f255bc87c46076c"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04.s01",
+          "title": "Correlate Events and Document Timeline",
+          "hash": "2d61f827223505092bee20067e02e84e01f4558aded036a93c1891587310f88e"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04.s02",
+          "title": "Identify Anomalous Activity",
+          "hash": "7b64d45b5457b3340a81ef0c0b76569f7fdc9f5b7b6d1405dceeee22c679701b"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04.s03",
+          "title": "Identify Root Cause and Enabling Conditions",
+          "hash": "3d457d3b5e6f26c532f0dd66f95bc26c8d5ae9897979953f2fe525ebe029dd10"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04.s04",
+          "title": "Gather Incident Indicators",
+          "hash": "6756b033a1f4b24e9194a009730d3acba7678d617ac5e10fe45ea2311b7dcada"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04.s05",
+          "title": "Analyze for Common Adversary TTPs",
+          "hash": "9f88cc4c98f2f97d9174318c70036f888663e45c677abafcfe7292d8025e557e"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s04.s06",
+          "title": "Validate and Refine Investigation Scope",
+          "hash": "9d147bc603c3837e4ce2000ee66872a2ff6d6feeef391c7af97154320b69be1f"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s05",
+          "title": "5. Third-Party Analysis Support (if needed)",
+          "hash": "40d00ec2bf98f830840a9970e6cfedfdc810b8f444e6174b887f77c4df40dd6f"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s01.s06",
+          "title": "6. Adjust Tools",
+          "hash": "28f4e3fe18184bcd72c50bfe640ec4eac826219136f2e72c2fae9e1e331632bd"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s02",
+          "title": "Containment",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s02.s01",
+          "title": "7. Contain Activity (Short-term Mitigations)",
+          "hash": "6054676be7cf19fce99331af0f576775b79c6c7c1593b6b6e0915e6cfac030f2"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s03",
+          "title": "Eradication & Recovery",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s03.s01",
+          "title": "8. Execute Eradication Plan",
+          "hash": "af54c5c132fbdf32a41eac1d3cd5a0281bfe2fa48a75143c8a4570186bd48778"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s03.s02",
+          "title": "9. Execute Eradication Plan",
+          "hash": "73aba47e117ff73cccea4f040d691bdea97ca328dac0d254e00869b3a39c2565"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s04",
+          "title": "Post-Incident Activities",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s04.s01",
+          "title": "10. Post-Incident Activities",
+          "hash": "a4732845b0f3a6334177a0bdbab4706dcc253dbd4117dbd8f32bf3e96748fe27"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s04.s01.s01",
+          "title": "Adjust Sensors, Alerts, and Log Collection",
+          "hash": "91b70ad4dfae590a9b1471f3bb120f732bb88b019dcb94e2fa494abbf467fed0"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s04.s01.s02",
+          "title": "Adjust Sensors, Alerts, and Log Collection",
+          "hash": "f748d56bbc09bc7ea16a6db05cfcd7fe525d02b477894d02cf1e1f9e0cf33116"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s04.s01.s03",
+          "title": "Perform Hotwash",
+          "hash": "7d39eb64e476af27917e5fd3dcca134646dceeb61c68dd447dd2cf73f03442d9"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s05",
+          "title": "Coordination with CISA",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "appendix-b-incident-response-checklist.s05.s01",
+          "title": "11. Coordination with CISA",
+          "hash": "c6243c39ab5561a9fbf1376b70cdfb5e0f36cb4678c38d3b2c4d0682d8cba0e4"
+        }
+      ]
+    },
+    {
+      "unit_id": "appendix-c-incident-response-preparation",
+      "title": "APPENDIX C: INCIDENT RESPONSE PREPARATION CHECKLIST",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "1012df3a7a78cf4c12fded826ccfba9cecb4079a4a98b13056b61d14cb67d3bf",
+      "sections": []
+    },
+    {
+      "unit_id": "appendix-e-vulnerability-and-incident-ca",
+      "title": "APPENDIX E: VULNERABILITY AND INCIDENT CATEGORIES",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "21388cf3e2a61e423db7f61a70d39f32a208b0288d3026ec4ba0afbeff183ce0",
+      "sections": []
+    },
+    {
+      "unit_id": "appendix-f-source-text",
+      "title": "APPENDIX F: SOURCE TEXT",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "2dca29c6a14be566c59e0638fb284d8a68072f6cbcdc7a9256793444ac9e6f18",
+      "sections": []
+    },
+    {
+      "unit_id": "appendix-g-source-text",
+      "title": "APPENDIX G: SOURCE TEXT",
+      "redacted": false,
+      "url": null,
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "0c9656b0d115e5117a01c4125b63e41e453afeeb0508246424c74544e61a5290",
+      "sections": []
+    }
+  ]
+}

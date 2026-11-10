@@ -1,0 +1,78 @@
+# Held-out questions for the CISA packs added 2026-10-25 (cisa-ir-playbooks, cisa-stopransomware), written after the
+# ranking configuration was frozen and before any run. Run once with the frozen configuration; never used for tuning.
+# Resolve with:  uv run python eval/build_questions.py --spec eval/questions-cisa.spec.yaml
+# Evidence was chosen by reading the cited elements (exact-phrase lookup with eval/find_evidence.py), not from search
+# rankings.
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-25"
+packs: [dynamic-ir, cisa-ir-playbooks, cisa-stopransomware]
+quotes: withhold_unredistributable
+questions:
+  - id: c01
+    split: cisa-heldout
+    scenario: federal_reporting
+    kinds: [paraphrase]
+    question: "How quickly must a federal civilian agency notify CISA after it determines that an incident has occurred?"
+    evidence:
+      - [{pack: cisa-ir-playbooks, element_id: incident-response-playbook.s07.s01.s01.l01.i01},
+         {pack: cisa-ir-playbooks, element_id: appendix-b-incident-response-checklist.s05.s01.t01}]
+    rationale: "Coordination with CISA, step 1 (situational awareness reports), and checklist step 11a."
+  - id: c02
+    split: cisa-heldout
+    scenario: post_incident
+    kinds: [paraphrase]
+    question: "According to CISA's playbook, what should the post-incident lessons-learned review cover?"
+    evidence:
+      - [{pack: cisa-ir-playbooks, element_id: incident-response-playbook.s06.s03.p01},
+         {pack: cisa-ir-playbooks, element_id: incident-response-playbook.s06.s03.p02}]
+    rationale: "Post-Incident Activities, Perform Hotwash: the lessons-learned analysis and its objectives."
+  - id: c03
+    split: cisa-heldout
+    scenario: federal_reporting
+    kinds: [table, procedure]
+    question: "In CISA's incident response checklist, what are the steps to declare an incident?"
+    evidence:
+      - [{pack: cisa-ir-playbooks, element_id: appendix-b-incident-response-checklist.s01.s01.t01}]
+    rationale: "Appendix B checklist, Detection & Analysis, step group 1 (Declare Incident): steps 1a-1d."
+  - id: c04
+    split: cisa-heldout
+    scenario: ransomware
+    kinds: [procedure]
+    question: "What is the first thing to do with systems affected by a ransomware attack?"
+    evidence:
+      - [{pack: cisa-stopransomware, element_id: part-2-ransomware-and-data-extortion-res.s01.l01.i01}]
+    rationale: "Response checklist, Detection and Analysis, item 1."
+  - id: c05
+    split: cisa-heldout
+    scenario: ransomware
+    kinds: [paraphrase]
+    question: "If we cannot disconnect a ransomware-infected device from the network, what should we do?"
+    evidence:
+      - [{pack: cisa-stopransomware, element_id: part-2-ransomware-and-data-extortion-res.s01.l02.i01}]
+    rationale: "Response checklist, Detection and Analysis, item 2."
+  - id: c06
+    split: cisa-heldout
+    scenario: ransomware
+    kinds: [paraphrase]
+    question: "How should backups be kept so that they survive a ransomware attack?"
+    evidence:
+      - [{pack: cisa-stopransomware, element_id: part-1-ransomware-and-data-extortion-pre.s01.l01.i01}]
+    rationale: "Preparing for ransomware and data extortion incidents: the first best practice (backups)."
+  - id: c07
+    split: cisa-heldout
+    scenario: ransomware
+    kinds: [cross_source]
+    question: "What do the #StopRansomware Guide and the Dynamic Incident Response book each recommend for systems that ransomware is actively encrypting?"
+    evidence:
+      - [{pack: cisa-stopransomware, element_id: part-2-ransomware-and-data-extortion-res.s01.l01.i01},
+         {pack: cisa-stopransomware, element_id: part-2-ransomware-and-data-extortion-res.s01.l02.i01}]
+      - [{pack: dynamic-ir, element_id: ch12.s03.s01.t01}]
+    rationale: "One #StopRansomware checklist item (isolate, or power down) and the book's containment-trigger table (active data destruction: immediate isolation)."
+  - id: c08
+    split: cisa-heldout
+    scenario: ransomware
+    kinds: [unanswerable]
+    answerable: false
+    question: "What does CISA require organizations to do with ransomware negotiation transcripts?"
+    evidence: []
+    rationale: "No pack states such a requirement: a regex over all packs for 'negotiat' within 80 characters of 'transcript' (text and table cells) found no element."

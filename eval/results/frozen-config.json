@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-10-25T13:26:39Z",
+  "ranking": {
+    "version": "2",
+    "stopwords": false,
+    "all_terms_first": false,
+    "candidates": 100,
+    "corpus_weights": {
+      "notes": 0.5,
+      "references": 0.5
+    },
+    "proximity_weight": 1.0,
+    "visual_boost": 1.5,
+    "alias_slots": 2
+  },
+  "search_py_sha256": "2c63ed5b46507025bc9eabf61b41afd6851e8065c230fec82f8d02e529c017be",
+  "questions_yaml_sha256": "dfcda5c81c96d3d71bea63b75bde179371217e1766d650b0eb6ce59d24c71f72",
+  "chunks_sha256": {
+    "dynamic-ir": "c1d61117c01450897e501feb3151508439653b8e1119e9b7b34694ff700c8da2",
+    "nist-sp800-61r3": "27aef19f9cd2cf055be1141cb418067b6b735d51c794974e7b29d000eec8baa6"
+  },
+  "note": "Frozen after tuning-split ablation (eval/results/tuning-ablation.json). Held-out run once after this point."
+}

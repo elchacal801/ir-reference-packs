@@ -1,0 +1,28 @@
+# Content-rights record for the cisa-stopransomware pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: cisa-stopransomware
+content_license:
+  spdx: null
+  url: null
+  statement: >-
+    Joint guide by CISA, MS-ISAC, NSA and FBI, marked TLP:CLEAR: "Disclosure is not limited ... Subject to standard
+    copyright rules, TLP:CLEAR information may be distributed without restriction" (PDF p. 1); "This information may
+    be shared broadly to reach all appropriate stakeholders" (PDF p. 31). The federal authors' text is a U.S.
+    Government work; MS-ISAC (Center for Internet Security) is a co-author and Microsoft contributed (PDF p. 31).
+  suggested_attribution: >-
+    CISA, MS-ISAC, NSA, FBI, #StopRansomware Guide v3.0 (October 2023). TLP:CLEAR.
+  exclusions:
+    - "Use of this material does not imply endorsement by CISA or the other authoring organizations."
+    - "Agency seals and logos (CISA, NSA and FBI seals and the MS-ISAC logo on the cover) are not redistributed."
+default_state: redistributable
+default_basis: >-
+  Joint guide by CISA, MS-ISAC, NSA and FBI, marked TLP:CLEAR: "Disclosure is not limited ... Subject to standard
+  copyright rules, TLP:CLEAR information may be distributed without restriction" (PDF p. 1); "This information may
+  be shared broadly to reach all appropriate stakeholders" (PDF p. 31). The federal authors' text is a U.S.
+  Government work; MS-ISAC (Center for Internet Security) is a co-author and Microsoft contributed (PDF p. 31).
+rules:
+  - id: cover-seals
+    match: {type: figure, within: fm-front-matter}
+    state: metadata_only
+    reason: "Cover art and agency seals or logos (insignia)."
+overrides: []

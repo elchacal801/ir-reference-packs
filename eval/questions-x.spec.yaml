@@ -1,0 +1,213 @@
+# Held-out questions for ranking v3 (split x-heldout), written 2026-10-25 after the Azure, Google Cloud, FIRST and
+# SWGDE packs were added and BEFORE any ranking v3 experiment. Sealed: never used for tuning; run exactly once, with
+# the frozen v3 configuration (and once with the frozen v2 configuration as the baseline).
+# Resolve with:  uv run python eval/build_questions.py --spec eval/questions-x.spec.yaml
+# Phrased as a responder or an agent would ask during an incident. Evidence was chosen by reading the cited elements
+# (exact-phrase lookup over the canonical documents, not the search index). No evidence element is used by the
+# tuning sets (questions.yaml, questions-ms.yaml, questions-vendor.yaml, questions-cisa.yaml, questions-x-tuning).
+verified_by: Claude (AI agent) — read each evidence element's text; maintainer review pending
+verified_date: "2026-10-25"
+packs: [dynamic-ir, nist-sp800-61r3, cisa-ir-playbooks, cisa-stopransomware, ms-learn-ir, ms-defender, ms-sentinel,
+        ms-purview-exchange, ms-windows-auditing, aws-security-ir, ms-azure-ir, gcp-security-ir, first-standards,
+        swgde-forensics]
+quotes: withhold_unredistributable
+questions:
+  - id: x01
+    split: x-heldout
+    scenario: cloud_forensics
+    kinds: [procedure]
+    question: "We need forensic copies of an Azure VM's disks that will hold up legally. What does the process look like?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: azarch-forensics.workflow.l01.i02}]
+    rationale: "Computer forensics chain of custody in Azure: the Copy-VmDigitalEvidence runbook's steps (snapshots of OS and data disks, immutable storage, hashes in Key Vault)."
+  - id: x02
+    split: x-heldout
+    scenario: cloud_investigation
+    kinds: [paraphrase]
+    question: "Which Azure log shows who created or changed resources, like a new VM or a Key Vault access policy change?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: azmon-activity-log.p01},
+         {pack: ms-azure-ir, element_id: azsec-management-monitoring-overview.activity-logging-and-auditing.p01}]
+    rationale: "The activity log records management (control plane) operations; the security overview says it shows who performed what, and when."
+  - id: x03
+    split: x-heldout
+    scenario: credential_compromise
+    kinds: [procedure]
+    question: "A Google Cloud service account key was pushed to a public GitHub repo. What do we do right now?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: gcpsec-compromised-credentials.respond-service-accounts.l01.i01},
+         {pack: gcp-security-ir, element_id: gcpsec-compromised-credentials.respond-service-accounts.l01.i02}]
+    rationale: "Respond to compromised service account keys and tokens: block the token (disable the service account, deny policy, delete) and replace the key."
+  - id: x04
+    split: x-heldout
+    scenario: cloud_investigation
+    kinds: [paraphrase]
+    question: "Why can't we see who read objects in our Google Cloud project — are data reads logged by default?"
+    evidence:
+      - [{pack: gcp-security-ir, element_id: audit-analyze-audit-logs.about-audit-logs.l01.i02}]
+    rationale: "Data Access audit logs are disabled by default (except for BigQuery)."
+  - id: x05
+    split: x-heldout
+    scenario: cloud_detection
+    kinds: [paraphrase]
+    question: "GuardDuty says temporary EC2 instance credentials are being used from outside AWS. What does that finding mean?"
+    evidence:
+      - [{pack: aws-security-ir, element_id: gd-guardduty-finding-types-iam.unauthorizedaccess-iam-instancecredentialexfiltrationoutsideaws_description.p02}]
+    rationale: "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS: a host outside AWS ran API operations with temporary credentials created for an EC2 instance."
+  - id: x06
+    split: x-heldout
+    scenario: phishing
+    kinds: [procedure, command]
+    question: "How do we permanently remove a phishing email from every mailbox in Microsoft 365?"
+    evidence:
+      - [{pack: ms-purview-exchange, element_id: purview-edisc-search-mailbox-data.hard-delete-messages.c01},
+         {pack: ms-purview-exchange, element_id: purview-edisc-search-mailbox-data.hard-delete-messages.p02}]
+    rationale: "Search for and delete email messages: New-ComplianceSearchAction -Purge -PurgeType HardDelete against the search."
+  - id: x07
+    split: x-heldout
+    scenario: phishing
+    kinds: [procedure]
+    question: "During a phishing investigation, how do we check whether the attacker set up mail forwarding or inbox rules?"
+    evidence:
+      - [{pack: ms-purview-exchange, element_id: purview-audit-troubleshooting-scenarios.determine-who-set-up-email-forwarding-for-a-mailbox.p03},
+         {pack: ms-purview-exchange, element_id: purview-audit-troubleshooting-scenarios.determine-who-set-up-email-forwarding-for-a-mailbox.p06},
+         {pack: ms-purview-exchange, element_id: purview-audit-troubleshooting-scenarios.determine-if-a-user-created-an-inbox-rule.l02.i02}]
+    rationale: "Audit log search: filter for Set-Mailbox records and read ForwardingSmtpAddress; search the New-InboxRule activity. Evidence moved here on 2026-11-10, when Microsoft's rewritten phishing playbook dropped its forwarding-rules procedure."
+  - id: x08
+    split: x-heldout
+    scenario: windows_forensics
+    kinds: [paraphrase]
+    question: "Which Windows Security event ID tells us a new service was installed on a host?"
+    evidence:
+      - [{pack: ms-windows-auditing, element_id: winaudit-event-4697.p03}]
+    rationale: "Event 4697: generated when a new service was installed in the system."
+  - id: x09
+    split: x-heldout
+    scenario: information_sharing
+    kinds: [paraphrase]
+    question: "A partner sent us a report marked TLP:AMBER+STRICT. Can we share it with our clients?"
+    evidence:
+      - [{pack: first-standards, element_id: first-tlp-2-0.tlp-definitions.p05}]
+    rationale: "TLP 2.0: TLP:AMBER+STRICT restricts sharing to the organization only."
+  - id: x10
+    split: x-heldout
+    scenario: vulnerability
+    kinds: [paraphrase]
+    question: "What does the Attack Requirements metric mean in CVSS v4.0?"
+    evidence:
+      - [{pack: first-standards, element_id: first-cvss-4-0-specification.attack-requirements-at.p01}]
+    rationale: "CVSS 4.0 specification, Attack Requirements (AT): prerequisite deployment and execution conditions of the vulnerable system."
+  - id: x11
+    split: x-heldout
+    scenario: csirt_operations
+    kinds: [paraphrase]
+    question: "Under the FIRST CSIRT Services Framework, what functions make up incident coordination?"
+    evidence:
+      - [{pack: first-standards, element_id: first-csirt-services-framework-2-1.6-5-service-information-security-incident-coordination.p05},
+         {pack: first-standards, element_id: first-csirt-services-framework-2-1.6-5-service-information-security-incident-coordination.l01.i01}]
+    rationale: "Service 6.5 Information security incident coordination: communication, notification distribution, relevant information distribution, activities coordination, reporting, media communication."
+  - id: x12
+    split: x-heldout
+    scenario: evidence_collection
+    kinds: [paraphrase]
+    question: "What is a live acquisition, and when would we use one instead of pulling the plug?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-17-f-002.s7-3.p01}]
+    rationale: "SWGDE 17-F-002 §7.3 Live Acquisition: a physical or logical acquisition from a running system."
+  - id: x13
+    split: x-heldout
+    scenario: evidence_collection
+    kinds: [procedure]
+    question: "After remotely collecting evidence from an endpoint, what do we need to document about the acquisition?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-22-f-003.s8.p02},
+         {pack: swgde-forensics, element_id: swgde-22-f-003.s8.l01.i01}]
+    rationale: "SWGDE 22-F-003 §8 Documentation: identifiers, acquisition details, hash values, person, date, errors."
+  - id: x14
+    split: x-heldout
+    scenario: cloud_forensics
+    kinds: [paraphrase]
+    question: "Before we contact the customer about their cloud account, how do we make sure the cloud provider doesn't lose the data?"
+    evidence:
+      - [{pack: swgde-forensics, element_id: swgde-23-f-004.s8-1.p02},
+         {pack: swgde-forensics, element_id: swgde-23-f-004.s7.p01}]
+    rationale: "SWGDE 23-F-004: send a preservation request to the cloud service provider (18 U.S.C. § 2703(f)) before contacting the custodian."
+  - id: x15
+    split: x-heldout
+    scenario: vulnerability
+    kinds: [paraphrase]
+    question: "How are federal agencies supposed to find out about vulnerabilities that are being actively exploited?"
+    evidence:
+      - [{pack: cisa-ir-playbooks, element_id: vulnerability-response-playbook.s03.p01}]
+    rationale: "CISA Vulnerability Response Playbook, Identification: monitor threat feeds and sources for actively exploited vulnerabilities."
+  - id: x16
+    split: x-heldout
+    scenario: windows_forensics
+    kinds: [paraphrase]
+    question: "Why should we grab a memory image before shutting down a compromised Windows machine?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch13.s02.s04.s02.s01.p01}]
+    rationale: "The captured memory image preserves volatile artifacts that disappear when the system is powered off."
+  - id: x17
+    split: x-heldout
+    scenario: cloud_forensics
+    kinds: [cross_source]
+    question: "How can we capture full network packets from a suspicious cloud VM in Azure and in Google Cloud?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: netwatch-packet-capture-overview.p02}]
+      - [{pack: gcp-security-ir, element_id: vpc-packet-mirroring.p02}]
+    rationale: "Azure Network Watcher packet capture and Google Cloud Packet Mirroring."
+  - id: x18
+    split: x-heldout
+    scenario: ransomware
+    kinds: [cross_source]
+    question: "How do Azure and Google Cloud protect stored data and backups from being deleted by an attacker?"
+    evidence:
+      - [{pack: ms-azure-ir, element_id: azsec-ransomware-prepare.isolated-backups-with-azure-backup.p01},
+         {pack: ms-azure-ir, element_id: azsec-ransomware-prepare.data-protection-for-azure-resources.l01.i02}]
+      - [{pack: gcp-security-ir, element_id: gcs-soft-delete.p02}]
+    rationale: "Azure Backup immutable isolated backups / immutable blobs; Cloud Storage soft delete against malicious deletion."
+  - id: x19
+    split: x-heldout
+    scenario: evidence_collection
+    kinds: [cross_source]
+    question: "What do the Dynamic Incident Response book and SWGDE say about chain of custody for collected evidence?"
+    evidence:
+      - [{pack: dynamic-ir, element_id: ch12.s10.s08.l01.i01.l01.i05},
+         {pack: dynamic-ir, element_id: ch12.s06.s05.p05}]
+      - [{pack: swgde-forensics, element_id: swgde-22-f-003.s8.p03}]
+    rationale: "Book: maintain the chain of custody for all collected evidence; SWGDE 22-F-003: document the chain of custody of the acquired data."
+  - id: x20
+    split: x-heldout
+    scenario: credential_compromise
+    kinds: [cross_source]
+    question: "Compare how Google Cloud and Microsoft Entra handle cutting off a compromised account's access."
+    evidence:
+      - [{pack: gcp-security-ir, element_id: gcpsec-compromised-credentials.respond-service-accounts.l01.i01},
+         {pack: gcp-security-ir, element_id: gcpsec-revoking-user-access.p01}]
+      - [{pack: ms-learn-ir, element_id: entra-revoke-access.overview.p01}]
+    rationale: "Google Cloud: block or revoke access (service accounts; revoking user access to a project); Entra: revoke user access in an emergency."
+  - id: x21
+    split: x-heldout
+    scenario: vulnerability
+    kinds: [unanswerable]
+    answerable: false
+    question: "What is the CVSS 5.0 base score formula?"
+    evidence: []
+    rationale: "No pack contains a CVSS 5.0: a search over all packs for 'CVSS v5', 'CVSS 5.0' and 'CVSS version 5' (text and table cells) found no element."
+  - id: x22
+    split: x-heldout
+    scenario: evidence_collection
+    kinds: [unanswerable]
+    answerable: false
+    question: "What is SWGDE's procedure for extracting data from a Tesla's infotainment system?"
+    evidence: []
+    rationale: "The vehicle infotainment document is not in the pack; a search over all packs for 'Tesla' found one element, which names the TeslaCrypt ransomware family (Azure Firewall article)."
+  - id: x23
+    split: x-heldout
+    scenario: vulnerability
+    kinds: [unanswerable]
+    answerable: false
+    question: "Which CISA emergency directive covers Ivanti Connect Secure VPN appliances?"
+    evidence: []
+    rationale: "A search over all packs for 'Ivanti' found no element; 'Emergency Directive' appears only as a general term (CISA playbook key terms and vulnerability-response text), naming no directive."

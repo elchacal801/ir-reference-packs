@@ -1,0 +1,36 @@
+# Suspected defects in the source PDF, preserved as published (the conversion never "fixes" source text).
+# Each entry was checked against the rendered page. Reported upstream: no (publication actions are out of scope).
+schema_version: 1
+pack_id: cisa-ir-playbooks
+defects:
+  - element_id: appendix-f-source-text.t01
+    pdf_page: 40
+    page_label: "40"
+    description: >-
+      Appendix F table: text is cut off at the cell edge in the printed page and in the PDF text layer alike
+      ("Executive Branch/OM" for "Executive Branch/OMB", "Federal Information Securit" for "... Security", and the
+      SP 800-37 title). The extracted cells carry the clipped text.
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Preserved as published; the full titles are in the cited OMB and NIST publications."
+  - element_id: incident-response-playbook.s03.s01.s05.p03
+    pdf_page: 13
+    page_label: "13"
+    description: >-
+      Four marked-content sequences on page 13 are not referenced by the PDF structure tree (a tagging defect); the
+      conversion recovers them as paragraphs next to their neighbours in reading order (issues
+      source_tagging_defect_recovered).
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Recovered in place; positions follow the marked-content order."
+  - element_id: null
+    pdf_page: null
+    page_label: null
+    description: >-
+      Document properties (not page content): the PDF metadata carries a Microsoft Information Protection label
+      "For Official Use Only (FOUO)" with SetDate 2020-11-16, inherited from the Word template. Every page is marked
+      TLP:CLEAR ("Disclosure is not limited") and CISA publishes the document publicly; the visible marking is taken
+      as authoritative.
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "No content change; noted for the maintainer's rights review."

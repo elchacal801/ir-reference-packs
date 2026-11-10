@@ -1,0 +1,76 @@
+# Reference-pack contract: #StopRansomware Guide (CISA, MS-ISAC, NSA, FBI). Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: cisa-stopransomware
+pack_version: "0.1.0"
+title: "#StopRansomware Guide (CISA, MS-ISAC, NSA, FBI)"
+description: >-
+  The joint #StopRansomware Guide, version 3.0 (October 2023), developed through the Joint Ransomware Task Force:
+  ransomware and data-extortion prevention best practices grouped by initial access vector, general hardening
+  guidance, and the ransomware response checklist (detection and analysis, reporting and notification, containment
+  and eradication, recovery and post-incident activity), with response contacts and resources. Converted from the
+  tagged PDF's structure tree, with the PDF outline as hierarchy.
+source:
+  title: "#StopRansomware Guide"
+  authors: []
+  publisher: "Cybersecurity and Infrastructure Security Agency (CISA); Multi-State Information Sharing & Analysis Center (MS-ISAC); National Security Agency (NSA); Federal Bureau of Investigation (FBI)"
+  url: "https://www.cisa.gov/stopransomware/ransomware-guide"
+  landing_page: "https://www.cisa.gov/stopransomware/ransomware-guide"
+  edition: "Version 3.0, October 2023"
+  edition_identifier: "v3.0-2023-10"
+  publication_date: "2023-10"
+  retrieval_date: "2026-10-25"
+  inputs:
+    - source_id: cisa-stopransomware/pdf/v3.0-2023-10
+      role: authoritative
+  notes: >-
+    Supplied by the maintainer on 2026-10-25 as an upload: www.cisa.gov (and media.defense.gov) refuse requests from
+    the project's cloud environment, so these bytes were not fetched from the URL below and their identity with the
+    published file is not verified. The URL is recorded for reference and update checks.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: pdf_page
+  locator: "one-based physical PDF page plus the printed page number read from the page footer"
+  format: "CISA, MS-ISAC, NSA, FBI, #StopRansomware Guide v3.0 (October 2023), {section}, p. {printed} (PDF p. {pdf})"
+  notes: "The PDF has no page-label tree; printed numbers are read per page from footer text, never by offset."
+applicability:
+  - incident-response
+  - ransomware
+  - data-extortion
+  - prevention
+  - hardening
+retrieval:
+  source_aliases:
+    - "#StopRansomware Guide"
+    - "StopRansomware Guide"
+    - "StopRansomware"
+    - "CISA ransomware guide"
+    - "ransomware response checklist"
+    - "Joint Ransomware Task Force"
+authority_class: government_guidance
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_and_sampled_visual_review
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks and rendered-page visual sampling; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: null
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Joint guide by CISA, MS-ISAC, NSA and FBI, marked TLP:CLEAR: "Disclosure is not limited ... Subject to standard
+    copyright rules, TLP:CLEAR information may be distributed without restriction" (PDF p. 1); "This information may
+    be shared broadly to reach all appropriate stakeholders" (PDF p. 31). The federal authors' text is a U.S.
+    Government work; MS-ISAC (Center for Internet Security) is a co-author and Microsoft contributed (PDF p. 31).
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false
+  notes: "Source PDF bytes are not bundled. They were supplied by the maintainer; see source.notes."

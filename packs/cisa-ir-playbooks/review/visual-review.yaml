@@ -1,0 +1,27 @@
+# Visual review records for cisa-ir-playbooks (rendered pages viewed next to the extracted elements and Markdown).
+# Reviewer identity is recorded truthfully: these reviews were done by an AI agent, not a human.
+schema_version: 1
+pack_id: cisa-ir-playbooks
+source_sha256: 2277247542d844d2258c0f6892d649d6885f783fc629664924e60638086f47f0
+pages:
+  - {page: 1, label: null, reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches,
+     elements_checked: [fm-front-matter.h01, fm-front-matter.h02, fm-front-matter.p01, fm-front-matter.p02],
+     notes: "Cover: title, subtitle, 'Publication: November 2021' and the TLP:CLEAR disclaimer; the CISA seal and cover art are figures (metadata only)."}
+  - {page: 2, label: "2", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches,
+     elements_checked: [fm-table-of-contents.toc01, fm-table-of-contents.toc02, fm-table-of-contents.toc03],
+     notes: "Contents: 29 entries with printed page numbers; printed label '2' read from the footer."}
+  - {page: 3, label: "3", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches,
+     elements_checked: [introduction.h01, introduction.p01, introduction.s01.h01, introduction.s01.p01, introduction.s01.p02],
+     notes: "Introduction, Overview, Scope in order; bullet list items; footnote 1 kept as a paragraph."}
+  - {page: 18, label: "18", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches_with_noted_differences,
+     elements_checked: [incident-response-playbook.s07.s01.s01.h01, incident-response-playbook.s07.s01.s01.l01.i01, incident-response-playbook.s07.s01.s01.l01.i05, incident-response-playbook.s07.s01.s03.l01.i06, incident-response-playbook.s07.s01.s06.p03],
+     notes: "Two-column page: reading order left then right; the numbered coordination steps 1)-6) are sections; five printed bullets that Word tagged as one list item are split back into five items. Footnotes stay in tag order as paragraphs: the continuation of footnote 24 ('internal reporting chain...') is printed in the right column and lands after section 6's paragraph (s06.p03). 'OMB M-20-04' broken across a line reads 'M-20 04' in item l01.i01."}
+  - {page: 25, label: null, reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list, result: matches,
+     elements_checked: [appendix-a-key-terms.h01, appendix-a-key-terms.t01],
+     notes: "The 'APPENDIX A: KEY TERMS' title is the table's tagged Caption; it opens the unit. No printed page number in this page's footer."}
+  - {page: 27, label: "27", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the element list and Markdown, result: matches,
+     elements_checked: [appendix-b-incident-response-checklist.h01, appendix-b-incident-response-checklist.p01, appendix-b-incident-response-checklist.s01.h01, appendix-b-incident-response-checklist.s01.s01.t01, appendix-b-incident-response-checklist.s01.s04.t01],
+     notes: "Checklist: phase ('Detection & Analysis') and step-group rows ('1. Declare Incident' ...) are outline entries tagged as table rows; each opens a section and the table continues under it with the Step/Procedure/Action Taken/Date Completed header. The 'Note:' paragraph is tagged before the title but printed below it and is placed after it."}
+  - {page: 40, label: "40", reviewer: Claude (AI agent), date: "2026-10-25", method: rendered page viewed alongside the table rows, result: matches_with_noted_differences,
+     elements_checked: [appendix-f-source-text.h01, appendix-f-source-text.t01],
+     notes: "Cells clipped in the printed table are clipped in the text layer too ('Executive Branch/OM', 'Securit'); recorded as a source defect."}

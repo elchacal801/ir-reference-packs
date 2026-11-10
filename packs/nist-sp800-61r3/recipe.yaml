@@ -1,0 +1,31 @@
+# Build recipe for the nist-sp800-61r3 pack.
+route: tagged_pdf_structure
+inputs:
+  authoritative: nist-sp800-61r3/pdf/2025-04
+artifacts:
+  - source_id: nist-sp800-61r3/pdf/2025-04
+    role: authoritative
+    url: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf
+    resolved_from: https://csrc.nist.gov/pubs/sp/800/61/r3/final
+    local_path: input/nist-sp800-61r3/2026-10-25/NIST.SP.800-61r3.pdf
+    media_type: application/pdf
+    edition_stamp: "SP 800-61r3 April 2025"
+  - source_id: nist-sp800-61r3/site/csrc-final
+    role: landing_page
+    url: https://csrc.nist.gov/pubs/sp/800/61/r3/final
+    local_path: input/nist-sp800-61r3/2026-10-25/final.html
+    media_type: text/html
+    notes: "Publication page: Date Published April 2025; Supersedes SP 800-61 Rev. 2 (08/06/2012)."
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules:
+    - {within: fm-front-matter, corpus: front_matter, include: false, reason: "title pages, authority, citation and publication notices (non-substantive front matter)"}
+    - {within: fm-table-of-contents, corpus: navigation, include: false, reason: "table of contents (navigation)"}
+    - {within: bm-appendix-c-change-log, corpus: back_matter, include: false, reason: "change log (publication history)"}
+    - {within: bm-references, corpus: references, include: true, reason: null}

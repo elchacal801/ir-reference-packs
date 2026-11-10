@@ -1,0 +1,75 @@
+{
+  "frozen_at": "2026-10-25T20:09:46Z",
+  "ranking": {
+    "version": "3",
+    "stopwords": false,
+    "all_terms_first": false,
+    "candidates": 100,
+    "corpus_weights": {
+      "notes": 0.5,
+      "references": 0.5
+    },
+    "proximity_weight": 1.0,
+    "visual_boost": 1.5,
+    "alias_slots": 2,
+    "alias_strip": "auto",
+    "alias_candidates": 20,
+    "alias_mode": "per_pack",
+    "alias_window": 5,
+    "rerank_weight": 0.2,
+    "dense_weight": 0.7,
+    "dense_candidates": 100,
+    "dense_within_filters": true,
+    "lexical_fallback": {
+      "rerank_weight": 0.3,
+      "dense_weight": 0.0
+    }
+  },
+  "search_py_sha256": "35ab154e565c8f2d61b2be7199f657b90a7e4566d56167c0642318890a953406",
+  "dense_py_sha256": "4e6d3b7446cb846f4972d4d3977ba6d2daa74a28949fe94e7e5e7a705d8d0aa9",
+  "models_lock_sha256": "047ea850d891bfd6b0c75a2208ebb84119c60fd68a502a80c3236dcd8c685ec4",
+  "index_meta": {
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "chunks": "12365",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "bm25_column_weights": "heading_path=2.0,text=1.0"
+  },
+  "sealed_questions": {
+    "file": "eval/questions-x.yaml",
+    "split": "x-heldout",
+    "sha256": "95c572d4c8da9734b7376ab7942288e2f382c28d1d1a9843d5e49dc7b043f637"
+  },
+  "chunks_sha256": {
+    "aws-security-ir": "8a23da3daea22739e05fa09c9a5053af614f67450a27871e38d1f3c57b83036c",
+    "cisa-ir-playbooks": "b010e68b48d2b4bf8794356ab3cf031c3811c7e60be97865221ef7cf446ccd1b",
+    "cisa-stopransomware": "02fa4c17caeb8152f400a5d0297ed242c801f2d5517557929dc2b57f81799421",
+    "dynamic-ir": "64147bcdf930603482e9db3d25b436104aadaf48a51c6f6f03b0c8996372847d",
+    "first-standards": "5bc14b65dee5f4ec3312bc7b5a1b6544a53e80f5d85220f2c1d8e174731304cb",
+    "gcp-security-ir": "415883bedffd5efb8dceb85a4c58ac077a726f3968566f7a8ca5b92c3e43b312",
+    "ms-azure-ir": "be3e9522a9fc71fe7ea7045ff3784a704b820e33f85280d49bb173dc5b489c0a",
+    "ms-defender": "dd4e3ce53843042b11be5a286fbda9d0a0f511920a3dfc5066bddeb7b1994a76",
+    "ms-learn-ir": "f7083829da1cb56a2e5f5c71fa0a7052f01dbff95b8b3004fe17e34ee2cb702e",
+    "ms-purview-exchange": "01c39ae7f8c8b2f517cbf0411b98bdb09085cfbb9845e2919637b60c1862557e",
+    "ms-sentinel": "d48054a267ae4e7d6f247b3746b478f8003c4a82c537527da2d4823d980932ee",
+    "ms-windows-auditing": "9e754eb261e891991967042a7992fa744e04b5b47da049fd4e830e287264c415",
+    "nist-sp800-61r3": "27aef19f9cd2cf055be1141cb418067b6b735d51c794974e7b29d000eec8baa6",
+    "swgde-forensics": "603f11addbe38bcfe00faaa9d6061b65a827ee71b31a1c2367f6549b849e653a"
+  },
+  "tuning_pool": {
+    "script": "eval/diagnose_ranks.py --per-source",
+    "summary": {
+      "answerable": 59,
+      "complete@5": 42,
+      "top1": 31,
+      "top3": 38,
+      "mrr@5": 0.607,
+      "multi_group_complete@5": "1/7"
+    },
+    "per_source": {
+      "multi_source_questions": 7,
+      "complete_per_source": 5
+    }
+  },
+  "note": "Frozen on the tuning pool only. First freeze: commit 39f1dae. Amended before the held-out run with dense_within_filters (filtered and per-source searches take the dense top within their filter); on the tuning pool it moved one rank below the top 5 (h07 group 2: 33 -> 31) and nothing else. The sealed set x-heldout is run once after this point, with v2 and with v3."
+}

@@ -1,0 +1,319 @@
+{
+  "run_at": "2026-10-25T21:25:51Z",
+  "backend": "local-fts5",
+  "label": null,
+  "split": "vendor-heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions-vendor.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "3",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2,
+      "alias_strip": "auto",
+      "alias_candidates": 20,
+      "alias_mode": "per_pack",
+      "alias_window": 5,
+      "rerank_weight": 0.2,
+      "dense_weight": 0.7,
+      "dense_candidates": 100,
+      "dense_within_filters": true,
+      "lexical_fallback": {
+        "rerank_weight": 0.3,
+        "dense_weight": 0.0
+      }
+    },
+    "dense": "on",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 12,
+    "answerable": 11,
+    "unanswerable": 1,
+    "evidence_complete_at_5": "8/11",
+    "evidence_complete_at_5_rate": 0.727,
+    "mean_group_recall": 0.727,
+    "multi_evidence_questions": "0/1 complete",
+    "mrr": 0.503,
+    "citation_valid": "8/8",
+    "required_context_complete": "1/1",
+    "duplicate_results": "0/60",
+    "failures": [
+      "v02",
+      "v10",
+      "v11"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "v01",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p03:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-device---automatic-attack-disruption-preview.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-network-isolation-exclusions.p01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.contain-devices-from-the-network:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v02",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-cloudprocessevents-table.p01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4688.t01:0",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-deviceevents-table.t01:1",
+        "ms-defender:2026-10-25:7cde9a0b:xdr-advanced-hunting-deviceprocessevents-table.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s01.s04.s01.a03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v03",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-hunting.bookmarks-to-keep-track-of-data:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-bookmarks.add-a-bookmark-azure-portal-only:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-hunts.view-hunt-details:0",
+        "ms-sentinel:2026-10-25:7cde9a0b:sentinel-bookmarks.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s03.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v04",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-search.before-you-search-the-audit-log.l01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-get-started.p01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-enable-disable.p01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-search-script.before-you-run-the-script:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-solutions-overview.audit-standard:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v05",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-investigate-accounts.use-mailitemsaccessed-audit-records-for-forensic-investigations:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-investigate-accounts.filter-duplicate-audit-records:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-troubleshooting-scenarios.determine-if-a-user-deleted-email-items.p01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-log-activities.exchange-mailbox-activities.t01:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:purview-audit-mailboxes.mailbox-actions-for-user-mailboxes-and-shared-mailboxes.t01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v06",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.security-monitoring-recommendations.l01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.logon-types-and-descriptions.t01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.logon-types-and-descriptions.l03:1",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.p05:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4624.logon-types-and-descriptions.p03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v07",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.security-monitoring-recommendations.l02:1",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.f01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.p12:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4625.p16:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-audit-logon:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "v08",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-compromised-creds:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-instancecredentialexfiltrationinsideaws_description.p06:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-iam.credentialaccess-iam-compromisedcredentials:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-resourcecredentialexfiltrationinsideaws_description.p06:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-resourcecredentialexfiltrationoutsideaws:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v09",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.p15:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.c04:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-fields.l01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-event-reference-aws-console-sign-in-events.cloudtrail-event-reference-aws-console-sign-in-events-federated-user.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "v10",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-10-25:7cde9a0b:vpc-about-flow-logs-records.record_format.p01:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:vpc-about-flow-logs-records.metadata.p01:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:vpc-flow-log-records.flow-logs-fields.p01:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:vpc-about-flow-logs-records.serverless-details:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:vpc-about-flow-logs-records.internet-routing-details:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v11",
+      "split": "vendor-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p03:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:mcsb-mcsb-v2-incident-response.ir-6.p10:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s04:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-azure-network-layer.possible-compromised-machine-detected:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "v12",
+      "split": "vendor-heldout",
+      "answerable": false,
+      "returned": [
+        "first-standards:2026-10-25:7cde9a0b:first-csirt-services-framework-2-1.6-3-service-artifact-and-forensic-evidence-analysis.p07:0",
+        "first-standards:2026-10-25:7cde9a0b:first-csirt-services-framework-2-1.6-3-service-artifact-and-forensic-evidence-analysis.p01:0",
+        "first-standards:2026-10-25:7cde9a0b:first-csirt-services-framework-2-1.6-3-1-function-media-or-surface-analysis:0",
+        "first-standards:2026-10-25:7cde9a0b:first-csirt-services-framework-2-1.6-3-3-function-run-time-or-dynamic-analysis:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.lab-module-6-hard-drive-imaging-protocol:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    }
+  ]
+}

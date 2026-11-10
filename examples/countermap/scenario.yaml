@@ -1,0 +1,44 @@
+# SYNTHETIC scenario for the Countermap integration example. Fictional organization, people and events; no real
+# incident data. Format: Countermap's scenario spec (countermap/scenario.py), so `countermap render` can validate it.
+title: "Synthetic: account takeover leading to payment redirection"
+description: >-
+  An accounts-payable clerk at a fictional manufacturer (Example Manufacturing Ltd.) follows a phishing link to an
+  adversary-in-the-middle sign-in page. The attacker replays the stolen session, registers their own MFA
+  authenticator, hides and forwards vendor email, then asks the clerk's colleagues to change a supplier's bank
+  details, and a scheduled supplier payment goes to an attacker-controlled account.
+authors: ["irpacks example (synthetic)"]
+steps:
+  - id: s1
+    technique: T1566.002
+    description: Clerk opens a link in a fake shared-invoice email that leads to a proxied sign-in page.
+    assets: [ap-clerk mailbox]
+  - id: s2
+    technique: T1539
+    after: [s1]
+    description: The proxy captures the session cookie issued after the clerk completes MFA.
+  - id: s3
+    technique: T1550.004
+    after: [s2]
+    description: Attacker replays the stolen session cookie to reach the clerk's cloud mailbox without a password prompt.
+  - id: s4
+    technique: T1098.005
+    after: [s3]
+    description: Attacker registers their own authenticator app as an MFA method on the clerk's account.
+  - id: s5
+    technique: T1564.008
+    after: [s3]
+    description: Inbox rule moves replies from the real supplier to an obscure folder so the clerk does not see them.
+  - id: s6
+    technique: T1114.003
+    after: [s3]
+    description: Inbox rule forwards copies of invoice email to an external address.
+  - id: s7
+    technique: T1684.001
+    after: [s5, s6]
+    description: From the clerk's mailbox the attacker asks finance to update the supplier's bank details for the next wire transfer.
+  - id: s8
+    technique: T1657
+    after: [s7]
+    description: The scheduled supplier payment is wired to the attacker-controlled bank account.
+countermeasures: auto
+max_countermeasures_per_step: 3

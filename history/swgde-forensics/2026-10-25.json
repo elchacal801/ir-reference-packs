@@ -1,0 +1,3165 @@
+{
+  "schema_version": 1,
+  "pack_id": "swgde-forensics",
+  "document_id": "swgde-forensics:2026-10-25",
+  "edition_id": "2026-10-25",
+  "recorded_at": "2026-10-25T21:12:16Z",
+  "built_at": "2026-10-25T21:11:32Z",
+  "units": [
+    {
+      "unit_id": "swgde-22-f-003",
+      "title": "Best Practices for Remote Collection of Digital Evidence from an Endpoint",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2025/03/2025-03-04-Best-Practices-for-Remote-Collection-of-Digital-Evidence-from-an-Endpoint-22-F-003-2.0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2025-03-04",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-22-f-003.front-matter",
+          "title": "Cover page and notices",
+          "hash": "995b0d4abc8fb0bf12003c89fa0420721de0505a25bc3ce69ba763c5e45ddf08"
+        },
+        {
+          "id": "swgde-22-f-003.s1",
+          "title": "1. Purpose",
+          "hash": "4450557f309cdcc0b239ab1735e8af831ff1715c0a8cc57fcc772504565d76e7"
+        },
+        {
+          "id": "swgde-22-f-003.s2",
+          "title": "2. Scope",
+          "hash": "df0f6bbbc88f902c6f2e956a1f031ad370529834668b45092a0d88836f82a7a9"
+        },
+        {
+          "id": "swgde-22-f-003.s3",
+          "title": "3. Limitations",
+          "hash": "6c91a6a5ab746ac2a24530c05924b9b46f8fdc8fd32dd75f7e1ea05807a2e3d1"
+        },
+        {
+          "id": "swgde-22-f-003.s4",
+          "title": "4. Preparation",
+          "hash": "46880264278246a939bcb7fd4ce9f3a00594172e15f06efb217b3773df40f5b5"
+        },
+        {
+          "id": "swgde-22-f-003.s5",
+          "title": "5. Considerations",
+          "hash": "f0e736202a77bf8ee601cec3930d132b09e3051c2f910519503a47edd0ab27cb"
+        },
+        {
+          "id": "swgde-22-f-003.s6",
+          "title": "6. Triage",
+          "hash": "0717b03f345e26536a3b6ed444e114d8e0afa361371103bce465fc06d0716272"
+        },
+        {
+          "id": "swgde-22-f-003.s7",
+          "title": "7. Acquisition Process",
+          "hash": "93c3e204aba5729d061f858a6128b013ac3c1ba466fbf55b830a90c5f9dca77d"
+        },
+        {
+          "id": "swgde-22-f-003.s8",
+          "title": "8. Documentation",
+          "hash": "b5eee72aca77039e40f5c6b336381cdd43b34fea4b9e8c2404ee2f66b3e09bc8"
+        },
+        {
+          "id": "swgde-22-f-003.s9",
+          "title": "9. Preservation",
+          "hash": "dd45c7aad5e6149fd43cfa710955b1a514aa728e5623e5268dd8609cc30a8987"
+        },
+        {
+          "id": "swgde-22-f-003.s10",
+          "title": "10. References",
+          "hash": "82611d96901c6ef17f2728d4b7e37200fff9f5c02dc49bde9a1a37addfcb3634"
+        },
+        {
+          "id": "swgde-22-f-003.s11",
+          "title": "11. Additional Resources",
+          "hash": "934c0bb63a010e901672fb685f5f6d291bc2d06abbe39165f98e4e7ee1efc694"
+        },
+        {
+          "id": "swgde-22-f-003.s12",
+          "title": "12. History",
+          "hash": "1fa3ed918a8c09b74052ba6d1980f01fb7b8446b308f7cb2a990d9a76f695763"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-23-f-004",
+      "title": "Best Practices for Digital Evidence Acquisition, Preservation, and Analysis from Cloud Service Providers",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2025/02/SWGDE-23-F-004-1.1-Best-Practices-for-Digital-Evidence-Acquisition-Preservation-and-Analysis-from-Cloud-Service-Providers.pdf",
+      "git_commit_id": null,
+      "updated_at": "2025-01-13",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-23-f-004.front-matter",
+          "title": "Cover page and notices",
+          "hash": "2bcf8e294a5d11ba46907a3875185222067abd70415ce27b492bda42993b805b"
+        },
+        {
+          "id": "swgde-23-f-004.s1",
+          "title": "1. Purpose",
+          "hash": "06f317a719d14e6009e053d59c0e782f0f3a63f410e2030446837c09740bdf8e"
+        },
+        {
+          "id": "swgde-23-f-004.s2",
+          "title": "2. Scope",
+          "hash": "40c638c51ef5ba466126711e2a33bf0027a4e06eeb52fe8c6525e98f2779946c"
+        },
+        {
+          "id": "swgde-23-f-004.s3",
+          "title": "3. Limitations",
+          "hash": "20b06f71c16091893eeaa74060c43044e7bcba46ec81a3397c85c0191a12d0e2"
+        },
+        {
+          "id": "swgde-23-f-004.s4",
+          "title": "4. Definitions",
+          "hash": "fe83e412321829868f94abe4fb1f14c3078c08d881ff1fe45cdc2c7ea94cf734"
+        },
+        {
+          "id": "swgde-23-f-004.s5",
+          "title": "5. Data in the Cloud",
+          "hash": "30b2df109e97ed35c49da930395ace4488bdff4f5652648e2c50e5eaef83e3f3"
+        },
+        {
+          "id": "swgde-23-f-004.s6",
+          "title": "6. Legal Considerations",
+          "hash": "2451523f4b143bdd669132a06dc08f360fc9726d3e859e2f3abdd000e7664e87"
+        },
+        {
+          "id": "swgde-23-f-004.s7",
+          "title": "7. Preservation",
+          "hash": "8605ac3f063d135ead6721f464a20ab2210032e561925e35d6c1226ca509fdf5"
+        },
+        {
+          "id": "swgde-23-f-004.s8",
+          "title": "8. Methods of Acquisition",
+          "hash": "701fe25b529039588f78a17b2a14ac25adacf36fb03913c411b6cca318d30656"
+        },
+        {
+          "id": "swgde-23-f-004.s8-1",
+          "title": "8.1 Compulsory legal process to the cloud service provider",
+          "hash": "af92f0a4ef2af92b0859540829f465a8fe0c2efded4046ae2f538219773b52b3"
+        },
+        {
+          "id": "swgde-23-f-004.s8-2",
+          "title": "8.2 Production by the lawful custodian",
+          "hash": "225656587fe9dcc08bf0192507cfb1e12cc9b1989c7d39cc2b8bd81434b6523e"
+        },
+        {
+          "id": "swgde-23-f-004.s8-3",
+          "title": "8.3 Use of a client application, API, or other interface",
+          "hash": "cc36c29fe819821f86d7d86c0b9fa7a4ab77dc670368722b8d996bba7c26a0cb"
+        },
+        {
+          "id": "swgde-23-f-004.s8-4",
+          "title": "8.4 Physical search and seizure of the service provider’s hardware providing the cloud computing services",
+          "hash": "e631c1dd3d1066150cb8fc8618d1ab605458d21d9f2153cd53eaf5bfb81bd345"
+        },
+        {
+          "id": "swgde-23-f-004.s8-5",
+          "title": "8.5 Other search authorities",
+          "hash": "e08eb4ba4aff64b4aaa4abed86eac7ecef884a67daecd554aac220435d69bef2"
+        },
+        {
+          "id": "swgde-23-f-004.s9",
+          "title": "9. Steps to Take Prior to Acquisition",
+          "hash": "a010f816f1d47d6259a1e90bc24a6df9a9ab0219a06c7ccdb726d27fd1df2566"
+        },
+        {
+          "id": "swgde-23-f-004.s10",
+          "title": "10. Steps to Take During Acquisition",
+          "hash": "cd4233853172427b83f87e59f459e177bcae41af4f5dc13c6ec78ea109ad1b7c"
+        },
+        {
+          "id": "swgde-23-f-004.s11",
+          "title": "11. Steps to Take After Acquisition",
+          "hash": "da7eb9ead47615c93857d1310e56e940dce2ff418f7632a0e2622c0cf06ccc7e"
+        },
+        {
+          "id": "swgde-23-f-004.s12",
+          "title": "12. Analysis",
+          "hash": "d270f83ce04f607fbd4bfeb19a4d2392ddf9512deed8afad3f6b8dfff5e9474e"
+        },
+        {
+          "id": "swgde-23-f-004.s13",
+          "title": "13. References",
+          "hash": "3360540c8579ce5d1c817f946beb8ed19a95a8bf9be1fd8dd212bcf67bbbfe9a"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-16-f-002",
+      "title": "Considerations for Required Minimization of Digital Evidence Seizure",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2026/02/SWGDE-16-F-002-2.1-Considerations-for-Required-Minimization-of-Digital-Evidence-Seizure.pdf",
+      "git_commit_id": null,
+      "updated_at": "2024-08-05",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-16-f-002.front-matter",
+          "title": "Cover page and notices",
+          "hash": "a0db7fa49174c16beb505a63beaa4f671dac5ac981df01e1575fec4cc4b681e0"
+        },
+        {
+          "id": "swgde-16-f-002.s1",
+          "title": "1. Summary",
+          "hash": "01e0abb7a5bff5c1a90109253fb02238b17af81d1bfa6a5c8c3833a087882af4"
+        },
+        {
+          "id": "swgde-16-f-002.s2",
+          "title": "2. Background",
+          "hash": "726e7474385fb970114e0971957b150269839b066d9793dbe6a77b7af2fd42b2"
+        },
+        {
+          "id": "swgde-16-f-002.s3",
+          "title": "3. Technical Issues Related to Limitations Imposed on Digital Evidence Acquisitions",
+          "hash": "edcde8d7ab7d40050a9047222e6fe587f83c5fc8c074dd34ad00dba0f2a88ff7"
+        },
+        {
+          "id": "swgde-16-f-002.s3-1",
+          "title": "3.1 Compound Files",
+          "hash": "1f074ccadc6e8bedc2f0a7be9eb989690f8d4390116f8d7f97fef9da37193ef8"
+        },
+        {
+          "id": "swgde-16-f-002.s3-2",
+          "title": "3.2 Acquiring Only a Targeted Profile",
+          "hash": "3725e10289cb373b7a6371484039de5b6d8a3958aa7552c5dded1476a2e5af69"
+        },
+        {
+          "id": "swgde-16-f-002.s3-3",
+          "title": "3.3 Anti-Forensics Techniques",
+          "hash": "74459c03ea4d6bdad7efd0409504ba775d5c638f27ffc62ac698c360fcac6320"
+        },
+        {
+          "id": "swgde-16-f-002.s4",
+          "title": "4. Examples",
+          "hash": "edb2491177f8d85cc617b737128c1c4f82da1962162da533aba9e0531bf51e83"
+        },
+        {
+          "id": "swgde-16-f-002.s5",
+          "title": "5. Recommendations",
+          "hash": "c8bd6c1dec82e92fdd6f990304ac5471415432ba6e998d4e72f82da3006cc474"
+        },
+        {
+          "id": "swgde-16-f-002.s6",
+          "title": "6. History",
+          "hash": "a8db97270efd7cb23f887c0aa545a8f018d32cd58aa6fca5427b3c44d5e63067"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-23-f-005",
+      "title": "Best Practices Apple MacOS Forensic Acquisition",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2024/04/2024-03-15-SWGDE-Best-Practices-Apple-MacOS-Forensic-Acquisition-23-F-005-1.0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2024-03-15",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-23-f-005.front-matter",
+          "title": "Cover page and notices",
+          "hash": "ce5efa4ab7daf337649d86f2e32a8da269f67ae2588431a205d6bc3409b2dbe1"
+        },
+        {
+          "id": "swgde-23-f-005.s1",
+          "title": "1. Purpose",
+          "hash": "7ef8e7a13234ceb62104d8da0053da23b949d3ef2d7ce28490810fcf406f3f4c"
+        },
+        {
+          "id": "swgde-23-f-005.s2",
+          "title": "2. Scope",
+          "hash": "215e13deda28f05a51e47d7ba1092942d14c3f26dba0d97de943f2d55165e5ef"
+        },
+        {
+          "id": "swgde-23-f-005.s3",
+          "title": "3. Limitations",
+          "hash": "4fd92c7c0e48ad8db8f3d35bdc3022839a37954ef6a1b309ecf127ee51ae9a03"
+        },
+        {
+          "id": "swgde-23-f-005.s4",
+          "title": "4. Preparation",
+          "hash": "f83d555dd3514ee078a53b253805accaeb1066d2b87ab36f78bc479ed35e83ad"
+        },
+        {
+          "id": "swgde-23-f-005.s5",
+          "title": "5. Location and Environment",
+          "hash": "c21699c1a28f970d0055def35fdfaf78abe2c92bf763f8da1cd3ed7218e14fff"
+        },
+        {
+          "id": "swgde-23-f-005.s6",
+          "title": "6. Information Specific to Forensic Collection of Mac/Apple Computers",
+          "hash": "b8a9cd9cbf54bf523dc3d166c84beb491d11b0e9c5d8437d8a967c8a0e80d83e"
+        },
+        {
+          "id": "swgde-23-f-005.s6-1",
+          "title": "6.1 Volatile Data Acquisition and Initial Network Concerns",
+          "hash": "8b3b6509971b35b8a339c6482bdfbfe9aea4c68389c8489efae0e19d5140a6d2"
+        },
+        {
+          "id": "swgde-23-f-005.s6-2",
+          "title": "6.2 Digital Forensics within the Mac Ecosystem",
+          "hash": "0f9290ddb49ffb8a958aa8c803aa27240cd852ad5ecda9a25806b518548e89af"
+        },
+        {
+          "id": "swgde-23-f-005.s6-3",
+          "title": "6.3 Types of Mac Computers and Computer Related Storage Devices",
+          "hash": "c0278c0b60cb9ebfca71439568aa66bf2554b489083041d97d08edd3de3ba6d1"
+        },
+        {
+          "id": "swgde-23-f-005.s7",
+          "title": "7. Training and Experience Consideration",
+          "hash": "07d72b2ba4606fee9e12ed07ee258c9b9899dac2dd5bc4e3b95cde1d6208c4c0"
+        },
+        {
+          "id": "swgde-23-f-005.s8",
+          "title": "8. Image Format and Metadata Considerations",
+          "hash": "837903938598fe97ddca7b6549425d700039ac1ca6b206da37477b04e5d0c6d7"
+        },
+        {
+          "id": "swgde-23-f-005.s8-1",
+          "title": "8.1 Firmware Password",
+          "hash": "d8f1d2026aaee1bbcf77b8113098f708a63cc349670caf8e39a874daa39c210b"
+        },
+        {
+          "id": "swgde-23-f-005.s8-2",
+          "title": "8.2 Encryption",
+          "hash": "76e3613b21e49c672452ccb41bae88ac84d5fdcd530ac9ce8b369c908bf16139"
+        },
+        {
+          "id": "swgde-23-f-005.s8-2-1",
+          "title": "8.2.1 Apple Mac with FileVault",
+          "hash": "52e6b0f91ae2b574d4c1b27c2c0310bb343d5a2a38d0ab57cd3df05e9f78cf2e"
+        },
+        {
+          "id": "swgde-23-f-005.s8-2-2",
+          "title": "8.2.2 Apple Mac with Apple Silicon or T2 Security Chip",
+          "hash": "ecabd4dac55c62b0f96e43a97dc2bf38a4394dd9c4ead87216d6ff65fa923a2b"
+        },
+        {
+          "id": "swgde-23-f-005.s8-2-3",
+          "title": "8.2.3 Additional Encryption Considerations",
+          "hash": "6c1fb4332eeaeaf4b24e63519c9d72db340b1d8b6bfdabb645c5781f524dafb9"
+        },
+        {
+          "id": "swgde-23-f-005.s8-3",
+          "title": "8.3 Boot Camp and Virtualization",
+          "hash": "c42c7f49bfa8da843dee5fc3db0a700d2ba90754642deef635fec2c5a3b18edf"
+        },
+        {
+          "id": "swgde-23-f-005.s8-4",
+          "title": "8.4 Boot Loader Restrictions",
+          "hash": "0d173607f9ee986e2673775e24f152ea49278854fd19f008480fa1c259026d21"
+        },
+        {
+          "id": "swgde-23-f-005.s9",
+          "title": "9. Triage",
+          "hash": "5a34ce0c875eec235f59abf1e1dd9554d076d97ad5b31447dee2ddf002faeebf"
+        },
+        {
+          "id": "swgde-23-f-005.s10",
+          "title": "10. Pre-interaction intelligence",
+          "hash": "e117b652d44c8962eeff8709591f5cfcf357b42d8f98ea4e30a9855bd84d4da0"
+        },
+        {
+          "id": "swgde-23-f-005.s11",
+          "title": "11. Start-up Commands",
+          "hash": "f5f63d4f92fd5d573e6834c687945cada94461c2fdef5a8034cbe696d2f3ca5f"
+        },
+        {
+          "id": "swgde-23-f-005.s12",
+          "title": "12. Acquisition Process",
+          "hash": "310fb12e799eca03abeb655c0649ffda615baac54e309da2391b1c8745b9fc52"
+        },
+        {
+          "id": "swgde-23-f-005.s12-1",
+          "title": "12.1 Need to Allow Full-Disk Access",
+          "hash": "c871ea803c9142b28c1fd9bb29749e72f144614861aa9a620d55b4072cde9e61"
+        },
+        {
+          "id": "swgde-23-f-005.s12-2",
+          "title": "12.2 Step 1: Obtain and Test the Administrator’s Password",
+          "hash": "f189797a666da2a911082f88a0f490e7485708d4c2c4ef4ff612369c3e5fbb39"
+        },
+        {
+          "id": "swgde-23-f-005.s12-3",
+          "title": "12.3 Step 2: Identification of Apple System",
+          "hash": "0087945bdab5cd4c2e82dbdea8f59370442be942bdab824ac53d95d5d783b333"
+        },
+        {
+          "id": "swgde-23-f-005.s12-4",
+          "title": "12.4 Step 3: Isolate the Device",
+          "hash": "650d6e8996368a72ca477417292c8c4757db4ca402f4757f7cca62b7c1b99d42"
+        },
+        {
+          "id": "swgde-23-f-005.s12-5",
+          "title": "12.5 Step 4: State of Mac Upon Arrival and Imaging Methods",
+          "hash": "7d45b31c596a8c6d1e40393e1affa2b456e3a334a8783ff33325856fe08ffd89"
+        },
+        {
+          "id": "swgde-23-f-005.s12-5-1",
+          "title": "12.5.1 Scenario 1: Mac is powered off (i.e. black screen)",
+          "hash": "79a0f1a4df3b59ee0168cd91a62cc12ed4ef47de61544dbc03a9584521c6319f"
+        },
+        {
+          "id": "swgde-23-f-005.s12-5-2",
+          "title": "12.5.2 Scenario 2: Mac displays logon screen",
+          "hash": "226bb524f55988d4428f5ae8e251d7033c1c145cbc6e4d93c13cbdfb39be16bb"
+        },
+        {
+          "id": "swgde-23-f-005.s12-5-3",
+          "title": "12.5.3 Scenario 3: Mac displays desktop screen",
+          "hash": "01664cbd33938cc3ae4b7db74cc5f52afdaf766c3eaab424454a2d4c7ddd3560"
+        },
+        {
+          "id": "swgde-23-f-005.s12-6",
+          "title": "12.6 Step 5: Consider Additional Methods of Imaging",
+          "hash": "768c4a631f7c9783d498fb6ff4f69bae759bc00994f0be1097aed56c02cdc899"
+        },
+        {
+          "id": "swgde-23-f-005.s12-6-1",
+          "title": "12.6.1 Target Disk Mode",
+          "hash": "33371f0041c5619024ca1f521165f3409429c1cbdb9d0b8aa53eab02e02eb195"
+        },
+        {
+          "id": "swgde-23-f-005.s12-6-2",
+          "title": "12.6.2 Share Disk Mode",
+          "hash": "637a2417395f65fe698fc8ed6b8ecb79ebf11df9921fd87c7804b2f00d2e2fb3"
+        },
+        {
+          "id": "swgde-23-f-005.s12-7",
+          "title": "12.7 Step 6: Image File Options",
+          "hash": "99ce0785413267804f5fde6cba17be253420d6d3e13b6351dc2d5ded1242d3a4"
+        },
+        {
+          "id": "swgde-23-f-005.s13",
+          "title": "13. Logical Acquisition Considerations",
+          "hash": "1e3fe10967cd72aa8f8239e26a2f51fa06ea17c00d62a95c951579020dc977aa"
+        },
+        {
+          "id": "swgde-23-f-005.s13-1",
+          "title": "13.1 Time Machine Backups",
+          "hash": "aa15d5042359f5d0e8e4f4ce5784dd2399dd13b48d8281bc50db0bc8cda72fac"
+        },
+        {
+          "id": "swgde-23-f-005.s13-2",
+          "title": "13.2 Local Snapshots",
+          "hash": "31be93cc519a37bd894357523addfbe5bde253b8fc612d37d660b7895d8192cb"
+        },
+        {
+          "id": "swgde-23-f-005.s13-3",
+          "title": "13.3 Keychains",
+          "hash": "9ad16853661c2ad13b04e06e6b7ff97e35f437934ce2d59b21ee38cea29dec67"
+        },
+        {
+          "id": "swgde-23-f-005.s14",
+          "title": "14. Documentation and Safe Handling of Digital Evidence.",
+          "hash": "8fb95fe795c58c838688c291aa48a01d377d8799da186edc90764134d9701343"
+        },
+        {
+          "id": "swgde-23-f-005.s15",
+          "title": "15. References",
+          "hash": "3febc87399ca6f1c5ba9807d70a70e4e11658d3d85111cfa73975255aee196fc"
+        },
+        {
+          "id": "swgde-23-f-005.s16",
+          "title": "16. Additional Resources",
+          "hash": "02b2e76dc3ebc0bbbba325ed4a816a6d404fda999370493055451a845de08239"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-21-f-001",
+      "title": "Best Practices for Acquiring Online Content",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2024/04/2024-03-15-SWGDE-Best-Practices-for-Acquiring-Online-Content-21-F-001-1.1.pdf",
+      "git_commit_id": null,
+      "updated_at": "2024-03-15",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-21-f-001.front-matter",
+          "title": "Cover page and notices",
+          "hash": "3bc62fc5aac63c27ac8b084f3c8dd5446f7e982334cf3461083fb14581b86ea7"
+        },
+        {
+          "id": "swgde-21-f-001.s1",
+          "title": "1. Purpose",
+          "hash": "72464372262416e56ddd8bf8f8604907584fc7168048c5e05651bf6b6e679825"
+        },
+        {
+          "id": "swgde-21-f-001.s2",
+          "title": "2. Scope",
+          "hash": "7240d9c631f7d26ea1da91984502106c419ab57721c1aa805f4e09bee540bea7"
+        },
+        {
+          "id": "swgde-21-f-001.s3",
+          "title": "3. Limitations and Considerations",
+          "hash": "8077e6017938d3830e3b24fa1f4df79545645d190b725cc8e20b3234e0a00587"
+        },
+        {
+          "id": "swgde-21-f-001.s3-1",
+          "title": "3.1 Principles of Digital Evidence",
+          "hash": "b3e2e1cdb9fe0d7181e3be0b03082bcd7f0bf7130d746c865bdd3ae92ce05eb4"
+        },
+        {
+          "id": "swgde-21-f-001.s3-2",
+          "title": "3.2 Accessibility",
+          "hash": "cbfef530fc8798dcb339d62dd25b53506ba808e078bd52b01fd3ed9ce6e39e73"
+        },
+        {
+          "id": "swgde-21-f-001.s3-3",
+          "title": "3.3 Supplemental Preservation",
+          "hash": "6117d0a28a5e9a3d625bde2ba188cf8e0bfcc36ac00b3f53f4c601bbdd8849e9"
+        },
+        {
+          "id": "swgde-21-f-001.s3-4",
+          "title": "3.4 Evidence Contamination",
+          "hash": "7952fe0fbd182b0a111ab3845f3f53223dd42ddabcb70e734768c4a7dc460761"
+        },
+        {
+          "id": "swgde-21-f-001.s3-5",
+          "title": "3.5 Legal Authority",
+          "hash": "e0d8c6d1057526ef9bdfdcb68cafd238e6a041237782072bbbd9cd43a155d331"
+        },
+        {
+          "id": "swgde-21-f-001.s4",
+          "title": "4. Preparations",
+          "hash": "ccc0b5ca10bf976f2b00e54261bf29028ba8005e94e57fba67236ae7065921da"
+        },
+        {
+          "id": "swgde-21-f-001.s4-1",
+          "title": "4.1 Configuration",
+          "hash": "02581f2ae71590c411f01a6c18a9e726d1037550e30b4cb16f81558ff1a180ec"
+        },
+        {
+          "id": "swgde-21-f-001.s4-2",
+          "title": "4.2 Content Volatility",
+          "hash": "72792316f76d2726c1bd5061ee52553ed68a27b246fc98c62cfef4d8e479e29c"
+        },
+        {
+          "id": "swgde-21-f-001.s4-3",
+          "title": "4.3 Tool Validation",
+          "hash": "882217b317db2176da1166a3eecbdea1acfcc542060999fddd94ffd6b086231d"
+        },
+        {
+          "id": "swgde-21-f-001.s5",
+          "title": "5. Goals of Acquisition",
+          "hash": "00405ff7569ea8c0adfa77049a9115d2128ecb7c16dc3c8be34468cadb4c3c68"
+        },
+        {
+          "id": "swgde-21-f-001.s6",
+          "title": "6. Categories",
+          "hash": "7fe796839f0b79645a5678ea0ae6654a380128759a3c8c63580298bd8309ac4c"
+        },
+        {
+          "id": "swgde-21-f-001.s6-1",
+          "title": "6.1 Static Websites",
+          "hash": "c6f795461b7ea6de980f55ab5aa8c6a1f951e3749752416b0f9a94055dc47497"
+        },
+        {
+          "id": "swgde-21-f-001.s6-2",
+          "title": "6.2 Dynamic Websites",
+          "hash": "cb859afc3dc43697531ff09c87b4747ecc1f7c91f13756460bd41e3a7a872996"
+        },
+        {
+          "id": "swgde-21-f-001.s6-3",
+          "title": "6.3 Ephemeral Websites",
+          "hash": "0eb51d38d7cb4b0297b0f233d32cb6bd2a6dd0d1bb777f291063f5cc2e7cb21a"
+        },
+        {
+          "id": "swgde-21-f-001.s7",
+          "title": "7. Documentation",
+          "hash": "c75cc0b683c715fa8c5aa4c575c3d8999e779b7ddf5f016131a9c5975ec4ba6e"
+        },
+        {
+          "id": "swgde-21-f-001.s7-1",
+          "title": "7.1 Documenting Screen Captures (Stills and Motion)",
+          "hash": "afaa9bf8e97b7f122e5389418b70a76040afd9148813ce5847ba0fe58ee62cd9"
+        },
+        {
+          "id": "swgde-21-f-001.s7-2",
+          "title": "7.2 Format",
+          "hash": "03af6799493de553c606d54079f3f8f4a935dd74b27a93a02a57ea03c1762cfd"
+        },
+        {
+          "id": "swgde-21-f-001.s7-3",
+          "title": "7.3 Hashing",
+          "hash": "be692c67b484ca2b15d02b61c69ebdacfb44bad2c7d639ad326da6d48981b20c"
+        },
+        {
+          "id": "swgde-21-f-001.s7-4",
+          "title": "7.4 Network Documentation",
+          "hash": "3a62a9adeba4886226794c0fe0ad774a74cc8dfbdf4c8a68ab344a8c9ee48a88"
+        },
+        {
+          "id": "swgde-21-f-001.s7-4-1",
+          "title": "7.4.1 Packet Captures",
+          "hash": "8d092db15d8dad19739fddfc0d36cfcb70793598ebd2cdf555fb74105b2fbe5b"
+        },
+        {
+          "id": "swgde-21-f-001.s7-4-2",
+          "title": "7.4.2 Open network connections",
+          "hash": "f55b13054e2f9c41a0bafb885ae04d9cc1ec4ca293b743bb28b51a2310a3ecfc"
+        },
+        {
+          "id": "swgde-21-f-001.s7-5",
+          "title": "7.5 Collection Documentation",
+          "hash": "248f345cff130df37005a35e480d41a64b5fc724be36f6f66a4999e59d5a7128"
+        },
+        {
+          "id": "swgde-21-f-001.s8",
+          "title": "8. Acquisition",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-21-f-001.s8-1",
+          "title": "8.1 Methods",
+          "hash": "3ccc5b6262fc39b21bfae52db6945e05d936a559d1e013d74e696b93213e6215"
+        },
+        {
+          "id": "swgde-21-f-001.s8-1-1",
+          "title": "8.1.1 Utilities",
+          "hash": "3753b5e4230d8814a2ed765863d7e2dce293b0c4888e17e6e278f554beeded85"
+        },
+        {
+          "id": "swgde-21-f-001.s8-1-2",
+          "title": "8.1.2 Web Browser / Plug-ins / Extensions",
+          "hash": "c40dcc69a02e6d6056ff89fb744f9000b855afe2f815002b19d0590aa089d9cc"
+        },
+        {
+          "id": "swgde-21-f-001.s8-1-3",
+          "title": "8.1.3 Screenshots",
+          "hash": "f9c1e29d7bd225280192e7c418583a8cd2b6dcf2056e2e8ca73a61826b25ec18"
+        },
+        {
+          "id": "swgde-21-f-001.s9",
+          "title": "9. Preservation",
+          "hash": "597a62b6a7b52456081878d5b9632b21ae3760a307c31b6f32dd6da992788730"
+        },
+        {
+          "id": "swgde-21-f-001.s10",
+          "title": "10. History",
+          "hash": "252614b046ced1888f726ae8c40b7be96928bdcdda32004e85c634741fdd478b"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-17-f-002",
+      "title": "Best Practices for Computer Forensic Acquisitions",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2024/03/2023-06-15-SWGDE-Best-Practices-for-Computer-Forensic-Acquisitions-17-F-002-2.0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2023-06-15",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-17-f-002.front-matter",
+          "title": "Cover page and notices",
+          "hash": "64a14dbb2d272da85d56903672741acb2a7eab324edd1c1b217aea289abc12aa"
+        },
+        {
+          "id": "swgde-17-f-002.s1",
+          "title": "1. Purpose",
+          "hash": "6a9803b92cdcac91f002f4cbc2ce700c1169bf1409b6045cc468f9a3ddb089ca"
+        },
+        {
+          "id": "swgde-17-f-002.s2",
+          "title": "2. Scope",
+          "hash": "4905ec79fe0ad486d5d3ac81db9f4400b354e51f0d00fdab493b8ff16ccd9022"
+        },
+        {
+          "id": "swgde-17-f-002.s3",
+          "title": "3. Limitations",
+          "hash": "0b02cd7d2bc57fb91b7f882cf111d2b1ba846822c50f86c8d131e6904c10243a"
+        },
+        {
+          "id": "swgde-17-f-002.s4",
+          "title": "4. Preparation and Considerations",
+          "hash": "c4ebef30dd97dbda54b15b5b3a3bef3fb77fc5f4cd6b6625a13c81d76b92ebbf"
+        },
+        {
+          "id": "swgde-17-f-002.s4-1",
+          "title": "4.1. Location and Environment",
+          "hash": "7f83dd205fec62bcd047346666430e4fa3a232fa2dc28f5bdaff469f39d49fe7"
+        },
+        {
+          "id": "swgde-17-f-002.s4-2",
+          "title": "4.2. Encryption",
+          "hash": "553bd16cfd534a110dc9fd7990adc06784f04ff4dda514754d52b5323815d742"
+        },
+        {
+          "id": "swgde-17-f-002.s4-3",
+          "title": "4.3. Hardware Specifics",
+          "hash": "a5056e2bbe8bc9f2070400c5fa7681ad43535733c5dc6949dac9a2b37ea233b4"
+        },
+        {
+          "id": "swgde-17-f-002.s5",
+          "title": "5. Triage",
+          "hash": "fa21d59d812e3c6e23a4f7022433fb3a1bb1044a36bb1fe60ab9290eb2906598"
+        },
+        {
+          "id": "swgde-17-f-002.s6",
+          "title": "6. Acquisition Process",
+          "hash": "79a807af966d3051a8ab029cda6695a10fbd3a06e4a58eecca3c091d409c841b"
+        },
+        {
+          "id": "swgde-17-f-002.s7",
+          "title": "7. Types of Acquisitions",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-17-f-002.s7-1",
+          "title": "7.1. Physical",
+          "hash": "0e3507dbbd16a7870b821a77d8aeba6927b638c3214271d33d64b317e7153611"
+        },
+        {
+          "id": "swgde-17-f-002.s7-2",
+          "title": "7.2. Logical",
+          "hash": "94cba0e7e249c47842ff4d22b5976aea1d2c7c8c6f7d21bdf9e80e599054244a"
+        },
+        {
+          "id": "swgde-17-f-002.s7-3",
+          "title": "7.3. Live Acquisition",
+          "hash": "bd5966c9a434a21c908fd0f281adbf735e61fe7b0189cb8012c25e2c195a0cbe"
+        },
+        {
+          "id": "swgde-17-f-002.s7-4-1",
+          "title": "7.4.1 Live Acquisitions Considerations",
+          "hash": "2b0193295fafe331d3b07bfec71a4d45cb68f1e9d159114798ca163feffb9a93"
+        },
+        {
+          "id": "swgde-17-f-002.s7-4-2",
+          "title": "7.4.2 Live Memory",
+          "hash": "9a751007e8614d71583640f181542bc3d57925cc851857a40f726df2f6fc6287"
+        },
+        {
+          "id": "swgde-17-f-002.s7-4-3",
+          "title": "7.4.3 Live File/File System Acquisition",
+          "hash": "11fb2eb6d650d67c982d5ae69fc93fd8fdbf496649f2c5290e21d9d3b1bd4d03"
+        },
+        {
+          "id": "swgde-17-f-002.s7-4",
+          "title": "7.4. Forensic Boot Media Acquisition",
+          "hash": "ddd6e3de1b32b6cb83d62914f0dd9f4a4d1e91898974ca908e9e49ce4893217f"
+        },
+        {
+          "id": "swgde-17-f-002.s7-4-1-x",
+          "title": "7.4.1 Boot Loader Restrictions",
+          "hash": "4b1c985d67b74950cf7e3ca6792bf050dadda646928bdc51546b0a191e47697d"
+        },
+        {
+          "id": "swgde-17-f-002.s7-4-2-x",
+          "title": "7.4.2 Workarounds",
+          "hash": "c124111765899665bb643a39aff2344d46fd7839407be1d13161736571d69ec9"
+        },
+        {
+          "id": "swgde-17-f-002.s7-5",
+          "title": "7.5. Targeted Collection",
+          "hash": "b4978ec6abd1cfa8ab69219b604d2b8bf9965eca117288e8d24f5aefc3930912"
+        },
+        {
+          "id": "swgde-17-f-002.s7-6",
+          "title": "7.6. Forensic Cloning",
+          "hash": "967b2930531391e1970de29e80b6385d443a5e701ebb09d1f1d52d7b86d1a8fd"
+        },
+        {
+          "id": "swgde-17-f-002.s8",
+          "title": "8. Verification and Preview",
+          "hash": "fceda6517b60b5d6a37334f2adbe38c086e5cfd1eeeed31b570fe898547e18fb"
+        },
+        {
+          "id": "swgde-17-f-002.s9",
+          "title": "9. Documentation",
+          "hash": "146748db145aabed3f81839c98c4e5420d3dc44d8b5a5fe0bb028dbe29e31c80"
+        },
+        {
+          "id": "swgde-17-f-002.s10",
+          "title": "10. Preservation",
+          "hash": "055dbae667bc3c529fe0b0629c1f805a65275190a1c3ee052e6769a185102f69"
+        },
+        {
+          "id": "swgde-17-f-002.s11",
+          "title": "11. References",
+          "hash": "0c92275259d5bf20a15a82600a64ba91e3ee6ed5c9ca4fd08dca65ecdd114fa1"
+        },
+        {
+          "id": "swgde-17-f-002.s12",
+          "title": "12. Additional Resources",
+          "hash": "4c91781bd7a709121443bfbfa3fea3972017d9ffe27fefd137f9929bacc69283"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-16-f-001",
+      "title": "Linux Technical Notes",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2023-03-31-SWGDE-Linux-Technical-Notes-16-F-001-2.0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2023-03-31",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-16-f-001.front-matter",
+          "title": "Cover page and notices",
+          "hash": "3a565d7e8fdfc95c0420b43b3dfbc0b4145686e22a93ac38d4a55ab0e65e84f7"
+        },
+        {
+          "id": "swgde-16-f-001.s1",
+          "title": "1. Purpose",
+          "hash": "c43632439b99a5c638d41dc347a81b98af392d3164311a16d78d7b86b58ddb08"
+        },
+        {
+          "id": "swgde-16-f-001.s2",
+          "title": "2. Scope",
+          "hash": "98dc759a7f344de92796761783aaeefceee5d1645e99f9bedbfb7428322b55b1"
+        },
+        {
+          "id": "swgde-16-f-001.s3",
+          "title": "3. Limitations",
+          "hash": "ebca816557d1410779cd95c3a159e7b6520138409a89aeb7c6c5a665ad888aa4"
+        },
+        {
+          "id": "swgde-16-f-001.s4",
+          "title": "4. Overview of Linux",
+          "hash": "40a589ac9409fea686f6de6feaa8ea6b4ed43d817c6b2c1c30c6bdd0226731d7"
+        },
+        {
+          "id": "swgde-16-f-001.s5",
+          "title": "5. Acquiring Data from Linux Computers",
+          "hash": "b5aa4d4607bcc2dd8ec0704ec5f1cf1bb3beb50657ec9dded1d06b3ce19c4b5e"
+        },
+        {
+          "id": "swgde-16-f-001.s5-1",
+          "title": "5.1 Identifying a Linux Desktop vs. Server Role",
+          "hash": "78fd90de3d3e82d71c7a6c995dee2a08c8de0f9b614257b822d129619a28c15c"
+        },
+        {
+          "id": "swgde-16-f-001.s5-2",
+          "title": "5.2 Embedded Linux",
+          "hash": "4933f42f2187b54c41174c4b066d594bfa0dd284cf59b86e79c0f48ff9ff927f"
+        },
+        {
+          "id": "swgde-16-f-001.s5-3",
+          "title": "5.3 Linux Live Distributions",
+          "hash": "8f1725e243b7b2c2d36dbe662afae747b862746bb888ff46891792984a298158"
+        },
+        {
+          "id": "swgde-16-f-001.s5-4",
+          "title": "5.4 Windows Subsystem for Linux",
+          "hash": "8286dd982861a4b0ee48786f89be68267c2b568241567d1b6e534d78e410f626"
+        },
+        {
+          "id": "swgde-16-f-001.s5-5",
+          "title": "5.5 Collections from Running Systems",
+          "hash": "7de2567f560b82e08087065cb273b0d527e71974883e9b32a7b81b073f1989f6"
+        },
+        {
+          "id": "swgde-16-f-001.s6",
+          "title": "6. File Systems and Disk Configurations",
+          "hash": "3d4d7cc86e7d459de7e20bf69ba7958d77e2a9e63485acb6d25f1fa2eb8599a2"
+        },
+        {
+          "id": "swgde-16-f-001.s6-1",
+          "title": "6.1 Logical Volume Management (LVM)",
+          "hash": "8072c6d378b78f6a62a0fe12c7bd8aea8d38b2a5ac9b665a3ac776b70948aa12"
+        },
+        {
+          "id": "swgde-16-f-001.s6-2",
+          "title": "6.2 File System Implementations",
+          "hash": "e735d36b20bc560b0f1de4bb7a2e8c7ab43157dc7548ccb95c8cb93e1c57edb2"
+        },
+        {
+          "id": "swgde-16-f-001.s6-3",
+          "title": "6.3 Common File Systems",
+          "hash": "e74fbc0c51235bbe2e0816c12e9c26e07e605094398cf515d25b0899c769697a"
+        },
+        {
+          "id": "swgde-16-f-001.s6-4",
+          "title": "6.4 Network file systems",
+          "hash": "5939b4829f8106ce55a44790c46c1b6fa7e4340f6e44c9323a0a79f961a33a3e"
+        },
+        {
+          "id": "swgde-16-f-001.s6-5",
+          "title": "6.5 Zettabyte File System (ZFS), a Modern Approach",
+          "hash": "c21b4254f5ba397c874f9e1946e532cc13a2497ca483388194229cc6db909a11"
+        },
+        {
+          "id": "swgde-16-f-001.s6-6",
+          "title": "6.6 fstab - file systems table",
+          "hash": "649c6720d05a46082cc49806110c26e0cd10f8e6bd638d824bc24eb41bafe39b"
+        },
+        {
+          "id": "swgde-16-f-001.s6-7",
+          "title": "6.7 mtab - mounted file systems table",
+          "hash": "7fe545e543e315a0140c2669c32d967fd48a0d838c884603a74a375cdc30eab4"
+        },
+        {
+          "id": "swgde-16-f-001.s6-8",
+          "title": "6.8 Links",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-16-f-001.s6-8-1",
+          "title": "6.8.1 Symbolic Links",
+          "hash": "b3643aadaba2445e98bb5fc1d1a47aff99e3d42c1fffe570b7cb61cb8a87cd99"
+        },
+        {
+          "id": "swgde-16-f-001.s6-8-2",
+          "title": "6.8.2 Hard Links",
+          "hash": "3d00b7b60626f78e242b9b6aaac30f31007caacb5a640a39a19a557f50087254"
+        },
+        {
+          "id": "swgde-16-f-001.s7",
+          "title": "7. Examining Linux Operating Systems",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-16-f-001.s7-1",
+          "title": "7.1 Directory Structure",
+          "hash": "9abb0073d27ab4f1aecfb514fb67477d990c73bd1058349c61e8a11818d5b056"
+        },
+        {
+          "id": "swgde-16-f-001.s7-2",
+          "title": "7.2 Basic System Configuration Information",
+          "hash": "e2f8d5e32890721afa8e7205c4ea0eb6e16e13be447b34c11938a3c6709685d5"
+        },
+        {
+          "id": "swgde-16-f-001.s7-3",
+          "title": "7.3 Users and Groups",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-16-f-001.s7-3-1",
+          "title": "7.3.1 User Account List",
+          "hash": "a83daa4eb5443761bf91035daac454e31c11f1e28389369ce79b23e851a38a35"
+        },
+        {
+          "id": "swgde-16-f-001.s7-3-2",
+          "title": "7.3.2 Groups List",
+          "hash": "7b8fc02c384c382fc66b848f0e407d83fa86375bc27f45d93e5cdeae14991ea7"
+        },
+        {
+          "id": "swgde-16-f-001.s7-3-3",
+          "title": "7.3.3 Shadow file/Passwords",
+          "hash": "6990ac9b2803520e6252f6ed0c232db48678e6bc47dbf90f067b626062095646"
+        },
+        {
+          "id": "swgde-16-f-001.s7-4",
+          "title": "7.4 Log Files",
+          "hash": "272e1d16cc4a31afeb5c6fb1cbb17b8ad45294e24456d65df3e1696b0ef64f22"
+        },
+        {
+          "id": "swgde-16-f-001.s7-5",
+          "title": "7.5 Bootloaders",
+          "hash": "44db8b53b37e25bedcfbfabca8a5af8d7cb3a276d12f14d8be3ada1c60ccca31"
+        },
+        {
+          "id": "swgde-16-f-001.s7-6",
+          "title": "7.6 Init Systems and Service Management",
+          "hash": "0d2eafc0ba8ae6375f824bca09a01eb50e46cb49cafe8a1ec3cd610e7d1e4d59"
+        },
+        {
+          "id": "swgde-16-f-001.s7-6-1",
+          "title": "7.6.1 System-V Init",
+          "hash": "1c6aaad64e2994b2c4657d660bef5094fcf41253af5bf3a00829f39dc24beadd"
+        },
+        {
+          "id": "swgde-16-f-001.s7-6-2",
+          "title": "7.6.2 Systemd",
+          "hash": "13f3d0ed0ce51743c2d82026e22ca0f4b146843d8afaeedff98e0f08415f7539"
+        },
+        {
+          "id": "swgde-16-f-001.s7-6-3",
+          "title": "7.6.3 Systemd Journal",
+          "hash": "dd01a42276c40fb9abda71aa9d121da0ff1ba8a44110591bebda3b6f80b13209"
+        },
+        {
+          "id": "swgde-16-f-001.s7-6-4",
+          "title": "7.6.4 Upstart",
+          "hash": "0312b82b6f02f1c5c3e246c66b2d7ede40aa1d2203a1cf732d21bfbf7ee2595c"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7",
+          "title": "7.7 Common Services",
+          "hash": "082c1a3e246a9f1aa74389d9c5f1828d4c3ee349060670ce04790ecf6b7eba4f"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-1",
+          "title": "7.7.1 Mail Transfer Agents and Mail Servers",
+          "hash": "795e113540019adc590a30001ffc23dbed31eab7650714a83011b90ef8595345"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-2",
+          "title": "7.7.2 Remote Access",
+          "hash": "6193049ddadeac068c3e6f2eaf921b47a411c2f063c20540c7eddc52aa99075c"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-3",
+          "title": "7.7.3 Internet Services Daemons (inetd and xinetd)",
+          "hash": "b86e0b1194eb6adfb5f5d4deaa616f76b7043d757cd2f1bb0cd3152ded493cbc"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-4",
+          "title": "7.7.4 File Sharing",
+          "hash": "648ba8e8e25e3e82ba06dc03c9e208cf7d8c3a1c9f2c82d1e46b553577a61fcd"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-5",
+          "title": "7.7.5 Web Servers",
+          "hash": "c46c9462cbecc8c6edfa8c0d595d0b6f374bb25f9f546fb6588e56724a25fb3e"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-6",
+          "title": "7.7.6 Database Servers",
+          "hash": "145723e052bdad50e06f0994c84d3d8cd3bda5df92ba86a198c40f417fdd7bd5"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-7",
+          "title": "7.7.7 Task Management",
+          "hash": "a465f02f7dea536a9c71b4b4f4e674544b99a043f3f2cded69d6c5939e8e8972"
+        },
+        {
+          "id": "swgde-16-f-001.s7-7-8",
+          "title": "7.7.8 Printing",
+          "hash": "1bac03fc675b3cd3d47839582e35e7afd98c4ff90eaae3e6741f0a7c029663bb"
+        },
+        {
+          "id": "swgde-16-f-001.s7-8",
+          "title": "7.8 Scheduled Tasks",
+          "hash": "a09ff454f5741bfcbc884ed658cebf36e0755cae8acae91aafe4f83d84f9d9dd"
+        },
+        {
+          "id": "swgde-16-f-001.s7-8-1",
+          "title": "7.8.1 cron Daemon",
+          "hash": "5150848350d7fdd79cff1aede08b9c7fb58715a5f5047eb0c9c7ba2bc18fdbce"
+        },
+        {
+          "id": "swgde-16-f-001.s7-8-2",
+          "title": "7.8.2 anacron",
+          "hash": "19b81eb144997cb97d52cc6e5a8cb59deed0c46d6dae78f1105d2aaf4977afc1"
+        },
+        {
+          "id": "swgde-16-f-001.s7-8-3",
+          "title": "7.8.3 at Daemon",
+          "hash": "35e174d26c2b879b34d7eec234191b3e1aa60d9f2f0e768d022514731cbd085d"
+        },
+        {
+          "id": "swgde-16-f-001.s7-9",
+          "title": "7.9 Common UNIX Printing System",
+          "hash": "f6bedf914220b52125da14a737df9ca27b945e4310f9c22d5518ff611c8bf643"
+        },
+        {
+          "id": "swgde-16-f-001.s7-10",
+          "title": "7.10 Remote Access and Administration",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-16-f-001.s7-10-1",
+          "title": "7.10.1 Telnet",
+          "hash": "c50dd22dd51159617905bf34a7b74f83afe77cfc21f09f156f559cd359044e94"
+        },
+        {
+          "id": "swgde-16-f-001.s7-10-2",
+          "title": "7.10.2 Secure Shell (SSH)",
+          "hash": "af6daed2ac7abc3823f90d3bb7feefa8de9ecaf5250a56c6c72700e85b3dfd84"
+        },
+        {
+          "id": "swgde-16-f-001.s7-10-3",
+          "title": "7.10.3 Virtual Network Computing (VNC)",
+          "hash": "6b885b4325d90853e955d1092ebf8329bbdea3b33b8c56fd49abbcd34c31f3e8"
+        },
+        {
+          "id": "swgde-16-f-001.s7-11",
+          "title": "7.11 Encryption",
+          "hash": "2a831db658e814751f8971f0c40296a1973e128fa2a09b2497de0ac5d5f2cbe2"
+        },
+        {
+          "id": "swgde-16-f-001.s7-11-1",
+          "title": "7.11.1 Block Device Encryption",
+          "hash": "ebe2417db8e7b446c70c2e5f63706001d0673a884815a6a2d6db20e6b9d980ca"
+        },
+        {
+          "id": "swgde-16-f-001.s7-11-2",
+          "title": "7.11.2 Stacked file system encryption",
+          "hash": "153f8f23c23a0c7904f012fef844743223a8a3ffeca7a961b74dd8aced8b4890"
+        },
+        {
+          "id": "swgde-16-f-001.s7-11-3",
+          "title": "7.11.3 Linux Unified Key Setup (LUKS)",
+          "hash": "1228cee1880a919a6b6c80d1cb9c9e364b5f76db088c3ce7c286eed76ca7bbb1"
+        },
+        {
+          "id": "swgde-16-f-001.s7-11-4",
+          "title": "7.11.4 eCryptfs",
+          "hash": "b6353704dac65b9f9321ac23e51334e2a807b5b14207a6f7b8307c1ca6286e22"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12",
+          "title": "7.12 Command Line Interface and Associated Artifacts",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12-1",
+          "title": "7.12.1 Command Shells",
+          "hash": "e2f4e989077bb24b7671a2caebeae90ea7feafb5f17750e12b58ce2186526f0f"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12-2",
+          "title": "7.12.2 Environment Variables",
+          "hash": "92df9667ae149ad8f2fb8d467e0db826cb9a809394677328b39a9dff5ac41b23"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12-3",
+          "title": "7.12.3 Basic Commands",
+          "hash": "ba76dca0de31a13be13f6bf3053769c500fa3a96d72eee334d201f7b655375af"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12-3-1",
+          "title": "7.12.3.1 su and sudo",
+          "hash": "5299fc63a3c82ccf7efbc045ca213044386149ff8e265d50b8c065b466b85af7"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12-4",
+          "title": "7.12.4 Shell Scripts",
+          "hash": "ad45bd71b65f24fadc460491beb89de29d949b1d5939ca409654890a7ad2dc00"
+        },
+        {
+          "id": "swgde-16-f-001.s7-12-5",
+          "title": "7.12.5 Aliased Commands",
+          "hash": "b311754f886d0a8f2342e14698a5b5678ea8496b55d88828e0863a986872288e"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13",
+          "title": "7.13 Graphical User Interfaces and Associated Artifacts",
+          "hash": "2ce5485f724d87ec125f65bb0571d517e8c55216d5b44d6a123597ac3497c2ff"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-1",
+          "title": "7.13.1 Basic Components",
+          "hash": "c4e8eedf1232f45fb1b35b5f33d686a5045833bff6e329a18ce9ea8a55521c46"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-2",
+          "title": "7.13.2 Desktop Environments",
+          "hash": "4842499ce21b0740aaf5ae5a9ff4b13a7a54c9e717def7f133c4d9c722e2ae4f"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-3",
+          "title": "7.13.3 Application Artifacts",
+          "hash": "57eba311d098e7139b7c7dbaacad65038f036ba1f3199f2c5e9b5b595a151e34"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-4",
+          "title": "7.13.4 Gnome Files/Nautilus",
+          "hash": "0c63d4f4cb77134d81093e370c3956a3bf01dbf7cc81e9a36f56039a97db8b3c"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-5",
+          "title": "7.13.5 Thumbnails",
+          "hash": "85f0afd8a161bf8a49e770e1d37e9aa78968000e823e8a44bd76fec452de1d61"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6",
+          "title": "7.13.6 Desktop Environment Artifacts",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-1",
+          "title": "7.13.6.1 KDE",
+          "hash": "135f706341fec8be81a1de2d500c573fc3a4b8452b05f87ac4c8943c8b97a1a5"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-2",
+          "title": "7.13.6.2 Gnome",
+          "hash": "f83a6d4efc5dc70ea6d8b043ed9de381d38c204f015b29e894d0b6dcbfe3c49e"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-3",
+          "title": "7.13.6.3 Firefox",
+          "hash": "10e37c90f70257813d810806d693630ffb5aa424594dcbbb8735728d09d43dfc"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-4",
+          "title": "7.13.6.4 Chromium / Google Chrome",
+          "hash": "0827f0349e9528683c74bec8c302fa95bd71f4fe0b23ceb6d2e1457f1267a052"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-5",
+          "title": "7.13.6.5 Thunderbird",
+          "hash": "098117eff22096f1caf8bcaebcb17dc4e98cdd9c572045d195e27138f7c42732"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-6",
+          "title": "7.13.6.6 Empathy",
+          "hash": "71a4d12b915f19ea0210e1344b3599fb13fc34f089ad9ee6ee1cdbbd24e6654c"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-7",
+          "title": "7.13.6.7 LibreOffice",
+          "hash": "6acb00f2f818483e7dc90533de2f6458d0f19d99a8e395112f5fa3ac816475f6"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-8",
+          "title": "7.13.6.8 Evolution Mail",
+          "hash": "58ba99442e10bb559d7d8bb4bbab9197f2491b04ff273cde0c124d2a91de065f"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-9",
+          "title": "7.13.6.9 Pidgin",
+          "hash": "be6ce4835cd9806bf1ab44a86dbb4913665c9d68198dd516415dc09600026b79"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-10",
+          "title": "7.13.6.10 GIMP",
+          "hash": "9e9b51225ff84115c9805d8c3b2dede73831cb4b8086cffa3f0e00f57d02c883"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-11",
+          "title": "7.13.6.11 VNC",
+          "hash": "df4dff206a3745ef745fc4ef9c6340fc81ffc29d271bada02291b0c48c2c6632"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-12",
+          "title": "7.13.6.12 Totem",
+          "hash": "9cb7e897a0cfbfaaaf36931a6a2d29369e894159c6e4eb781e5bc33d06890d78"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-13",
+          "title": "7.13.6.13 Transmission",
+          "hash": "7f8a43e69b5ea530027f8303424310905437d1a55b82cecfa49ee75e6d8bc311"
+        },
+        {
+          "id": "swgde-16-f-001.s7-13-6-14",
+          "title": "7.13.6.14 Emulation Software",
+          "hash": "8c18225d95c75f79b704fefcebdc9cc87975c34275fadf074d85bfc4f40ba19e"
+        },
+        {
+          "id": "swgde-16-f-001.s7-14",
+          "title": "7.14 Application Packages",
+          "hash": "e77d5f03ac347a722afba359a13481536b3b587c749b9774717fb9b700c5ead6"
+        },
+        {
+          "id": "swgde-16-f-001.s8",
+          "title": "8. References",
+          "hash": "4aa21c2e0d776a999db223934043e7d35e857b9d5477fc03c53e9505cb8e1a20"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-archiving",
+      "title": "Best Practices for Archiving Digital and Multimedia Evidence",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2020-09-17-SWGDE-Best-Practices-for-Archiving-Digital-and-Multimedia-Evidence_v1.0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2020-09-17",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-archiving.front-matter",
+          "title": "Cover page and notices",
+          "hash": "5b13d6ad8abc6e5ed81dea95d2439298ff10f424e3f0660c8b1d3ce9270d586c"
+        },
+        {
+          "id": "swgde-archiving.s1",
+          "title": "1. Purpose",
+          "hash": "8fbdcf61db72d0b2bde37236711488c3f2d4b4dc327e50389f5a821de430a949"
+        },
+        {
+          "id": "swgde-archiving.s2",
+          "title": "2. Scope",
+          "hash": "714c9289a787665ea80092ee809e4193ff6ee0cc29b1a4fdcec33956c34d3c5d"
+        },
+        {
+          "id": "swgde-archiving.s3",
+          "title": "3. Limitations",
+          "hash": "a9aa896317caad4ef036430bdf35f88fe128dc5c42538b35e3ba5281018e0967"
+        },
+        {
+          "id": "swgde-archiving.s4",
+          "title": "4. Archive Management",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-archiving.s4-1",
+          "title": "4.1 Goals",
+          "hash": "ef5414667b696041b75f42a82f7be47ea95cb685452b71a7b18950cfb6c9538b"
+        },
+        {
+          "id": "swgde-archiving.s4-2",
+          "title": "4.2 Responsibility",
+          "hash": "f67f97a432a49d96e2527849c21c40716e14acd74c58fdb0cb6e77381c74eef6"
+        },
+        {
+          "id": "swgde-archiving.s4-3",
+          "title": "4.3 Summary of Best Practices",
+          "hash": "a31cf72ec7fbfeb617f742e9eb99f72c7f6fd69ae6f51b6c06160a07e289a953"
+        },
+        {
+          "id": "swgde-archiving.s5",
+          "title": "5. Discussion",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-archiving.s5-1",
+          "title": "5.1 Archive Management System Functions",
+          "hash": "835128ccbbb7baf3eee39013bf086e78bd9606646ec9fa9d92695999f84a3756"
+        },
+        {
+          "id": "swgde-archiving.s5-1-1",
+          "title": "5.1.1 Indexing",
+          "hash": "602064e03f31445313e64ecbd14fc5bbe42e3853caa5c98238144382d59c2c3b"
+        },
+        {
+          "id": "swgde-archiving.s5-1-2",
+          "title": "5.1.2 Retrieval",
+          "hash": "c6a31439527a77e8f3e2bd27249b3a04702bbb8070bd3d6c4fa06d6186a2c47b"
+        },
+        {
+          "id": "swgde-archiving.s5-1-3",
+          "title": "5.1.3 Record Keeping, Audit Trail, and Provenance",
+          "hash": "141eea40349e89b53342e60061abe74cb76d7d85b1dbd3132fe73fc32ebcb46d"
+        },
+        {
+          "id": "swgde-archiving.s5-1-4",
+          "title": "5.1.4 Unique Identifiers (UIDs)",
+          "hash": "cb340e1793bd5e46898b6d5f5fc64d113fbb607c9ee5771675707973ed723a2e"
+        },
+        {
+          "id": "swgde-archiving.s5-1-5",
+          "title": "5.1.5 Data Obsolescence Mitigation",
+          "hash": "b7f47c327f35a5966b3e45fe6ee84908ddf7bfde3dee122eba9ac3a00454e623"
+        },
+        {
+          "id": "swgde-archiving.s5-1-6",
+          "title": "5.1.6 Storage Media Migration",
+          "hash": "568d7aa778dd8e6bae02166faccbf5e5fdd51276b8c922e5af82ba0b81573084"
+        },
+        {
+          "id": "swgde-archiving.s5-1-7",
+          "title": "5.1.7 Fixity Checking",
+          "hash": "5f25270eac39beaa9404cda208c801975152d42418030d6e1acef273589dda85"
+        },
+        {
+          "id": "swgde-archiving.s5-1-8",
+          "title": "5.1.8 Redundancy and Geographic Dispersal",
+          "hash": "37dc4bdc4e58fca08f3ea8bd53bb891eb870fb2bf78de53d75af743eff661631"
+        },
+        {
+          "id": "swgde-archiving.s5-1-9",
+          "title": "5.1.9 Security",
+          "hash": "5510e7e8b5969860612b8681b06581c478f7c1f5c357b3594149f94f7b7bf462"
+        },
+        {
+          "id": "swgde-archiving.s6",
+          "title": "6. The Archive Management System Model",
+          "hash": "f1e0dec77b7761d0d34f274843cf9f0ae843065bd4ef3eb3475386a772820cd9"
+        },
+        {
+          "id": "swgde-archiving.s6-1",
+          "title": "6.1 OAIS taxonomy",
+          "hash": "8d204099947658de7ffa50b1767c511df218f627d854f0b0359a0aa19403c778"
+        },
+        {
+          "id": "swgde-archiving.s6-2",
+          "title": "6.2 Management Systems",
+          "hash": "987884056b36a24189419f4d9ec14c3a6ac0b14b6810a30c6e2f112792b07b2e"
+        },
+        {
+          "id": "swgde-archiving.s7",
+          "title": "7. Comparison of Physical Storage Options",
+          "hash": "69399c34ac221983ed54c0c26fe29227b849a46e135e26ea211b70a6fb671ee9"
+        },
+        {
+          "id": "swgde-archiving.s7-4",
+          "title": "7.4 Data tape",
+          "hash": "0ed36ce4763614ca4fdd676aae2da66cfe60115e6be02ec3516ad652f7eea4f8"
+        },
+        {
+          "id": "swgde-archiving.s7-5",
+          "title": "7.5 Servers (online)",
+          "hash": "3a9e34f02088388962619bc90eb7355cb6e810f2e9a89da8e4fa67d3f143d7a4"
+        },
+        {
+          "id": "swgde-archiving.s7-6",
+          "title": "7.6 Hosted storage",
+          "hash": "8ddb304bb697fc64f53a6e024205cf043b30d0930af89ca42876a387071500d2"
+        },
+        {
+          "id": "swgde-archiving.s8",
+          "title": "8. Reference Implementations",
+          "hash": "7a7931803b3d316f1e44ccd893c3db9ec749ba9aea516e73553f477009eeb511"
+        },
+        {
+          "id": "swgde-archiving.s8-1",
+          "title": "8.1 Example 1",
+          "hash": "27697355d7a34810475fe207f5c8f00c856be22ceddcff5bb77a58b8bab9e02b"
+        },
+        {
+          "id": "swgde-archiving.s8-2",
+          "title": "8.2 Example 2",
+          "hash": "98e2a825024e21683f4b5d2a32db280d7fc7183fc072190bd7b215512aebc19d"
+        },
+        {
+          "id": "swgde-archiving.s8-3",
+          "title": "8.3 Example 3",
+          "hash": "94ca5feae3c62b991866fa1a13bd67e48749983cc6c35f4f3cd00fe27cb3fc8c"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-mobile-analysis",
+      "title": "Best Practices for Mobile Device Forensic Analysis",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2020-09-17-SWGDE-Best-Practices-for-Mobile-Device-Forensic-Analysis_v1.0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2020-09-17",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-mobile-analysis.front-matter",
+          "title": "Cover page and notices",
+          "hash": "04c48383e93b474b9422f2cf137aae9700c93b0236b30585e740912dbdbf812f"
+        },
+        {
+          "id": "swgde-mobile-analysis.s1",
+          "title": "1. Purpose",
+          "hash": "db8083ac2f5e0a37a8212e996a6ad8a552259507be49f4c317bc301efb287a39"
+        },
+        {
+          "id": "swgde-mobile-analysis.s2",
+          "title": "2. Scope",
+          "hash": "c3b062ec42eef113d01446a6b8c8793c4f5928e41032adf63efcfe16648f9048"
+        },
+        {
+          "id": "swgde-mobile-analysis.s3",
+          "title": "3. Disclaimers",
+          "hash": "2fe632849cb342e275303a84f94b6cc74433812ccfa3e78633fea22713186946"
+        },
+        {
+          "id": "swgde-mobile-analysis.s4",
+          "title": "4. Preparations",
+          "hash": "a2338b9ddd670252567c5f15c78b3e432c337fcc56640059c49522118db6ac1f"
+        },
+        {
+          "id": "swgde-mobile-analysis.s5",
+          "title": "5. Considerations",
+          "hash": "ff3bb6680c9c0a6161d5d80bee3dadd1509f732104c9515fd51295b1ad311c8e"
+        },
+        {
+          "id": "swgde-mobile-analysis.s6",
+          "title": "6. Artifacts of Value",
+          "hash": "bc106c250c8d980b9b63b648d49ca67b1a1125044138884d8b66ab876abf6559"
+        },
+        {
+          "id": "swgde-mobile-analysis.s7",
+          "title": "7. Forensic Tool Analysis",
+          "hash": "e092d2915c15feda6676ae4dbb87de019809caf6dd488659cd628f7453b160b6"
+        },
+        {
+          "id": "swgde-mobile-analysis.s8",
+          "title": "8. Validation of Data Results",
+          "hash": "01ed30b433634effe6555da0b829c6ef428521dc2021c757fb65ed49ac2d2ac4"
+        },
+        {
+          "id": "swgde-mobile-analysis.s9",
+          "title": "9. Evidentiary Considerations",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-mobile-analysis.s9-1",
+          "title": "9.1. Timeline analysis",
+          "hash": "d256e1dd40c7274863111ab409f7f50e6a709e541190e807d0bd3d66e7b1054c"
+        },
+        {
+          "id": "swgde-mobile-analysis.s9-2",
+          "title": "9.2. Data hiding applications",
+          "hash": "3ccc1a6803ef672db4d6943971f1a4228e7f82753ed9c82dee47432f35927ff7"
+        },
+        {
+          "id": "swgde-mobile-analysis.s9-3",
+          "title": "9.3. Logical Encryption",
+          "hash": "7a4d595f36d39368a28dcd403d7c1ce77f6eb5aef09e2993716772e19a42b0b4"
+        },
+        {
+          "id": "swgde-mobile-analysis.s9-4",
+          "title": "9.4. Malware Detection",
+          "hash": "4f5678808cf565f16acb0557c46422d69b6d992191fb976a57b49d1552d01ef3"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10",
+          "title": "10. Mobile Operating Systems",
+          "hash": "20f9ff0b265a0a9e9c96abb00736b8b582c97d937af8e027dfda458b6086f2cf"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-1",
+          "title": "10.1. Android Analysis",
+          "hash": "74cb02e46d030c5c8450f9409633c477a958bbb12569580316c0efd13c70c6d3"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-1-1",
+          "title": "10.1.1. Cloud Account",
+          "hash": "cfc527b278efdc26f0d816505cd684ab1eec6aa029997b7b545137bba8a6482a"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-1-2",
+          "title": "10.1.2. Google Play",
+          "hash": "6ba20c3d606874673776e423aac9a5c4459ac28c22f31da899c16ed67d3ce84f"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2",
+          "title": "10.2. iOS Analysis",
+          "hash": "901f56de1e68ed302da92a338f7b866f7b8516da5c2a784d7b66ef78f66e5cd8"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2-1",
+          "title": "10.2.1. Cloud Account",
+          "hash": "4a265ac3822adae706515f3d81d4fdf0a17b766fad80a9bbb05cd11d93a47916"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2-2",
+          "title": "10.2.2. Apple Services",
+          "hash": "db03b253750dc46dbe85eb6b2a868017edaa42e6831b030bf9f8eb967d58d955"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2-3",
+          "title": "10.2.3. iMessage",
+          "hash": "c7a040f80fec12a43ee7b61e9b61f6fcab51a99a53219ff21a1d1befd936d792"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2-4",
+          "title": "10.2.4. FaceTime",
+          "hash": "86826b2fb4c7ca48236ee81b7abafe1b2aa4f197eb7b998454843a973e702143"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2-5",
+          "title": "10.2.5. App Store",
+          "hash": "5498d5a9e8a52096d6a216c49d66cb6f56af9ded1525fdb17f564c62afd4c1f1"
+        },
+        {
+          "id": "swgde-mobile-analysis.s10-2-6",
+          "title": "10.2.6. iOS Time Format",
+          "hash": "adc0017b5d18a511fb937da93b89e2dcb432db00f3f6a3190134f11f970eddf0"
+        },
+        {
+          "id": "swgde-mobile-analysis.s11",
+          "title": "11. External Media Analysis",
+          "hash": "4a5a8b68ad93573a5f59b5afeb0b7676b216960ff1be87a660b55bbd48ab75d0"
+        },
+        {
+          "id": "swgde-mobile-analysis.s12",
+          "title": "12. Artifact Analysis",
+          "hash": "2c0262241ac4aee0d481297bf53cb80cb2aba99995a4c87365effc166a4eb91a"
+        },
+        {
+          "id": "swgde-mobile-analysis.s12-1",
+          "title": "12.1. Applications",
+          "hash": "f2614f777a611b022f6fb9477891a4fa1aaefd7120b29dfaddefd5ea48dbf87b"
+        },
+        {
+          "id": "swgde-mobile-analysis.s12-2",
+          "title": "12.2. Databases",
+          "hash": "834c04f843bb7a05c41d3b074548781a0ca6f6cb0c740d61b8f1899da823b240"
+        },
+        {
+          "id": "swgde-mobile-analysis.s12-3",
+          "title": "12.3. XML Files",
+          "hash": "9b61f84747b29de85d57b9908d3e8a155543bd9098ffe198a54b34fa1cdb7dc5"
+        },
+        {
+          "id": "swgde-mobile-analysis.s12-4",
+          "title": "12.4. Plists",
+          "hash": "904a060a3269d4561c84d40e282c1b96cdefef46c421d70ca0b988e225d97d45"
+        },
+        {
+          "id": "swgde-mobile-analysis.s13",
+          "title": "13. Manual Analysis",
+          "hash": "b23060bd3f91414b3f750d939a0e5599e100f494bcb11104823e9d986d2ea49c"
+        },
+        {
+          "id": "swgde-mobile-analysis.s14",
+          "title": "14. References",
+          "hash": "8b0e1c58d243d12c51c822f3735562acd309d2c756532ee95e4de363ede6337d"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-report-writing",
+      "title": "Requirements for Report Writing in Digital and Multimedia Forensics",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2018-11-20-SWGDE-Requirements-for-Report-Writin.pdf",
+      "git_commit_id": null,
+      "updated_at": "2018-11-20",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-report-writing.front-matter",
+          "title": "Cover page and notices",
+          "hash": "cd1b561360d1d84718d2c0d892cd6dc01f4dd2797308d5d35cb440314724540a"
+        },
+        {
+          "id": "swgde-report-writing.s1",
+          "title": "1. Purpose",
+          "hash": "7c7c4cfdf89ce85a7a4abf98358a5ac7dcb426b6cd9456ed2c98e725b9583067"
+        },
+        {
+          "id": "swgde-report-writing.s2",
+          "title": "2. Scope",
+          "hash": "ad76a8fa511b5240c01647e0dc516bfad7980378777cc134c445c31255145282"
+        },
+        {
+          "id": "swgde-report-writing.s3",
+          "title": "3. Limitations",
+          "hash": "0ebe9c3295c8bd8e408516f5d29cd5bc17c0cb0d451d069b3e067191204d385b"
+        },
+        {
+          "id": "swgde-report-writing.s4",
+          "title": "4. General Discussion",
+          "hash": "6ff74a2af05ed54dbaf4efcf27fbb7483e18e6aac28f97ed99172c29cb8d56f6"
+        },
+        {
+          "id": "swgde-report-writing.s5",
+          "title": "5. Minimum Requirements",
+          "hash": "a9423e2dbdac91ba395d9cfe856f01560ff13e7b7ffe76564b5410e7e8a328ae"
+        },
+        {
+          "id": "swgde-report-writing.s5-1",
+          "title": "5.1 General information",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-1-1",
+          "title": "5.1.1 A title similar to “Report of Examination,” to provide an immediate and accurate identification of the information being provided",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-1-2",
+          "title": "5.1.2 Name and address of the examining organization/laboratory",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-1-3",
+          "title": "5.1.3 Case identifier and page accountability (page number and total number of pages)",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-1-4",
+          "title": "5.1.4 Date of report (date of final signed version)",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-1-5",
+          "title": "5.1.5 Acronyms and abbreviations defined at first use, if not in the common vernacular of the general public",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-2",
+          "title": "5.2 Request",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-2-1",
+          "title": "5.2.1 Date of request",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-2-2",
+          "title": "5.2.2 Requestor name and organization",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-2-3",
+          "title": "5.2.3 Details, purpose, and scope of the request",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-2-4",
+          "title": "5.2.4 Authority for request (e.g., consent, search warrant, contract, etc.)",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-3",
+          "title": "5.3 Submitted or collected items",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-3-1",
+          "title": "5.3.1 Date items submitted or collected",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-3-2",
+          "title": "5.3.2 Method of delivery/collection",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-report-writing.s5-3-3",
+          "title": "5.3.3 Submitter information (e.g., name and organization), if applicable",
+          "hash": "788eb2f721fffdece424e3c54af21e4f082bd085ad40f10c1e20c42de812e6c3"
+        },
+        {
+          "id": "swgde-report-writing.s5-4",
+          "title": "5.4 Results, details of examination, and supporting data",
+          "hash": "b08fcd1c1ed64017cd5f0248b872f4da0cbe51a5fb4ae59992eba47c8a7c7e48"
+        },
+        {
+          "id": "swgde-report-writing.s5-5",
+          "title": "5.5 Opinions and Conclusions, if included",
+          "hash": "290f4ad6ef39e62c205633b8541a99f92a44b18e1bd90864afc6cbbb4df975f3"
+        },
+        {
+          "id": "swgde-report-writing.s5-6",
+          "title": "5.6 Disposition",
+          "hash": "8b0033caf4c79093bfac06927fc5617c6d75e57f6889391ed43639cb953a8448"
+        },
+        {
+          "id": "swgde-report-writing.s5-7",
+          "title": "5.7 Report authorization",
+          "hash": "0583563a182748890e6c5226e801bf39d966692c7c3800d5fffc74be2cf5bb1b"
+        },
+        {
+          "id": "swgde-report-writing.s6",
+          "title": "6. Amendments to Examination Reports",
+          "hash": "b5dd80799f7ed085eadd0d689af53c1aba2929f0fe7daa51a8679a4d7a901a99"
+        },
+        {
+          "id": "swgde-report-writing.s7",
+          "title": "7. References",
+          "hash": "100d38256c83db3503ba0df37277b4ad910efa61daf0ba78181a9e2694ef0276"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-computer-examination",
+      "title": "Best Practices for Computer Forensic Examination",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2024/05/2018-07-11-SWGDE-Best-Practices-for-Computer-Fo.pdf",
+      "git_commit_id": null,
+      "updated_at": "2018-07-11",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-computer-examination.front-matter",
+          "title": "Cover page and notices",
+          "hash": "e19f98ccc2b35adf476d2b6bdd9b5043c14b9e89d0f9788852a6b3af66eb1de7"
+        },
+        {
+          "id": "swgde-computer-examination.s1",
+          "title": "1. Purpose",
+          "hash": "0831a443ad24a60a52b6f0da82cd7bbd6779c05f6c9155802b78092360b3940b"
+        },
+        {
+          "id": "swgde-computer-examination.s2",
+          "title": "2. Scope",
+          "hash": "510e67534276bc9de6381910d75c505436002bd366fefb05933fc57ee6c62e8d"
+        },
+        {
+          "id": "swgde-computer-examination.s3",
+          "title": "3. Limitations",
+          "hash": "e14d3b919e2cf7f15bfcc1997e839dc7ff383e4aaa2cbe1a2d73b00c4540aa42"
+        },
+        {
+          "id": "swgde-computer-examination.s4",
+          "title": "4. Preparation",
+          "hash": "7c8fd00941c13c4b02fba563301f6dea37c7e85060d675c1b53ff3a95b08da73"
+        },
+        {
+          "id": "swgde-computer-examination.s4-1",
+          "title": "4.1 Environment",
+          "hash": "0e8a8d962bf3c29f0b6b4dfcdb3318f7672e7bc6d6cda46c147215739d90cc9b"
+        },
+        {
+          "id": "swgde-computer-examination.s4-2",
+          "title": "4.2 Examination workstation",
+          "hash": "262e279fe12a4854231644720741ab2603e2736317c1d4ea701083ab5d2c16a4"
+        },
+        {
+          "id": "swgde-computer-examination.s4-3",
+          "title": "4.3 Documentation",
+          "hash": "73d1acefd0218484d036172d00b7a29053e922057f9d1f789724f6bae1bccaa5"
+        },
+        {
+          "id": "swgde-computer-examination.s5",
+          "title": "5. Considerations",
+          "hash": "e5c73a68803a62502ffe873de7389f08d3b22936fffef8a2851684079bdb65aa"
+        },
+        {
+          "id": "swgde-computer-examination.s6",
+          "title": "6. Examination",
+          "hash": "d3fb2f995c90b9860e6492d4fe1d3da451f3586b44abf06b251e02b47d5d3751"
+        },
+        {
+          "id": "swgde-computer-examination.s7",
+          "title": "7. Analysis",
+          "hash": "c06970be0da7c35e5571dd4a2b33f3ad476c8b155cba42ec77d3ade5b6d3b11b"
+        },
+        {
+          "id": "swgde-computer-examination.s8",
+          "title": "8. References",
+          "hash": "ea7f06f44f2466a517d33ebce22fc9a7be976c5e462516c6616952982e442852"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-collection-myths-vs-facts",
+      "title": "Collection of Digital and Multimedia Evidence Myths vs Facts",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2017-07-18-SWGDE-Collection-of-Digital-and-Multimedia-Evidence-Myths-vs-Facts_v1-2.pdf",
+      "git_commit_id": null,
+      "updated_at": "2017-07-18",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-collection-myths-vs-facts.front-matter",
+          "title": "Cover page and notices",
+          "hash": "dcc6c411160b3d330176a7086fd9f5eb3fc1a1a2697b1a291624627a59f8d5cc"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-files-that-do-not-have-a-hash-calcu",
+          "title": "MYTH: “Files that do not have a hash calculated when collected cannot be authenticated.”",
+          "hash": "6698e87b5e21149e1f2014b290fe2dc34786813d33dff8a7ed59c8a409860603"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-digital-forensic-examiners-are-able",
+          "title": "MYTH: “Digital forensic examiners are able to have all available forensic tools on-site to conduct all types of digital forensic analysis.”",
+          "hash": "a2f82f2bc07e0d976dda8261ea57a35a3cb53fc3eff51c6e225eb261e720e08c"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-users-cannot-edit-exif-or-metadata-",
+          "title": "MYTH: “Users cannot edit EXIF or metadata from digital cameras and or images.”",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.fact-exif-and-metadata-can-be-deleted-or",
+          "title": "FACT: EXIF and metadata can be deleted or can be edited. Metadata also can drop out altogether during transmission, transfer, or format changes.",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-data-for-a-company-or-individua",
+          "title": "MYTH: “All data for a company or individual is located at the same physical location as the company or individual.”",
+          "hash": "8e49adfd09b8a51457db3ff912ef7fcca580474795a06cc64611347cdb7bf50a"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-data-viewable-on-a-digital-devi",
+          "title": "MYTH: “All data viewable on a digital device is stored locally on that digital device.”",
+          "hash": "2632b9ae85a0c0e1c7aa5b62057d01961899e3f56a65a1488fc375a2cac6cb3c"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-hard-drives-can-be-imaged-at-th",
+          "title": "MYTH: “All hard drives can be imaged at the same speed.”",
+          "hash": "a3a4e1a8b233a20184f4bac416c3da4dabea568b60c83ad2ed91425a1eb463df"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-a-duplicate-original-is-a-myth",
+          "title": "MYTH: “A ‘duplicate original’ is a myth.”",
+          "hash": "c5c64960992de30dce8a4d5f550c23e241cf2e6fee8905e6e1a271a4f2955f85"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-data-on-a-computer-can-be-viewe",
+          "title": "MYTH: “All data on a computer can be viewed using the ‘My Computer’ screen.”",
+          "hash": "147581ff7938855156e8d28d4781b64f2b6da2c4189de00becfc9e8d4681ce3c"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-a-digital-forensic-examiner-can-con",
+          "title": "MYTH: “A digital forensic examiner can conduct a proper and thorough forensic exam only using keyword searches.”",
+          "hash": "0a83ba9e43d2647445cf01835cee9fd8d9ba78e1ee47780a4546216d6d56ed4f"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-qualifying-a-witness-as-an-expert-i",
+          "title": "MYTH: “Qualifying a witness as an expert in digital forensics means the witness is an expert in computers.”",
+          "hash": "0d8c318f023fbf1cc5eb87df484d0c391198a5cf74eacf147524720a9950ddab"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-it-is-possible-to-compile-an-all-en",
+          "title": "MYTH: “It is possible to compile an all-encompassing list of forensic myths.”",
+          "hash": "112cee6e4cf635b3f0f270e9f4a0ad7e24e39a03567d57083c5d079c2f2e6ffc"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-forensic-analysis-involves-a-digita",
+          "title": "MYTH: “Forensic analysis involves a digital investigative analyst looking at every file on the digital device.”",
+          "hash": "c83d98def2898b900b283dcdff6e30f1a608ff905c86ca780c01b9419a6fd69e"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-once-a-forensic-analysis-is-conduct",
+          "title": "MYTH: \"Once a forensic analysis is conducted, every item of significance to a case has been identified.\"",
+          "hash": "23a9cbe6fd62f2168b62b5c3cccba30c86119934473ae204b2d7e370e0d1a16f"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-there-should-never-be-a-second-anal",
+          "title": "MYTH: “There should never be a second analysis conducted because of the potential for conflicting forensics reports.”",
+          "hash": "93896c9725ad28183f4635dd128d84c2500a4e2f8fc71063d7462a5f4f58de95"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-because-digital-images-can-be-manip",
+          "title": "MYTH: “Because digital images can be manipulated, they should not be admissible.”",
+          "hash": "ec159765a95b6f5949027f22759d5b7f5125835809451529031150a0250ba063"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-digitally-enhanced-images-should-no",
+          "title": "MYTH: “Digitally enhanced images should not be admissible.”",
+          "hash": "92fd1193986860cb7a5c02b376d0b251f990d113e98a7a5bab3737fc62791cde"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-when-images-are-digitally-enhanced-",
+          "title": "MYTH: “When images are digitally enhanced, they must be reproducible, and these reproductions must be ‘bit-for-bit’ copies of each other.”",
+          "hash": "d79ea5eaf8fc725d00492c2b0d0b72d56cb6e2ec5c35f371633770068df6d388"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-localized-adjustments-such-as-dodge",
+          "title": "MYTH: “Localized adjustments such as dodge and burn should never be used in the digital enhancement of images.”",
+          "hash": "a4d6c6aa41d737e53c7f75a0c43a730a9e5fc9c95a32de5276c892d4c0f89e76"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-digital-enhancement-of-a-fingerprin",
+          "title": "MYTH: “Digital enhancement of a fingerprint image can accidentally morph the fingerprint of one person into that of another.”",
+          "hash": "91ec2cdf8a4710b38a58fd7ca3cb503cfd1c33a7e49044050e7d9f7613a95afc"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-digital-images-must-be-electron",
+          "title": "MYTH: “All digital images must be electronically authenticated to be admissible.”",
+          "hash": "8eec1db4b7187b39778c6f8c311d59125b62d930b2a2946ded443330d94ae72e"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-any-copy-duplicate-of-a-digital-ima",
+          "title": "MYTH: “Any copy (duplicate) of a digital image made from the camera’s media is not an original.”",
+          "hash": "7c52f4fc09bec128bff9e92abc55901ac42da3829db2da0452cbc9a6b7560197"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-compression-of-digital-images-or-vi",
+          "title": "MYTH: “Compression of digital images or video is always bad.”",
+          "hash": "ca527b644ee34baa4c9441d5974005ce4275fb3575966a05540d399779c3f524"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-compressed-images-such-as-those-cap",
+          "title": "MYTH: “Compressed images, such as those captured in JPEG format, are not suitable for comparative or analytical purposes.”",
+          "hash": "7884be3c60546f48cf3918142925faf8a28c5e340c5a59ae321f1a263694c0b9"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-digital-images-must-be-treated-",
+          "title": "MYTH: “All digital images must be treated as evidence and tracked with a chain of custody.”",
+          "hash": "2df2bc626f1981bf4d4535be2411c5238f5b07b9a26b37e263aa7941f1431495"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-digital-imaging-equipment-must-",
+          "title": "MYTH: “All digital imaging equipment must be calibrated to be used in a forensic setting.”",
+          "hash": "82ecb1697e85732332529de9e4904f13c81cf55e92dbaaa17372c693c6352d60"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-an-expert-is-required-to-lay-a-foun",
+          "title": "MYTH: “An expert is required to lay a foundation for any digital images introduced in court.”",
+          "hash": "6cd5298c1ee5498fd904202167b6731ec0098dec637de74d45e0c1b5e5cb4075"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-watermarking-does-not-change-the-or",
+          "title": "MYTH: “Watermarking does not change the original image.”",
+          "hash": "8c96bd5db587d49d161fa1101fb1ba310dd6f77a6c3368535be529850f965804"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-images-should-never-have-their-meta",
+          "title": "MYTH: “Images should never have their metadata modified or removed as this will invalidate them for forensic use.”",
+          "hash": "1c660497a125dc18167ec1b0513f6c9b5435bcca85b8d9664ac61a8a149f739a"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-digital-recordings-are-always-bette",
+          "title": "MYTH: “Digital recordings are always better than analog recordings.”",
+          "hash": "0a1333baef9075bddd7a09d2ce3e6dc370944b0a4edc981e3a835e7354fb73fb"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-compressed-multimedia-evidence-is-t",
+          "title": "MYTH: “Compressed multimedia evidence is the best method of sharing and archiving because of reduced space.”",
+          "hash": "47162367d92f6e4e710bc0aca88278dfc2688b7d67af82a63983addaeccd8835"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-all-audio-playback-is-equal",
+          "title": "MYTH: “All audio playback is equal.”",
+          "hash": "2128c9e639b1914967c2b6a0d17b053d0e78224ab90591c800d9769f736c356b"
+        },
+        {
+          "id": "swgde-collection-myths-vs-facts.myth-cell-phone-extraction-tools-accurat",
+          "title": "MYTH: \"Cell phone extraction tools accurately get and show everything on a phone.\"",
+          "hash": "2f3e129ff803eb783957cf98637fda60ff1d854d6d2dbb98c9c4035f719d702d"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-glossary",
+      "title": "Digital and Multimedia Evidence Glossary",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2024/03/2016-06-23-SWGDE-Digital-and-Multimedia-Evidence-Glossary_v3-0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2016-06-23",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-glossary.front-matter",
+          "title": "Cover page and notices",
+          "hash": "dcc6c411160b3d330176a7086fd9f5eb3fc1a1a2697b1a291624627a59f8d5cc"
+        },
+        {
+          "id": "swgde-glossary.preface",
+          "title": "Preface",
+          "hash": "2720ad96ba01b98d71f4e673c0678b90bdb5154bbd5eeea06cb9fbbc2ba46b50"
+        },
+        {
+          "id": "swgde-glossary.achievable-resolution",
+          "title": "Achievable Resolution",
+          "hash": "a17fb931b3cc7102e0fe162fef20c64534ed7063260b9de1731e3158bc174c01"
+        },
+        {
+          "id": "swgde-glossary.acquisition",
+          "title": "Acquisition",
+          "hash": "672131f7f7b001a7b99db7e23bad7fa8286dd50fe714d344f0c2a3e9f766cf89"
+        },
+        {
+          "id": "swgde-glossary.administrative-review",
+          "title": "Administrative Review",
+          "hash": "8e0cdb9a3c9b3a4c410ddf42108f72b98bf573ba0b6a31b98f6627367f327c96"
+        },
+        {
+          "id": "swgde-glossary.algorithm",
+          "title": "Algorithm",
+          "hash": "ee35c041d1d0392cc46a22b2976e69645be7061553cd429d3505ce9bd889dc70"
+        },
+        {
+          "id": "swgde-glossary.analytical-photogrammetry",
+          "title": "Analytical Photogrammetry",
+          "hash": "70589b6973234f60743bd522a302c37909d24479375f481d7ad320a58470671a"
+        },
+        {
+          "id": "swgde-glossary.archive-copy",
+          "title": "Archive Copy",
+          "hash": "22b22f844af1ea2104ea65b694b5d8bb2bb198eb27bdf82671d42eedb457975c"
+        },
+        {
+          "id": "swgde-glossary.archive-image",
+          "title": "Archive Image",
+          "hash": "3ffde654749b9e9390fbfb4c5213d9d57be0fe235dce7520384730c4146cdd7a"
+        },
+        {
+          "id": "swgde-glossary.archiving",
+          "title": "Archiving",
+          "hash": "c53091475434cd38476e0fd4ec02ca2e090ac5e1809b64de09acd33411ed3d99"
+        },
+        {
+          "id": "swgde-glossary.artifact",
+          "title": "Artifact",
+          "hash": "8d3cee3c7f4d638ef739b9f39e79d39e38194c9538660248571036423101eedd"
+        },
+        {
+          "id": "swgde-glossary.aspect-ratio",
+          "title": "Aspect Ratio",
+          "hash": "176a3ff7ed264f8760c761bc6336e5cb596d32bb18c0f157d665e28b1f84b54e"
+        },
+        {
+          "id": "swgde-glossary.audio-enhancement",
+          "title": "Audio Enhancement",
+          "hash": "284f0f96ffe1dc3c53b9bea53a279923ada5f4cf8041d7fa2bbe7be05ddee77e"
+        },
+        {
+          "id": "swgde-glossary.authentication",
+          "title": "Authentication",
+          "hash": "733c620ed4b1518fa97d359669db8b89b50c9b9886ed4d00fe90f8e039ab1aec"
+        },
+        {
+          "id": "swgde-glossary.capture",
+          "title": "Capture",
+          "hash": "ab187ca368df4647beb3066ff19243edfa2025ab7595c34a088609959a30068f"
+        },
+        {
+          "id": "swgde-glossary.capture-card-frame-grabber",
+          "title": "Capture card/frame grabber",
+          "hash": "694ecefb3ca2d1c69a46495ee55bc74610273e409b5d8c09d962898a7613f5bf"
+        },
+        {
+          "id": "swgde-glossary.capture-device",
+          "title": "Capture Device",
+          "hash": "58fe67de4399dbaf09a13e89005336490c23c4d1211c32e4653cfd04f63994a9"
+        },
+        {
+          "id": "swgde-glossary.carve",
+          "title": "Carve",
+          "hash": "c776122d7503c8ed6682801c680938655138cb3455f941652d3d9eb7fee9f46f"
+        },
+        {
+          "id": "swgde-glossary.cd-dvd-compact-disc-digital-versatile-di",
+          "title": "CD/DVD (compact disc/digital versatile disc)",
+          "hash": "816242bd240fbeb7b45bc83dd29e02832d0120f4eb9ebdaecfcc40e76458fe2d"
+        },
+        {
+          "id": "swgde-glossary.cellular-network-isolation-card-cnic",
+          "title": "Cellular Network Isolation Card (CNIC)",
+          "hash": "e5d187e5d6c5d44e288226855c2a081d13f122797785015d8a49eeba912815f3"
+        },
+        {
+          "id": "swgde-glossary.chain-of-custody",
+          "title": "Chain of Custody",
+          "hash": "7b7564c2b47f14f7f67f5119ae40b3b380fe9e136ffbc7b128775437c7f7de45"
+        },
+        {
+          "id": "swgde-glossary.clarification",
+          "title": "Clarification",
+          "hash": "1e4f6acf195c3efc31f1700e622aa6d3904b5a00f25958258998ac5f2acc18af"
+        },
+        {
+          "id": "swgde-glossary.clean-room-chamber",
+          "title": "Clean Room/Chamber",
+          "hash": "3447de97c71afcd3d820514f645e698ea630b39d5dec9e7eea2fdede71d469c5"
+        },
+        {
+          "id": "swgde-glossary.codec-compressor-decompressor",
+          "title": "Codec (compressor/decompressor)",
+          "hash": "4f156d2f1bb84f16723024d9339cbc340a24216d3322ad17835e2414b605698f"
+        },
+        {
+          "id": "swgde-glossary.cognitive-image-analysis",
+          "title": "Cognitive Image Analysis",
+          "hash": "18b79cd62975796605f456c7e9cca73da311d50364f709337acceac2f639318f"
+        },
+        {
+          "id": "swgde-glossary.colorimetry",
+          "title": "Colorimetry",
+          "hash": "5a6f5f1d47b55bd585ce06c1030424a5e335ea3ce3bdb8933664ef4ccbc04990"
+        },
+        {
+          "id": "swgde-glossary.color-range",
+          "title": "Color Range",
+          "hash": "a17efba7a6dcca13872df2bf3cf8aa44b19e21ce6757fc0d80b4bb12c5d23583"
+        },
+        {
+          "id": "swgde-glossary.competency-test",
+          "title": "Competency Test",
+          "hash": "6bf8bda3b6285261404c79fd3426cba32c1119a6ecb90a5263675553cadbc30f"
+        },
+        {
+          "id": "swgde-glossary.composite-video-signal",
+          "title": "Composite Video Signal",
+          "hash": "2acc03a24236bd1418af83e1eb39cbe3789b4aa5cd751cf95564c28b510dd3a1"
+        },
+        {
+          "id": "swgde-glossary.compression",
+          "title": "Compression",
+          "hash": "94e730e9b5fc3a56bdead07dc13411c04798e2a260e47283db971cf0df0b1169"
+        },
+        {
+          "id": "swgde-glossary.compression-ratio",
+          "title": "Compression ratio",
+          "hash": "adb060e459c073d30f3d2ce00e70cb9fe2146d9171afa8b47a032fe2ccbf697d"
+        },
+        {
+          "id": "swgde-glossary.computer-forensics",
+          "title": "Computer Forensics",
+          "hash": "962d2ca05e078bbfd834e8a5041f6ab489cc87005758fc7cce9bc969b7bb854f"
+        },
+        {
+          "id": "swgde-glossary.copy",
+          "title": "Copy",
+          "hash": "7d4abf3d91b6188c7e1c1d1bbe10ca623243772f62bd19a16a6a62e79c5026aa"
+        },
+        {
+          "id": "swgde-glossary.data",
+          "title": "Data",
+          "hash": "11464f160f21a843e7ee03a89233af3271c37bb2b2ce98290eb54deff93b8df8"
+        },
+        {
+          "id": "swgde-glossary.data-analysis",
+          "title": "Data Analysis",
+          "hash": "69281cbf69f1a3df31d0057a6ac903c3be7c1a478c922bd8f47e9e68f0c2ebb1"
+        },
+        {
+          "id": "swgde-glossary.data-extraction",
+          "title": "Data Extraction",
+          "hash": "1cc43eecf5277a77f6646267ee7da7a437a59bc495f73c7d4029ec90e0c740d5"
+        },
+        {
+          "id": "swgde-glossary.data-smear",
+          "title": "Data Smear",
+          "hash": "833d3bf142aa2047e5a5d47e6d5662d4f255089bb2070e4f282c62d4b6cbd6a3"
+        },
+        {
+          "id": "swgde-glossary.deblurring",
+          "title": "Deblurring",
+          "hash": "34c3851ec9b3ec5abc683d9971781e1dec08e1dc2ce1d52674254ce0e71d1be6"
+        },
+        {
+          "id": "swgde-glossary.deinterlacing",
+          "title": "Deinterlacing",
+          "hash": "555fb3ef5b06ac5b3d6635dc181da96e2a5d55ec77db819aa55ddfba561b9d70"
+        },
+        {
+          "id": "swgde-glossary.demonstrative-comparison",
+          "title": "Demonstrative Comparison",
+          "hash": "439e651776435a2ba5059c6637e23bdcc48f9e1a39b5677ffd6e5b941806fffe"
+        },
+        {
+          "id": "swgde-glossary.digital-cctv-retrieval",
+          "title": "Digital CCTV Retrieval",
+          "hash": "0b3a485e0b7e508c08e96cd74ae1f411d5118417e8ff18f369ade9b5bc447809"
+        },
+        {
+          "id": "swgde-glossary.digital-evidence",
+          "title": "Digital Evidence",
+          "hash": "1470699cb05c6bbe2a4abd4ba11d80dce97d2f808b83b25ffdb2eb6f4aaf38fa"
+        },
+        {
+          "id": "swgde-glossary.digital-image",
+          "title": "Digital Image",
+          "hash": "5ded21dfbbbdc1a1bb92c9a904ff4f2a31edd92bc36b2113c8ed9c2bcb590747"
+        },
+        {
+          "id": "swgde-glossary.directory-listing",
+          "title": "Directory Listing",
+          "hash": "1e6bf99781bc48b7590b1a59fb79044c9f5c0f1f3e0c86276453bf043f955f23"
+        },
+        {
+          "id": "swgde-glossary.downloading-exporting",
+          "title": "Downloading/Exporting",
+          "hash": "6ac751972fed5d12babe92aa223b55a4da5d43d5fdbbad26a5950db3dea2c3ff"
+        },
+        {
+          "id": "swgde-glossary.duplicate",
+          "title": "Duplicate",
+          "hash": "e27dd51e7d76700781cc22b3a70c6e694848abaa46555d5fca98c85d052f4dcb"
+        },
+        {
+          "id": "swgde-glossary.dynamic-range",
+          "title": "Dynamic Range",
+          "hash": "8f83c122e63ea1ffe693b6ba99da5c69fd4b6ef061f92ae00d248e7400aa4071"
+        },
+        {
+          "id": "swgde-glossary.dvr-digital-video-recorder",
+          "title": "DVR (Digital Video Recorder)",
+          "hash": "cda1fbde671845ba6dee401e2805a0764fed47f6f40f7175ea8a0210a1bc44a7"
+        },
+        {
+          "id": "swgde-glossary.enhancement",
+          "title": "Enhancement",
+          "hash": "a573d3ccf4181f421af02855a37594069c1cf53d87b189fb0e45320fa58bf819"
+        },
+        {
+          "id": "swgde-glossary.erased-file-recovery",
+          "title": "Erased File Recovery",
+          "hash": "9aa91c58134aac3a9693e854b66eec393a3be49b67b24e9b46eb5ce0fc782781"
+        },
+        {
+          "id": "swgde-glossary.extraction",
+          "title": "Extraction",
+          "hash": "dddd764a69b44f380a0828007f97b45f578ef9daadd5fd554eb7f2f2631d12e2"
+        },
+        {
+          "id": "swgde-glossary.field",
+          "title": "Field",
+          "hash": "c7a1a958decbfa4ba979d6d0245ceaf09a59ac9ead638c3998e9e8800db8dcab"
+        },
+        {
+          "id": "swgde-glossary.file-format",
+          "title": "File Format",
+          "hash": "c37403883e944e9289c94906674f91c93a7a4c8d5977dfbd1266f6da531df8d9"
+        },
+        {
+          "id": "swgde-glossary.file-slack",
+          "title": "File Slack",
+          "hash": "f0ec6390292a72d478756643a71da84a39e0d62ad37ec00b97fc2bb35de7273c"
+        },
+        {
+          "id": "swgde-glossary.fixed-focal-length-lens-prime-lens",
+          "title": "Fixed Focal Length Lens (Prime Lens)",
+          "hash": "22adf1fd9bd8a8c71a374856d0afc8b98ee952f318c8368aa3c2aca8acb1fee7"
+        },
+        {
+          "id": "swgde-glossary.focal-length",
+          "title": "Focal Length",
+          "hash": "cab8127af35d2bbeea4191be1f74e352b9916ec751e7de03491cbb3458a295e4"
+        },
+        {
+          "id": "swgde-glossary.forensic",
+          "title": "Forensic",
+          "hash": "da83919a791f4d66d5d396a5fdf3843b0ee1555189f9393fec6381fb25abc011"
+        },
+        {
+          "id": "swgde-glossary.forensic-audio",
+          "title": "Forensic Audio",
+          "hash": "12bceaf8b2a14c2d272f7c56db3359293e204e8efe27c473dba3516914b9e184"
+        },
+        {
+          "id": "swgde-glossary.forensic-cloning",
+          "title": "Forensic Cloning",
+          "hash": "a83484a5eff0a7c9cce178ec5871de52a29598208c5fa417c089e226b8ac5695"
+        },
+        {
+          "id": "swgde-glossary.forensic-image",
+          "title": "Forensic Image",
+          "hash": "672131f7f7b001a7b99db7e23bad7fa8286dd50fe714d344f0c2a3e9f766cf89"
+        },
+        {
+          "id": "swgde-glossary.forensic-photogrammetry",
+          "title": "Forensic Photogrammetry",
+          "hash": "c653e5c56943265c6d672fed4fb7cb5ba85c1e079194664b82d2e23c7fa9d808"
+        },
+        {
+          "id": "swgde-glossary.forensic-video-analysis",
+          "title": "Forensic Video Analysis",
+          "hash": "51470ce3392ea34bd2571d67ed018b2483ad4193ca5eb1d3d63cc4d9939ef246"
+        },
+        {
+          "id": "swgde-glossary.forensic-wipe",
+          "title": "Forensic Wipe",
+          "hash": "2d9affd0c5697dbc8bba417703b91dcb82ecb2064ffebc41a7df3bd8716f124b"
+        },
+        {
+          "id": "swgde-glossary.format",
+          "title": "Format",
+          "hash": "549a36d880e2ae69c2768cba4eb5ab4f20770d538cda124c3eba98044819c7bd"
+        },
+        {
+          "id": "swgde-glossary.format-conversion",
+          "title": "Format Conversion",
+          "hash": "094afe57a82cf370be2db17e1a2932237a5348a668496bfe0e07872ceea926d3"
+        },
+        {
+          "id": "swgde-glossary.frame",
+          "title": "Frame",
+          "hash": "c53882840c80e275bc99b851021067833dd64b99915e416205117325a723c7cc"
+        },
+        {
+          "id": "swgde-glossary.free-space",
+          "title": "Free Space",
+          "hash": "86007d3be2b6aa09482686bd6a035a28265a3c44a4f601cd331c219392a00da0"
+        },
+        {
+          "id": "swgde-glossary.gaussian-blur",
+          "title": "Gaussian Blur",
+          "hash": "be5a04610061b81345d90c90b5f0f10f980bd91cb9a118c8dc28a88e2ad69b00"
+        },
+        {
+          "id": "swgde-glossary.geotag",
+          "title": "Geotag",
+          "hash": "dddb6394e53c370c309fa04b88433e2f404cfa07b9d7a4fbb472dc02050eff32"
+        },
+        {
+          "id": "swgde-glossary.gpx",
+          "title": "GPX",
+          "hash": "19471003601978a924283eb92e6dad0f48bc12a0556244bb440163f2a4ccf8c9"
+        },
+        {
+          "id": "swgde-glossary.hash-or-hash-value",
+          "title": "Hash or Hash Value",
+          "hash": "a917b2ddfba9705d471191fb48e13c70f9c4a5f1a307d334b1906577f5f6531b"
+        },
+        {
+          "id": "swgde-glossary.hashing-function",
+          "title": "Hashing Function",
+          "hash": "e1242a6293855dbf46187efdcabfc7ba8e3a5a80ddbb40e1f738960c0955b995"
+        },
+        {
+          "id": "swgde-glossary.image",
+          "title": "Image",
+          "hash": "da0ec7a60be8b630571b0661599dde2f8006647aa38747ffd38dcddd97a96f4a"
+        },
+        {
+          "id": "swgde-glossary.image-analysis",
+          "title": "Image Analysis",
+          "hash": "c04064313156a7d572f9acca85b60e76edf1736f06e1836dc17fe8198a8e528c"
+        },
+        {
+          "id": "swgde-glossary.image-averaging",
+          "title": "Image Averaging",
+          "hash": "bc5ca8efc319cf8957e273304262693fec16ca60652947b18027a91fb5ae2e1b"
+        },
+        {
+          "id": "swgde-glossary.image-comparison-photographic-comparison",
+          "title": "Image Comparison (Photographic Comparison)",
+          "hash": "fc958eb32b0b2b8c967ec4a4bbb97c1dc19bfd96e8a0a576273bad744119adcc"
+        },
+        {
+          "id": "swgde-glossary.image-content-analysis",
+          "title": "Image Content Analysis",
+          "hash": "06a42bdac3cd7a8fa59c41daed3472ea95c7faaf3af3d763f75ad835edfd9395"
+        },
+        {
+          "id": "swgde-glossary.image-data-recovery",
+          "title": "Image Data Recovery",
+          "hash": "f4e5327276a3be06690472ea98fb65865f97d2dcbdacc55f7148924fdf247272"
+        },
+        {
+          "id": "swgde-glossary.image-enhancement",
+          "title": "Image Enhancement",
+          "hash": "0a72402e0181496afb775e4b596907927257b00720afc44c4e5745486515b386"
+        },
+        {
+          "id": "swgde-glossary.image-output",
+          "title": "Image Output",
+          "hash": "3d1485df7d7a5f39c65a5ec0d418daf52e235642aab7a41201196faec4939c23"
+        },
+        {
+          "id": "swgde-glossary.image-processing",
+          "title": "Image Processing",
+          "hash": "ce14f6cf814a02c42ce2b44d6f7286804c8dc5aa9dedd5bbece39d5bb3de022d"
+        },
+        {
+          "id": "swgde-glossary.image-processing-log",
+          "title": "Image Processing Log",
+          "hash": "d81a5178449a652907dbd5833be49ade9d2ac792b5bf6882f2bcc4cefc2e71c6"
+        },
+        {
+          "id": "swgde-glossary.image-restoration",
+          "title": "Image Restoration",
+          "hash": "ff9bec543edfba23dc8e1d75d38b763163ef9b7c9f53b468398df03c2d7116cb"
+        },
+        {
+          "id": "swgde-glossary.image-synthesis",
+          "title": "Image Synthesis",
+          "hash": "2ba63659860d7f63b4d07fd24275acbdcb142d6403e8437a2168cfdea3f840dc"
+        },
+        {
+          "id": "swgde-glossary.imaging-technology",
+          "title": "Imaging Technology",
+          "hash": "0e35aa28370eae1494b10fd7206a17d330835499cf52764e7515f2e59b0b31af"
+        },
+        {
+          "id": "swgde-glossary.image-transmission",
+          "title": "Image Transmission",
+          "hash": "ace2128a6dbb80bb9d3aa66b7c7dc476ec739abb1ba26dce5a195694ad688cc1"
+        },
+        {
+          "id": "swgde-glossary.integrity-verification",
+          "title": "Integrity verification",
+          "hash": "c85beed9287263da1c71ebec028d2f30c158bf9c08f72d143684ffcced3393e1"
+        },
+        {
+          "id": "swgde-glossary.intermediate-storage",
+          "title": "Intermediate Storage",
+          "hash": "8f4a173501587cff18103bc9b373839c855cb81afeb3bc3c53a3a8a39574d7aa"
+        },
+        {
+          "id": "swgde-glossary.interlaced-scan",
+          "title": "Interlaced Scan",
+          "hash": "1f761a11dce23f2d40a389888aaf44d7af360288e0e9095c41db6af1e7857101"
+        },
+        {
+          "id": "swgde-glossary.interpolation",
+          "title": "Interpolation",
+          "hash": "46703ebc511e304e73d50b28ac2e99ef474b9fe1447a10c0048c9bdb2ab01e63"
+        },
+        {
+          "id": "swgde-glossary.log-file",
+          "title": "Log File",
+          "hash": "cc3f6ec3eaa2570922b97daf4329898605b1aaec7396e0eafd66ac49ab2e5000"
+        },
+        {
+          "id": "swgde-glossary.logical-acquisition-copy",
+          "title": "Logical Acquisition/Copy",
+          "hash": "2878db397db7da82ebd603d6b78eb36cbde04ab30d79b48efbe8a8035c989531"
+        },
+        {
+          "id": "swgde-glossary.lossy-compression",
+          "title": "Lossy Compression",
+          "hash": "0fb5ac8cc164a1a12a520bf577d662d9f23cc6c8f77cb16d2b14173ace9c6cc9"
+        },
+        {
+          "id": "swgde-glossary.lossless-compression",
+          "title": "Lossless Compression",
+          "hash": "584c531b018407b89a8a17a04aa363fa9873144753ffc73645b65e23c2f6d0e9"
+        },
+        {
+          "id": "swgde-glossary.media",
+          "title": "Media",
+          "hash": "8cf99a3246400b2b89d7cded625794c24220eb911b60fd725a14e7a20a55a6ff"
+        },
+        {
+          "id": "swgde-glossary.media-characterization",
+          "title": "Media Characterization",
+          "hash": "1206d9a15615f0bfa8f3e44086a4277dd8a300043874667d978cebd07ce5b5b7"
+        },
+        {
+          "id": "swgde-glossary.memory-smear",
+          "title": "Memory Smear",
+          "hash": "9e26a4952ec3c8303f4ba0c78e3aaad79d2c4f261d848af66f32c58312ecd431"
+        },
+        {
+          "id": "swgde-glossary.metadata",
+          "title": "Metadata",
+          "hash": "0355136ad7248badd4c36109b8edb56c020e58071933ffa6565617ab75b4785b"
+        },
+        {
+          "id": "swgde-glossary.mobile-device",
+          "title": "Mobile Device",
+          "hash": "e45dac72afc29e35d4788c5a531eb24d587c2d427444a83f1bf319d1b5633cbb"
+        },
+        {
+          "id": "swgde-glossary.mobile-phone-forensics",
+          "title": "Mobile Phone Forensics",
+          "hash": "39e145a0e3633ffbfb72871eaa8b41b9e4e7d4782c2e4d8e77ea146fcf9465c3"
+        },
+        {
+          "id": "swgde-glossary.multiplexer-demultiplexer",
+          "title": "Multiplexer/Demultiplexer",
+          "hash": "d0a1ec4d268018658df08cfb77cbdf13be4dba697d1cac310bc76a11b83f76e4"
+        },
+        {
+          "id": "swgde-glossary.multimedia-evidence",
+          "title": "Multimedia Evidence",
+          "hash": "c40122184691782acb7276de65e71e845b23f79fa9cc8510e6cfca3075eae348"
+        },
+        {
+          "id": "swgde-glossary.native-file-format",
+          "title": "Native File Format",
+          "hash": "bc2f334bb6521b4624810594b0119b71e089bc2cd1b00319027d0703de77e6c5"
+        },
+        {
+          "id": "swgde-glossary.noise",
+          "title": "Noise",
+          "hash": "47447f1e2bd88e245e3821575e7ddfad0a96d63ca108e1e98496f69ee0b98ae1"
+        },
+        {
+          "id": "swgde-glossary.nominal-resolution",
+          "title": "Nominal Resolution",
+          "hash": "77653982e7cd080f1b3f66436027d7f6b969df110df0d2e67580c8c1df33b5a2"
+        },
+        {
+          "id": "swgde-glossary.normal-lens",
+          "title": "Normal Lens",
+          "hash": "82c01d24e99273696069c62b29099f30198d07d9e724d9f2db52311c5462c6a6"
+        },
+        {
+          "id": "swgde-glossary.ntsc",
+          "title": "NTSC",
+          "hash": "0ee8be837586482296b147219264fb85b8a67286d4a0c6553dc085d085ecb9a6"
+        },
+        {
+          "id": "swgde-glossary.nvr-network-video-recorder",
+          "title": "NVR (Network Video Recorder)",
+          "hash": "40e559a530ee1f24b73af09ec423dea42d8e14f5170945eca6a508ad3b0cf688"
+        },
+        {
+          "id": "swgde-glossary.original-image",
+          "title": "Original Image",
+          "hash": "6f3c4f61df1340eac2744647265ee4737265516ea9cdcfc34b1008bc24100774"
+        },
+        {
+          "id": "swgde-glossary.original-recording",
+          "title": "Original Recording",
+          "hash": "3984647d2e569792561159edb10ca90bc17215b1e3c3f73c4ca1f97aebcde92a"
+        },
+        {
+          "id": "swgde-glossary.pal",
+          "title": "PAL",
+          "hash": "2a16979b1e4f35c10703f199afd1158cb3f77289b822cb06f4d9f1e90469486a"
+        },
+        {
+          "id": "swgde-glossary.partition",
+          "title": "Partition",
+          "hash": "ae1651d532d6051d0f4dcde01ac805f57482de814e4237da27fc0ee302ec24d9"
+        },
+        {
+          "id": "swgde-glossary.password-recovery",
+          "title": "Password Recovery",
+          "hash": "74b1d0fcdbfc6a7519803d499f76e94127b72ae299e877035e8d63550300579e"
+        },
+        {
+          "id": "swgde-glossary.pcb",
+          "title": "PCB",
+          "hash": "68553e57c4f0803806b66b88593094e56309f5cb1ce3bfc24fe09f7edefa32bf"
+        },
+        {
+          "id": "swgde-glossary.peer-review-technical-review",
+          "title": "Peer Review/Technical Review",
+          "hash": "72aa4ea2d89d5c72876895e5f501f4ca73a03b110d1444bcecd52faf44745a66"
+        },
+        {
+          "id": "swgde-glossary.photogrammetry",
+          "title": "Photogrammetry",
+          "hash": "e0a7980af6df8b5790895f788d97884f80a41679fd0587ce0dfdad61fdd5e4be"
+        },
+        {
+          "id": "swgde-glossary.photometry",
+          "title": "Photometry",
+          "hash": "8e1a2005fb8d14626df862c91d358761ac22cfa581cbc4c7fe3db7682b09b520"
+        },
+        {
+          "id": "swgde-glossary.physical-copy",
+          "title": "Physical Copy",
+          "hash": "8462ae87274367a99b44a0b187b291e9a134865d33070890d7af2d49b06c3883"
+        },
+        {
+          "id": "swgde-glossary.physical-image-acquisition",
+          "title": "Physical Image/Acquisition",
+          "hash": "bf63113b3ecf438e6e745c09c8e9f98ab7dc87b62130d7d0118729a453576b02"
+        },
+        {
+          "id": "swgde-glossary.pixel",
+          "title": "Pixel",
+          "hash": "da17e21242926c1d7a506c520b6cbb8cea98d7f3d0b25ab490d71e7c2436ba3b"
+        },
+        {
+          "id": "swgde-glossary.playback-optimization",
+          "title": "Playback Optimization",
+          "hash": "8c91b141a4fb8d4b32e9ef5bede1321c227442be40aa0f8d14650e0ecd9785a3"
+        },
+        {
+          "id": "swgde-glossary.playback",
+          "title": "Playback",
+          "hash": "92ad5b948729a7974f32655d0db2aed01a355f404f346030f6f3d5aea27aa480"
+        },
+        {
+          "id": "swgde-glossary.preview",
+          "title": "Preview",
+          "hash": "a2827f5b803292a8d2fb9c76bb356c09f4e68f66d2f5611125d497be69dca14c"
+        },
+        {
+          "id": "swgde-glossary.primary-image",
+          "title": "Primary Image",
+          "hash": "9c7c647c99a80149d9286f4b7e250a1842bf34b5a2b6b121db07fbd320dd405a"
+        },
+        {
+          "id": "swgde-glossary.processed-image",
+          "title": "Processed Image",
+          "hash": "fc8e3715ceb5b27a412db9df9bfb4ce05c2318602ef6afd5d474ff582c503fe8"
+        },
+        {
+          "id": "swgde-glossary.production-switcher",
+          "title": "Production Switcher",
+          "hash": "d2bce0e6c259d0d49044609ad5d6223f3ac6ddf16b9a0a6d6b1bffd3ec6f7782"
+        },
+        {
+          "id": "swgde-glossary.proficiency-test",
+          "title": "Proficiency Test",
+          "hash": "0401627ef165e67a0ba7bf09121f2d6d876d6a7c8ed656e7eec20aaf32061867"
+        },
+        {
+          "id": "swgde-glossary.progressive-scan",
+          "title": "Progressive Scan",
+          "hash": "2b0c4fa0db2c9ebf185a4a3812ef7759111bc9dc82cd1b39f286d0df44c499bf"
+        },
+        {
+          "id": "swgde-glossary.proprietary-file-format",
+          "title": "Proprietary File Format",
+          "hash": "0e2e2fefc8b79b14084556f6152312ed5cfa86ccc6fcad596cc8bc288595efff"
+        },
+        {
+          "id": "swgde-glossary.quality-assurance",
+          "title": "Quality Assurance",
+          "hash": "a2b19dfa80c4533cfbab528106802b433c3815489840518f889313caba0c74b4"
+        },
+        {
+          "id": "swgde-glossary.quantitative-image-analysis",
+          "title": "Quantitative Image Analysis",
+          "hash": "bf5cd6edbfc1ac957170632e102990dfa6f9f443e04cfd69cac888456ba53c88"
+        },
+        {
+          "id": "swgde-glossary.reconstruction",
+          "title": "Reconstruction",
+          "hash": "4d0fb3477f05c72a708d87fc749775a68462a8bc71852b71e18946aca21d8435"
+        },
+        {
+          "id": "swgde-glossary.reference-materials",
+          "title": "Reference Materials",
+          "hash": "9d79b06038a52e64256a70cc507423b8689073d17bd9bcef3cec25c2842e46fa"
+        },
+        {
+          "id": "swgde-glossary.reliability",
+          "title": "Reliability",
+          "hash": "41f0f9c00378ef6790e37fead046d6e52b09002496430c1ce09b26018462805d"
+        },
+        {
+          "id": "swgde-glossary.reproducibility",
+          "title": "Reproducibility",
+          "hash": "3de5758735d7ddb28e66c6755a7368e05f5db3a9b43966aef39dae599852dbb1"
+        },
+        {
+          "id": "swgde-glossary.residue",
+          "title": "Residue",
+          "hash": "21358cec35398890366146325ef53461ff4340b98d2ca161000aea57a4ff179c"
+        },
+        {
+          "id": "swgde-glossary.resolution",
+          "title": "Resolution",
+          "hash": "5d7e6290a1d135229a1eb7d516a62b38a5ce548c72e6393583ca63933745f485"
+        },
+        {
+          "id": "swgde-glossary.resolving-power",
+          "title": "Resolving Power",
+          "hash": "5142cd7df98d555bdfed2d9ab5c77f20902470b7344122eeabdf67808434928e"
+        },
+        {
+          "id": "swgde-glossary.restoration",
+          "title": "Restoration",
+          "hash": "275c4aef961929afd5e34bddec3a20ab7a301403bb41186906330ed20a1455fb"
+        },
+        {
+          "id": "swgde-glossary.route",
+          "title": "Route",
+          "hash": "d65acdadda28146039a46f8c417286bc1fbb4f7b5b954d446251723c999d5cca"
+        },
+        {
+          "id": "swgde-glossary.routing-switcher",
+          "title": "Routing Switcher",
+          "hash": "009e2d1b44717bf874bb9ccb8205a6f1b52e934b4bdc58a614f1216258551268"
+        },
+        {
+          "id": "swgde-glossary.sharpening",
+          "title": "Sharpening",
+          "hash": "d45d3b364bf4d2918f2b387bfd1436ae632ebf0e4dbf727a8ee7bbca1b639189"
+        },
+        {
+          "id": "swgde-glossary.signature-wiped",
+          "title": "Signature Wiped",
+          "hash": "85d50669e6a23e2848aa7f3217b23e45285e85323a12ce2f1dfaf0fc029f580e"
+        },
+        {
+          "id": "swgde-glossary.skimmer",
+          "title": "Skimmer",
+          "hash": "3ef212c02239c9967a18836c88e80683499a85c85f0c5a0666bf551163768196"
+        },
+        {
+          "id": "swgde-glossary.standard-conversion",
+          "title": "Standard Conversion",
+          "hash": "4b424a7449612b16acd7d143a547d71b508c1a11c27b6ba3c4fec92537778c3e"
+        },
+        {
+          "id": "swgde-glossary.source-code",
+          "title": "Source Code",
+          "hash": "d0a12d0aa5a046ea8b993bf13b17fe996c8a91bc90e1226ed893a60f6ada381e"
+        },
+        {
+          "id": "swgde-glossary.storage-media",
+          "title": "Storage Media",
+          "hash": "568fb6ad379a2dda5d6dfccc5d0360beec99cdaa20f28249bc036dc505c4fa78"
+        },
+        {
+          "id": "swgde-glossary.s-video",
+          "title": "S-Video",
+          "hash": "719e4d71a5b93889aaf1dc8acc26f0338325cef718f72a76037d277e57c0dae6"
+        },
+        {
+          "id": "swgde-glossary.technical-peer-review",
+          "title": "Technical/Peer Review",
+          "hash": "72aa4ea2d89d5c72876895e5f501f4ca73a03b110d1444bcecd52faf44745a66"
+        },
+        {
+          "id": "swgde-glossary.time-base-corrector-tbc",
+          "title": "Time-base Corrector (TBC)",
+          "hash": "ff578828d669040bae08c5369999af08a0d693408e3222aa657b9c70f20f2be1"
+        },
+        {
+          "id": "swgde-glossary.timed-expiry",
+          "title": "Timed Expiry",
+          "hash": "75d989e776c3b2f8f4a9d91132188fd86c921c6a28c7c81fe356823316e04b98"
+        },
+        {
+          "id": "swgde-glossary.time-lapse-video-recording",
+          "title": "Time Lapse Video Recording",
+          "hash": "aee9a1a1471075639e2077ec53fcfadd15ea591bcbd0e10af2bd48bbf6658a41"
+        },
+        {
+          "id": "swgde-glossary.timeline-sequence-reconstruction",
+          "title": "Timeline Sequence Reconstruction",
+          "hash": "c728325286bfb07180ece39a56786bb684c15eed9c1a824c1c0ecfeb300597d2"
+        },
+        {
+          "id": "swgde-glossary.track-log",
+          "title": "Track Log",
+          "hash": "7218654cadfc5baa53ba025ee41c6122b0d83e3a13ece9a8786f237314073293"
+        },
+        {
+          "id": "swgde-glossary.trackpoint",
+          "title": "Trackpoint",
+          "hash": "0a3e1ce4be46958a847da99dc4d1a8a4d0c57b541aaccf86b6490ce9b6245cf8"
+        },
+        {
+          "id": "swgde-glossary.traditional-enhancement-techniques",
+          "title": "Traditional Enhancement Techniques",
+          "hash": "fda4408f2ca4aa03701af84341a787dc1b4840b2a5235ddcba96fac5393d59be"
+        },
+        {
+          "id": "swgde-glossary.transcode",
+          "title": "Transcode",
+          "hash": "dd78a77a2e64aef9e8f0c2de1f3097bdc25ae4d416acf27478d7672ca5e1ba89"
+        },
+        {
+          "id": "swgde-glossary.triage",
+          "title": "Triage",
+          "hash": "9ab5ea37c1a43a8e9bc350dc005a2500b2e29fe60158d3d367779c87effd7b9a"
+        },
+        {
+          "id": "swgde-glossary.trusted-media",
+          "title": "Trusted Media",
+          "hash": "044fefd8d9355b9916a76669efeb2966400ca397d0f4a22263f8ecebe490b935"
+        },
+        {
+          "id": "swgde-glossary.validation",
+          "title": "Validation",
+          "hash": "4068916c002887430d158e6f267df81e129b29c276d8f54fa8b980e9cac064a1"
+        },
+        {
+          "id": "swgde-glossary.validation-testing",
+          "title": "Validation Testing",
+          "hash": "e27f217cce97e3c0e5af54592c1c20e1d9d52a73016581519de160226349f6b5"
+        },
+        {
+          "id": "swgde-glossary.variable-focal-length-lens-zoom",
+          "title": "Variable Focal Length Lens (Zoom)",
+          "hash": "3c2c5360edb20d2b4b7d83c49eb5af7d3575dbc67a101d294d94e94300896ee1"
+        },
+        {
+          "id": "swgde-glossary.vectorscope",
+          "title": "Vectorscope",
+          "hash": "ac8d67bd0edb555d832527645845552860c96f2ea39516926c26581fc5788b60"
+        },
+        {
+          "id": "swgde-glossary.verification",
+          "title": "Verification",
+          "hash": "06929dba441b2e2324f993dd5fdf58d123f8cc4cc8a11b36346d1da94427d2cb"
+        },
+        {
+          "id": "swgde-glossary.video",
+          "title": "Video",
+          "hash": "7950fdf3f838147ceb3d73adaf6433d33d9062e90cf363ccdff26644170ce505"
+        },
+        {
+          "id": "swgde-glossary.video-analysis",
+          "title": "Video Analysis",
+          "hash": "47a5a4dd9e32d1e928bf5af961d7dcef87973803fd09fb5b53b3431446f6bdf2"
+        },
+        {
+          "id": "swgde-glossary.video-distribution-amplifier",
+          "title": "Video Distribution Amplifier",
+          "hash": "74faca929b0cda851e57039f13637b2989de2b5ce3605cafba3c8b82e27f9f7f"
+        },
+        {
+          "id": "swgde-glossary.video-enhancement",
+          "title": "Video Enhancement",
+          "hash": "c93b4181a87068c046d784bad295b1d59fe0481fc3c00b1857b9132925e44cf5"
+        },
+        {
+          "id": "swgde-glossary.video-security-recording-system",
+          "title": "Video Security Recording System",
+          "hash": "f35b6c7ade48413a142e2058b3b9eb812b15730731bceb58c2e1c0577fe73924"
+        },
+        {
+          "id": "swgde-glossary.video-stabilization",
+          "title": "Video Stabilization",
+          "hash": "0c963f5a84dfdbbbab6a9fba60823ef52afcb5ef8621b5b3beed5ac139abf7df"
+        },
+        {
+          "id": "swgde-glossary.waveform-monitor",
+          "title": "Waveform Monitor",
+          "hash": "e4eff683f9848aad803837c68ec94bb485a7aad40a8b859e00fd785d0f870520"
+        },
+        {
+          "id": "swgde-glossary.waypoint",
+          "title": "Waypoint",
+          "hash": "8876f28717fc5659bfbc66ac63e77f1b3508e4c240db123f69d9ef4ba70a7ffc"
+        },
+        {
+          "id": "swgde-glossary.work-copy",
+          "title": "Work Copy",
+          "hash": "7585e33f57305d39777bf3a5d95820b5f4db4a4a1df94d18b2867bf1ab60d2de"
+        },
+        {
+          "id": "swgde-glossary.worm-storage",
+          "title": "WORM (storage)",
+          "hash": "5ead7eb75daaeb183c9839380bd8fdf4cc30f9c016ae8aebfaa48f9c0140f3f9"
+        },
+        {
+          "id": "swgde-glossary.write-block-write-protect",
+          "title": "Write Block/Write Protect",
+          "hash": "8a2b6a59cd4e66b5b5b999f493471bba848d66e6c12068612ade86ccab5c47ec"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-model-sop",
+      "title": "Model SOP for Computer Forensics",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2012-09-13-SWGDE-Model-SOP-for-Computer-Forensics-V3-0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2012-09-13",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-model-sop.front-matter",
+          "title": "Cover page and notices",
+          "hash": "f9052b10fc47004282452bdcb5c9bf1396c8bae266370bc9da91550a73ff181b"
+        },
+        {
+          "id": "swgde-model-sop.s1",
+          "title": "1. Introduction",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-model-sop.s1-1",
+          "title": "1.1 Purpose",
+          "hash": "6b6bed61f31f750cb3d5a8d2dd0e143076c32e22f65914b1bca7b99014401c4e"
+        },
+        {
+          "id": "swgde-model-sop.s1-2",
+          "title": "1.2 Scope",
+          "hash": "968b75493284ec5197957ac9d409d0a2bb4d40b8072e4c3f0b0a1a8600730867"
+        },
+        {
+          "id": "swgde-model-sop.s1-3",
+          "title": "1.3 Discussion",
+          "hash": "1aec6c38f6be462098bc30a5d66ea60a98eed92732c0d4402e50c774a9365d44"
+        },
+        {
+          "id": "swgde-model-sop.s2",
+          "title": "2. Minimum Exam Standards",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-model-sop.s2-1",
+          "title": "2.1 Purpose",
+          "hash": "a393d59cbb1e39da8d53135ef55d95a6f71a03d00da1d7a3da221e1d10c9e606"
+        },
+        {
+          "id": "swgde-model-sop.s2-2",
+          "title": "2.2 Scope",
+          "hash": "3dcd775a82e67f8d0e89e734536c5b235c1f6e9bc8bb7aff36ff43379d864f80"
+        },
+        {
+          "id": "swgde-model-sop.s2-3",
+          "title": "2.3 Examination Requirements",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-model-sop.s2-3-1",
+          "title": "2.3.1 Equipment Preparation",
+          "hash": "3aea9a5f7b73c123cc09d42e34eec38d6e132bed44bbcfa4667056885672624c"
+        },
+        {
+          "id": "swgde-model-sop.s2-3-2",
+          "title": "2.3.2 Examination Request",
+          "hash": "0be83e0d449a4979b716d413b4804f1b498fb0194503a74ff14acfea7d8c01a0"
+        },
+        {
+          "id": "swgde-model-sop.s2-3-3",
+          "title": "2.3.3 Evidence Preservation",
+          "hash": "e9033649e75e3df5423f3caa294bf3957806baa9f7067c890b2e106f327c03d3"
+        },
+        {
+          "id": "swgde-model-sop.s2-3-4",
+          "title": "2.3.4 Examination",
+          "hash": "d3029deb1652558d9c8123524c5369f719daeae77444512f33ffc5a3af4ac9c6"
+        },
+        {
+          "id": "swgde-model-sop.s2-4",
+          "title": "2.4 Documentation",
+          "hash": "15f5db984b1d30af63fcf9fb9d9b924d094d7c8d4510a24ec81331fc160bb239"
+        },
+        {
+          "id": "swgde-model-sop.s2-4-1",
+          "title": "2.4.1 Request",
+          "hash": "785b87fa1084fc2621777420de5c26db03c214ba50992608c2e226b777bafa24"
+        },
+        {
+          "id": "swgde-model-sop.s2-4-2",
+          "title": "2.4.2 Chain of Custody",
+          "hash": "e12338ed313a11b596d33213d89bf2dd4014f6eddca55338dc92e14a789d6ca5"
+        },
+        {
+          "id": "swgde-model-sop.s2-4-3",
+          "title": "2.4.3 Notes",
+          "hash": "8af3fe5bdb700a3e40b36cb79b373ffd699109b150f245ac19433355fee982e9"
+        },
+        {
+          "id": "swgde-model-sop.s2-4-4",
+          "title": "2.4.4 Examination Report",
+          "hash": "089131a5a3275b79b87f2694786f3915672196b4160af8dd02bf8486b10fafb0"
+        },
+        {
+          "id": "swgde-model-sop.s3",
+          "title": "3. Tool and Technique Testing",
+          "hash": "c6a79c07cb2d0433809d0d43fcb0af2f22c435019275e831cda1fd0fe1755cc3"
+        },
+        {
+          "id": "swgde-model-sop.s4",
+          "title": "4. Case Prioritization",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "swgde-model-sop.s4-1",
+          "title": "4.1 Purpose and Scope",
+          "hash": "60d54520af7afd0bec88ca7e25f31202e4649f71a220f1d0ed94d42a04916c29"
+        },
+        {
+          "id": "swgde-model-sop.s4-2",
+          "title": "4.2 Case Prioritization",
+          "hash": "bf5298199885450c1f11dfb93080926c943a9cb0e6eb2528fda73b4d3521ebae"
+        },
+        {
+          "id": "swgde-model-sop.s4-3",
+          "title": "4.3 Exceptions and Modifications to Case Prioritization",
+          "hash": "8c9a3ea24168811b9ea8b5bf79ab2a264935c79eb6a77bbf6ae2ec21062d547b"
+        },
+        {
+          "id": "swgde-model-sop.s4-4",
+          "title": "4.4 Triage",
+          "hash": "e4ec5c5a44c47ed7a0736ad2a7e233f86f438b469a2fc5f03fb65e2673c2cc1a"
+        },
+        {
+          "id": "swgde-model-sop.s5",
+          "title": "5. Recommendation",
+          "hash": "803371c23a34ca2cf5b2f86d9e590255a22a2de51774cbad3f9ddf830e03c169"
+        },
+        {
+          "id": "swgde-model-sop.s6",
+          "title": "6. Model Standard Operating Procedures",
+          "hash": "3ebc7d2b5640c97758d23e6dadc2621721badc90edbdf00533a4585aa12ace93"
+        },
+        {
+          "id": "swgde-model-sop.scene-module-1-evidence-preservation-cri",
+          "title": "Scene Module 1: Evidence Preservation: Crime Scene / Field Response",
+          "hash": "fa497d4c5776c2835cac592e880ed7a54ff05d7441744c89033c42657a8b56f6"
+        },
+        {
+          "id": "swgde-model-sop.scene-module-2-live-memory-imaging-and-a",
+          "title": "Scene Module 2: Live Memory Imaging and Analysis",
+          "hash": "cf3788600ed5be580ebae4b40fb3f7f8654e22f93746fd0df66a0ed43ff93667"
+        },
+        {
+          "id": "swgde-model-sop.scene-module-3-imaging-and-preview",
+          "title": "Scene Module 3: Imaging and Preview",
+          "hash": "58914fb1ff574f47f5c1e3e5bb01200ae7fc113702ade0e4a1ea95cfd4a42ff0"
+        },
+        {
+          "id": "swgde-model-sop.scene-module-4-mobile-device-collection",
+          "title": "Scene Module 4: Mobile Device Collection",
+          "hash": "465e92d6c6179321bda5c668bf398ee90d0b0499a802d49a08c39bc37888b653"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-1-exam-preparation-workstatio",
+          "title": "Lab Module 1: Exam Preparation: Workstation",
+          "hash": "ebd807b5572b7ec05813a25ed212f71bd98d87982a31b8f868ea1babaeb105c5"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-2-physical-inspection",
+          "title": "Lab Module 2: Physical Inspection",
+          "hash": "ce975d6b029b4a69b8bdb9acd7a3a1cdb7646e34f3bd5dfb24d738859b4ec81f"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-3-write-protecting-media",
+          "title": "Lab Module 3: Write Protecting Media",
+          "hash": "4672bf03d909ee4765da1b50947948dbe0e7a547a1c76974a63d28ee90fdf9c3"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-4-wiping-media",
+          "title": "Lab Module 4: Wiping Media",
+          "hash": "4984e26537e587a220b81bef8bf3bfbb348d73509415f9f44145f636e5adef7f"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-5-hard-drive-removal-and-bios",
+          "title": "Lab Module 5: Hard Drive Removal and BIOS Check",
+          "hash": "0120a9788be27ea6c110bff67fa9e780a5ed18443d738f08da633c338c5bdb18"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-6-hard-drive-imaging-protocol",
+          "title": "Lab Module 6: Hard Drive Imaging Protocol Using Windows",
+          "hash": "549a263fb4dfae957bcf9a3cfab1ba83d8822683a4b7b8630037edcc06fb374b"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-7-imaging-protocol-using-linu",
+          "title": "Lab Module 7: Imaging Protocol Using Linux",
+          "hash": "52ae34fb2478e6326fb22d7360e6fbf53d3c6dc0ac992a907de977aa1b12460f"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-8-imaging-a-macintosh-compute",
+          "title": "Lab Module 8: Imaging a Macintosh Computer",
+          "hash": "ade82c94d67447109fbd436e7fc365e91e788cb7a78e05cdb800d8c941e059e3"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-9-cable-acquisition-protocol",
+          "title": "Lab Module 9: Cable Acquisition Protocol",
+          "hash": "d6ed9a44aff9524216014bdd5f068c3a2694136f6236ee262beee728c2b4f817"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-10-handheld-mobile-devices",
+          "title": "Lab Module 10: Handheld/Mobile Devices",
+          "hash": "c7bee19b7447854a32a4bc1b21b0c726f15862965644c94d8529e57c65342b6f"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-11-examination-and-analysis",
+          "title": "Lab Module 11: Examination and Analysis",
+          "hash": "fd2a713949421b7481e70738a041471448ce46ea7aa46a33aa546822dbb71671"
+        },
+        {
+          "id": "swgde-model-sop.lab-module-12-image-restoration",
+          "title": "Lab Module 12: Image Restoration",
+          "hash": "9a6624704b4e58f30046b2ff68645479523bdd15a6e7a27a3c042a2785807111"
+        }
+      ]
+    },
+    {
+      "unit_id": "swgde-data-integrity",
+      "title": "Data Integrity Within Computer Forensics",
+      "redacted": false,
+      "url": "https://www.swgde.org/wp-content/uploads/2023/11/2006-04-12-SWGDE-Data-Integrity-Within-Computer-Forensics-V1-0.pdf",
+      "git_commit_id": null,
+      "updated_at": "2006-04-12",
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "swgde-data-integrity.front-matter",
+          "title": "Cover page and notices",
+          "hash": "5addf31a2e381bda83f1e1f26bc8f64befc378b1cc4524b5d4110584c5ade722"
+        },
+        {
+          "id": "swgde-data-integrity.s1-0",
+          "title": "1.0 Digital Evidence",
+          "hash": "428fd73ea971e98f80ff97f8e471fb80535ed3955aab2ba87f709d9c8a0dc302"
+        },
+        {
+          "id": "swgde-data-integrity.s2-0",
+          "title": "2.0 Security",
+          "hash": "b582481eab5be0728724a0e0461049391e7204c492cf31615ea697ac7a7ccbdd"
+        },
+        {
+          "id": "swgde-data-integrity.s3-0",
+          "title": "3.0 Hashing",
+          "hash": "e4ddfe8dcb8dbe382978fb90d405fc9762ff3fe73c3dadf0f6e8ea5ed284c36b"
+        },
+        {
+          "id": "swgde-data-integrity.s4-0",
+          "title": "4.0 Verification/Analyzation",
+          "hash": "85432f2abc6684e1983b652db95157afd9772d6f64ade85f1e3309d0317e9b2c"
+        },
+        {
+          "id": "swgde-data-integrity.s5-0",
+          "title": "5.0 Rehash of Image",
+          "hash": "da86a68d4122621673053d4dd2468b0b39034217f1a30f62d89ed8b0dbd4c02d"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2435 @@
+{
+ "schema_version": "1.0.0",
+ "document_id": "nist-sp800-61r3:800-61r3",
+ "source_sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+ "coordinate_convention": "pdf_points_top_left_origin",
+ "page_count": 48,
+ "label_ranges": [
+  {
+   "start_page": 1,
+   "end_page": 1,
+   "style": "none",
+   "first_label": null,
+   "last_label": null
+  },
+  {
+   "start_page": 2,
+   "end_page": 2,
+   "style": "none",
+   "first_label": null,
+   "last_label": null
+  },
+  {
+   "start_page": 3,
+   "end_page": 3,
+   "style": "none",
+   "first_label": null,
+   "last_label": null
+  },
+  {
+   "start_page": 4,
+   "end_page": 4,
+   "style": "none",
+   "first_label": null,
+   "last_label": null
+  },
+  {
+   "start_page": 5,
+   "end_page": 8,
+   "style": "lower_roman",
+   "first_label": "i",
+   "last_label": "iv"
+  },
+  {
+   "start_page": 9,
+   "end_page": 48,
+   "style": "decimal",
+   "first_label": "1",
+   "last_label": "40"
+  }
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "page_label": null,
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text_and_images",
+   "body_chars": 273,
+   "vector_objects": 0,
+   "furniture": [],
+   "images": [
+    {
+     "bbox": [
+      302.9,
+      718.5,
+      540.01,
+      755.77
+     ],
+     "srcsize": [
+      1177,
+      185
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      12.24,
+      15.84,
+      71.36,
+      74.96
+     ],
+     "srcsize": [
+      379,
+      379
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    }
+   ],
+   "body_key_chars": 260,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 2,
+   "page_label": null,
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text_and_images",
+   "body_chars": 612,
+   "vector_objects": 0,
+   "furniture": [],
+   "images": [
+    {
+     "bbox": [
+      468.0,
+      556.18,
+      540.0,
+      628.18
+     ],
+     "srcsize": [
+      300,
+      300
+     ],
+     "raw_sha256": null,
+     "element_id": "fm-front-matter.f01"
+    }
+   ],
+   "body_key_chars": 591,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 3,
+   "page_label": null,
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2690,
+   "vector_objects": 3,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2584,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 4,
+   "page_label": null,
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 590,
+   "vector_objects": 2,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 546,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 5,
+   "page_label": "i",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1558,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "i",
+     "bbox": [
+      304.81,
+      746.51,
+      307.09,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1513,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 6,
+   "page_label": "ii",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 723,
+   "vector_objects": 2,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "ii",
+     "bbox": [
+      303.72,
+      746.51,
+      308.28,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 706,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 7,
+   "page_label": "iii",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 657,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "iii",
+     "bbox": [
+      302.52,
+      746.51,
+      309.36,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 646,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 8,
+   "page_label": "iv",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text_and_images",
+   "body_chars": 1616,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "iv",
+     "bbox": [
+      302.52,
+      746.51,
+      309.31,
+      756.47
+     ]
+    }
+   ],
+   "images": [
+    {
+     "bbox": [
+      83.4,
+      135.72,
+      539.28,
+      145.8
+     ],
+     "srcsize": [
+      1900,
+      42
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      83.4,
+      154.68,
+      539.28,
+      162.36
+     ],
+     "srcsize": [
+      1900,
+      32
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      83.16,
+      191.04,
+      539.52,
+      201.12
+     ],
+     "srcsize": [
+      1902,
+      42
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      83.16,
+      209.52,
+      539.4,
+      219.6
+     ],
+     "srcsize": [
+      1901,
+      42
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      83.16,
+      227.88,
+      539.4,
+      237.96
+     ],
+     "srcsize": [
+      1901,
+      42
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      83.04,
+      264.72,
+      539.28,
+      274.8
+     ],
+     "srcsize": [
+      1901,
+      42
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    },
+    {
+     "bbox": [
+      83.04,
+      283.2,
+      539.28,
+      293.28
+     ],
+     "srcsize": [
+      1901,
+      42
+     ],
+     "raw_sha256": null,
+     "element_id": null
+    }
+   ],
+   "body_key_chars": 570,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 9,
+   "page_label": "1",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2213,
+   "vector_objects": 1,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "1",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2159,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 10,
+   "page_label": "2",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2416,
+   "vector_objects": 5,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "2",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2359,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 11,
+   "page_label": "3",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2272,
+   "vector_objects": 4,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "3",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2208,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 12,
+   "page_label": "4",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text_and_images",
+   "body_chars": 1720,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "4",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [
+    {
+     "bbox": [
+      128.7,
+      254.46,
+      483.59,
+      433.38
+     ],
+     "srcsize": [
+      1058,
+      534
+     ],
+     "raw_sha256": null,
+     "element_id": "sec2.s01.f01"
+    }
+   ],
+   "body_key_chars": 1677,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec2.h01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 13,
+   "page_label": "5",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text_and_images",
+   "body_chars": 1800,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "5",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [
+    {
+     "bbox": [
+      160.5,
+      344.18,
+      451.21,
+      561.58
+     ],
+     "srcsize": [
+      1212,
+      906
+     ],
+     "raw_sha256": null,
+     "element_id": "sec2.s01.f02"
+    }
+   ],
+   "body_key_chars": 1718,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 14,
+   "page_label": "6",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1951,
+   "vector_objects": 125,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "6",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1903,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec2.s02.h01",
+    "sec2.s02.p01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": {
+    "reviewer": "Claude (AI agent)",
+    "date": "2026-10-25",
+    "method": "rendered at 1.0x and viewed alongside the element list and Markdown",
+    "result": "matches",
+    "notes": "Table 1 row spans reconstructed correctly (Preparation x3, Detection & Analysis x2, Containment/Eradication/Recovery x3); printed page number read from the footer.",
+    "elements_checked": [
+     "sec2.s01.p09",
+     "sec2.s01.p10",
+     "sec2.s01.t01",
+     "sec2.s01.p11",
+     "sec2.s02.h01",
+     "sec2.s02.p01"
+    ]
+   }
+  },
+  {
+   "page": 15,
+   "page_label": "7",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2507,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "7",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2403,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec2.s02.p02",
+    "sec2.s02.l01.i01",
+    "sec2.s02.l01.i02.l01.i01",
+    "sec2.s02.l01.i02.l01.i02",
+    "sec2.s02.l01.i02.l01.i03",
+    "sec2.s02.p03",
+    "sec2.s02.l02.i01",
+    "sec2.s02.l02.i02",
+    "sec2.s02.l02.i03"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 16,
+   "page_label": "8",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2625,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "8",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2540,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec2.s02.l02.i04",
+    "sec2.s02.l02.i05",
+    "sec2.s02.l02.i06",
+    "sec2.s02.p04",
+    "sec2.s02.p05"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 17,
+   "page_label": "9",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1393,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "9",
+     "bbox": [
+      303.48,
+      746.51,
+      308.53,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1359,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 18,
+   "page_label": "10",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2376,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "10",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2275,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.h01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 19,
+   "page_label": "11",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2061,
+   "vector_objects": 145,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "11",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1989,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 20,
+   "page_label": "12",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2036,
+   "vector_objects": 238,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "12",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1967,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 21,
+   "page_label": "13",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1888,
+   "vector_objects": 232,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "13",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1813,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 22,
+   "page_label": "14",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1696,
+   "vector_objects": 235,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "14",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1641,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 23,
+   "page_label": "15",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2085,
+   "vector_objects": 231,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "15",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2014,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 24,
+   "page_label": "16",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2446,
+   "vector_objects": 208,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "16",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2367,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 25,
+   "page_label": "17",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1936,
+   "vector_objects": 129,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "17",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1858,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 26,
+   "page_label": "18",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2087,
+   "vector_objects": 158,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "18",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1990,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 27,
+   "page_label": "19",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2059,
+   "vector_objects": 177,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "19",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1974,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 28,
+   "page_label": "20",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1949,
+   "vector_objects": 121,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "20",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1884,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 29,
+   "page_label": "21",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1763,
+   "vector_objects": 249,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "21",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1692,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 30,
+   "page_label": "22",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1951,
+   "vector_objects": 269,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "22",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1845,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 31,
+   "page_label": "23",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1992,
+   "vector_objects": 220,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "23",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1926,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.h01",
+    "sec3.s02.p01",
+    "sec3.s02.p02",
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 32,
+   "page_label": "24",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2098,
+   "vector_objects": 181,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "24",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2028,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": {
+    "reviewer": "Claude (AI agent)",
+    "date": "2026-10-25",
+    "method": "rendered at 1.0x and viewed alongside the merged table rows",
+    "result": "matches",
+    "notes": "Repeated header row at the top of the page dropped; the 'R2: Tune the continuous monitoring...' continuation (empty first three cells) merged into the DE.CM row from p. 31; DE.CM-01..09 rows match.",
+    "elements_checked": [
+     "sec3.s02.t01"
+    ]
+   }
+  },
+  {
+   "page": 33,
+   "page_label": "25",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2027,
+   "vector_objects": 99,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "25",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1962,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 34,
+   "page_label": "26",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2132,
+   "vector_objects": 165,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "26",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2051,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 35,
+   "page_label": "27",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1820,
+   "vector_objects": 126,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "27",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1761,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 36,
+   "page_label": "28",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2019,
+   "vector_objects": 163,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "28",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1969,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 37,
+   "page_label": "29",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1983,
+   "vector_objects": 129,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "29",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1921,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 38,
+   "page_label": "30",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1959,
+   "vector_objects": 115,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "30",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1909,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 39,
+   "page_label": "31",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1801,
+   "vector_objects": 111,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "31",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1763,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 40,
+   "page_label": "32",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1860,
+   "vector_objects": 110,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "32",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1795,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 41,
+   "page_label": "33",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1825,
+   "vector_objects": 114,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "33",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1755,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 42,
+   "page_label": "34",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2309,
+   "vector_objects": 179,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "34",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 2234,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 43,
+   "page_label": "35",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1053,
+   "vector_objects": 107,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "35",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1026,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [
+    "sec3.s02.t01"
+   ],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 44,
+   "page_label": "36",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 2104,
+   "vector_objects": 10,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "36",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1897,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 45,
+   "page_label": "37",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1987,
+   "vector_objects": 8,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "37",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1755,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 46,
+   "page_label": "38",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 547,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "38",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 539,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 47,
+   "page_label": "39",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 1970,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "39",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 1890,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  },
+  {
+   "page": 48,
+   "page_label": "40",
+   "width": 612.0,
+   "height": 792.0,
+   "rotation": 0,
+   "content_class": "text",
+   "body_chars": 729,
+   "vector_objects": 0,
+   "furniture": [
+    {
+     "text": "NIST SP 800-61r3 Incident Response Recommendations and",
+     "bbox": [
+      72.0,
+      38.75,
+      540.07,
+      48.71
+     ]
+    },
+    {
+     "text": "April 2025 Considerations for Cyber Risk Management",
+     "bbox": [
+      72.0,
+      50.87,
+      539.98,
+      60.83
+     ]
+    },
+    {
+     "text": "40",
+     "bbox": [
+      300.96,
+      746.51,
+      311.05,
+      756.47
+     ]
+    }
+   ],
+   "images": [],
+   "body_key_chars": 711,
+   "uncovered_key_chars": 0,
+   "uncovered_regions": [],
+   "element_ids": [],
+   "coverage_status": "text_covered",
+   "visual_review": null
+  }
+ ]
+}

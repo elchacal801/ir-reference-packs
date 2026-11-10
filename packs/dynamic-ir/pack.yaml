@@ -1,0 +1,81 @@
+# Reference-pack contract for the Dynamic Incident Response book.
+# Validated against schemas/pack.schema.json by `irpacks validate-pack`.
+schema_version: "1.0.0"
+pack_id: dynamic-ir
+pack_version: "0.1.0"
+title: "Dynamic Incident Response: A Framework for Security Teams"
+description: >-
+  Source-faithful conversion of the publisher's PDF (First Edition, build stamp 20260917164224) with
+  PDF page provenance, verified against the same-build Asciidoctor HTML for structure.
+source:
+  title: "Dynamic Incident Response: A Framework for Security Teams"
+  authors: ["Joshua Wright"]
+  publisher: "The Escal Institute of Advanced Technologies, Inc. d/b/a SANS Institute"
+  url: "https://dl.dynamicincidentresponse.com/dynamicir.pdf"
+  landing_page: "https://dynamicincidentresponse.com/"
+  edition: "First Edition"
+  # Printed on the copyright page (PDF p. 3) of the registered PDF. The copy inspected while
+  # planning (stamp 20260914175315, sha256 a0b16111...) is a different build; see sources.lock.json.
+  edition_identifier: "20260917164224"
+  publication_date: null   # the source states a build stamp, not a publication date
+  identifiers:
+    isbn_paperback: "9798255618767"
+  retrieval_date: "2026-10-25"
+  inputs:
+    - source_id: dynamic-ir/pdf/1e-20260917164224
+      role: authoritative
+    - source_id: dynamic-ir/html/1e-20260917164218
+      role: structured_candidate
+  notes: >-
+    The PDF is the authority for text and page citations. The HTML edition (same build run, separate format
+    stamp) is accepted only block-by-block where alignment against the PDF is established.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: pdf_page
+  locator: "one-based physical PDF page plus the printed page label from the PDF page-label tree"
+  format: >-
+    Joshua Wright, Dynamic Incident Response: A Framework for Security Teams, First Edition
+    (build {edition_identifier}), {chapter}, "{section}", p. {printed} (PDF p. {pdf})
+  notes: "Printed labels are read per page; no global offset is applied (front matter uses roman numerals)."
+applicability:
+  - incident-response
+  - dfir
+  - containment
+  - eradication
+  - recovery
+  - ransomware
+  - cloud
+  - ot-ics
+  - ai-assisted-ir
+  - nist-csf-2
+retrieval:
+  source_aliases:
+    - "Dynamic Incident Response: A Framework for Security Teams"
+    - "Dynamic Incident Response"
+    - "the book"   # the only book in the packs; not "DAIR", which names the book's model and is a question's subject
+authority_class: published_reference_guidance
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_and_sampled_visual_review
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks and rendered-page visual sampling; not a human review"]
+  notes: "Maintainer review pending. See qa-report.md for what was and was not reviewed."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "A later publisher build may differ; register it as a new source identity."
+distribution:
+  content_license: CC-BY-4.0
+  content_license_url: "https://creativecommons.org/licenses/by/4.0/"
+  rights_basis: >-
+    Copyright page (PDF p. 3): CC BY 4.0 for copyrightable content; third-party text, graphics, images,
+    tables, charts or graphs excluded; SANS trademarks not licensed.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false
+  notes: "Public candidate excludes items whose rights basis is unresolved (see rights.yaml)."

@@ -1,0 +1,80 @@
+# Reference-pack contract: AWS incident response guidance and detection and log references. Validated against
+# schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: aws-security-ir
+pack_version: "0.1.0"
+title: "AWS documentation: incident response, GuardDuty findings, Detective, CloudTrail and VPC Flow Logs"
+description: >-
+  AWS documentation pages for incident response in AWS: the AWS Security Incident Response User Guide (preparation,
+  detection and analysis, containment, eradication and recovery, case workflow; it replaces the earlier AWS Security
+  Incident Response Guide whitepaper), the Well-Architected security pillar's detection and incident response best
+  practices, Amazon GuardDuty finding types and remediation, Amazon Detective investigation, AWS CloudTrail event and
+  log file references, and Amazon VPC Flow Logs records. Captured as HTML on 2026-10-25. The article list is generated
+  from the guides' published tables of contents (recipe.yaml discovery rules; articles.yaml).
+source:
+  title: "AWS documentation: Security Incident Response, Well-Architected security pillar, GuardDuty, Detective, CloudTrail and VPC Flow Logs (incident response sections)"
+  authors: []
+  publisher: "Amazon Web Services"
+  url: "https://docs.aws.amazon.com/security-ir/latest/userguide/what-is.html"
+  landing_page: "https://docs.aws.amazon.com/security-ir/latest/userguide/"
+  edition: "AWS documentation snapshot 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # continuously updated web documentation; pages carry no update time
+  retrieval_date: "2026-10-25"
+  inputs:                   # one locked input per page: articles.yaml and sources.lock.json list them
+    - source_id: aws-security-ir/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    Vendor documentation that changes frequently. Console paths, API names and finding types are specific to the
+    capture date; check `irpacks check-updates aws-security-ir` before relying on procedural details.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: section_anchor
+  locator: "published page URL with the section's heading anchor and the capture date"
+  format: "Amazon Web Services, “{page}”, “{section}”, AWS documentation (captured {retrieval_date}), {url}#{anchor}"
+  notes: "Web pages are not paginated; never cite page numbers for this pack."
+applicability:
+  - incident-response
+  - cloud
+  - aws
+  - threat-detection
+  - audit-logs
+  - network-logs
+retrieval:
+  source_aliases:
+    - "AWS"
+    - "Amazon Web Services"
+    - "AWS documentation"
+    - "AWS Security Incident Response"
+    - "GuardDuty"
+    - "Amazon Detective"
+    - "CloudTrail"
+    - "VPC Flow Logs"
+    - "Well-Architected"
+authority_class: vendor_documentation
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_only
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "Web documentation: superseded continuously by later revisions of each page. See the update workflow."
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Maintainer decision (2026-10-25), extending the Microsoft Learn decision to AWS: AWS documentation pages are
+    treated as publicly redistributable with attribution. They are published openly on docs.aws.amazon.com under the
+    AWS Site Terms; no open content license was located for these guides (the archived awsdocs GitHub repositories
+    are not the current source).
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

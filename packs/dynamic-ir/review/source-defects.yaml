@@ -1,0 +1,23 @@
+# Suspected defects in the source itself, preserved exactly as printed (the conversion never "fixes" source text).
+# Each entry was checked against the rendered PDF page. Reported upstream: no (publication actions are out of scope).
+schema_version: 1
+pack_id: dynamic-ir
+defects:
+  - element_id: ch04.s03.sb01.lst01.c01
+    pdf_page: 65
+    page_label: "41"
+    description: >-
+      Listing 25 (MySQL query): the SQL reads "COUNT() AS failure_count ... ASC;*" with the leading command text in bold;
+      an asterisk appears to have been consumed as AsciiDoc bold markup (likely intended "COUNT(*)"). Same in HTML and PDF.
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Preserved as printed. Readers should not copy the query verbatim; report to the author via the errata contact."
+  - element_id: ch13.s03.s02.s07.s01.lst01.c01
+    pdf_page: 367
+    page_label: "343"
+    description: >-
+      Listing 95 (Revoke-MgUserSignInSession output): the PowerShell header underline "--" was rendered as an em dash
+      ("UserPrincipalName —"), apparently by Asciidoctor typographic replacement. Same in HTML and PDF.
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Preserved as printed; the line break position in the code block follows the structured candidate."

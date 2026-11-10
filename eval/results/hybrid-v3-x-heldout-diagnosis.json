@@ -1,0 +1,814 @@
+[
+ {
+  "id": "x01",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.57,
+  "terms_in_no_result": [
+   "legally",
+   "look",
+   "like"
+  ],
+  "top5": [
+   [
+    "ms-azure-ir",
+    "Security > Evidence integrity"
+   ],
+   [
+    "ms-azure-ir",
+    "Computer forensics chain of custody in Azure > Architecture"
+   ],
+   [
+    "ms-azure-ir",
+    "Architecture > Workflow"
+   ],
+   [
+    "ms-azure-ir",
+    "Architecture > Components"
+   ],
+   [
+    "ms-azure-ir",
+    "Considerations > Cost Optimization"
+   ]
+  ],
+  "group_ranks_50": [
+   3
+  ]
+ },
+ {
+  "id": "x02",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.72,
+  "terms_in_no_result": [
+   "shows",
+   "VM"
+  ],
+  "top5": [
+   [
+    "ms-azure-ir",
+    "Enable Key Vault logging"
+   ],
+   [
+    "ms-azure-ir",
+    "Activity log in Azure Monitor"
+   ],
+   [
+    "ms-azure-ir",
+    "Interpret your Key Vault logs > Operation names table"
+   ],
+   [
+    "ms-defender",
+    "Azure Key Vault alerts > Suspicious policy change and secret query in a key vaul"
+   ],
+   [
+    "ms-azure-ir",
+    "Azure Key Vault logging > Interpret your Key Vault logs"
+   ]
+  ],
+  "group_ranks_50": [
+   2
+  ]
+ },
+ {
+  "id": "x03",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.51,
+  "terms_in_no_result": [
+   "right"
+  ],
+  "top5": [
+   [
+    "ms-defender",
+    "Use shared queries in advanced hunting > Access community queries in the GitHub "
+   ],
+   [
+    "gcp-security-ir",
+    "Protecting against credential leakage > Don't submit service account keys to sou"
+   ],
+   [
+    "gcp-security-ir",
+    "Create and delete service account keys > Create a service account key"
+   ],
+   [
+    "gcp-security-ir",
+    "Create and delete service account keys > Create a service account key"
+   ],
+   [
+    "ms-learn-ir",
+    "Understand how provisioning integrates with Azure Monitor logs > Community contr"
+   ]
+  ],
+  "group_ranks_50": [
+   null
+  ]
+ },
+ {
+  "id": "x04",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.79,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "gcp-security-ir",
+    "Enable Data Access audit logs"
+   ],
+   [
+    "gcp-security-ir",
+    "Overview of Event Threat Detection > Event Threat Detection rules"
+   ],
+   [
+    "gcp-security-ir",
+    "Enable Data Access audit logs > Before you begin"
+   ],
+   [
+    "gcp-security-ir",
+    "Enable logs > Enable the Data Access audit logs"
+   ],
+   [
+    "gcp-security-ir",
+    "Types of audit logs > Data Access audit logs"
+   ]
+  ],
+  "group_ranks_50": [
+   35
+  ]
+ },
+ {
+  "id": "x05",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.7,
+  "terms_in_no_result": [
+   "says"
+  ],
+  "top5": [
+   [
+    "aws-security-ir",
+    "GuardDuty IAM finding types > UnauthorizedAccess:IAMUser/InstanceCredentialExfil"
+   ],
+   [
+    "aws-security-ir",
+    "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.InsideAWS > Credential"
+   ],
+   [
+    "aws-security-ir",
+    "UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS > Credential"
+   ],
+   [
+    "aws-security-ir",
+    "GuardDuty IAM finding types > UnauthorizedAccess:IAMUser/ResourceCredentialExfil"
+   ],
+   [
+    "aws-security-ir",
+    "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.InsideAWS > Credential"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x06",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.66,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-purview-exchange",
+    "Search for and delete email messages"
+   ],
+   [
+    "ms-defender",
+    "Daily activities > Review phishing and malware campaigns that resulted in delive"
+   ],
+   [
+    "ms-purview-exchange",
+    "Search the audit log to investigate common support issues > Determine if a user "
+   ],
+   [
+    "ms-purview-exchange",
+    "Find and delete email messages in eDiscovery"
+   ],
+   [
+    "ms-purview-exchange",
+    "Search for and delete email messages > Step 3: Delete the message"
+   ]
+  ],
+  "group_ranks_50": [
+   15
+  ]
+ },
+ {
+  "id": "x07",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.78,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-learn-ir",
+    "Investigation steps > Are there forwarding rules configured for the mailbox?"
+   ],
+   [
+    "ms-defender",
+    "Exfiltration alerts: Detect attempts to steal data from your organization > Susp"
+   ],
+   [
+    "ms-defender",
+    "Persistence alerts: Detect attempts to maintain a foothold > Suspicious inbox ma"
+   ],
+   [
+    "dynamic-ir",
+    "Business Email Compromise Investigation > Email System Investigation"
+   ],
+   [
+    "ms-learn-ir",
+    "Phishing investigation > Checklist"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x08",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.77,
+  "terms_in_no_result": [
+   "us"
+  ],
+  "top5": [
+   [
+    "ms-windows-auditing",
+    "4697(S): A service was installed in the system."
+   ],
+   [
+    "ms-defender",
+    "Collect investigation package from devices > Investigation package contents for "
+   ],
+   [
+    "ms-windows-auditing",
+    "4697(S): A service was installed in the system. > Security Monitoring Recommenda"
+   ],
+   [
+    "ms-learn-ir",
+    "Secure group managed service accounts > Move to a gMSA"
+   ],
+   [
+    "ms-learn-ir",
+    "New audit log properties for service principal creation > ServicePrincipalProvis"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x09",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.32,
+  "terms_in_no_result": [
+   "us",
+   "AMBER+STRICT"
+  ],
+  "top5": [
+   [
+    "first-standards",
+    "FIRST Standards Definitions and Usage Guidance \u2014 Version 2.0 > 3. TLP definition"
+   ],
+   [
+    "ms-purview-exchange",
+    "SMTP AUTH Clients report in the new Exchange admin center in Exchange Online"
+   ],
+   [
+    "ms-sentinel",
+    "Create and manage threat intelligence > Curate threat intelligence"
+   ],
+   [
+    "ms-defender",
+    "Use the Microsoft Defender portal to configure user reported settings > Options "
+   ],
+   [
+    "first-standards",
+    "FIRST Standards Definitions and Usage Guidance \u2014 Version 2.0 > 1. Introduction"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x10",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.8,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "first-standards",
+    "Changes in CVSS Version 4.0 > Guidance for Using Supplemental Metrics"
+   ],
+   [
+    "first-standards",
+    "Exploitability Metrics > Attack Requirements (AT)"
+   ],
+   [
+    "first-standards",
+    "2.1. Exploitability Metrics > 2.1.1. Attack Vector (AV)"
+   ],
+   [
+    "first-standards",
+    "Common Vulnerability Scoring System version 4.0: Specification Document > Vector"
+   ],
+   [
+    "dynamic-ir",
+    "Proactive Prevention and Detection > Assess Security Posture Through Adversary S"
+   ]
+  ],
+  "group_ranks_50": [
+   2
+  ]
+ },
+ {
+  "id": "x11",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 1.0,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "first-standards",
+    "6 Service Area: Information Security Incident Management > 6.5 Service: Informat"
+   ],
+   [
+    "first-standards",
+    "6.5 Service: Information security incident coordination > 6.5.4 Function: Activi"
+   ],
+   [
+    "first-standards",
+    "6.5 Service: Information security incident coordination > 6.5.5 Function: Report"
+   ],
+   [
+    "first-standards",
+    "6.5 Service: Information security incident coordination > 6.5.1 Function: Commun"
+   ],
+   [
+    "first-standards",
+    "6.5 Service: Information security incident coordination > 6.5.2 Function: Notifi"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x12",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.48,
+  "terms_in_no_result": [
+   "one",
+   "instead"
+  ],
+  "top5": [
+   [
+    "swgde-forensics",
+    "7. Types of Acquisitions > 7.3. Live Acquisition"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices Apple MacOS Forensic Acquisition > 3. Limitations"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Scene Module 1: Evidence Preservation: "
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Remote Collection of Digital Evidence from an Endpoint > 3. L"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices Apple MacOS Forensic Acquisition > 12. Acquisition Process"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x13",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.79,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "swgde-forensics",
+    "Best Practices for Remote Collection of Digital Evidence from an Endpoint > 4. P"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Remote Collection of Digital Evidence from an Endpoint > 1. P"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Remote Collection of Digital Evidence from an Endpoint > 8. D"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Remote Collection of Digital Evidence from an Endpoint > 2. S"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Remote Collection of Digital Evidence from an Endpoint > 5. C"
+   ]
+  ],
+  "group_ranks_50": [
+   3
+  ]
+ },
+ {
+  "id": "x14",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.48,
+  "terms_in_no_result": [
+   "lose"
+  ],
+  "top5": [
+   [
+    "ms-defender",
+    "Troubleshooting SIEM integration > General troubleshooting"
+   ],
+   [
+    "gcp-security-ir",
+    "Log types and activation requirements > Supported log data and threats detected"
+   ],
+   [
+    "gcp-security-ir",
+    "Best practices for setting up your project > Federate user accounts with your ex"
+   ],
+   [
+    "ms-azure-ir",
+    "What to do before an attack > Steps to take before an attack"
+   ],
+   [
+    "gcp-security-ir",
+    "Respond to abuse notifications and warnings in Google Cloud > Best practices to "
+   ]
+  ],
+  "group_ranks_50": [
+   null
+  ]
+ },
+ {
+  "id": "x15",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.68,
+  "terms_in_no_result": [
+   "supposed"
+  ],
+  "top5": [
+   [
+    "cisa-ir-playbooks",
+    "VULNERABILITY RESPONSE PLAYBOOK > Reporting and Notification"
+   ],
+   [
+    "dynamic-ir",
+    "Vulnerability Remediation > Identifying Exploited Vulnerabilities"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "VULNERABILITY RESPONSE PLAYBOOK > Identification"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "VULNERABILITY RESPONSE PLAYBOOK"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "VULNERABILITY RESPONSE PLAYBOOK > Evaluation"
+   ]
+  ],
+  "group_ranks_50": [
+   3
+  ]
+ },
+ {
+  "id": "x16",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.5,
+  "terms_in_no_result": [
+   "grab"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Whole-System Memory Investigation > Capturing and Analyzing Memory with Volatili"
+   ],
+   [
+    "dynamic-ir",
+    "Prioritized Collection > Volatile Data Collection"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices Apple MacOS Forensic Acquisition > 13. Logical Acquisition Consid"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Scene Module 2: Live Memory Imaging and"
+   ],
+   [
+    "dynamic-ir",
+    "Verification Activity Examples > The Simple, Secure Storage Bucket"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "x17",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.61,
+  "terms_in_no_result": [
+   "suspicious"
+  ],
+  "top5": [
+   [
+    "ms-azure-ir",
+    "Packet capture overview"
+   ],
+   [
+    "ms-azure-ir",
+    "Start, stop, download, and delete packet captures with Azure Network Watcher > P"
+   ],
+   [
+    "ms-azure-ir",
+    "Start, stop, download, and delete packet captures with Azure Network Watcher > P"
+   ],
+   [
+    "ms-azure-ir",
+    "Inspect and analyze Network Watcher packet capture files"
+   ],
+   [
+    "gcp-security-ir",
+    "Packet Mirroring"
+   ]
+  ],
+  "group_ranks_50": [
+   1,
+   5
+  ],
+  "per_source": {
+   "sources": [
+    "gcp-security-ir",
+    "ms-azure-ir"
+   ],
+   "named": true,
+   "groups_found": [
+    true,
+    true
+   ]
+  }
+ },
+ {
+  "id": "x18",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 1.0,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-azure-ir",
+    "How can you protect yourself? > Azure Backup"
+   ],
+   [
+    "ms-azure-ir",
+    "Azure Backup security best practices to safeguard backup data"
+   ],
+   [
+    "ms-azure-ir",
+    "Frequently asked questions - Protect backups from Ransomware > What are the best"
+   ],
+   [
+    "ms-azure-ir",
+    "What to do before an attack > Steps to take before an attack"
+   ],
+   [
+    "gcp-security-ir",
+    "Overview of Event Threat Detection > Event Threat Detection rules"
+   ]
+  ],
+  "group_ranks_50": [
+   null,
+   null
+  ],
+  "per_source": {
+   "sources": [
+    "gcp-security-ir",
+    "ms-azure-ir"
+   ],
+   "named": true,
+   "groups_found": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "id": "x19",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.57,
+  "terms_in_no_result": [
+   "book",
+   "say"
+  ],
+  "top5": [
+   [
+    "ms-azure-ir",
+    "Computer forensics chain of custody in Azure"
+   ],
+   [
+    "dynamic-ir",
+    "Contain: Step-by-Step > Step 8. Document Containment Actions and Communicate Sta"
+   ],
+   [
+    "swgde-forensics",
+    "Collection of Digital and Multimedia Evidence Myths vs Facts > MYTH: \u201cAll digita"
+   ],
+   [
+    "ms-azure-ir",
+    "Computer forensics chain of custody in Azure > Scenario details"
+   ],
+   [
+    "ms-azure-ir",
+    "Incident Response > IR-4: Detection and analysis - investigate an incident"
+   ]
+  ],
+  "group_ranks_50": [
+   2,
+   10
+  ],
+  "per_source": {
+   "sources": [
+    "dynamic-ir",
+    "swgde-forensics"
+   ],
+   "named": true,
+   "groups_found": [
+    true,
+    true
+   ]
+  }
+ },
+ {
+  "id": "x20",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.52,
+  "terms_in_no_result": [
+   "Compare"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Isolating Compromised Resources > Virtual Machine Isolation"
+   ],
+   [
+    "ms-defender",
+    "Respond to a compromised cloud email account"
+   ],
+   [
+    "gcp-security-ir",
+    "Respond to compromised Google Cloud credentials > Handle account lockouts"
+   ],
+   [
+    "ms-azure-ir",
+    "Incident Response > IR-6: Containment, eradication and recovery - automate the i"
+   ],
+   [
+    "ms-learn-ir",
+    "Token theft playbook > Containment state"
+   ]
+  ],
+  "group_ranks_50": [
+   null,
+   null
+  ],
+  "per_source": {
+   "sources": [
+    "ms-learn-ir",
+    "gcp-security-ir"
+   ],
+   "named": true,
+   "groups_found": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "id": "x21",
+  "answerable": false,
+  "coverage": "medium",
+  "best_coverage": 0.67,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "first-standards",
+    "7. CVSS v3.1 Equations > 7.1. Base Metrics Equations"
+   ],
+   [
+    "first-standards",
+    "7. CVSS v3.1 Equations > 7.3. Environmental Metrics Equations"
+   ],
+   [
+    "first-standards",
+    "7. CVSS v3.1 Equations > 7.5. A Word on CVSS v3.1 Equations and Scoring"
+   ],
+   [
+    "first-standards",
+    "Common Vulnerability Scoring System version 4.0: Specification Document > Qualit"
+   ],
+   [
+    "first-standards",
+    "Common Vulnerability Scoring System version 4.0: Specification Document > Append"
+   ]
+  ]
+ },
+ {
+  "id": "x22",
+  "answerable": false,
+  "coverage": "low",
+  "best_coverage": 0.4,
+  "terms_in_no_result": [
+   "Tesla"
+  ],
+  "top5": [
+   [
+    "swgde-forensics",
+    "5. Acquiring Data from Linux Computers > 5.2 Embedded Linux"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 10: Handheld/Mobile Devices"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 11: Examination and Analysis"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "Detection& Analysis Activities > Collect and Preserve Data"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Mobile Device Forensic Analysis > 8. Validation of Data Resul"
+   ]
+  ]
+ },
+ {
+  "id": "x23",
+  "answerable": false,
+  "coverage": "low",
+  "best_coverage": 0.34,
+  "terms_in_no_result": [
+   "Ivanti",
+   "Connect"
+  ],
+  "top5": [
+   [
+    "cisa-ir-playbooks",
+    "VULNERABILITY RESPONSE PLAYBOOK > Reporting and Notification"
+   ],
+   [
+    "dynamic-ir",
+    "Develop an Incident Communications Plan > Develop an Emergency Communication Pla"
+   ],
+   [
+    "ms-sentinel",
+    "Advanced multistage attack detection in Microsoft Sentinel > Scenario-based Fusi"
+   ],
+   [
+    "dynamic-ir",
+    "Investigation Techniques for Eradication > Log Investigation"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "APPENDIX A: KEY TERMS"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,235 @@
+{
+  "run_at": "2026-10-25T21:25:55Z",
+  "backend": "local-fts5",
+  "label": null,
+  "split": "cisa-heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions-cisa.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "3",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2,
+      "alias_strip": "auto",
+      "alias_candidates": 20,
+      "alias_mode": "per_pack",
+      "alias_window": 5,
+      "rerank_weight": 0.2,
+      "dense_weight": 0.7,
+      "dense_candidates": 100,
+      "dense_within_filters": true,
+      "lexical_fallback": {
+        "rerank_weight": 0.3,
+        "dense_weight": 0.0
+      }
+    },
+    "dense": "on",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 8,
+    "answerable": 7,
+    "unanswerable": 1,
+    "evidence_complete_at_5": "4/7",
+    "evidence_complete_at_5_rate": 0.571,
+    "mean_group_recall": 0.571,
+    "multi_evidence_questions": "0/1 complete",
+    "mrr": 0.5,
+    "citation_valid": "4/4",
+    "required_context_complete": "0/0",
+    "duplicate_results": "0/40",
+    "failures": [
+      "c04",
+      "c06",
+      "c07"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "c01",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-e-vulnerability-and-incident-ca:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s07.s01.s01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.s05:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-a-key-terms.t01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s03.s01.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "c02",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s06:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.s03:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.s04:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s07.s01.s07:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:mcsb-mcsb-v2-incident-response.ir-7.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "c03",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.s01.s01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.p01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.s05:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s03.s01.s01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.s04:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "c04",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-learn-ir:2026-10-25:7cde9a0b:secops-incident-response-playbook-dart-ransomware-approach.the-microsoft-incident-response-approach-to-conducting-ransomware-incident-investigations.p01:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:secops-incident-response-playbook-dart-ransomware-approach.step-1-assess-the-current-situation:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.what-to-do-during-an-attack:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.determine-what-is-most-important-to-you:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-ransomware-detect-respond.responding-to-ransomware-attacks:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "c05",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:part-2-ransomware-and-data-extortion-res.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch19.s01.s06.sb02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s03.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s03.s01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mde-respond-machine-alerts.isolate-devices-from-the-network.p03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "c06",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s02:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.how-can-you-protect-yourself.p01:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.p01:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.what-to-do-before-an-attack.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "c07",
+      "split": "cisa-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s07.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:fm-preface.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s03.s01:0",
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:part-2-ransomware-and-data-extortion-res.s04:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "c08",
+      "split": "cisa-heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s08.s04.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s03.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s01.s02.s04:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s07.s01.p01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:introduction:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    }
+  ]
+}

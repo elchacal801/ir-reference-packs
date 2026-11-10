@@ -1,0 +1,565 @@
+{
+  "run_at": "2026-10-25T14:00:48Z",
+  "backend": "local-fts5",
+  "label": "public-candidate-index",
+  "split": "all",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "index": "build/public-index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "2",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2
+    },
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 25,
+    "answerable": 22,
+    "unanswerable": 3,
+    "evidence_complete_at_5": "19/22",
+    "evidence_complete_at_5_rate": 0.864,
+    "mean_group_recall": 0.909,
+    "multi_evidence_questions": "1/3 complete",
+    "mrr": 0.806,
+    "citation_valid": "21/21",
+    "required_context_complete": "8/8",
+    "duplicate_results": "0/125",
+    "failures": [
+      "t04",
+      "t11",
+      "h07"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "t01",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s01.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s01.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch14.s01.s06:0",
+        "dynamic-ir:20260917164224:1de2483f:ch19.s01.s06.sb02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s05.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t02",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s07.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s06.s07:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s02.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s06.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s10.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "t03",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s09:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s06.s08:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s10.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s07.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch18.s04.s03.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t04",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch16.s04.s01.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s05.s05:0",
+        "dynamic-ir:20260917164224:1de2483f:ch09.s09.s07:0",
+        "dynamic-ir:20260917164224:1de2483f:ch10.s07:0",
+        "dynamic-ir:20260917164224:1de2483f:ch10.s04:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "t05",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch12.s02.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s10.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s03.s01.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s03.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s02.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t06",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:1de2483f:sec3.s02.t01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s03.s10:0",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s02.s07.s03.s01.sb01:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec3.s01.t01:13",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s02.s07.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t07",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:1de2483f:sec2.s01.p07:0",
+        "dynamic-ir:20260917164224:1de2483f:ch05.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch05.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch20.s01.p01:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec2.s01.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t08",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch17.s02.s05.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.fn01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s02.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch14.s04.s01.p06:0",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s04.s02.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "t09",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch13.s04.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch16.s03.s01.s01.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s01.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s06.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch16.s03.s01.s02.q01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t10",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch20.s02.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch06.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch20.s02.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch06.s06:0",
+        "dynamic-ir:20260917164224:1de2483f:ch16.s04.s01.s01.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null,
+      "visual_asset_exposed": true
+    },
+    {
+      "id": "t11",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch20.s02.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch20.s02.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch20.s01.p01:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:fm-executive-summary:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec3.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t12",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch09.s08:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s07.s04.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s07.s04.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s09.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch09.s06.s03.p05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t13",
+      "split": "tuning",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch17.s02.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s03.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.s02.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.s01.s02.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch09.s06.s01.lst02:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "t14",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch04.s05:0",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s02.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s05.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch04.s06.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch08.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "t15",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:1de2483f:sec2.s02.p01:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec3.s02.t01:4",
+        "dynamic-ir:20260917164224:1de2483f:ch03.s02.s02.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch09.s03.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch04.s05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h01",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch18.s04.s03.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s10.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch18.s04.s01.s01.p06:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s07.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s04.s05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h02",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s04.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s10.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s10.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s04.s02.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s04.s05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h03",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch18.s04.s02.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s07.s01.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s06.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch18.s02.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch19.s04:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "h04",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch14.s04.s01.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.s06.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.s04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s02.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.s07.s02.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h05",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:1de2483f:sec3.s02.t01:2",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec3.s01.t01:9",
+        "dynamic-ir:20260917164224:1de2483f:ch20.s02.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s03.s10:0",
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s01.s04.s05.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h06",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s03.s02.s02.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s09.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s07.s04.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s09.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s02.s09.s01.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h07",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch05.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch05.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch03.s02.s02.p04:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec1.s01:0",
+        "nist-sp800-61r3:800-61r3:1de2483f:sec1.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "h08",
+      "split": "heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch07.s02.s01.s07.p04:0",
+        "dynamic-ir:20260917164224:1de2483f:ch12.s03.s01.p05:0",
+        "dynamic-ir:20260917164224:1de2483f:ch15.s02.s07.s02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch17.s08.s04.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch02.p01:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "h09",
+      "split": "heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s04.s05.s01.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s04.s05.s01.lst02:0",
+        "dynamic-ir:20260917164224:1de2483f:ch01.s01.p09:0",
+        "dynamic-ir:20260917164224:1de2483f:ch01.s03.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch01.s02.p01:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "h10",
+      "split": "heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:1de2483f:ch12.s04.s04.s03:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s07.s01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s08:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s03.s02.s10.p01:0",
+        "dynamic-ir:20260917164224:1de2483f:ch13.s06.s04:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    }
+  ]
+}

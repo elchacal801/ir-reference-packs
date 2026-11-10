@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source lock (sources.lock.json): pinned source identities, separate from dependency locks",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lock_version", "sources"],
+  "properties": {
+    "lock_version": {"const": 1},
+    "notes": {"type": "string"},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "pack_id", "role", "status", "sha256", "size_bytes", "media_type", "url",
+                     "retrieved_at", "local_path", "edition_stamp"],
+        "properties": {
+          "source_id": {"type": "string"},
+          "pack_id": {"type": "string"},
+          "role": {"enum": ["authoritative", "structured_candidate", "supplement", "landing_page", "reference_only"]},
+          "status": {"enum": ["available", "not_available_locally", "superseded_locally"]},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "size_bytes": {"type": ["integer", "null"]},
+          "media_type": {"type": ["string", "null"]},
+          "url": {"type": ["string", "null"]},
+          "resolved_from": {"type": ["string", "null"]},
+          "retrieved_at": {"type": ["string", "null"]},
+          "http": {"type": ["object", "null"]},
+          "local_path": {"type": ["string", "null"], "description": "Portable path relative to the project root"},
+          "edition_stamp": {"type": ["string", "null"]},
+          "observations": {"type": "object"},
+          "notes": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

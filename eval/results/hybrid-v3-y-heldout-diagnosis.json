@@ -1,0 +1,1105 @@
+[
+ {
+  "id": "y01",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.4,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "kept"
+  ],
+  "top5": [
+   [
+    "ms-defender",
+    "Collect investigation package from devices > Investigation package contents for "
+   ],
+   [
+    "dynamic-ir",
+    "Removing Persistence Mechanisms > Windows Persistence Removal Considerations"
+   ],
+   [
+    "dynamic-ir",
+    "Verification Activity Examples > The Simple, Secure Storage Bucket"
+   ],
+   [
+    "ms-windows-auditing",
+    "Audit Security System Extension"
+   ],
+   [
+    "ms-defender",
+    "Microsoft Defender for Identity classic alerts > Other alerts"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "y02",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.44,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "Nobody",
+   "ever",
+   "set"
+  ],
+  "top5": [
+   [
+    "ms-learn-ir",
+    "Microsoft Entra data retention > Can I see last month's data after getting a pre"
+   ],
+   [
+    "aws-security-ir",
+    "Viewing Insights events for trails with the console"
+   ],
+   [
+    "aws-security-ir",
+    "Logging management events with the AWS Management Console > Updating the managem"
+   ],
+   [
+    "aws-security-ir",
+    "Create trails in additional accounts"
+   ],
+   [
+    "aws-security-ir",
+    "Viewing Insights events for trails"
+   ]
+  ],
+  "group_ranks_50": [
+   8
+  ]
+ },
+ {
+  "id": "y03",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.35,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "stop",
+   "anyone",
+   "anywhere"
+  ],
+  "top5": [
+   [
+    "gcp-security-ir",
+    "Rotate project credentials > Rotate service account keys"
+   ],
+   [
+    "gcp-security-ir",
+    "Create and delete service account keys > Create a service account key"
+   ],
+   [
+    "gcp-security-ir",
+    "Disable and enable service account keys"
+   ],
+   [
+    "gcp-security-ir",
+    "Create and delete service account keys > Delete a service account key"
+   ],
+   [
+    "gcp-security-ir",
+    "Service account keys and tokens > Respond to compromised service account keys an"
+   ]
+  ],
+  "group_ranks_50": [
+   8
+  ]
+ },
+ {
+  "id": "y04",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.8,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-purview-exchange",
+    "Audit log activities > Microsoft 365 Backup activities"
+   ],
+   [
+    "ms-windows-auditing",
+    "4672(S): Special privileges assigned to new logon."
+   ],
+   [
+    "ms-azure-ir",
+    "What to do before an attack > Steps to take before an attack"
+   ],
+   [
+    "ms-azure-ir",
+    "Overview of security features in Azure Backup > Security features to help protec"
+   ],
+   [
+    "ms-azure-ir",
+    "Secure by default with soft delete for Azure Backup"
+   ]
+  ],
+  "group_ranks_50": [
+   null
+  ]
+ },
+ {
+  "id": "y05",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.45,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "us",
+   "someone"
+  ],
+  "top5": [
+   [
+    "ms-defender",
+    "Identity infrastructure security assessments > Disable Print spooler service on "
+   ],
+   [
+    "dynamic-ir",
+    "Recovery Strategies > Coordinated Recovery"
+   ],
+   [
+    "ms-defender",
+    "Sample logs > Suspicious domain controller promotion (potential DcShadow attack)"
+   ],
+   [
+    "ms-windows-auditing",
+    "Audit account logon events"
+   ],
+   [
+    "ms-windows-auditing",
+    "Monitor the central access policies that apply on a file server"
+   ]
+  ],
+  "group_ranks_50": [
+   null
+  ]
+ },
+ {
+  "id": "y06",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.52,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "think",
+   "ran"
+  ],
+  "top5": [
+   [
+    "ms-defender",
+    "Microsoft Defender for Identity alerts in Microsoft Defender format > Credential"
+   ],
+   [
+    "ms-defender",
+    "Microsoft Defender for Identity classic alerts > Persistence and privilege escal"
+   ],
+   [
+    "dynamic-ir",
+    "Account and Identity Remediation > Krbtgt Account Reset"
+   ],
+   [
+    "ms-defender",
+    "Microsoft Defender for Identity classic alerts > Credential access alerts"
+   ],
+   [
+    "ms-defender",
+    "Accounts security posture assessments > Change password for krbtgt account"
+   ]
+  ],
+  "group_ranks_50": [
+   3
+  ]
+ },
+ {
+  "id": "y07",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.51,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "look",
+   "old"
+  ],
+  "top5": [
+   [
+    "ms-defender",
+    "Create and run activity queries > Query activities six months back"
+   ],
+   [
+    "ms-sentinel",
+    "Restore archived logs from search"
+   ],
+   [
+    "ms-sentinel",
+    "Restore archived logs from search > View restored log data"
+   ],
+   [
+    "ms-sentinel",
+    "Start an investigation by searching for events in large datasets"
+   ],
+   [
+    "ms-defender",
+    "Filter and query Defender for Cloud Apps activities"
+   ]
+  ],
+  "group_ranks_50": [
+   4
+  ]
+ },
+ {
+  "id": "y08",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.7,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "say"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Prepare > Backups"
+   ],
+   [
+    "dynamic-ir",
+    "Recovery Is Not the End > Ongoing Extortion Risk"
+   ],
+   [
+    "dynamic-ir",
+    "7. Prepare Activity > Preparation Strategies"
+   ],
+   [
+    "cisa-stopransomware",
+    "Part 2: Ransomware and Data Extortion Response Checklist"
+   ],
+   [
+    "cisa-stopransomware",
+    "Part 2: Ransomware and Data Extortion Response Checklist > Detection and Analysi"
+   ]
+  ],
+  "group_ranks_50": [
+   4
+  ]
+ },
+ {
+  "id": "y09",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.65,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "E:X"
+  ],
+  "top5": [
+   [
+    "first-standards",
+    "Common Vulnerability Scoring System version 4.0: Specification Document > Vector"
+   ],
+   [
+    "first-standards",
+    "Common Vulnerability Scoring System version 4.0: Specification Document > Vector"
+   ],
+   [
+    "first-standards",
+    "Changes in CVSS Version 4.0 > Update to the Version Identifier in the Vector Str"
+   ],
+   [
+    "first-standards",
+    "Common Vulnerability Scoring System version 4.0: Specification Document > Vector"
+   ],
+   [
+    "first-standards",
+    "CVSS v4.0 Scoring > CVSS v4.0 Scoring using MacroVectors and Interpolation"
+   ]
+  ],
+  "group_ranks_50": [
+   null
+  ]
+ },
+ {
+  "id": "y10",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.38,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-sentinel",
+    "Create and manage threat intelligence > Curate threat intelligence"
+   ],
+   [
+    "first-standards",
+    "FIRST Standards Definitions and Usage Guidance \u2014 Version 2.0 > 3. TLP definition"
+   ],
+   [
+    "first-standards",
+    "Multi-Party Disclosure Use Cases > Use Case 3: Public disclosure of limited vuln"
+   ],
+   [
+    "dynamic-ir",
+    "Develop an Incident Communications Plan > Establish External Reporting Channels"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "APPENDIX C: INCIDENT RESPONSE PREPARATION CHECKLIST"
+   ]
+  ],
+  "group_ranks_50": [
+   2
+  ]
+ },
+ {
+  "id": "y11",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.5,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Containment Strategies > Active Containment"
+   ],
+   [
+    "dynamic-ir",
+    "Remote Worker Environments > Access and Recovery"
+   ],
+   [
+    "dynamic-ir",
+    "Investigation Techniques for Eradication > Insider Threat Investigation"
+   ],
+   [
+    "swgde-forensics",
+    "Collection of Digital and Multimedia Evidence Myths vs Facts > MYTH: \"Once a for"
+   ],
+   [
+    "swgde-forensics",
+    "12. Acquisition Process > 12.4 Step 3: Isolate the Device"
+   ]
+  ],
+  "group_ranks_50": [
+   36
+  ]
+ },
+ {
+  "id": "y12",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.81,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "swgde-forensics",
+    "Best Practices Apple MacOS Forensic Acquisition > 13. Logical Acquisition Consid"
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Computer Forensic Examination > 5. Considerations"
+   ],
+   [
+    "swgde-forensics",
+    "Collection of Digital and Multimedia Evidence Myths vs Facts > MYTH: \u201cAny copy ("
+   ],
+   [
+    "swgde-forensics",
+    "Best Practices for Computer Forensic Acquisitions > 4. Preparation and Considera"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 8: Imaging a Macintosh Compu"
+   ]
+  ],
+  "group_ranks_50": [
+   2
+  ]
+ },
+ {
+  "id": "y13",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.66,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "made"
+  ],
+  "top5": [
+   [
+    "gcp-security-ir",
+    "Benefits of incremental snapshots > How incremental snapshots work"
+   ],
+   [
+    "gcp-security-ir",
+    "About instant snapshots > How instant snapshot sizes work"
+   ],
+   [
+    "gcp-security-ir",
+    "View information about instant snapshots > View information about an instant sna"
+   ],
+   [
+    "gcp-security-ir",
+    "Benefits of incremental snapshots > Snapshot size"
+   ],
+   [
+    "ms-learn-ir",
+    "Securing workload identities > Workload identity risk detections"
+   ]
+  ],
+  "group_ranks_50": [
+   null
+  ]
+ },
+ {
+  "id": "y14",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.48,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "Someone",
+   "readable",
+   "show",
+   "switched"
+  ],
+  "top5": [
+   [
+    "aws-security-ir",
+    "GuardDuty S3 Protection finding types > Policy:S3/AccountBlockPublicAccessDisabl"
+   ],
+   [
+    "aws-security-ir",
+    "GuardDuty S3 Protection finding types > Policy:S3/BucketBlockPublicAccessDisable"
+   ],
+   [
+    "aws-security-ir",
+    "GuardDuty S3 Protection finding types > Policy:S3/BucketAnonymousAccessGranted"
+   ],
+   [
+    "aws-security-ir",
+    "GuardDuty S3 Protection finding types > Policy:S3/BucketPublicAccessGranted"
+   ],
+   [
+    "aws-security-ir",
+    "GuardDuty S3 Protection finding types > Impact:S3/AnomalousBehavior.Permission"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "y15",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.61,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "Somebody",
+   "catch"
+  ],
+  "top5": [
+   [
+    "gcp-security-ir",
+    "Overview of Event Threat Detection > Event Threat Detection rules"
+   ],
+   [
+    "gcp-security-ir",
+    "Log types and activation requirements > Logs that are always on"
+   ],
+   [
+    "gcp-security-ir",
+    "Mitigate cryptocurrency mining attacks on Google Cloud > Reduce internet exposur"
+   ],
+   [
+    "gcp-security-ir",
+    "Correlated Threats overview > Correlated Threats rules"
+   ],
+   [
+    "gcp-security-ir",
+    "Mitigate cryptocurrency mining attacks on Google Cloud > Secure your Compute Eng"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "y16",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.52,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "keeps",
+   "clear"
+  ],
+  "top5": [
+   [
+    "ms-learn-ir",
+    "Administrator manual remediation > Unblock users"
+   ],
+   [
+    "ms-learn-ir",
+    "Remediation > Should we add \"Enforce sign-in frequency - Every time\" to our Cond"
+   ],
+   [
+    "ms-learn-ir",
+    "Microsoft Entra ID Protection for B2B Users > How to remediate a user's risk as "
+   ],
+   [
+    "ms-learn-ir",
+    "Configure and enable risk policies > Choosing acceptable risk levels"
+   ],
+   [
+    "ms-learn-ir",
+    "Frequently asked questions around Microsoft Entra ID Protection > B2B users"
+   ]
+  ],
+  "group_ranks_50": [
+   21
+  ]
+ },
+ {
+  "id": "y17",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.57,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "gcp-security-ir",
+    "Inspect a VM for signs of kernel memory tampering > Example inspection with the "
+   ],
+   [
+    "cisa-ir-playbooks",
+    "APPENDIX B: INCIDENT RESPONSE CHECKLIST > Eradication & Recovery"
+   ],
+   [
+    "gcp-security-ir",
+    "Inspect a VM for signs of kernel memory tampering"
+   ],
+   [
+    "dynamic-ir",
+    "Prepare the Organization > Develop an Incident Communications Plan"
+   ],
+   [
+    "gcp-security-ir",
+    "Findings > Kernel-mode rootkit threat findings"
+   ]
+  ],
+  "group_ranks_50": [
+   2
+  ]
+ },
+ {
+  "id": "y18",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.43,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "wants",
+   "mean"
+  ],
+  "top5": [
+   [
+    "first-standards",
+    "What does the PSIRT do? > Definitions"
+   ],
+   [
+    "first-standards",
+    "3. Temporal Metrics > 3.3. Report Confidence (RC)"
+   ],
+   [
+    "first-standards",
+    "Use Case 4: Public disclosure or exploitation of vulnerability prior to vendor a"
+   ],
+   [
+    "ms-defender",
+    "Security alerts and incidents > How does Defender for Cloud detect threats?"
+   ],
+   [
+    "first-standards",
+    "Guidelines and Practices for Multi-Party Vulnerability Coordination and Disclosu"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "y19",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.4,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "left",
+   "lets",
+   "run",
+   "rid",
+   "properly"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Removing Persistence Mechanisms > Web Shell Removal"
+   ],
+   [
+    "dynamic-ir",
+    "Verification Activity Examples > The Unresponsive WordPress Site"
+   ],
+   [
+    "dynamic-ir",
+    "Verification Activity Examples > The Unresponsive WordPress Site"
+   ],
+   [
+    "ms-defender",
+    "Deprecated Defender for Servers Linux alerts > VM_SuspectPhp"
+   ],
+   [
+    "ms-defender",
+    "Deprecated Defender for Servers Windows alerts > VM_SuspectPhp"
+   ]
+  ],
+  "group_ranks_50": [
+   1
+  ]
+ },
+ {
+  "id": "y20",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.66,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "us",
+   "switch"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "5. Incident Response Models and Their Limitations > NIST SP 800-61 Revision 3 an"
+   ],
+   [
+    "dynamic-ir",
+    "Shortcomings in Existing Models > Lack of Incident Verification Requirements"
+   ],
+   [
+    "dynamic-ir",
+    "Data Handling Considerations > Open-Weight Models"
+   ],
+   [
+    "nist-sp800-61r3",
+    "2. Incident Response as Part of Cybersecurity Risk Management > 2.1. Incident Re"
+   ],
+   [
+    "nist-sp800-61r3",
+    "Executive Summary"
+   ]
+  ],
+  "group_ranks_50": [
+   5
+  ]
+ },
+ {
+  "id": "y21",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.71,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-purview-exchange",
+    "Trace an email message in Exchange Online"
+   ],
+   [
+    "dynamic-ir",
+    "Recovery Objectives > Coordinated Production Restoration"
+   ],
+   [
+    "ms-defender",
+    "Investigate incidents in the Microsoft Defender portal (legacy) > Attack story"
+   ],
+   [
+    "ms-purview-exchange",
+    "Search the audit log for specific email messages > Quick reference"
+   ],
+   [
+    "ms-purview-exchange",
+    "Message Trace FAQ in Exchange Online > Are there any known limitations or behavi"
+   ]
+  ],
+  "group_ranks_50": [
+   7
+  ]
+ },
+ {
+  "id": "y22",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.7,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "say"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Prepare the Incident Response Team > Develop Playbooks for Common Incidents"
+   ],
+   [
+    "ms-azure-ir",
+    "Incident response overview for Azure > Learn and improve after incidents"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "INCIDENT RESPONSE PLAYBOOK > Post-Incident Activities"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "INTRODUCTION"
+   ],
+   [
+    "nist-sp800-61r3",
+    "Executive Summary"
+   ]
+  ],
+  "group_ranks_50": [
+   30,
+   3
+  ],
+  "per_source": {
+   "sources": [
+    "nist-sp800-61r3",
+    "cisa-ir-playbooks"
+   ],
+   "named": true,
+   "groups_found": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "id": "y23",
+  "answerable": true,
+  "coverage": "high",
+  "best_coverage": 0.84,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "recommend"
+  ],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Isolating Compromised Resources > Virtual Machine Isolation"
+   ],
+   [
+    "aws-security-ir",
+    "Remediating a potentially compromised ECS cluster"
+   ],
+   [
+    "dynamic-ir",
+    "Cloud Containment > Network Isolation Containment"
+   ],
+   [
+    "dynamic-ir",
+    "Supplier and Supply Chain Investigation > SaaS Vendor Compromises"
+   ],
+   [
+    "ms-azure-ir",
+    "Incident response overview for Azure > Contain and recover from incidents"
+   ]
+  ],
+  "group_ranks_50": [
+   null,
+   5
+  ],
+  "per_source": {
+   "sources": [
+    "ms-azure-ir",
+    "aws-security-ir"
+   ],
+   "named": true,
+   "groups_found": [
+    true,
+    true
+   ]
+  }
+ },
+ {
+  "id": "y24",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.64,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "someone"
+  ],
+  "top5": [
+   [
+    "gcp-security-ir",
+    "Analyze logs > Permission changes questions"
+   ],
+   [
+    "ms-defender",
+    "Govern actions for connected apps in Defender for Cloud Apps > Review the govern"
+   ],
+   [
+    "gcp-security-ir",
+    "Overview of Event Threat Detection > Event Threat Detection rules"
+   ],
+   [
+    "gcp-security-ir",
+    "Logs for granting roles > Logs for granting the Service Account User role"
+   ],
+   [
+    "aws-security-ir",
+    "EKS Protection finding types > Policy:Kubernetes/AdminAccessToDefaultServiceAcco"
+   ]
+  ],
+  "group_ranks_50": [
+   null,
+   null
+  ],
+  "per_source": {
+   "sources": [
+    "gcp-security-ir",
+    "aws-security-ir"
+   ],
+   "named": true,
+   "groups_found": [
+    false,
+    false
+   ]
+  }
+ },
+ {
+  "id": "y25",
+  "answerable": true,
+  "coverage": "medium",
+  "best_coverage": 0.57,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "dynamic-ir",
+    "Preface"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "INCIDENT RESPONSE PLAYBOOK > Eradication & Recovery"
+   ],
+   [
+    "dynamic-ir",
+    "12. Contain Activity > Evidence Collection During Containment"
+   ],
+   [
+    "dynamic-ir",
+    "13. Eradicate Activity > Investigation Techniques for Eradication"
+   ],
+   [
+    "dynamic-ir",
+    "Investigation During Eradication > Short-Form Investigation to Inform Eradicatio"
+   ]
+  ],
+  "group_ranks_50": [
+   21,
+   2
+  ],
+  "per_source": {
+   "sources": [
+    "dynamic-ir",
+    "cisa-ir-playbooks"
+   ],
+   "named": true,
+   "groups_found": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "id": "y26",
+  "answerable": true,
+  "coverage": "low",
+  "best_coverage": 0.45,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "ask",
+   "us",
+   "hold",
+   "cleanup",
+   "book",
+   "say"
+  ],
+  "top5": [
+   [
+    "cisa-ir-playbooks",
+    "APPENDIX G: SOURCE TEXT"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "Coordination with CISA > 5) Report to Federal Law Enforcement"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "INCIDENT RESPONSE PLAYBOOK > Eradication & Recovery"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "INTRODUCTION"
+   ],
+   [
+    "cisa-ir-playbooks",
+    "Coordination > Intergovernmental Coordination"
+   ]
+  ],
+  "group_ranks_50": [
+   22,
+   3
+  ],
+  "per_source": {
+   "sources": [
+    "dynamic-ir",
+    "cisa-ir-playbooks"
+   ],
+   "named": false,
+   "groups_found": [
+    true,
+    true
+   ]
+  }
+ },
+ {
+  "id": "y27",
+  "answerable": false,
+  "coverage": "medium",
+  "best_coverage": 0.62,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "mean"
+  ],
+  "top5": [
+   [
+    "first-standards",
+    "FIRST Standards Definitions and Usage Guidance \u2014 Version 2.0 > 3. TLP definition"
+   ],
+   [
+    "first-standards",
+    "FIRST Standards Definitions and Usage Guidance \u2014 Version 2.0 > 1. Introduction"
+   ],
+   [
+    "aws-security-ir",
+    "GuardDuty EC2 finding types > Trojan:EC2/BlackholeTraffic"
+   ],
+   [
+    "ms-defender",
+    "Common Defender for Cloud Apps threat protection policies > Detect leaked creden"
+   ],
+   [
+    "aws-security-ir",
+    "Lambda Protection finding types > Trojan:Lambda/BlackholeTraffic"
+   ]
+  ]
+ },
+ {
+  "id": "y28",
+  "answerable": false,
+  "coverage": "low",
+  "best_coverage": 0.45,
+  "best_similarity": null,
+  "terms_in_no_result": [
+   "Chromebook"
+  ],
+  "top5": [
+   [
+    "swgde-forensics",
+    "12. Acquisition Process > 12.6 Step 5: Consider Additional Methods of Imaging"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 8: Imaging a Macintosh Compu"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 9: Cable Acquisition Protoco"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 12: Image Restoration"
+   ],
+   [
+    "swgde-forensics",
+    "6. Model Standard Operating Procedures > Lab Module 8: Imaging a Macintosh Compu"
+   ]
+  ]
+ },
+ {
+  "id": "y29",
+  "answerable": false,
+  "coverage": "high",
+  "best_coverage": 0.92,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "dynamic-ir",
+    "5. Incident Response Models and Their Limitations > NIST SP 800-61 Revision 3 an"
+   ],
+   [
+    "dynamic-ir",
+    "5. Incident Response Models and Their Limitations > The NIST Model: SP 800-61"
+   ],
+   [
+    "dynamic-ir",
+    "20. Integrating DAIR with NIST CSF 2.0 > Understanding NIST SP 800-61 R3 and CSF"
+   ],
+   [
+    "dynamic-ir",
+    "Development of Incident Response Models > Later Developments: US Navy, SANS, and"
+   ],
+   [
+    "dynamic-ir",
+    "Part 3: Special Considerations in Incident Response > 20. Integrating DAIR with "
+   ]
+  ]
+ },
+ {
+  "id": "y30",
+  "answerable": false,
+  "coverage": "medium",
+  "best_coverage": 0.71,
+  "best_similarity": null,
+  "terms_in_no_result": [],
+  "top5": [
+   [
+    "ms-windows-auditing",
+    "4673(S, F): A privileged service was called."
+   ],
+   [
+    "ms-learn-ir",
+    "Microsoft Entra data retention > How long does Microsoft Entra ID store the data"
+   ],
+   [
+    "ms-defender",
+    "Enable attack disruption actions in Okta with Microsoft Sentinel (preview) > Ste"
+   ],
+   [
+    "ms-azure-ir",
+    "Capture data to keep a trail of activities > Network monitoring"
+   ],
+   [
+    "gcp-security-ir",
+    "Route logs > Set up a single destination"
+   ]
+  ]
+ }
+]

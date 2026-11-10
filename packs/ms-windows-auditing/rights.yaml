@@ -1,0 +1,29 @@
+# Content-rights record for the ms-windows-auditing pack (classification aid; not legal advice).
+schema_version: 1
+pack_id: ms-windows-auditing
+content_license:
+  spdx: null
+  url: null
+  statement: >-
+    Maintainer decision (2026-10-25): Microsoft Learn articles are treated as publicly redistributable with
+    attribution, like the MicrosoftDocs repositories that state a license (CC BY 4.0 for documentation in azure-docs
+    and microsoft-365-docs; MIT in entra-docs). The source repository of each article is named in source-map.json
+    (original_content_git_url); for most docsets it is not public, so no license file was read for them. Microsoft
+    trademarks and product names are not licensed.
+  suggested_attribution: >-
+    Microsoft Learn, "<article title>", <url>, updated <updated_at>. Copyright (c) Microsoft Corporation.
+  exclusions:
+    - "Microsoft trademarks, logos and product names are not licensed by this pack."
+    - "Screenshots and diagrams were not captured; figures carry alt text and a link to the published image only."
+default_state: redistributable
+default_basis: >-
+  Maintainer decision (2026-10-25): Microsoft Learn articles are treated as publicly redistributable with
+  attribution, like the MicrosoftDocs repositories that state a license (CC BY 4.0 for documentation in azure-docs
+  and microsoft-365-docs; MIT in entra-docs). The source repository of each article is named in source-map.json
+  (original_content_git_url); for most docsets it is not public, so no license file was read for them.
+rules:
+  - id: images-not-captured
+    match: {type: figure}
+    state: metadata_only
+    reason: "Image bytes were not captured; alt text and link only."
+overrides: []

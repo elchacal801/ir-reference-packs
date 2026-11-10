@@ -1,0 +1,82 @@
+# Reference-pack contract: Microsoft Learn: Azure incident response, forensics and recovery. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: ms-azure-ir
+pack_version: "0.1.0"
+title: "Microsoft Learn: Azure incident response, forensics and recovery"
+description: >-
+  Microsoft Learn articles for responding to incidents in Azure: the Azure incident response and ransomware
+  guidance, the Microsoft cloud security benchmark controls for logging, threat detection and incident response,
+  the Well-Architected incident response strategies, the computer-forensics chain-of-custody and ransomware-resilient
+  backup architectures, the activity and resource logs with their schemas and diagnostic settings, VNet and NSG flow
+  logs and packet capture, Key Vault logging and recovery, DDoS response, Azure Firewall logs and threat
+  intelligence, Azure Backup ransomware protection, Blob Storage soft delete, versioning and immutability, and VM
+  disk snapshots, VHD export and Run Command. Captured as HTML; each article's source commit and update time are
+  recorded so later changes can be detected. The article list is generated from the published tables of contents
+  (recipe.yaml discovery rules; articles.yaml).
+source:
+  title: "Microsoft Learn: Azure documentation (incident response, forensics and recovery)"
+  authors: []
+  publisher: "Microsoft"
+  url: "https://learn.microsoft.com/en-us/azure/security/fundamentals/incident-response-overview"
+  landing_page: "https://learn.microsoft.com/en-us/azure/security/"
+  edition: "Microsoft Learn snapshot 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # continuously updated web documentation; per-article update times are in sources.lock.json
+  retrieval_date: "2026-10-25"
+  inputs:                   # one locked input per article: articles.yaml and sources.lock.json list them
+    - source_id: ms-azure-ir/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    Vendor documentation that changes frequently. Service names, portal paths, CLI and PowerShell commands, log
+    schemas and retention defaults are specific to the capture date; check `irpacks check-updates ms-azure-ir`
+    before relying on procedural details.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: section_anchor
+  locator: "published article URL with the section's heading anchor, the article's last update time and source commit"
+  format: "Microsoft, “{article}”, “{section}”, Microsoft Learn (updated {updated_at}; source commit {commit}), {url}#{anchor}"
+  notes: "Web articles are not paginated; never cite page numbers for this pack."
+applicability:
+  - incident-response
+  - forensics
+  - cloud
+  - azure
+  - logging
+  - ransomware
+  - recovery
+retrieval:
+  source_aliases:
+    - "Azure"
+    - "Microsoft Azure"
+    - "Microsoft cloud security benchmark"
+    - "MCSB"
+    - "Azure Well-Architected"
+    - "Azure activity log"
+    - "Azure Backup"
+authority_class: vendor_documentation
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_only
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "Web documentation: superseded continuously by later revisions of each article. See the update workflow."
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Maintainer decision (2026-10-25): Microsoft Learn articles are treated as publicly redistributable with
+    attribution, like the MicrosoftDocs repositories that state a license (CC BY 4.0 for documentation in azure-docs
+    and microsoft-365-docs; MIT in entra-docs). The source repository of each article is named in source-map.json
+    (original_content_git_url); for most docsets it is not public, so no license file was read for them.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

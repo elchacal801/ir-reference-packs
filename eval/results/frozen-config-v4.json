@@ -1,0 +1,422 @@
+{
+  "frozen_at": "2026-10-27T16:57:25Z",
+  "ranking": {
+    "version": "4",
+    "stopwords": false,
+    "all_terms_first": false,
+    "candidates": 100,
+    "corpus_weights": {
+      "notes": 0.5,
+      "references": 0.5
+    },
+    "proximity_weight": 1.0,
+    "visual_boost": 1.5,
+    "alias_slots": 2,
+    "alias_strip": "auto",
+    "alias_candidates": 20,
+    "alias_mode": "per_pack",
+    "alias_window": 5,
+    "rerank_weight": 0.3,
+    "dense_weight": 0.4,
+    "dense_candidates": 100,
+    "dense_within_filters": true,
+    "lexical_fallback": {
+      "rerank_weight": 0.3,
+      "dense_weight": 0.0
+    },
+    "v4_tokens": true,
+    "dense_norm": "minmax",
+    "similarity_levels": true
+  },
+  "index_changes": {
+    "navigation_titles": "^(related content|related articles|related resources|see also|next steps|additional resources|learn more|clean up resources|(extra|additional) incident response playbooks)$",
+    "source_aliases_added": {
+      "dynamic-ir": [
+        "the book"
+      ],
+      "nist-sp800-61r3": [
+        "NIST SP 800-61",
+        "NIST 800-61"
+      ]
+    }
+  },
+  "similarity_levels": {
+    "low_below": 0.73,
+    "high_from": 0.78
+  },
+  "search_py_sha256": "4b04a2a382aee4dee9253dbc37fe5d4c0b6fe5c51f0eb07e38a0cc659e7c4774",
+  "dense_py_sha256": "54b67e6fe689352528efdcd5173c788a1e5b0d500b84dc7b78d8e16017ed349c",
+  "packbuild_py_sha256": "127811a9f35a005e2975c8933efca1fe1bbf55eec72de907f62e95ca2e17b557",
+  "models_lock_sha256": "047ea850d891bfd6b0c75a2208ebb84119c60fd68a502a80c3236dcd8c685ec4",
+  "index_meta": {
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "chunks": "12364",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "bm25_column_weights": "heading_path=2.0,text=1.0"
+  },
+  "sealed_questions": {
+    "file": "eval/questions-y.yaml",
+    "split": "y-heldout",
+    "sha256": "feeba7432faf79e8cd1b7e0661fa1d3b5326ceb6fd3341091cac4b53dc990b98"
+  },
+  "chunks_sha256": {
+    "aws-security-ir": "0b62c97ed1752687bf54258de1a4a21c7a4b6af5b45c40e965a1228c4119d8b1",
+    "cisa-ir-playbooks": "b010e68b48d2b4bf8794356ab3cf031c3811c7e60be97865221ef7cf446ccd1b",
+    "cisa-stopransomware": "02fa4c17caeb8152f400a5d0297ed242c801f2d5517557929dc2b57f81799421",
+    "dynamic-ir": "64147bcdf930603482e9db3d25b436104aadaf48a51c6f6f03b0c8996372847d",
+    "first-standards": "ff1d63b37764526bc3f3f0b2482d1c19922af1cf6b0cb5e4e10b872d71afa7ac",
+    "gcp-security-ir": "415883bedffd5efb8dceb85a4c58ac077a726f3968566f7a8ca5b92c3e43b312",
+    "ms-azure-ir": "257c6ac7f187c8f917d5e40116210dd03dec5c7883b3943ca1bffa3508a6abfb",
+    "ms-defender": "dfce886047e2fcfd58bcefe30ed0bcbfc55d5cbde4cbe65fe2b761186ee7cdcb",
+    "ms-learn-ir": "bb9f505042cca0c33fe99dab2b13caac204f823b02d336e5c470f75a652ae1cc",
+    "ms-purview-exchange": "e8cfaf08e2ef74089da63b500712355db01bcf6205d86c3335dc747d9e6973b1",
+    "ms-sentinel": "876b2a97ff356f50e5777f64487fb6cd1c9f66021a26f885216a61124caab085",
+    "ms-windows-auditing": "9e754eb261e891991967042a7992fa744e04b5b47da049fd4e830e287264c415",
+    "nist-sp800-61r3": "27aef19f9cd2cf055be1141cb418067b6b735d51c794974e7b29d000eec8baa6",
+    "swgde-forensics": "dd5276793c29a23a59c04bd6e9a41f7bbfb37d164fccfc130b759ca0c038c7ca"
+  },
+  "tuning_pool": {
+    "script": "eval/diagnose_ranks.py --per-source",
+    "summary": {
+      "answerable": 79,
+      "complete@5": 56,
+      "top1": 39,
+      "top3": 51,
+      "mrr@5": 0.582,
+      "multi_group_complete@5": "3/11"
+    },
+    "per_source": {
+      "multi_source_questions": 11,
+      "complete_per_source": 7
+    }
+  },
+  "note": "Chosen on the tuning pool (questions, -ms, -vendor, -cisa, -x-tuning, -x) and the practitioner test's questions (docs/practitioner-test-2026-10-27.md); the sealed set y is run once after this point, with v3 (on the v3-era index, build/local/index-v3.sqlite) and with v4. Rejected on the tuning pool: two cross-encoder re-rankers (MiniLM-L6, bge-reranker-base: no gain, 1.8-10 s per search), query focus (lower top-3), and the alias 'DAIR' (the model's name is a question's subject).",
+  "experiments": {
+    "baseline_v3_on_v3_index": {
+      "cfg": {},
+      "answerable": 79,
+      "complete@5": 55,
+      "top1": 39,
+      "top3": 53,
+      "mrr@5": 0.587,
+      "multi_group_complete@5": "2/11",
+      "per_source": "7/11",
+      "secs": 78
+    },
+    "cross_encoder_minilm_l6": [
+      {
+        "cfg": {
+          "cross_encoder": "minilm",
+          "cross_top": 30,
+          "cross_weight": 1.0
+        },
+        "answerable": 79,
+        "complete@5": 53,
+        "top1": 35,
+        "top3": 53,
+        "mrr@5": 0.555,
+        "multi_group_complete@5": "3/11",
+        "per_source": "5/11",
+        "secs": 225
+      },
+      {
+        "cfg": {
+          "cross_encoder": "minilm",
+          "cross_top": 30,
+          "cross_weight": 0.6
+        },
+        "answerable": 79,
+        "complete@5": 55,
+        "top1": 37,
+        "top3": 55,
+        "mrr@5": 0.574,
+        "multi_group_complete@5": "4/11",
+        "per_source": "7/11",
+        "secs": 86
+      },
+      {
+        "cfg": {
+          "cross_encoder": "minilm",
+          "cross_top": 30,
+          "cross_weight": 0.3
+        },
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 38,
+        "top3": 55,
+        "mrr@5": 0.585,
+        "multi_group_complete@5": "3/11",
+        "per_source": "7/11",
+        "secs": 83
+      }
+    ],
+    "cross_encoder_bge_reranker_base": [
+      {
+        "cfg": {
+          "cross_encoder": "bge",
+          "cross_top": 30,
+          "cross_weight": 1.0
+        },
+        "answerable": 79,
+        "complete@5": 52,
+        "top1": 36,
+        "top3": 48,
+        "mrr@5": 0.553,
+        "multi_group_complete@5": "2/11",
+        "per_source": "5/11",
+        "secs": 1063
+      },
+      {
+        "cfg": {
+          "cross_encoder": "bge",
+          "cross_top": 30,
+          "cross_weight": 0.6
+        },
+        "answerable": 79,
+        "complete@5": 52,
+        "top1": 37,
+        "top3": 55,
+        "mrr@5": 0.572,
+        "multi_group_complete@5": "2/11",
+        "per_source": "5/11",
+        "secs": 81
+      },
+      {
+        "cfg": {
+          "cross_encoder": "bge",
+          "cross_top": 30,
+          "cross_weight": 0.3
+        },
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 41,
+        "top3": 54,
+        "mrr@5": 0.607,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 82
+      }
+    ],
+    "v4_index_changes_with_DAIR_alias": [
+      {
+        "cfg": {},
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 38,
+        "top3": 53,
+        "mrr@5": 0.576,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 105
+      },
+      {
+        "cfg": {
+          "v4_tokens": true
+        },
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 39,
+        "top3": 53,
+        "mrr@5": 0.585,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 112
+      },
+      {
+        "cfg": {
+          "focus_query": true
+        },
+        "answerable": 79,
+        "complete@5": 53,
+        "top1": 37,
+        "top3": 48,
+        "mrr@5": 0.554,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 101
+      },
+      {
+        "cfg": {
+          "v4_tokens": true,
+          "focus_query": true
+        },
+        "answerable": 79,
+        "complete@5": 53,
+        "top1": 38,
+        "top3": 48,
+        "mrr@5": 0.56,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 110
+      }
+    ],
+    "v4_index_changes_without_DAIR_alias": [
+      {
+        "cfg": {},
+        "answerable": 79,
+        "complete@5": 55,
+        "top1": 39,
+        "top3": 53,
+        "mrr@5": 0.587,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 94
+      },
+      {
+        "cfg": {
+          "v4_tokens": true
+        },
+        "answerable": 79,
+        "complete@5": 55,
+        "top1": 40,
+        "top3": 53,
+        "mrr@5": 0.596,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 108
+      }
+    ],
+    "dense_minmax_weights": [
+      {
+        "cfg": {
+          "dense_norm": "minmax"
+        },
+        "answerable": 79,
+        "complete@5": 53,
+        "top1": 34,
+        "top3": 47,
+        "mrr@5": 0.528,
+        "multi_group_complete@5": "3/11",
+        "per_source": "4/11",
+        "secs": 71
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true
+        },
+        "answerable": 79,
+        "complete@5": 52,
+        "top1": 34,
+        "top3": 47,
+        "mrr@5": 0.525,
+        "multi_group_complete@5": "3/11",
+        "per_source": "4/11",
+        "secs": 96
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.3,
+          "dense_weight": 0.6
+        },
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 34,
+        "top3": 48,
+        "mrr@5": 0.532,
+        "multi_group_complete@5": "3/11",
+        "per_source": "4/11",
+        "secs": 100
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.2,
+          "dense_weight": 0.6
+        },
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 31,
+        "top3": 49,
+        "mrr@5": 0.522,
+        "multi_group_complete@5": "3/11",
+        "per_source": "4/11",
+        "secs": 98
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.3,
+          "dense_weight": 0.5
+        },
+        "answerable": 79,
+        "complete@5": 56,
+        "top1": 34,
+        "top3": 51,
+        "mrr@5": 0.551,
+        "multi_group_complete@5": "3/11",
+        "per_source": "4/11",
+        "secs": 92
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.1,
+          "dense_weight": 0.7
+        },
+        "answerable": 79,
+        "complete@5": 53,
+        "top1": 31,
+        "top3": 48,
+        "mrr@5": 0.516,
+        "multi_group_complete@5": "3/11",
+        "per_source": "4/11",
+        "secs": 92
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.3,
+          "dense_weight": 0.4
+        },
+        "answerable": 79,
+        "complete@5": 56,
+        "top1": 39,
+        "top3": 51,
+        "mrr@5": 0.582,
+        "multi_group_complete@5": "3/11",
+        "per_source": "7/11",
+        "secs": 90
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.3,
+          "dense_weight": 0.3
+        },
+        "answerable": 79,
+        "complete@5": 54,
+        "top1": 38,
+        "top3": 52,
+        "mrr@5": 0.573,
+        "multi_group_complete@5": "2/11",
+        "per_source": "7/11",
+        "secs": 92
+      },
+      {
+        "cfg": {
+          "dense_norm": "minmax",
+          "v4_tokens": true,
+          "rerank_weight": 0.2,
+          "dense_weight": 0.4
+        },
+        "answerable": 79,
+        "complete@5": 55,
+        "top1": 35,
+        "top3": 51,
+        "mrr@5": 0.552,
+        "multi_group_complete@5": "3/11",
+        "per_source": "6/11",
+        "secs": 90
+      }
+    ]
+  }
+}

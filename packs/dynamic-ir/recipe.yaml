@@ -1,0 +1,117 @@
+# Build recipe for the dynamic-ir pack.  Commands: see README.md.
+route: asciidoctor_html_verified_against_pdf
+inputs:
+  authoritative: dynamic-ir/pdf/1e-20260917164224
+  structured_candidate: dynamic-ir/html/1e-20260917164218
+
+# Source artifacts acquired for this pack (all recorded in sources.lock.json by `irpacks sources lock`).
+# URLs were resolved from the publisher's pages (dynamicincidentresponse.com, resources.html), not invented.
+artifacts:
+  - source_id: dynamic-ir/pdf/1e-20260917164224
+    role: authoritative
+    url: https://dl.dynamicincidentresponse.com/dynamicir.pdf
+    resolved_from: https://dynamicincidentresponse.com/
+    local_path: input/dynamic-ir/publisher-2026-10-25/dynamicir.pdf
+    media_type: application/pdf
+    edition_stamp: "20260917164224"
+  - source_id: dynamic-ir/html/1e-20260917164218
+    role: structured_candidate
+    url: https://dl.dynamicincidentresponse.com/book/dynamicir.html
+    resolved_from: https://dynamicincidentresponse.com/
+    local_path: input/dynamic-ir/publisher-2026-10-25/dynamicir.html
+    media_type: text/html
+    edition_stamp: "20260917164218"
+  - source_id: dynamic-ir/epub/1e-20260917164434
+    role: reference_only
+    url: https://dl.dynamicincidentresponse.com/dynamicir.epub
+    resolved_from: https://dynamicincidentresponse.com/
+    local_path: input/dynamic-ir/publisher-2026-10-25/dynamicir.epub
+    media_type: application/epub+zip
+    edition_stamp: "20260917164434"
+    notes: "Not used: the single-page HTML parsed fully, so the EPUB route was not needed."
+  - source_id: dynamic-ir/site/home
+    role: landing_page
+    url: https://dynamicincidentresponse.com/
+    local_path: input/dynamic-ir/publisher-2026-10-25/site/index.html
+    media_type: text/html
+  - source_id: dynamic-ir/site/resources
+    role: landing_page
+    url: https://dynamicincidentresponse.com/resources.html
+    local_path: input/dynamic-ir/publisher-2026-10-25/site/resources.html
+    media_type: text/html
+  - source_id: dynamic-ir/site/errata
+    role: landing_page
+    url: https://dynamicincidentresponse.com/errata.html
+    local_path: input/dynamic-ir/publisher-2026-10-25/site/errata.html
+    media_type: text/html
+    notes: "States 'No errata reported yet.' at retrieval time."
+  - source_id: dynamic-ir/site/chapters
+    role: landing_page
+    url: https://dynamicincidentresponse.com/chapters.html
+    local_path: input/dynamic-ir/publisher-2026-10-25/site/chapters.html
+    media_type: text/html
+    notes: "Lists per-chapter HTML pages; not downloaded because the single-page HTML was usable."
+  # Companion checklists: separate supplements, never part of the default book corpus.
+  - {source_id: dynamic-ir/supplement/step-by-step-prepare.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-prepare.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-prepare.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-detect.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-detect.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-detect.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-verify-triage.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-verify-triage.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-verify-triage.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-scope.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-scope.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-scope.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-contain.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-contain.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-contain.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-eradicate.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-eradicate.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-eradicate.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-recover.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-recover.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-recover.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-debrief.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-debrief.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-debrief.md, media_type: text/markdown}
+  - {source_id: dynamic-ir/supplement/step-by-step-response-actions-loop.md, role: supplement, url: "https://dl.dynamicincidentresponse.com/resources/step-by-step-response-actions-loop.md", resolved_from: "https://dynamicincidentresponse.com/resources.html", local_path: input/dynamic-ir/supplements-2026-10-25/step-by-step-response-actions-loop.md, media_type: text/markdown}
+
+# Source identities known but not present in this environment (recorded, never substituted).
+known_unavailable:
+  - source_id: dynamic-ir/pdf/1e-20260914175315-user-inspected
+    role: authoritative
+    sha256: a0b16111027651c08d2ab4e8ad9d3b3efbd1526147146506ad17dfe3b930d396
+    size_bytes: 69372527
+    edition_stamp: "20260914175315"
+    local_path: input/dynamicir.pdf
+    notes: >-
+      User-supplied copy inspected during planning (666 pages, 159 bookmarks). Not supplied to this environment
+      (larger than the upload limit). A different byte identity and build stamp from the publisher download.
+      To build it: place it at input/dynamicir.pdf, then run `irpacks sources lock` and build with
+      `--authoritative dynamic-ir/pdf/1e-20260914175315-user-inspected`.
+
+pdf_only_regions:
+  - kind: toc
+    bookmark: "Table of Contents"
+    insert_after: fm-front-matter
+  - kind: index
+    bookmark: "Index"
+    attach_to: bm-index
+
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+
+corpus:
+  default: narrative
+  rules:
+    - {within: fm-front-matter, corpus: front_matter, include: false, reason: "title, copyright and license page (non-substantive front matter)"}
+    - {within: fm-table-of-contents, corpus: navigation, include: false, reason: "printed table of contents (navigation)"}
+    - {within: fm-praise-for-dynamic-incident-response, corpus: front_matter, include: false, reason: "endorsement quotations (non-substantive front matter)"}
+    - {within: bm-index, corpus: index, include: false, reason: "back-of-book index (navigation)"}
+    - {within: bm-colophon, corpus: back_matter, include: false, reason: "colophon: production notes (non-substantive back matter)"}
+
+pilot:
+  description: >-
+    All of Chapter 6 plus selected technical sections of Chapters 12, 13 and 16: diagrams (Ch. 6), tables and
+    footnotes (12.3), code/figures/admonitions/sidebar incl. DNS Sinkholes (12.4), cross-page procedures
+    (12 and 13 Step-by-Step), code and footnotes (13.4), embedded prompts and code (16.2-16.3).
+  keep:
+    - ch06
+    - ch12.s03
+    - ch12.s04
+    - ch12.s10
+    - ch13.s04
+    - ch13.s06
+    - ch16.s02
+    - ch16.s03
+  extra_pages_bookmarks: []   # chapter-end footnote pages are added automatically for kept chapters

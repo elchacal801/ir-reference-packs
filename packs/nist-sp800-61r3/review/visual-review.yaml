@@ -1,0 +1,23 @@
+# Visual review records for nist-sp800-61r3 (rendered page viewed next to `irpacks review-page` output).
+# Reviewer identity is recorded truthfully: these reviews were done by an AI agent, not a human.
+schema_version: 1
+pack_id: nist-sp800-61r3
+source_sha256: e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d
+pages:
+  - page: 14
+    label: "6"
+    reviewer: Claude (AI agent)
+    date: "2026-10-25"
+    method: rendered at 1.0x and viewed alongside the element list and Markdown
+    result: matches
+    elements_checked: [sec2.s01.p09, sec2.s01.p10, sec2.s01.t01, sec2.s01.p11, sec2.s02.h01, sec2.s02.p01]
+    notes: "Table 1 row spans reconstructed correctly (Preparation x3, Detection & Analysis x2, Containment/Eradication/Recovery x3); printed page number read from the footer."
+  - page: 32
+    label: "24"
+    reviewer: Claude (AI agent)
+    date: "2026-10-25"
+    method: rendered at 1.0x and viewed alongside the merged table rows
+    result: matches
+    elements_checked: [sec3.s02.t01]
+    notes: "Repeated header row at the top of the page dropped; the 'R2: Tune the continuous monitoring...' continuation (empty first three cells) merged into the DE.CM row from p. 31; DE.CM-01..09 rows match."
+elements: []

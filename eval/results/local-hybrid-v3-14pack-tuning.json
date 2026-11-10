@@ -1,0 +1,383 @@
+{
+  "run_at": "2026-10-25T20:10:51Z",
+  "backend": "local-fts5",
+  "label": null,
+  "split": "tuning",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "3",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2,
+      "alias_strip": "auto",
+      "alias_candidates": 20,
+      "alias_mode": "per_pack",
+      "alias_window": 5,
+      "rerank_weight": 0.2,
+      "dense_weight": 0.7,
+      "dense_candidates": 100,
+      "dense_within_filters": true,
+      "lexical_fallback": {
+        "rerank_weight": 0.3,
+        "dense_weight": 0.0
+      }
+    },
+    "dense": "on",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 15,
+    "answerable": 14,
+    "unanswerable": 1,
+    "evidence_complete_at_5": "12/14",
+    "evidence_complete_at_5_rate": 0.857,
+    "mean_group_recall": 0.893,
+    "multi_evidence_questions": "1/2 complete",
+    "mrr": 0.818,
+    "citation_valid": "13/13",
+    "required_context_complete": "3/3",
+    "duplicate_results": "0/75",
+    "failures": [
+      "t04",
+      "t11"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "t01",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s01.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s04.s01.s03:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdc-alerts-dns.attempted-communication-with-suspicious-sinkholed-domain:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch19.s01.s06.sb02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s01.s06:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t02",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s07.s01:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdo-responding-to-a-compromised-email-account.step-1-disable-the-affected-user-account:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdo-responding-to-a-compromised-email-account.step-2-revoke-user-access:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s02.s03:0",
+        "ms-defender:2026-10-25:7cde9a0b:mdo-detect-and-remediate-illicit-consent-grants.a01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "t03",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s02.s09:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s08:0",
+        "ms-learn-ir:2026-10-25:7cde9a0b:ms-ir-compromised-app.references:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s10.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s07.s02:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t04",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-10-25:7cde9a0b:sir-config-validation.config-validation-step5:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s01.s05.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s05.s06:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch10.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch15.s05.s05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "t05",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.s01.p05:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s10.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s03.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s02.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t06",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s02.t01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s03.s10:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:waf-monitor-threats.related-links:0",
+        "gcp-security-ir:2026-10-25:7cde9a0b:gcparch-manage-incidents-and-problems.principle_overview:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s01.t01:13"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t07",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec2.s01.p07:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t08",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.fn01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch14.s04.s01.p06:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s02:0",
+        "ms-azure-ir:2026-10-25:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.steps-to-take-before-an-attack.t01:1"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "t09",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s04.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch16.s03.s01.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s01.s01:0",
+        "ms-windows-auditing:2026-10-25:7cde9a0b:winaudit-event-4699.security-monitoring-recommendations:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s06.s03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t10",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch06.s06:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch16.s04.s01.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch06.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null,
+      "visual_asset_exposed": true
+    },
+    {
+      "id": "t11",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.s01:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:fm-executive-summary:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec1.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t12",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch09.s08:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s04.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s09.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s04.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch09.s05.s02.sb01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "t13",
+      "split": "tuning",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s01.s02.s04:0",
+        "ms-purview-exchange:2026-10-25:7cde9a0b:exo-how-dane-secures-email.tlsa-resource-record.p09:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s04:0",
+        "aws-security-ir:2026-10-25:7cde9a0b:ct-cloudtrail-log-file-custom-validation.cloudtrail-log-file-custom-validation-steps-validate-digest-file:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "t14",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch04.s05:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch04.s06.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch15.s02.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch15.s05.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch04.s06.s01.sb01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "t15",
+      "split": "tuning",
+      "answerable": true,
+      "returned": [
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec2.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch03.s02.s02.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch09.s03.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch09.s09.s01:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec3.s02.t01:4"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    }
+  ]
+}

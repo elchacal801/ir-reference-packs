@@ -1,0 +1,78 @@
+# Reference-pack contract: Google Cloud documentation: incident response, threat detection and forensics. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: gcp-security-ir
+pack_version: "0.1.0"
+title: "Google Cloud documentation: incident response, threat detection and forensics"
+description: >-
+  Google Cloud documentation for responding to incidents in Google Cloud: Google's data incident response process,
+  the incident preparation and response guides (ransomware and cryptomining mitigation, compromised credentials,
+  revoking access, abuse notifications), Security Command Center threat detection and its guides for investigating
+  and responding to threats, Cloud Audit Logs, VPC Flow Logs and Packet Mirroring, Compute Engine disk snapshots,
+  service-account key response, Cloud Storage recovery controls, and the architecture guides on security log
+  analytics and incident management. Captured as HTML; each page's footer update date and a hash of its body are
+  recorded so later changes can be detected. The page list is generated from the published side navigation
+  (recipe.yaml discovery rules; articles.yaml).
+source:
+  title: "Google Cloud documentation (incident response, threat detection and forensics)"
+  authors: []
+  publisher: "Google"
+  url: "https://docs.cloud.google.com/docs/security/incident-response"
+  landing_page: "https://docs.cloud.google.com/docs/security"
+  edition: "Google Cloud documentation snapshot 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # continuously updated web documentation; per-page update dates are in sources.lock.json
+  retrieval_date: "2026-10-25"
+  inputs:                   # one locked input per page: articles.yaml and sources.lock.json list them
+    - source_id: gcp-security-ir/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    Vendor documentation that changes frequently. Product names, console paths, gcloud commands, log formats and
+    service tiers are specific to the capture date; check `irpacks check-updates gcp-security-ir` before relying on
+    procedural details.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: section_anchor
+  locator: "published page URL with the section's heading anchor and the page's last update date"
+  format: "Google, “{article}”, “{section}”, Google Cloud documentation (updated {updated_at}), {url}#{anchor}"
+  notes: "Web pages are not paginated; never cite page numbers for this pack."
+applicability:
+  - incident-response
+  - forensics
+  - cloud
+  - gcp
+  - logging
+  - threat-detection
+retrieval:
+  source_aliases:
+    - "Google Cloud"
+    - "GCP"
+    - "Google Cloud Platform"
+    - "Security Command Center"
+    - "Cloud Audit Logs"
+    - "Event Threat Detection"
+authority_class: vendor_documentation
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_only
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "Web documentation: superseded continuously by later revisions of each page. See the update workflow."
+distribution:
+  content_license: CC-BY-4.0
+  content_license_url: https://creativecommons.org/licenses/by/4.0/
+  rights_basis: >-
+    CC BY 4.0, per each page's footer ("Except as otherwise noted, the content of this page is licensed under the
+    Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License"). The
+    footer statement is recorded per page; a page naming another license is flagged at build time.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

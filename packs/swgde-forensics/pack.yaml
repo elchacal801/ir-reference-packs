@@ -1,0 +1,70 @@
+# Reference-pack contract: SWGDE digital-evidence best practices for acquisition, preservation, examination and reporting. Validated against schemas/pack.schema.json.
+schema_version: "1.0.0"
+pack_id: swgde-forensics
+pack_version: "0.1.0"
+title: "SWGDE best practices: digital evidence acquisition, preservation, examination and reporting"
+description: >-
+  Fifteen current documents of the Scientific Working Group on Digital Evidence (SWGDE): remote collection of
+  digital evidence from an endpoint, evidence acquisition from cloud service providers, computer forensic
+  acquisitions, Apple macOS acquisition, Linux technical notes, acquiring online content, minimization of evidence
+  seizure, computer forensic examination, mobile device forensic analysis, archiving, report writing, collection
+  myths vs facts, the model SOP for computer forensics, data integrity, and the digital and multimedia evidence
+  glossary. Converted from each PDF's page layout and outline (the files are untagged or carry unusable tags).
+source:
+  title: "SWGDE published documents (digital evidence acquisition, preservation, examination and reporting)"
+  authors: []
+  publisher: "Scientific Working Group on Digital Evidence (SWGDE)"
+  url: "https://www.swgde.org/documents/published-complete-listing/"
+  landing_page: "https://www.swgde.org/documents/published-complete-listing/"
+  edition: "SWGDE documents current on 2026-10-25"
+  edition_identifier: "2026-10-25"
+  publication_date: null   # each document has its own number, version and date (source-map.json)
+  retrieval_date: "2026-10-25"
+  inputs:
+    - source_id: swgde-forensics/snapshot/2026-10-25
+      role: authoritative
+  notes: >-
+    Every document is a published (non-draft) SWGDE document listed as current on 2026-10-25. Several date from
+    2006-2018; SWGDE advises readers to verify on swgde.org that they use the current version.
+recipe: recipe.yaml
+rights: rights.yaml
+citation:
+  scheme: pdf_collection
+  locator: "document number, version and date; section; printed page (footer 'Page N of M') and PDF page; the PDF URL opened at the section's page"
+  format: "Scientific Working Group on Digital Evidence (SWGDE), “{document}” ({number}, version {version}, {date}), “{section}”, p. {printed} (PDF p. {pdf}), {url}#page={page}"
+  notes: "SWGDE requires any reference or quote to include the version number (or creation date): the citation carries both."
+applicability:
+  - digital-forensics
+  - evidence-handling
+  - incident-response
+  - acquisition
+  - reporting
+retrieval:
+  source_aliases:
+    - "SWGDE"
+    - "Scientific Working Group on Digital Evidence"
+authority_class: community_standard
+owner:
+  name: "Diego Parra"
+  role: maintainer
+  contact: null
+review:
+  state: automated_checks_and_sampled_visual_review
+  date: "2026-10-25"
+  reviewers: ["Claude (AI agent) - automated checks and rendered-page visual sampling; not a human review"]
+  notes: "Maintainer review pending."
+superseded:
+  state: false
+  by: null
+  supersedes: null
+  notes: "SWGDE revises documents individually; check-updates compares each PDF's HTTP validators."
+distribution:
+  content_license: null
+  content_license_url: null
+  rights_basis: >-
+    Maintainer decision (2026-10-25): redistributable under the SWGDE Redistribution Policy on each cover page. Its
+    conditions are met: each document keeps its cover page with the disclaimer (front-matter section); no
+    endorsement is claimed; citations give document number, version, status (published) and date.
+  local_policy: complete_local_build
+  public_policy: allowlisted_subset
+  source_bytes_in_public_archive: false

@@ -1,0 +1,28 @@
+# Build recipe for the ms-windows-auditing pack: published Microsoft Learn articles, captured as HTML snapshots.
+# Each article is its own source identity (one capture date); its git_commit_id / updated_at / ms.date metadata is
+# recorded in sources.lock.json and drives change detection (irpacks check-updates).
+#
+# The article list is generated: `irpacks sources discover ms-windows-auditing` applies the discovery rules below to the
+# published tables of contents and writes articles.yaml (existing unit IDs are kept). Review its diff, then lock.
+# Selection: the sections a responder uses (investigate, respond, hunt, alert and log references); deployment,
+# licensing, configuration and API-reference sections are left out.
+route: learn_html_pages
+inputs:
+  snapshot: "2026-10-25"
+artifacts_file: articles.yaml
+discovery:
+  base: https://learn.microsoft.com/en-us/
+  rules:
+    - toc: previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing
+      prefix: winaudit
+      docset: windows-auditing
+      include: ['.*']
+chunking:
+  min_tokens: 600
+  max_tokens: 1000
+  overlap_tokens: 100
+  overlap_min_tokens: 80
+  overlap_max_tokens: 120
+corpus:
+  default: narrative
+  rules: []
