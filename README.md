@@ -53,9 +53,10 @@ canonical document therefore reaches every output.
 * **Change detection:** upstream changes are checked weekly and on request, and reported per section with a
   severity. New and removed articles in the tables of contents are reported too
   ([Detecting changes over time](#detecting-changes-over-time)).
-* **Status: `0.1.0.dev0`, not released.**
-  * The source code is on GitHub. No release or package has been made, and no pack has been distributed; the
-    public candidates under `dist/` are local.
+* **Status: `0.1.0`, released as a source release.**
+  * The release is a tag of this repository: code, recipes, source locks, history records and the evaluation. No
+    package has been published and no built pack has been distributed; the public candidates under `dist/` are
+    local.
   * Not production-ready: the content has not been reviewed by the maintainer, and the visual review was done by
     an AI agent.
   * See [Status](#status) for the five separate readiness dimensions.
