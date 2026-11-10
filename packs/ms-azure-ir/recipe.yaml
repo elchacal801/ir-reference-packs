@@ -10,7 +10,7 @@
 # benchmark versions are left out. Entra, Defender for Cloud and Sentinel articles are in their own packs.
 route: learn_html_pages
 inputs:
-  snapshot: "2026-10-25"
+  snapshot: "2026-11-10"
 artifacts_file: articles.yaml
 discovery:
   base: https://learn.microsoft.com/en-us/
@@ -64,12 +64,14 @@ discovery:
     - toc: azure/backup
       prefix: azbackup
       docset: backup
-      include: ['^Security and Ransomware protection > (Overview|Secure your Azure Backup deployment|FAQ-Protection against Ransomware|Best practices for backup data protection)$',
-                '^Security and Ransomware protection > Multi-user authorization > Overview$',
-                '^Security and Ransomware protection > Immutability > Overview$',
-                '^Security and Ransomware protection > Secure by default with soft delete > Overview of soft delete$',
-                '^Security and Ransomware protection > Ransomware protection > Integrate with Microsoft Defender',
-                '^Security and Ransomware protection > Threat Detection with Microsoft Defender for Cloud integration > Overview$',
+      # Microsoft renamed "Security and Ransomware protection" to "Azure Backup Cyber Recovery" in November 2026.
+      include: ['^Azure Backup Cyber Recovery > (Overview|Ransomware protection FAQ)$',
+                '^Azure Backup Cyber Recovery > Govern backup security > Backup security best practices$',
+                '^Azure Backup Cyber Recovery > Protect backups > Secure your Azure Backup deployment$',
+                '^Azure Backup Cyber Recovery > Protect backups > Multi-user authorization > Overview$',
+                '^Azure Backup Cyber Recovery > Protect backups > Immutability > Overview$',
+                '^Azure Backup Cyber Recovery > Protect backups > Soft delete > Secure by default with soft delete$',
+                '^Azure Backup Cyber Recovery > Detect and respond to threats > (Threat detection with Microsoft Defender for Cloud|Preserve recovery points in response to ransomware alerts)',
                 '^Azure VM backup > Backup scenarios > Restore > About Azure VM restore$']
     - toc: azure/storage/blobs
       prefix: azblob

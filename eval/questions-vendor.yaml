@@ -7,20 +7,20 @@ sources:
     document_id: dynamic-ir:20260917164224
     source_sha256: f882f3fdfe4d2de2b8b295747b1579f7592c59cd46d5a3dc211ba8b777925164
   ms-defender:
-    document_id: ms-defender:2026-10-25
-    source_sha256: 47583cf18d7c19bcf8e912e78f77d6c751634e9adfc5890d1c7cb8970dd97034
+    document_id: ms-defender:2026-11-10
+    source_sha256: 4da0a21abd893ce8ff064299e47594fb7e54282f3b9c4d3faa35ec169062fd51
   ms-sentinel:
-    document_id: ms-sentinel:2026-10-25
-    source_sha256: f4777d17b82fb95bf3ec31c58bdadbf96d0cf54c882d34513ed8797bf9b0047d
+    document_id: ms-sentinel:2026-11-10
+    source_sha256: ef1f9fb2180a5718262990eace99f8dcef2c336eb8dbed084c425e1e1a49fa84
   ms-purview-exchange:
-    document_id: ms-purview-exchange:2026-10-25
-    source_sha256: 4fddcf1cca023511bab1ab123a30e186db716531f09e012491f755e28c47c3d7
+    document_id: ms-purview-exchange:2026-11-10
+    source_sha256: 58e562ff68b0fdfdf36e0c7dd1ce10e6d49a3aef8fc3224652d6adbc9aa6e47b
   ms-windows-auditing:
-    document_id: ms-windows-auditing:2026-10-25
-    source_sha256: 65f4d50da9b33d06dce2213352b3a1bf06b7da8a357d1cd3ce6213434bf2cdaf
+    document_id: ms-windows-auditing:2026-11-10
+    source_sha256: 479f2a850db3bea4a8fa6786e847005eaaf202ab95931b6db1a94bd018bfbf3a
   aws-security-ir:
-    document_id: aws-security-ir:2026-10-25
-    source_sha256: 7bf21f59a2485f06190ecde7ac473448256644875cee366f910901f0e0389309
+    document_id: aws-security-ir:2026-11-10
+    source_sha256: ac7597805544a8c3c57e30aea449896e14b5f3c6e1f8b4210f81f44f949dec52
 questions:
 - id: v01
   split: vendor-heldout

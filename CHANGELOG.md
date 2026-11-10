@@ -1,8 +1,33 @@
 # Changelog
 
-All notable changes. Engine versions and pack versions are independent. Nothing has been released or published.
+All notable changes. Engine versions and pack versions are independent. Releases are tags of this repository: they
+contain the code, recipes, source locks, history records and evaluation. Built packs are not published.
 
 ## Unreleased
+
+## 0.1.0 (2026-11-10)
+
+First public release, as `ir-reference-packs`.
+
+### Changed (web packs, snapshot 2026-11-10)
+* **All nine web packs are at the 2026-11-10 snapshot.** Each build validates with 0 errors; history records
+  `history/<pack>/2026-11-10.json` are added. Units with changed sections since 2026-10-25:
+  * `ms-azure-ir` (14): Microsoft renamed the Azure Backup TOC section to "Azure Backup Cyber Recovery" and rewrote
+    its security overview; virtual network and NSG flow-log formats, packet capture, DDoS log fields, activity log.
+  * `ms-defender` (15, and 1 article added: the CloudKeyVaultEvents hunting table): incident cases and correlation,
+    advanced hunting schema tables, Defender for Identity alerts, device response actions.
+  * `gcp-security-ir` (14): Event Threat Detection, AI threat findings, snapshots, soft delete, VPC flow-log records.
+  * `aws-security-ir` (6, and 1 article added: S3 data events for governance): GuardDuty custom detection rule
+    findings, CloudTrail data and network activity events.
+  * `ms-purview-exchange` (2): audit log activities; retention tags.
+  * `ms-sentinel` (2): running playbooks; migrating alert-trigger playbooks to automation rules.
+  * `ms-windows-auditing` and `first-standards`: re-captured, no changed sections.
+* **Evaluation, re-run on these snapshots** with ranking v4 (`eval/results/hybrid-v4-14pack-*-2026-11-10.json`).
+  Evidence-complete@5 is unchanged on seven of the eight sets (tuning 13/14, held-out 7/8, ms 5/7, vendor 7/11,
+  cisa 4/7, x-tuning 7/12, y 14/26). On x it is 12/20, was 13/20: x07 no longer completes after its evidence moved
+  to `ms-purview-exchange` (below). Nothing was retuned.
+  * Evidence maintenance: xt02 keeps its element (reworded upstream); y04's third alternative moved from list item
+    3 to list item 2 of the same list in the rewritten Azure Backup article.
 
 ### Changed (`ms-learn-ir` snapshot 2026-11-10)
 * **Adopted the 2026-11-10 snapshot of `ms-learn-ir`** (135 articles, was 130). Validation: 0 errors, 0 warnings.

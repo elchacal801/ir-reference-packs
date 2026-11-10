@@ -16,12 +16,12 @@ source:
   publisher: "FIRST.Org, Inc. (Forum of Incident Response and Security Teams)"
   url: "https://www.first.org/standards/"
   landing_page: "https://www.first.org/standards/"
-  edition: "www.first.org snapshot 2026-10-25"
-  edition_identifier: "2026-10-25"
+  edition: "www.first.org snapshot 2026-11-10"
+  edition_identifier: "2026-11-10"
   publication_date: null   # each document states its own version (TLP 2.0, CSIRT Services Framework 2.1, CVSS 4.0 ...)
-  retrieval_date: "2026-10-25"
+  retrieval_date: "2026-11-10"
   inputs:
-    - source_id: first-standards/snapshot/2026-10-25
+    - source_id: first-standards/snapshot/2026-11-10
       role: authoritative
   notes: >-
     The CSIRT Services Framework page is headed "Version 2.1 (for review purposes)" and links the PDF edition

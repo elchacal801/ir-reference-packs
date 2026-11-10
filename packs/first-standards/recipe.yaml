@@ -4,7 +4,7 @@
 # document's version is stated in its own text.
 route: first_org_html
 inputs:
-  snapshot: "2026-10-25"
+  snapshot: "2026-11-10"
 artifacts_file: articles.yaml
 discovery:
   base: https://www.first.org/

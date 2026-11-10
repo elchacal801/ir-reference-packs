@@ -19,29 +19,29 @@ sources:
     document_id: ms-learn-ir:2026-11-10
     source_sha256: 0bb7da675c3418038833ca4cca95567519ea6f5c209b5d50271279bfa149af9b
   ms-defender:
-    document_id: ms-defender:2026-10-25
-    source_sha256: 47583cf18d7c19bcf8e912e78f77d6c751634e9adfc5890d1c7cb8970dd97034
+    document_id: ms-defender:2026-11-10
+    source_sha256: 4da0a21abd893ce8ff064299e47594fb7e54282f3b9c4d3faa35ec169062fd51
   ms-sentinel:
-    document_id: ms-sentinel:2026-10-25
-    source_sha256: f4777d17b82fb95bf3ec31c58bdadbf96d0cf54c882d34513ed8797bf9b0047d
+    document_id: ms-sentinel:2026-11-10
+    source_sha256: ef1f9fb2180a5718262990eace99f8dcef2c336eb8dbed084c425e1e1a49fa84
   ms-purview-exchange:
-    document_id: ms-purview-exchange:2026-10-25
-    source_sha256: 4fddcf1cca023511bab1ab123a30e186db716531f09e012491f755e28c47c3d7
+    document_id: ms-purview-exchange:2026-11-10
+    source_sha256: 58e562ff68b0fdfdf36e0c7dd1ce10e6d49a3aef8fc3224652d6adbc9aa6e47b
   ms-windows-auditing:
-    document_id: ms-windows-auditing:2026-10-25
-    source_sha256: 65f4d50da9b33d06dce2213352b3a1bf06b7da8a357d1cd3ce6213434bf2cdaf
+    document_id: ms-windows-auditing:2026-11-10
+    source_sha256: 479f2a850db3bea4a8fa6786e847005eaaf202ab95931b6db1a94bd018bfbf3a
   aws-security-ir:
-    document_id: aws-security-ir:2026-10-25
-    source_sha256: 7bf21f59a2485f06190ecde7ac473448256644875cee366f910901f0e0389309
+    document_id: aws-security-ir:2026-11-10
+    source_sha256: ac7597805544a8c3c57e30aea449896e14b5f3c6e1f8b4210f81f44f949dec52
   ms-azure-ir:
-    document_id: ms-azure-ir:2026-10-25
-    source_sha256: a981e2e884eb0871e38b98ef6b9426491e893ad48125b66377c2480c363d7979
+    document_id: ms-azure-ir:2026-11-10
+    source_sha256: 71d1483e3e793ac932eaf9b5dbf42b317830bd9c77839d2dcaf062a58ab199cb
   gcp-security-ir:
-    document_id: gcp-security-ir:2026-10-25
-    source_sha256: f51c8ee359d5cd94bf927b42600c55c7208bf8ee223c4c224716b293e469fc33
+    document_id: gcp-security-ir:2026-11-10
+    source_sha256: a3c55013403179e8112a05f62007a5b29e248c8707a76a0b41e503485a8a5342
   first-standards:
-    document_id: first-standards:2026-10-25
-    source_sha256: bb1b006a6473ad644a69f42d867d03fa01ef2e11dce06804622ebc0b9f8e7836
+    document_id: first-standards:2026-11-10
+    source_sha256: 3e3b56384bf1bc3216cda45519d86dea0b63f31687e5620530183f7aed186e31
   swgde-forensics:
     document_id: swgde-forensics:2026-10-25
     source_sha256: e33cdb8dac57a51a6e20864908603b5f8d7e5c220b6065b72d68050fea101dea
@@ -78,8 +78,8 @@ questions:
   - - pack: ms-azure-ir
       element_id: azbackup-security-overview.multi-user-authorization.p01
       type: paragraph
-      quote: Multi-user authorization (MUA) for Azure Backup allows you to add an additional layer of protection to critical
-        operations on your Recovery Services vaults and Backup vaults. For MUA, Azure Backup use
+      quote: 'MUA adds an extra authorization layer to critical operations on Recovery Services vaults and Backup vaults.
+        It uses Resource Guard so that a separate authorized user can approve protected operations. '
       mapping_status: native_structure
       rights_state: redistributable
       locators:

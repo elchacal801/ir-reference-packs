@@ -1,0 +1,692 @@
+{
+  "run_at": "2026-11-10T06:50:21Z",
+  "backend": "local-fts5",
+  "label": null,
+  "split": "y-heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions-y.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "4",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2,
+      "alias_strip": "auto",
+      "alias_candidates": 20,
+      "alias_mode": "per_pack",
+      "alias_window": 5,
+      "rerank_weight": 0.3,
+      "dense_weight": 0.4,
+      "dense_candidates": 100,
+      "dense_within_filters": true,
+      "lexical_fallback": {
+        "rerank_weight": 0.3,
+        "dense_weight": 0.0
+      },
+      "v4_tokens": true,
+      "dense_norm": "minmax",
+      "similarity_levels": true
+    },
+    "dense": "on",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 30,
+    "answerable": 26,
+    "unanswerable": 4,
+    "evidence_complete_at_5": "14/26",
+    "evidence_complete_at_5_rate": 0.538,
+    "mean_group_recall": 0.596,
+    "multi_evidence_questions": "0/5 complete",
+    "mrr": 0.308,
+    "citation_valid": "17/17",
+    "required_context_complete": "1/1",
+    "duplicate_results": "0/150",
+    "failures": [
+      "y03",
+      "y04",
+      "y06",
+      "y09",
+      "y11",
+      "y13",
+      "y16",
+      "y22",
+      "y23",
+      "y24",
+      "y25",
+      "y26"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "y01",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s01.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s05.s01.p07:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s06.s03:0",
+        "ms-defender:2026-11-10:7cde9a0b:mde-overview-endpoint-detection-response:0",
+        "ms-defender:2026-11-10:7cde9a0b:mde-respond-machine-alerts.investigation-package-contents-for-windows-devices.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y02",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-11-10:7cde9a0b:ct-view-insights-events-console.p01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:sir-service-name-info-in-cloudtrail.p01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:ct-insights-events-enable:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:ct-view-cloudtrail-events-console.p01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:ct-cloudtrail-working-with-log-files:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y03",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-revoking-user-access.rotate-sa-keys:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-keys-create-delete.creating.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-keys-create-delete.deleting.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-keys-disable-enable.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-keys-create-delete.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y04",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-azure-ir:2026-11-10:7cde9a0b:azbackup-secure-by-default.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.steps-to-take-before-an-attack.t01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.azure-backup:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azbackup-azure-backup-data-protection-best-practices.soft-delete-for-permanent-deletion-protection-of-backup-data:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y05",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-11-10:7cde9a0b:mdi-cef-format-sa.suspicious-domain-controller-promotion-potential-dcshadow-attack:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdi-identity-infrastructure.disable-print-spooler-service-on-domain-controllers:0",
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-1102.f01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdi-alerts-mdi-classic.other-alerts.t01:1",
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-4734.f01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y06",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-4768.table-2-kerberos-ticket-flags.t01:2",
+        "ms-defender:2026-11-10:7cde9a0b:mdi-cef-format-sa.suspected-golden-ticket-usage-forged-authorization-data:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdi-alerts-xdr.credential-access-alerts.t01:4",
+        "ms-defender:2026-11-10:7cde9a0b:mdi-alerts-mdi-classic.persistence-and-privilege-escalation-alerts.t01:6",
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-4771.f01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y07",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-sentinel:2026-11-10:7cde9a0b:sentinel-restore.p01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdca-activity-filters-queries.query-activities-six-months-back:0",
+        "ms-sentinel:2026-11-10:7cde9a0b:sentinel-investigate-large-datasets.p01:0",
+        "ms-sentinel:2026-11-10:7cde9a0b:sentinel-restore.restore-archived-log-data:0",
+        "ms-sentinel:2026-11-10:7cde9a0b:sentinel-restore.view-restored-log-data:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        3
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 3,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y08",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s08.s04.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s02.s05.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s03.s03:0",
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:part-2-ransomware-and-data-extortion-res.p01:0",
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:introduction.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y09",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.vector-string.p07:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.vector-string.p01:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-user-guide.update-to-the-version-identifier-in-the-vector-string:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.f01:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.vector-string.p05:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y10",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-tlp-2-0.tlp-definitions:0",
+        "ms-sentinel:2026-11-10:7cde9a0b:sentinel-understand-threat-intelligence.curate-threat-intelligence:0",
+        "first-standards:2026-11-10:7cde9a0b:first-tlp-2-0.introduction:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcparch-shared-responsibility-shared-fate.shared_fate.p01:0",
+        "first-standards:2026-11-10:7cde9a0b:first-multiparty-vulnerability-coordination-1-1.use-case-3-public-disclosure-of-limited-vulnerability-information-prior-to-remediation:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y11",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s07.s03.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s02.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s08.p01:0",
+        "ms-defender:2026-11-10:7cde9a0b:xdr-advanced-hunting-take-action.take-actions-on-emails.p01:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-data-security-investigations-mitigation-actions.purge-a-single-item:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y12",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s13:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-17-f-002.s10:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-archiving.s8-2:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-computer-examination.s5:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-21-f-001.s9:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y13",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:gce-snapshots.how-incremental-snapshots-work:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gce-instant-snapshots.size:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azvm-disks-incremental-snapshots.check-snapshot-status.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azvm-disks-incremental-snapshots.incremental-snapshots-of-premium-ssd-v2-and-ultra-disks:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gce-snapshots.snapshot_size:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y14",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-s3.policy-s3-accountblockpublicaccessdisabled:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-s3.policy-s3-bucketblockpublicaccessdisabled:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-s3.policy-s3-bucketpublicaccessgranted:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-s3.policy-s3-bucketanonymousaccessgranted:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-s3.impact-s3-anomalousbehavior-permission:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y15",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-concepts-event-threat-detection-overview.rules.t01:25",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-bps-for-protecting-against-cryptocurrency-attacks.reduce-internet-exposure-to-your-compute-engine-and-gke-resources:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-bps-for-protecting-against-cryptocurrency-attacks.secure-your-compute-engine-and-gke-resources:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-correlated-threats-overview.correlated-threat-rules:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-concepts-event-threat-detection-overview.always_on_logs.t01:2"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "y16",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-idp-remediate-unblock.unblock-users:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-concept-identity-protection-b2b.how-to-remediate-a-users-risk-as-an-administrator:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-id-protection-faq.b2b-users:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-id-protection-faq.should-we-add--enforce-sign-in-frequency---every-time--to-our-conditional-access-policies-for-high-risk-:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-howto-identity-protection-configure-risk-policies.choosing-acceptable-risk-levels:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y17",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-investigate-vmtd-kernel-tampering-findings.example-diamorphine.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-investigate-vmtd-kernel-tampering-findings.a01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-concepts-vm-threat-detection-overview.kernel-mode-rootkit-threat-findings:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:scc-investigate-vmtd-kernel-tampering-findings.example-diamorphine.p03:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-b-incident-response-checklist.s03:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y18",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x-x-x-x:0",
+        "first-standards:2026-11-10:7cde9a0b:first-psirt-services-framework-1-1.definitions.p01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdca-app-governance-manage-alerts.view-alert-details:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s01.s04.s03:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-data-integrity:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y19",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s01.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch09.s06.s01.lst02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch09.s06.s01.p01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdc-deprecated-alerts.vm_suspectphp-1:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s04.s01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y20",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s05.s04:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch06.p01:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:fm-executive-summary:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec2.s01.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y21",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-purview-exchange:2026-11-10:7cde9a0b:exo-trace-an-email-message:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:exo-message-trace-faq.are-there-any-known-limitations-or-behavior-clarifications-that-i-should-be-aware-of-when-using-the-message-trace-tool:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:exo-monitoring.reporting-and-message-trace-data-availability-and-latency:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-ediscovery-data-spillage-search-and-purge.step-5-use-message-trace-log-to-check-how-spilled-data-was-shared:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:exo-message-trace-faq.for-more-information:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y22",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s02.s05:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:introduction:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azsec-incident-response-overview.learn-and-improve-after-incidents:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s06:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:fm-executive-summary:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        4
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y23",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdc-alerts-azure-vm-extensions.azure-vm-extensions-alerts.p01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-compromised-ecs:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s06.s04:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azsec-incident-response-overview.contain-and-recover-from-incidents:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        5
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 5,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y24",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcparch-security-log-analytics.permission_changes_questions.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-examples-service-accounts.grant-service-account-user:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdca-governance-actions.review-the-governance-log.t01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcs-audit-logging.access:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-eks-audit-logs.policy-kubernetes-adminaccesstodefaultserviceaccount:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y25",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:fm-preface.p01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s05:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s01.s02.s01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:introduction:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        2
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.5,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "y26",
+      "split": "y-heldout",
+      "answerable": true,
+      "returned": [
+        "cisa-ir-playbooks:2021-11:7cde9a0b:introduction:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-g-source-text.t02:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s07.s01.s05:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:incident-response-playbook.s07.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch17.s05.s04.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "y27",
+      "split": "y-heldout",
+      "answerable": false,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-tlp-2-0.tlp-definitions:0",
+        "first-standards:2026-11-10:7cde9a0b:first-tlp-2-0.introduction:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcparch-shared-responsibility-shared-fate.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcs-object-versioning.example.l01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-ec2.trojan-ec2-blackholetraffic:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "y28",
+      "split": "y-heldout",
+      "answerable": false,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.lab-module-8-imaging-a-macintosh-compute.l04:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.lab-module-12-image-restoration:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s12-6:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.lab-module-8-imaging-a-macintosh-compute.p01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.scene-module-3-imaging-and-preview:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "y29",
+      "split": "y-heldout",
+      "answerable": false,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s03:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch05.s02:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch20.s01.p01:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec1.s02:0",
+        "nist-sp800-61r3:800-61r3:7cde9a0b:sec1.s01:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "y30",
+      "split": "y-heldout",
+      "answerable": false,
+      "returned": [
+        "ms-defender:2026-11-10:7cde9a0b:mde-investigate-machines.timeline-data-retention:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-audit-solutions-overview.audit-log-retention-policies:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-reference-reports-data-retention.how-long-does-microsoft-entra-id-store-the-data:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-audit-solutions-overview.long-term-retention-of-audit-logs:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:entra-troubleshoot-policy-changes-audit-log.overview:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    }
+  ]
+}

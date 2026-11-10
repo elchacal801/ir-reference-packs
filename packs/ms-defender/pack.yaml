@@ -17,12 +17,12 @@ source:
   publisher: "Microsoft"
   url: "https://learn.microsoft.com/en-us/defender-xdr/investigate-incidents"
   landing_page: "https://learn.microsoft.com/en-us/defender-xdr/"
-  edition: "Microsoft Learn snapshot 2026-10-25"
-  edition_identifier: "2026-10-25"
+  edition: "Microsoft Learn snapshot 2026-11-10"
+  edition_identifier: "2026-11-10"
   publication_date: null   # continuously updated web documentation; per-article update times are in sources.lock.json
-  retrieval_date: "2026-10-25"
+  retrieval_date: "2026-11-10"
   inputs:                   # one locked input per article: articles.yaml and sources.lock.json list them
-    - source_id: ms-defender/snapshot/2026-10-25
+    - source_id: ms-defender/snapshot/2026-11-10
       role: authoritative
   notes: >-
     Vendor documentation that changes frequently. Product names, portal paths, cmdlets and table schemas are

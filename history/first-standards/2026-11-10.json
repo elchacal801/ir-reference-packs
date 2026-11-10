@@ -1,0 +1,1829 @@
+{
+  "schema_version": 1,
+  "pack_id": "first-standards",
+  "document_id": "first-standards:2026-11-10",
+  "edition_id": "2026-11-10",
+  "recorded_at": "2026-11-10T06:39:11Z",
+  "built_at": "2026-11-10T06:39:10Z",
+  "units": [
+    {
+      "unit_id": "first-tlp-2-0",
+      "title": "TRAFFIC LIGHT PROTOCOL (TLP)",
+      "redacted": false,
+      "url": "https://www.first.org/tlp",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "first-tlp-2-0.first-standards-definitions-and-usage-guidance-version-2-0",
+          "title": "FIRST Standards Definitions and Usage Guidance — Version 2.0",
+          "hash": "cbee05bab814ecfbe002aa5102c180959511e99b4739f231d8895c3e53ae9db8"
+        },
+        {
+          "id": "first-tlp-2-0.introduction",
+          "title": "1. Introduction",
+          "hash": "50d04b8a508a96d102f6a84fad5494ca87b55dd62a451e194a4699aacfe9c7fa"
+        },
+        {
+          "id": "first-tlp-2-0.usage",
+          "title": "2. Usage",
+          "hash": "0204dfefa0cb12ccfa2dec212c173cbf0541a57663e03901d4a3a342b6f412d3"
+        },
+        {
+          "id": "first-tlp-2-0.tlp-definitions",
+          "title": "3. TLP definitions",
+          "hash": "61e5d2d24d9c7ea800c735a59dbcb499eeb264bde8a1bf77cd2ba07b5b7a36cc"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-csirt-services-framework-2-1",
+      "title": "FIRST CSIRT Services Framework",
+      "redacted": false,
+      "url": "https://www.first.org/standards/frameworks/csirts/csirt_services_framework_v2.1",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "64215d8e5774235006991af120169e106b020beca0d2be439fb96cd760641ea7",
+      "sections": [
+        {
+          "id": "first-csirt-services-framework-2-1.computer-security-incident-response-team-csirt-services-framework",
+          "title": "Computer Security Incident Response Team (CSIRT) Services Framework",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.1-purpose",
+          "title": "1 Purpose",
+          "hash": "0e0f9d1b0e232f8ba7b704e601518c32842f7b51222b723334e13d47a9f49b05"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.2-introduction-and-background",
+          "title": "2 Introduction and Background",
+          "hash": "559c8b1b0e46ce419fd713d223fe2c06da533605b21da63a631171a4f74d9248"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.3-the-difference-between-a-csirt-and-a-psirt",
+          "title": "3 The Difference Between a CSIRT and a PSIRT",
+          "hash": "08530ef7d27486cf00bac885f6c418e2a000a34f5fb76939d10ef81e7aa6b184"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.4-csirt-services-framework-structure",
+          "title": "4 CSIRT Services Framework Structure",
+          "hash": "561104cc2559bdb57ed7a5dc16dcb9151faf8829a11723c7dfd201ee3542161b"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-service-area-information-security-event-management",
+          "title": "5 Service Area: Information Security Event Management",
+          "hash": "d504d9fc633f020d4d37b8871b0f5120461ca3c6d87ba890bd7f94d489c76a79"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-1-service-monitoring-and-detection",
+          "title": "5.1 Service: Monitoring and detection",
+          "hash": "f989fdf68c828d4016258e794e6900edbab95229972edd7df235cc15ac6b1948"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-1-1-function-log-and-sensor-management",
+          "title": "5.1.1 Function: Log and sensor management",
+          "hash": "61c07a03bab08e0d3148dc7cacdc05fe9bd844534a26f859943a3a2bd9adb6fd"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-1-2-function-detection-use-case-management",
+          "title": "5.1.2 Function: Detection use case management",
+          "hash": "d85b910a2f67acee476690d0d5be14aab53c82276611f2316c349d3a9de39508"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-1-3-function-contextual-data-management",
+          "title": "5.1.3 Function: Contextual data management",
+          "hash": "633218240e4eeb87339fa970b86d3ec7ac952381506f30b79ca3c60aba011a6d"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-2-service-event-analysis",
+          "title": "5.2 Service: Event analysis",
+          "hash": "cb9eb734797966e2f9dd2855b76a6a4f18da5a4010ef1dfa84e901e2f1f2f9a9"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-2-1-function-correlation",
+          "title": "5.2.1 Function: Correlation",
+          "hash": "d12d98ecbd28a06106abbb24641e48b776131f12e08b4971be53ac177c4c1e9e"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.5-2-2-function-qualification",
+          "title": "5.2.2 Function: Qualification",
+          "hash": "5b2d6896632e727467d241ee96ec5b965c0009b8f644e7faf2934879830900c0"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-service-area-information-security-incident-management",
+          "title": "6 Service Area: Information Security Incident Management",
+          "hash": "accbf14a4e8c89630e0c95b00e2b65e8585783b03c0d64f714e5e3b51309eb26"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-1-service-information-security-incident-report-acceptance",
+          "title": "6.1 Service: Information security incident report acceptance",
+          "hash": "4674b6bc2694f12e71a4bcb85563a27c25a204234a822b617dc318583b9a1777"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-1-1-function-information-security-incident-report-receipt",
+          "title": "6.1.1 Function: Information security incident report receipt",
+          "hash": "994057efc8faca59f62ce7ab56ea852f4d6a3899a10132e955da659916af88a9"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-1-2-function-information-security-incident-triage-and-processing",
+          "title": "6.1.2 Function: Information security incident triage and processing",
+          "hash": "c6377fa835601f446838110911be3ccfebed97f5ba32b3698d0eab4ed6d18a7d"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-2-service-information-security-incident-analysis",
+          "title": "6.2 Service: Information security incident analysis",
+          "hash": "cd57cb30d6632090d4edb415de488bd7ad16cc17f3f373e353c535771b20ecc2"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-2-1-function-information-security-incident-triage-prioritization-and-categorization",
+          "title": "6.2.1 Function: Information security incident triage (prioritization and categorization)",
+          "hash": "48ad3ff9128c9f557942f3f7da531d62ce2a994927ca707297d59aca1f3f6fa5"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-2-2-function-information-collection",
+          "title": "6.2.2 Function: Information collection",
+          "hash": "091e56362849421d6e210a1faff26f6adfe14d70b0bd01f7cd53442fd60bd5ff"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-2-3-function-detailed-analysis-coordination",
+          "title": "6.2.3 Function: Detailed analysis coordination",
+          "hash": "87f312e5555b2029dea9d4aa512bb621ed9eda47c70131cff644d0d4e3cc96c4"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-2-4-function-information-security-incident-root-cause-analysis",
+          "title": "6.2.4 Function: Information security incident root cause analysis",
+          "hash": "4e75f8053ba62f3d758582e78c28eb177933afbe6143ebe125ec1bfc4f456367"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-2-5-function-cross-incident-correlation",
+          "title": "6.2.5 Function: Cross-incident correlation",
+          "hash": "6708f555f2f56412ceb251689f44f3a8a8d0220a320f6ddca264f4a10579f951"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-3-service-artifact-and-forensic-evidence-analysis",
+          "title": "6.3 Service: Artifact and forensic evidence analysis",
+          "hash": "9e9ef9a71ca33754ada015652ffe12498e39f4229e63e3767fdb21f6ff11f339"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-3-1-function-media-or-surface-analysis",
+          "title": "6.3.1 Function: Media or surface analysis",
+          "hash": "4b88c30baeeb2ef8f5a948daa7f6fd6c3cb240f5f6b14d13d7abe9b9d3411ea0"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-3-2-function-reverse-engineering",
+          "title": "6.3.2 Function: Reverse engineering",
+          "hash": "bc104b85f304d28828ad0b0d517f5b76997776b89aa321d916c60e04d965a678"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-3-3-function-run-time-or-dynamic-analysis",
+          "title": "6.3.3 Function: Run time or dynamic analysis",
+          "hash": "f4e004dab8fb58421a4b865eed0dfb809b8ede0e706494b7b0003350645ad43b"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-3-4-function-comparative-analysis",
+          "title": "6.3.4 Function: Comparative analysis",
+          "hash": "bfdf10160baf94b7007ed47a9f74e51c1c62889bdf0dda5bdb9115cf782744d5"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-4-service-mitigation-and-recovery",
+          "title": "6.4 Service: Mitigation and recovery",
+          "hash": "bea6d929046d81bb4dc1f2ac26c4aa2483738a7b0aee5779eb8acee2fa631243"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-4-1-function-response-plan-establishment",
+          "title": "6.4.1 Function: Response plan establishment",
+          "hash": "1e04d7acbf1471283a62bac5b287fd7794b7f006ddc0f6924ac9052c4b77a2ed"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-4-2-function-ad-hoc-measures-and-containment",
+          "title": "6.4.2 Function: Ad hoc measures and containment",
+          "hash": "c66a67ed4c8cab09995ed45d9b1051d28349e7042b61918a118a7383c808c7c1"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-4-3-function-system-restoration",
+          "title": "6.4.3 Function: System restoration",
+          "hash": "0de8214d0bc5f9d11783ef5e5c8ef16bab51c7132c64f0a7dbb651ed9fd6da4b"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-4-4-function-other-information-security-entities-support",
+          "title": "6.4.4 Function: Other information security entities support",
+          "hash": "def2363de8374bdb8b9cb563c8e06bd06c8a1536da7e5e39b8d17bdb98a47dd7"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-service-information-security-incident-coordination",
+          "title": "6.5 Service: Information security incident coordination",
+          "hash": "0e87fdcb0f29671b9b529a4d6a5c42471d2ad4438e2696a5a9fbc165c3918c73"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-1-function-communication",
+          "title": "6.5.1 Function: Communication",
+          "hash": "8bbd02880e47d0b0eb1b6cc25ff33673b8df24e92c4477ff97018fa7f30855bf"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-2-function-notification-distribution",
+          "title": "6.5.2 Function: Notification distribution",
+          "hash": "18faa55d256fea4f78ef0fa3352036c83c2a319a687c78724ff122b15a7b2587"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-3-function-relevant-information-distribution",
+          "title": "6.5.3 Function: Relevant information distribution",
+          "hash": "106b1a17008f73696233377732f49055a6a5fdcb3a7ece0606a67455d612281b"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-4-function-activities-coordination",
+          "title": "6.5.4 Function: Activities coordination",
+          "hash": "184474c89ac4c7f426e61069e4e658e434491d7f519e92f6bb4c361927360b56"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-5-function-reporting",
+          "title": "6.5.5 Function: Reporting",
+          "hash": "d3cac072231653fffb0d1677a1b8728c5530fcc4d512b98c60252a4476a64b5f"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-5-6-function-media-communication",
+          "title": "6.5.6 Function: Media communication",
+          "hash": "d3e0af2c8bad2c71651008235b455fa2766a8031118c8e666f032c045af2a9fb"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-6-service-crisis-management-support",
+          "title": "6.6 Service: Crisis management support",
+          "hash": "736e4784a15d9b52e32b1cda3e7c1b457b95fb6ecec14c56dbd941607cddc7b5"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-6-1-function-information-distribution-to-constituents",
+          "title": "6.6.1 Function: Information distribution to constituents",
+          "hash": "cefb5b52d9ba7611ea5730fb34a03a6e1e40012efd1be24bc1eed7331a11a3b7"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-6-2-function-information-security-status-reporting",
+          "title": "6.6.2 Function: Information security status reporting",
+          "hash": "93ee118744b8d30d9d9ae70138dcbcf5bf7fce12a88aed7c2f00dc656e9572b8"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.6-6-3-function-strategic-decisions-communication",
+          "title": "6.6.3 Function: Strategic decisions communication",
+          "hash": "1d3e8a135490e92c6252d9d568fe9471edd75230a4d53b7a1f1eee6a7c7b5a88"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-service-area-vulnerability-management",
+          "title": "7 Service Area: Vulnerability Management",
+          "hash": "da93fcf7339f3767b701bad7a0f4fd5bb24d6bb2810814ca7ae888643abb7ac0"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-1-service-vulnerability-discovery-research",
+          "title": "7.1 Service: Vulnerability discovery / research",
+          "hash": "67c9e5658347c5748db5b144f4d06d4c4a10454c77ee39511f9f4d373466afc8"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-1-1-function-incident-response-vulnerability-discovery",
+          "title": "7.1.1 Function: Incident response vulnerability discovery",
+          "hash": "e5a8ccdc083f449e8186a454ba806b2473fb62dc76e0e7393b043038790f5794"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-1-2-function-public-source-vulnerability-discovery",
+          "title": "7.1.2 Function: Public source vulnerability discovery",
+          "hash": "310d9edd973d446e5157afc0a241348c26a939adb208b969f0f1d54922af2654"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-1-3-function-vulnerability-research",
+          "title": "7.1.3 Function: Vulnerability research",
+          "hash": "ed089a6c14503fabfbae1cbd1edaa1b26bff60999e2625d461c263684d19cf93"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-2-service-vulnerability-report-intake",
+          "title": "7.2 Service: Vulnerability report intake",
+          "hash": "34b1e8d47c16d8cbd179ca7aece6ed42b800e76aa09cc0517175d22b80d02be6"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-2-1-function-vulnerability-report-receipt",
+          "title": "7.2.1 Function: Vulnerability report receipt",
+          "hash": "12f0a9a69ea2d2a50d721ca9f3a54cc4342662825d77db65c441897a7e0adaf3"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-2-2-function-vulnerability-report-triage-and-processing",
+          "title": "7.2.2 Function: Vulnerability report triage and processing",
+          "hash": "647f33aee491c57c43b4297e92eb3f2e371a0fe09f5ddc4c563e3e89b9250c33"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-3-service-vulnerability-analysis",
+          "title": "7.3 Service: Vulnerability analysis",
+          "hash": "8f63573c55e636928c6ec782b5772d969ac4a7a7f2c9c21aa4d039614cbeaff1"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-3-1-function-vulnerability-triage-validation-and-categorization",
+          "title": "7.3.1 Function: Vulnerability triage (validation and categorization)",
+          "hash": "bd464146d885cece1ab74dd704329b4205cc6ea1cbc9e1c7186903cef13b6377"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-3-2-function-vulnerability-root-cause-analysis",
+          "title": "7.3.2 Function: Vulnerability root cause analysis",
+          "hash": "ad0e4a6053c351ec89df3a870f6749f420739b6e5a147c76bb25d7d65a6ce2cd"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-3-3-function-vulnerability-remediation-development",
+          "title": "7.3.3 Function: Vulnerability remediation development",
+          "hash": "eea1be4990e2a5ec5e7e8f3e023e9c7fb3704a9f0672d7c23d6597c7215243e0"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-4-service-vulnerability-coordination",
+          "title": "7.4 Service: Vulnerability coordination",
+          "hash": "4a18b79f9b85678817df0e497d1fc8af7e1267488fc31c5b681fca20a5e7850c"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-4-1-function-vulnerability-notification-reporting",
+          "title": "7.4.1 Function: Vulnerability notification/reporting",
+          "hash": "4b3ce9f25c46039be40a3145d414043bca6910d837350c721d65e9fe5a09d3d8"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-4-2-function-vulnerability-stakeholder-coordination",
+          "title": "7.4.2 Function: Vulnerability stakeholder coordination",
+          "hash": "fedb5522dc787bdca8e767cd0964a1f094d8cf09470815c8a47fae6460b4b5b0"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-5-service-vulnerability-disclosure",
+          "title": "7.5 Service: Vulnerability disclosure",
+          "hash": "e5ef2b44e5ed35d3a26652b0927b449aae5f66bb54328ba199c087648596feec"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-5-1-function-vulnerability-disclosure-policy-and-infrastructure-maintenance",
+          "title": "7.5.1 Function: Vulnerability disclosure policy and infrastructure maintenance",
+          "hash": "8685ef962fe99efe0968fd55944cf9d09957a7842c93d227df89ba377403e9b4"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-5-2-function-vulnerability-announcement-communication-dissemination",
+          "title": "7.5.2 Function: Vulnerability announcement/communication/dissemination",
+          "hash": "7daaf93a5c6fcd6e91aa9d3237c8003ec70c6eb56fadf7fbb5518f82587d412c"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-5-3-function-post-vulnerability-disclosure-feedback",
+          "title": "7.5.3 Function: Post-vulnerability disclosure feedback",
+          "hash": "219f0fcd3ba40957ac824a3823f2817ae0028647e87113c6f4e5c1c6654d17a2"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.fnref-8",
+          "title": "7.6 Service: Vulnerability response8",
+          "hash": "7a3ea8f90e213796269a7757e2fe766d9f4855eb34b37d1a17bae4bffc27965a"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-6-1-function-vulnerability-detection-scanning",
+          "title": "7.6.1 Function: Vulnerability detection / scanning",
+          "hash": "957a0f36104851f5c1878f246379cbcefac73bb3816c7b4c42f9d03c236e98b5"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.7-6-2-function-vulnerability-remediation",
+          "title": "7.6.2 Function: Vulnerability remediation",
+          "hash": "ee50d5a7848a138480f699b5e590d4d6a7b6fae378cd4cbd38ee8fa82f34997d"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-service-area-situational-awareness",
+          "title": "8 Service Area: Situational Awareness",
+          "hash": "d230d58c20a6e5fa4a771e00d51c19dd525946fc9119fe48522313f4d26a1842"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-1-service-data-acquisition",
+          "title": "8.1 Service: Data acquisition",
+          "hash": "560153dd767510fcad6fcbe3224e86fa7ad4e76ebc61b27fb7322c423e6500ba"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-1-1-function-policy-aggregation-distillation-and-guidance",
+          "title": "8.1.1 Function: Policy aggregation, distillation, and guidance",
+          "hash": "3c72a6ada14151c4a25ffd8c686eadfb46afd2d60383ed6b499be136479c1b46"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-1-2-function-asset-mapping-to-functions-roles-actions-and-key-risks",
+          "title": "8.1.2 Function: Asset mapping to functions, roles, actions, and key risks",
+          "hash": "fc6acace9014fa5a91f1ac0bddb141d7377b05890579dcf4be058089df2ec337"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-1-3-function-collection",
+          "title": "8.1.3 Function: Collection",
+          "hash": "6a04ed723ac7442b3a4da9f6b9ee15e8d6d7b33bcb65b277d7151ca938843706"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-1-4-function-data-processing-and-preparation",
+          "title": "8.1.4 Function: Data processing and preparation",
+          "hash": "3aaa1931081e944eefd3ba46917209fa84e0dedd4ff0e6c0201bc803984348eb"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-2-service-analysis-and-synthesis",
+          "title": "8.2 Service: Analysis and synthesis",
+          "hash": "02894d55a9e232ed2556b52bb65bfe812239fec875896466c88260b479352ea7"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-2-1-function-projection-and-inference",
+          "title": "8.2.1 Function: Projection and inference",
+          "hash": "5cd8f482ffe24c1d8e15e505511e8f72e1eac8e520360138a846c1f66aa00902"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-2-2-function-event-detection-through-alerting-and-or-hunting",
+          "title": "8.2.2 Function: Event detection (through alerting and/or hunting)",
+          "hash": "00b8ff080cf7d76461cc424acd73139e766f5f3a54d3d72a5268713de14f2955"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-2-3-function-information-security-incident-management-decision-support",
+          "title": "8.2.3 Function: Information security incident management decision support",
+          "hash": "c29a6fcb5bf411ab51733ed5e4027a6b87096f4b1be5cab59f913b48752353e7"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-2-4-function-situational-impact",
+          "title": "8.2.4 Function: Situational impact",
+          "hash": "032f4571e60a3cade2e47a7844492128b329a2fe0ae8a2ad7551ca87d5148f7e"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-service-communication",
+          "title": "8.3 Service: Communication",
+          "hash": "098e2bb39269544d7c709060b8c584b5cc46d9cb95318cc88ddabbc40f0ae300"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-1-function-internal-and-external-communication",
+          "title": "8.3.1 Function: Internal and external communication",
+          "hash": "3063ae212c0ebf141fdcc040f2a7c8b8cae32c5001c3295fa5bb2f7c3781f521"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-2-function-reporting-and-recommendations",
+          "title": "8.3.2 Function: Reporting and recommendations",
+          "hash": "339136262cb17fe24df8a76d4677339392fcf2a274891bafe97662a0e1a2bbef"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-3-function-implementation",
+          "title": "8.3.3 Function: Implementation",
+          "hash": "591126940ec2ee1b11de97f7143cdf4550dd39b979cc589f57570eba8b088584"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-4-function-dissemination-integration-information-sharing",
+          "title": "8.3.4 Function: Dissemination / integration / information sharing",
+          "hash": "7ac710492e3534368a875dee2e51748f0f4a49548a20bacbc607705f53c28029"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-5-function-management-of-information-sharing",
+          "title": "8.3.5 Function: Management of information sharing",
+          "hash": "ecce4c94c8ec6455666a7a908407287e677542b28fa1670f3c6e30c2b1e143ce"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.8-3-6-function-feedback",
+          "title": "8.3.6 Function: Feedback",
+          "hash": "f634c6afa15fb7112722fcaec90cfc221b44d0fa6fcb9a34c50cfe34129f7ec5"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-service-area-knowledge-transfer",
+          "title": "9 Service Area: Knowledge Transfer",
+          "hash": "22995b2a75f9ef986c420e4367157d41b1e1c1294e23f3fd337bf7e0bb3b3eaa"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-1-service-awareness-building",
+          "title": "9.1 Service: Awareness building",
+          "hash": "74a9c388779cd85118d453a2510eda0bb4c66276fed8aba57e42a3fc8a6fe498"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-1-1-function-research-and-information-aggregation",
+          "title": "9.1.1 Function: Research and information aggregation",
+          "hash": "e9245c8c99c239db4aca0c8409c8522da915d5833c6426f0dfa9e42eb4a8dd0b"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-1-2-function-reports-and-awareness-materials-development",
+          "title": "9.1.2 Function: Reports and awareness materials development",
+          "hash": "d9da1d22e4db120be363278040035395e64c7e971cf31dacd6d5c6d00d0981ec"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-1-3-function-information-dissemination",
+          "title": "9.1.3 Function: Information dissemination",
+          "hash": "84e9eb4410d0aa9926ec2ffd410dcb8a40c1e9b8b0e97773feb72b86d84dbbb0"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-1-4-function-outreach",
+          "title": "9.1.4 Function: Outreach",
+          "hash": "88bebdad56fff43448ecd1dbee7cd476edd03ca4123080d3420cbe89e7a58193"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-2-service-training-and-education",
+          "title": "9.2 Service: Training and education",
+          "hash": "ae050fc300b7c01dc8ecd8cfd03c773ecbc2051359edd0a0e24999439359f0b6"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-2-1-function-knowledge-skill-and-ability-requirements-gathering",
+          "title": "9.2.1 Function: Knowledge, skill, and ability requirements gathering",
+          "hash": "d81f69935176059ef51dd2d23a5b436759e252b1580ba1f0d3fa6b0484a42976"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-2-2-function-educational-and-training-materials-development",
+          "title": "9.2.2 Function: Educational and training materials development",
+          "hash": "54527a42429805e1c4e511e2039395d494c6f140cd75fb2326ac6a1c960b3d70"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-2-3-function-content-delivery",
+          "title": "9.2.3 Function: Content delivery",
+          "hash": "4200b3f8105423b97d1f16b0bd9833596dce1dc472c833532810d34791ecbc7d"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-2-4-function-mentoring",
+          "title": "9.2.4 Function: Mentoring",
+          "hash": "0a4229620de3308d96f7e293904f5e4d9f0c80d3e737c2d90764943ae22e555d"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-2-5-function-csirt-staff-professional-development",
+          "title": "9.2.5 Function: CSIRT staff professional development",
+          "hash": "ddf8621da993bfcc1d4a8e3a48ca494c66037b5db2b9373b329299a8ff6404e8"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-3-service-exercises",
+          "title": "9.3 Service: Exercises",
+          "hash": "ec6005cc719d8bc1e500b852e7cd650b93141ab787f96e01904ecc92dda170df"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-3-1-function-requirements-analysis",
+          "title": "9.3.1 Function: Requirements analysis",
+          "hash": "620e1cbc0550538e37fd30bda86758c68efdd737e1f84a7ce8ee15652f1a478f"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-3-2-function-format-and-environment-development",
+          "title": "9.3.2 Function: Format and environment development",
+          "hash": "295497885aae834f48f70fbcb43ab39e772c9321e9e46e40fc7b399a7cdaf1c9"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-3-3-function-scenario-development",
+          "title": "9.3.3 Function: Scenario development",
+          "hash": "d009896976efda474f45a7ed18e4b3e9e703d8cc84874faba6bba454c30c1778"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-3-4-function-exercises-execution",
+          "title": "9.3.4 Function: Exercises execution",
+          "hash": "8ad6b4e2a68d2f597f244f55e0a7e6ede1758d42ddaabd066f14a6c2ba417903"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-3-5-function-exercise-outcome-review",
+          "title": "9.3.5 Function: Exercise outcome review",
+          "hash": "5ee0ea31fe113d9ed4a748834a293b560123a568f0041db532843656d66d46c3"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-4-service-technical-and-policy-advisory",
+          "title": "9.4 Service: Technical and policy advisory",
+          "hash": "14826b1847f12b7f47c6fda2f700b0bfe6581061a2c664e194bc0a6c1ebe1fed"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-4-1-function-risk-management-support",
+          "title": "9.4.1 Function: Risk management support",
+          "hash": "255fa05119cb02ee85d5ef39bbefa1991677fc78c42d2bae94b4df24f2e2110f"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-4-2-function-business-continuity-and-disaster-recovery-planning-support",
+          "title": "9.4.2 Function: Business continuity and disaster recovery planning support",
+          "hash": "d6d8c9ab161ce8911d99b879c43d2bc31450d0645e89cf03cbaff75fe9b7691c"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-4-3-function-policy-support",
+          "title": "9.4.3 Function: Policy support",
+          "hash": "34237a88cf3be34f5bf9b245940d0384cd6db191bac9e1c30957f00a0127c2ca"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.9-4-4-function-technical-advice",
+          "title": "9.4.4 Function: Technical advice",
+          "hash": "a87a8cb8cc77862c5ee517f1aaa996d95fca64010ea5c532968d1e16803c642c"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.annex-1-acknowledgments",
+          "title": "ANNEX 1: Acknowledgments",
+          "hash": "cdd22bd08ef5780a062330d1e50a8d0528d03da7b8b1059f73c2e838a0531448"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.annex-3-supporting-resources",
+          "title": "ANNEX 3: Supporting Resources",
+          "hash": "9d58255d1fdbd3ce826aab11c6575def3b6137948e1f3e1481aa64f61e6cbe57"
+        },
+        {
+          "id": "first-csirt-services-framework-2-1.annex-4-overview-of-all-csirt-services-and-related-functions",
+          "title": "ANNEX 4: Overview of all CSIRT Services and related Functions",
+          "hash": "fdba8a2d74b685a41a0c14229fe82ebe52d7eaa652d72bd8f9d41e455d351032"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-psirt-services-framework-1-1",
+      "title": "PSIRT Services Framework",
+      "redacted": false,
+      "url": "https://www.first.org/standards/frameworks/psirts/psirt_services_framework_v1.1",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e0b9fd662c0c6e1527eb236999c4d8dae751772646d140b955957b67f1394219",
+      "sections": [
+        {
+          "id": "first-psirt-services-framework-1-1.purpose",
+          "title": "Purpose",
+          "hash": "f3379edec4fe4c567108c837bc8f4d41fa89849540a7cc25f33aefa36f424463"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.introduction",
+          "title": "Introduction",
+          "hash": "202acbf0bc256134139c928711845b2efbceecf810a63f25781c5348a7104625"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.psirt-framework-structure",
+          "title": "PSIRT Framework Structure",
+          "hash": "12919cf13dc6dac80bc5ee23adbcf292c4bf7167e77f60905479ee5b8591170d"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.psirt-organizational-structure",
+          "title": "PSIRT Organizational Structure",
+          "hash": "2eda7c3ba6db16c81b8af13563dba9efaf08ae783dc15358e13e65aa1b24156b"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.distributed-model",
+          "title": "Distributed Model",
+          "hash": "b8a34b64f67dfdc38c79f5661e918b3345d31317b2cc7b024bc0818bd0288682"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.centralized-model",
+          "title": "Centralized Model",
+          "hash": "d4fbcc8449df942be67d8d58aa3c33b98b27f123c1122239c4f60b89faa70b4c"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.hybrid-model",
+          "title": "Hybrid Model",
+          "hash": "c2be0e73b4f878105b1e72aeeebcf8f884a68abd5d335afa91338153c7ed9da9"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.other-considerations",
+          "title": "Other Considerations",
+          "hash": "4baf2a5a6de83b2a3f530c88807f7b2a7977920f37b69121d032728ae5f25bb8"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.stakeholders",
+          "title": "Stakeholders",
+          "hash": "b3411d99b0232c715acad52bdc8814ce13852c5364620b8d3ae0a6936c4e6ac8"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.what-does-the-psirt-do",
+          "title": "What does the PSIRT do?",
+          "hash": "fffced749a9df10c5a6b14713ee3a52595391b4cc3e2593e9a5c2c78ef01d65d"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.definitions",
+          "title": "Definitions",
+          "hash": "24f89319c3298b6ef03a001a041caf51329575924667b3c72f751f9752d89d6c"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.operational-foundations",
+          "title": "Operational Foundations",
+          "hash": "e71d04cc86e59ded84a4ea97c68498eb67fea5f49cbee6cf21f4d04395007223"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.i-strategic",
+          "title": "I. Strategic",
+          "hash": "72612e7216c7d5de7342d02ec2c27c4ab75453b817afc65895cf80794c7ed5ab"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.ii-tactical",
+          "title": "II. Tactical",
+          "hash": "e3cce4a6814370ece790f42187bf7324409e0198b3f3ec9baa4ec85008f23a86"
+        },
+        {
+          "id": "first-psirt-services-framework-1-1.iii-operational",
+          "title": "III. Operational",
+          "hash": "4d886115838915b018c600304e77409ed65c2d9a2110ac15a660019d895acaa6"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-multiparty-vulnerability-coordination-1-1",
+      "title": "Guidelines and Practices for Multi-Party Vulnerability Coordination and Disclosure",
+      "redacted": false,
+      "url": "https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "0b9f2def79b317e62f2b3f8bb42322b7104da7e0feb334333a5edbdddbadc296",
+      "sections": [
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.introduction",
+          "title": "Introduction",
+          "hash": "59e1bacaa22e8007171bca5d53b4fe1106a462582f05f267336d37b9451b8d2b"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.definitions",
+          "title": "Definitions",
+          "hash": "1c9607bc66a57bdcb7035426fb4fe92913ab92427dd84b56df86c6f45dc95388"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.guiding-concepts-and-best-current-practices",
+          "title": "Guiding Concepts and Best Current Practices",
+          "hash": "186572903b604d099ba21d32d70002c4af3d19a3a59c922eada4ce7af9ae86b1"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.establish-a-strong-foundation-of-processes-and-relationships",
+          "title": "Establish a strong foundation of processes and relationships",
+          "hash": "46516e7f2dcb89ffa607f069e3c8b351ffb4dcec6436d764938269e363065482"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.maintain-clear-and-consistent-communications",
+          "title": "Maintain clear and consistent communications",
+          "hash": "fb62ce57f88ea044ff2e122aec184f49baad30c1462c008973bac345fff67001"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.build-and-maintain-trust",
+          "title": "Build and maintain trust",
+          "hash": "1d762f4beaf72fdf78f44c3824809732ea2cee83e805995e9339db33cc3f506f"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.minimize-exposure-for-stakeholders",
+          "title": "Minimize exposure for stakeholders",
+          "hash": "8ba0086e96cabcfb5811b72313fe191e0c9bffc40bd95e68efaa75984cfa5bd9"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.respond-quickly-to-early-disclosure",
+          "title": "Respond quickly to early disclosure",
+          "hash": "5b1098fc8dff1e93e0bd65436eb19599f262f4633117598e3ac0c8b06017a54f"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.use-coordinators-when-appropriate",
+          "title": "Use coordinators when appropriate",
+          "hash": "b956abcf8cbbb66763a75dec76ef7515ca1cc2e4a7cbe4d97aeac57ea032854c"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.multi-party-disclosure-use-cases",
+          "title": "Multi-Party Disclosure Use Cases",
+          "hash": "2aff22955059b0be208588ecb1121e4fc5e0a94ab6d6aa8715c1961c154b509d"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.use-case-0-no-vulnerability",
+          "title": "Use Case 0: No vulnerability",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description",
+          "title": "Description",
+          "hash": "e6dc592d6bdf174d5af10a8f52d9a156b3572cb5c4e2b764efd76ace65e80940"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.use-case-1-vulnerability-with-no-affected-users",
+          "title": "Use Case 1: Vulnerability with no affected users",
+          "hash": "7e3e6f708368fba5be78a736fc4e0597304cc0dd1b2145ebd66207f3291f5aa2"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x",
+          "title": "Description",
+          "hash": "be38a6dd4b84c481a73612d846db749b9ef273a90388e49d9c6bea13f8c14a92"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-1-product-is-deployed-before-vulnerability-is-discovered-or-fixed",
+          "title": "Variant 1: Product is deployed before vulnerability is discovered or fixed",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x",
+          "title": "Description",
+          "hash": "22e27cb2fb5b0b423104ef5d51d708563d4b0abcebfea295ab253b995ec59d00"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes",
+          "title": "Causes",
+          "hash": "72944496d751f5eb0f1ce4a7c29a6be5d2ec51a0bdab6c78bb5df1b8ce11b42e"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention",
+          "title": "Prevention",
+          "hash": "a22e44cbd9ffe020b81aa83fd1606219fbf5db6d4b734b7079c5aff9fc44d4e8"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.use-case-2-vulnerability-with-coordinated-disclosure",
+          "title": "Use Case 2: Vulnerability with coordinated disclosure",
+          "hash": "e0b2b7ec67e3cbf3dad81f393dada0b533ccef519410d8c107f752581da3b5f6"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x",
+          "title": "Description",
+          "hash": "e0ca48d8ee5c94a682d72a96cb3f23afd631db30623e9eeae67310c4a7e6b63e"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-1-finder-makes-the-vulnerability-details-public-prior-to-remediation",
+          "title": "Variant 1: Finder makes the vulnerability details public prior to remediation",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x",
+          "title": "Description",
+          "hash": "da758ca5aad97e1af7b39c2e5d6610833484297df3084e32eee5619698d4526d"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x",
+          "title": "Causes",
+          "hash": "3f1d96449fcd7330419dd85bac516e06a4bb7d5b5142ffc0ea7542f1d64f4966"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x",
+          "title": "Prevention",
+          "hash": "85399513d8020b72f6c3ce62b60dab9201d3f6b4ef8c2c137353c5abce839f87"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response",
+          "title": "Response",
+          "hash": "d730ecc10d50def51af3cd21b0600992040d5a40e3cad32acd7b3f11ec90c189"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-2-users-do-not-deploy-remediation-immediately",
+          "title": "Variant 2: Users do not deploy remediation immediately",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x",
+          "title": "Description",
+          "hash": "c20f410d3abff627d7eb4a2af18b92dfafcfc0849b80bfe24043a62a7b95bf30"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x",
+          "title": "Causes",
+          "hash": "8f6f7532b012325174ca7098a26b45f3573af75accae0f49fea265ed01c055dc"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x",
+          "title": "Prevention",
+          "hash": "7ff977d0155650e764143943a47f168915612e0501969481b3c736b0c12e2fdd"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response-x",
+          "title": "Response",
+          "hash": "b033ff1fbec61d720d74cd6e0019d359a6a36ba06b31d479168c9efc8003e8bf"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-3-missing-communication-between-upstream-and-downstream-vendors",
+          "title": "Variant 3: Missing communication between upstream and downstream vendors",
+          "hash": "00039df3b1074d459577ee876125aee9012ebaddebe28e5cb55d65ff852160be"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "c8d7903719e14f3bca29c9bb8042e9cb07f2e9d529789e2926dbe12444895819"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x",
+          "title": "Causes",
+          "hash": "69195f6e1321f14b3e10d23337a48f686593660d0686e292590e75840b8a73d3"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x",
+          "title": "Prevention",
+          "hash": "d8a58b52e649213797a44785ac31ab575f8a1152688c0ebb67cc9073027bbab9"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response-x-x",
+          "title": "Response",
+          "hash": "0626a2f60be9702e287ca247fd95fa4558716f0b2d3b90de4adf37dd0d5c11bb"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-4-vendor-makes-the-vulnerability-details-public-prior-to-remediation",
+          "title": "Variant 4: Vendor makes the vulnerability details public prior to remediation",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "41c943bdfccea779eced77591045dc731a5a5488d1d4e6b7f7c2eeef8b171ac2"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x",
+          "title": "Causes",
+          "hash": "7913e1541f3349633bf3cd1dc7652f9981bb30a3ff15048ce7d72733e8cd5c9c"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x-x",
+          "title": "Prevention",
+          "hash": "24398dd5307e8debf4d6564f8dfa62e54c85ff3af0c1f2f6c348ea9518628927"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response-x-x-x",
+          "title": "Response",
+          "hash": "af14eb291925ca2d3a8f67d25c7194a07ac9c726429bb0fbf96347b92768bd4a"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-5-vendor-does-not-remediate-a-reported-vulnerability",
+          "title": "Variant 5: Vendor does not remediate a reported vulnerability",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "347a2da6be8eb0e1d6985de0705642a5f44517dad7e1d7d1c4b46ed8a1c2f88d"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x-x",
+          "title": "Causes",
+          "hash": "adfe85c4197d6213ac247948a023660b84d86906262255b398ba66115e39b3e1"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response-x-x-x-x",
+          "title": "Response",
+          "hash": "d7ba6a5b6dca750f6d6b4f94d6f3afb76fbe7d347a24a342b3e502771b630201"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-6-missing-communication-between-peer-vendors-impedes-coordination",
+          "title": "Variant 6: Missing communication between peer vendors impedes coordination",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "703f39fbc716f45875f118dd947879184ffd3326f971f079a3913d1111e41923"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x-x-x",
+          "title": "Causes",
+          "hash": "31b2ca2b6b2a5ea39ab955e35ecbf41d61b1d08121a5ebf83d448e00e603be3c"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x-x-x",
+          "title": "Prevention",
+          "hash": "c84c3d3b53635dd7e265d289f647c03c918415f9b0be5a88fbaa6742727fdaba"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.responses",
+          "title": "Responses",
+          "hash": "7e758c1239c67493f492c18ecfed108377112ddb054e3e3a3e77bca44da5edd7"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-7-coordinator-makes-vulnerability-details-public-prior-to-remediation",
+          "title": "Variant 7: Coordinator makes vulnerability details public prior to remediation",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "07e58df72cd7b9d069d8b64e1bd5463b5d5029cdc9c6c95be4ef9bc4218dfc51"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x-x-x-x",
+          "title": "Causes",
+          "hash": "f0999b83843b070c87774389446eec2883a1887ca804abecc078d865a6c4bdf2"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x-x-x-x",
+          "title": "Prevention",
+          "hash": "b422c2bfc8c717f57af1061611d402457479e6bb7c5dd86134fa3e5a78bdc957"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.responses-x",
+          "title": "Responses",
+          "hash": "ef555c7359b33b63ceeb09a90c15be35ce637a05a3167e18e9721c5ed6e6ab37"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-8-finder-reports-a-vulnerability-to-one-vendor-that-may-affect-others-using-the-same-component",
+          "title": "Variant 8: Finder reports a vulnerability to one vendor that may affect others using the same component",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "03c02a0e5aa83bed63d4a3621f63a4bd03e27eebd539b92c17eb547e131f8d42"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x-x-x-x-x",
+          "title": "Causes",
+          "hash": "58bd7a81fb14b88922590d1530d4a57b83dcba2e47d5607ff072c4bf91a5faeb"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x-x-x-x-x",
+          "title": "Prevention",
+          "hash": "2fca7ab3ff3211fb19ca53fcb25065774f0217b22092927d944095bed6255094"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.use-case-3-public-disclosure-of-limited-vulnerability-information-prior-to-remediation",
+          "title": "Use Case 3: Public disclosure of limited vulnerability information prior to remediation",
+          "hash": "217bbdf9757cdf6420dfea796563169c9b72db94fbc66c4314a2177576001b3d"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "b67cbb0bceaab6f121e6138165b59363de81622bd57b80298fe40811a9525677"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.use-case-4-public-disclosure-or-exploitation-of-vulnerability-prior-to-vendor-awareness",
+          "title": "Use Case 4: Public disclosure or exploitation of vulnerability prior to vendor awareness",
+          "hash": "5b989e4a24c9972e246e32d943585ee2c1d2c7e719ace0aed30c6cea843e2154"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "087a22d9a54c40a7d097edf55bfed6ed5dc02ea3dfabe113a5167888f08df593"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-1-finder-publishes-vulnerability-details-and-vulnerability-is-exploited",
+          "title": "Variant 1: Finder publishes vulnerability details and vulnerability is exploited",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "c589930181ac1926cc8a322fffe5674b450b2322e6e77e94f4a75550d7c75480"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x-x-x-x-x-x",
+          "title": "Causes",
+          "hash": "e98161313f5d65e1cab848f4b6cb7925d05f8d1bdc078f56b4cf2988e507b1ba"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x-x-x-x-x-x",
+          "title": "Prevention",
+          "hash": "9383b274fc907237161b329bdcd6a80ff09b45cc07379c111ebba16882b16083"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response-x-x-x-x-x",
+          "title": "Response",
+          "hash": "bbd65e22536b44955c4d7caf6c73955d1e3038884c80564750748eb16e85a78f"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.variant-2-previously-undisclosed-vulnerability-used-in-attacks",
+          "title": "Variant 2: Previously undisclosed vulnerability used in attacks",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.description-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x",
+          "title": "Description",
+          "hash": "1a82fdd59d563584ce343bee20960211508d9e47633f6214f4ec7fae15857366"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.causes-x-x-x-x-x-x-x-x-x-x",
+          "title": "Causes",
+          "hash": "bbdbad388563439f67df29d481c953111e2cf1ec7940b88ab010efff10d288b5"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.prevention-x-x-x-x-x-x-x-x-x",
+          "title": "Prevention",
+          "hash": "b3b6a066bb0ce42fdb200af979348a7ec12a2369c1482f69fac43c68ea547b3d"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.response-x-x-x-x-x-x",
+          "title": "Response",
+          "hash": "275c3856d351e767f7dff2a1f7d9cdefe9a7669dd2715fa8f4108402cbc97d53"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.acknowledgements",
+          "title": "Acknowledgements",
+          "hash": "14222d321057fd319ebdd8bc9fc7b7c00e29ddc6e5089bde524fdb9a67b3c813"
+        },
+        {
+          "id": "first-multiparty-vulnerability-coordination-1-1.supporting-resources",
+          "title": "Supporting Resources",
+          "hash": "79fce888a2839c04657d9dd2f4f679585b226f20dc00039cdc994bcbef4bdf16"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-cvss-4-0-specification",
+      "title": "Common Vulnerability Scoring System version 4.0: Specification Document",
+      "redacted": false,
+      "url": "https://www.first.org/cvss/v4.0/specification-document",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "63a14008acbe9ddc2718a9beed34ab8f2e131cb4a11318bb926e5854d8670966",
+      "sections": [
+        {
+          "id": "first-cvss-4-0-specification.introduction",
+          "title": "Introduction",
+          "hash": "43fe6f3f314788548b11a3a699439ecee51670ade6eda92e2eaa27ce5d663bb9"
+        },
+        {
+          "id": "first-cvss-4-0-specification.metrics",
+          "title": "Metrics",
+          "hash": "fee4dcacbbaa446d3913e57be0ff87191f7cf13e6414c3df55dcb2529fd97ac2"
+        },
+        {
+          "id": "first-cvss-4-0-specification.assessment",
+          "title": "Assessment",
+          "hash": "cb04fe1c50125bd67a2259dc344946ae044cca666f05bf710ab31f730c2a3821"
+        },
+        {
+          "id": "first-cvss-4-0-specification.nomenclature",
+          "title": "Nomenclature",
+          "hash": "5e260e255600a13cbb6391956cb7c9285a945bda6b94d2075cc1f1de468d43c6"
+        },
+        {
+          "id": "first-cvss-4-0-specification.base-metrics",
+          "title": "Base Metrics",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-cvss-4-0-specification.exploitability-metrics",
+          "title": "Exploitability Metrics",
+          "hash": "142ac869d85e35955b9b99e1c611472db4453c8b49bb9fa1b84f9c9eef5ce724"
+        },
+        {
+          "id": "first-cvss-4-0-specification.attack-vector-av",
+          "title": "Attack Vector (AV)",
+          "hash": "80dce5562b29705bf8924a7b54e74302ce1f7aba7877182af085926d850bc09c"
+        },
+        {
+          "id": "first-cvss-4-0-specification.attack-complexity-ac",
+          "title": "Attack Complexity (AC)",
+          "hash": "22aceb02361336e7cb02d8b10b4cede9766e61d28c86536d33d3b01ba90b5850"
+        },
+        {
+          "id": "first-cvss-4-0-specification.attack-requirements-at",
+          "title": "Attack Requirements (AT)",
+          "hash": "70fd45f62256827f5e05801155b05c6f3d11d41054e127238d7f2b3dae635a36"
+        },
+        {
+          "id": "first-cvss-4-0-specification.privileges-required-pr",
+          "title": "Privileges Required (PR)",
+          "hash": "fda9c467fcca5c80a174b60b9931e636b6561c7534ef0a06d96bc7d6354796f5"
+        },
+        {
+          "id": "first-cvss-4-0-specification.user-interaction-ui",
+          "title": "User Interaction (UI)",
+          "hash": "4e52608704d69e0c3d56a44c23ba1fad46d2043ed89494dc2c05be779e7318e0"
+        },
+        {
+          "id": "first-cvss-4-0-specification.impact-metrics",
+          "title": "Impact Metrics",
+          "hash": "44040cbb197a402a83f4bea19705e31bfc88896d9860bced5198bbefecf89aaf"
+        },
+        {
+          "id": "first-cvss-4-0-specification.confidentiality-vc-sc",
+          "title": "Confidentiality (VC/SC)",
+          "hash": "a25fd5653be64c63673d65d0c17df1d0514ea588f5b2261969be91c1072275af"
+        },
+        {
+          "id": "first-cvss-4-0-specification.table-6-confidentiality-impact-to-the-vulnerable-system-vc",
+          "title": "Table 6: Confidentiality Impact to the Vulnerable System (VC)",
+          "hash": "1c32aac12db6b573dc37a82e7d0900b77312e6a6c144bce3d3d5e2ceca7ccc9c"
+        },
+        {
+          "id": "first-cvss-4-0-specification.table-7-confidentiality-impact-to-the-subsequent-system-sc",
+          "title": "Table 7: Confidentiality Impact to the Subsequent System (SC)",
+          "hash": "1a37c7482c41dadfa89f6594e70337d167090c906087e1a15691b6863783aafd"
+        },
+        {
+          "id": "first-cvss-4-0-specification.integrity-vi-si",
+          "title": "Integrity (VI/SI)",
+          "hash": "bfd0035e98fcfe0faf8855b40f1c9afbdfb27f5ac3b05cc80fd917083b646ef2"
+        },
+        {
+          "id": "first-cvss-4-0-specification.table-9-integrity-impact-to-the-subsequent-system-si",
+          "title": "Table 9: Integrity Impact to the Subsequent System (SI)",
+          "hash": "07dfe71c01077abd243b0e9fb0f0b1caba1d84c69743a368b514a2b6cb6a6629"
+        },
+        {
+          "id": "first-cvss-4-0-specification.availability-va-sa",
+          "title": "Availability (VA/SA)",
+          "hash": "1d564d38b69be42f0ede83902065d3afacebfb3890388d7b37115aad6d6924ff"
+        },
+        {
+          "id": "first-cvss-4-0-specification.table-10-availability-impact-to-the-vulnerable-system-va",
+          "title": "Table 10: Availability Impact to the Vulnerable System (VA)",
+          "hash": "4036189b930ed65bde7739511aedbbf7ad9c04cef494509b85e45619048bcd15"
+        },
+        {
+          "id": "first-cvss-4-0-specification.table-11-availability-impact-to-the-subsequent-system-sa",
+          "title": "Table 11: Availability Impact to the Subsequent System (SA)",
+          "hash": "f1b842095dce127d83ca8199062cc0eeaa424a639e0f0405afced91e8c579a80"
+        },
+        {
+          "id": "first-cvss-4-0-specification.threat-metrics",
+          "title": "Threat Metrics",
+          "hash": "8a2465d9a9ea724d680e85728eefaa0a418a2f090f057c56b00401c7076a2ba4"
+        },
+        {
+          "id": "first-cvss-4-0-specification.exploit-maturity-e",
+          "title": "Exploit Maturity (E)",
+          "hash": "efef05dabb882985fab5f2e3d94d12829e1bd00471d5605a6e059560c561cb2d"
+        },
+        {
+          "id": "first-cvss-4-0-specification.environmental-metrics",
+          "title": "Environmental Metrics",
+          "hash": "986412ddcf147246040d0b50f27e4f4b5bf71b8c252c4e65788eb70e66f1c856"
+        },
+        {
+          "id": "first-cvss-4-0-specification.confidentiality-integrity-and-availability-requirements-cr-ir-ar",
+          "title": "Confidentiality, Integrity, and Availability Requirements (CR, IR, AR)",
+          "hash": "b8427b6df77f988ce644ca939bd1e74f38d7f6cffef5ba53d0a5ee227175000c"
+        },
+        {
+          "id": "first-cvss-4-0-specification.modified-base-metrics",
+          "title": "Modified Base Metrics",
+          "hash": "4c5562927fa0945ff5d383c3639cb68e54e1a7d0cc041913511a82d262a8c2f5"
+        },
+        {
+          "id": "first-cvss-4-0-specification.supplemental-metrics",
+          "title": "Supplemental Metrics",
+          "hash": "a1b8c5f474af2fa3f3bcea6d198ea8c9fe8300c4b18689e58db0853f8b127935"
+        },
+        {
+          "id": "first-cvss-4-0-specification.safety-s",
+          "title": "Safety (S)",
+          "hash": "ee8f4e1ccaa5ea61f8b1b17d3d5877f74f39518c752915a42499c64b32cffb2c"
+        },
+        {
+          "id": "first-cvss-4-0-specification.automatable-au",
+          "title": "Automatable (AU)",
+          "hash": "9d4d42b0831813835cccb7bc6a0fc2a47dcff0e8c1529d4c9476c52e80722f61"
+        },
+        {
+          "id": "first-cvss-4-0-specification.provider-urgency-u",
+          "title": "Provider Urgency (U)",
+          "hash": "2fd382f186e44953c21a1560be519149450986a9e572e086bd61f6f15dc5b28b"
+        },
+        {
+          "id": "first-cvss-4-0-specification.recovery-r",
+          "title": "Recovery (R)",
+          "hash": "e113bd98b9fe39c3f31bcca09457b207257d38926d3e1eb4fbcc365daa20a6ce"
+        },
+        {
+          "id": "first-cvss-4-0-specification.value-density-v",
+          "title": "Value Density (V)",
+          "hash": "7ae4df462a0e378e85f8b9ba9cc03d9379b3d8b7c88a3b39b3e48052afa5a0a0"
+        },
+        {
+          "id": "first-cvss-4-0-specification.vulnerability-response-effort-re",
+          "title": "Vulnerability Response Effort (RE)",
+          "hash": "928495f5a7339600b4cb12ce5944513b953071044cea300afe5f18ffa1037bfb"
+        },
+        {
+          "id": "first-cvss-4-0-specification.qualitative-severity-rating-scale",
+          "title": "Qualitative Severity Rating Scale",
+          "hash": "e543aae3f52e7a9825e028ca1fcd722a88fa5028bc2d97e14ebc6067ebe250f3"
+        },
+        {
+          "id": "first-cvss-4-0-specification.vector-string",
+          "title": "Vector String",
+          "hash": "b39f166c30bef443080649dcf3f6c85c329e1baf76da36dcbe1aa845d4a9584d"
+        },
+        {
+          "id": "first-cvss-4-0-specification.cvss-v4-0-scoring",
+          "title": "CVSS v4.0 Scoring",
+          "hash": "8dd30b635be6f7ef5e97c19324c2c1d7a83d7481963a9cb0896c90b64ececa8f"
+        },
+        {
+          "id": "first-cvss-4-0-specification.new-scoring-system-development",
+          "title": "New Scoring System Development",
+          "hash": "d634f252b42d49f7863f19ce7c658870fc91b56ce4693d875981ee6f28d33793"
+        },
+        {
+          "id": "first-cvss-4-0-specification.cvss-v4-0-scoring-using-macrovectors-and-interpolation",
+          "title": "CVSS v4.0 Scoring using MacroVectors and Interpolation",
+          "hash": "9edf0978fbffdec9ef4d318d0a24648422c66532d6b9a47b688e30052187de49"
+        },
+        {
+          "id": "first-cvss-4-0-specification.scores-of-all-macrovectors",
+          "title": "Scores of all MacroVectors",
+          "hash": "5891622f2c3382c17053543d3c2fc480b3b49149c86bf8b7a0482052bd431257"
+        },
+        {
+          "id": "first-cvss-4-0-specification.appendix-a---acknowledgments",
+          "title": "Appendix A - Acknowledgments",
+          "hash": "4478ee1b548019953f8729ac89aa9f4149dd8e8d944dda33d6d25d8f072e1738"
+        },
+        {
+          "id": "first-cvss-4-0-specification.appendix-b---on-line-resources",
+          "title": "Appendix B - On-Line Resources",
+          "hash": "e5eaf1ade45f896e09f8e673eff51ee1229a0edae14f9645b59ce4363096a773"
+        },
+        {
+          "id": "first-cvss-4-0-specification.version-history",
+          "title": "Version History",
+          "hash": "913e2c7bec049882c7b31aec67a36437ada72de736e9525e34cf79461faf0623"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-cvss-4-0-user-guide",
+      "title": "Common Vulnerability Scoring System version 4.0: User Guide",
+      "redacted": false,
+      "url": "https://www.first.org/cvss/v4.0/user-guide",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "c6826f6bc43a253f9c040d5d3469427936b5fe72e014b4b03d8451306f045d1f",
+      "sections": [
+        {
+          "id": "first-cvss-4-0-user-guide.introduction",
+          "title": "Introduction",
+          "hash": "e16ca5b2be80a5948ba7521b0ed594d52adaa30dcedb16e2c7cf8301d48fa660"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.changes-in-cvss-version-4-0",
+          "title": "Changes in CVSS Version 4.0",
+          "hash": "3f62f5ce3b1fafec2475f9d8838c81fb3311bc5807c1197354cb21163f79df6d"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.cvss-nomenclature",
+          "title": "CVSS Nomenclature",
+          "hash": "84f6d0aa828a8e32352bf4170b8c6f78c6021b5012ae2454cf5d9108e226940d"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.cvss-base-score-cvss-b-measures-severity-not-risk",
+          "title": "CVSS Base Score (CVSS-B) Measures Severity, not Risk",
+          "hash": "e71e9bf341526b61ec1e95aea389d4f4d789da1d1a56725897702a34cdb5c06e"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.changes-to-assessment-guidance",
+          "title": "Changes to Assessment Guidance",
+          "hash": "37634e6899b6e1f361768d9d8120acb43c3f28720e5ca0638fed94d06de2bcbc"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.scope-removed",
+          "title": "Scope Removed",
+          "hash": "d533fd1c3eea6a542bf5eb5a37c065f9ef39e5d294811fe667cd59b1bace1a4f"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.assessing-vulnerabilities-in-software-libraries-and-similar-2-3-2",
+          "title": "Assessing Vulnerabilities in Software Libraries (and Similar)",
+          "hash": "dbdc599455a90da8c7a13745776d847b26d979d5b7c0f771079b2c0b5f884bc4"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.multiple-cvss-base-cvss-b-scores-2-3-3",
+          "title": "Multiple CVSS Base (CVSS-B) Scores",
+          "hash": "74fd04232c0448257f08d2e22b2dfb4ba4707d867686594c1417eba6448d2f0a"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.guidance-for-using-environmental-security-requirements-metrics",
+          "title": "Guidance for Using Environmental Security Requirements Metrics",
+          "hash": "53d55891c280ccbb965d667ef0057649b98e594a71e1aca0ffd78d9e595b8abd"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.guidance-for-using-supplemental-metrics",
+          "title": "Guidance for Using Supplemental Metrics",
+          "hash": "30eade3b7ad223049f4119ef10b95cd67af3a9096b7f1d8e71c5bebedf215bf6"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.new-base-metric-attack-requirements",
+          "title": "New Base Metric: Attack Requirements",
+          "hash": "29772ee0a98db7a36ad3f5d4cec0df384d56e2150e8c79e1dc1afc82b4499051"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.updated-base-metric-user-interaction",
+          "title": "Updated Base Metric: User Interaction",
+          "hash": "1e813a20a861ce839d21bd25451dd911fc6486426078cb134c7f1f76dcb32b5e"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.temporal-renamed-to-the-threat-metric-group",
+          "title": "Temporal renamed to the Threat Metric Group",
+          "hash": "eb7df53f3298e7e8dfdb965d61d2f1ff52a9ec3388241aaf9b608a8b80ee73c0"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.the-cvss-extensions-framework",
+          "title": "The CVSS Extensions Framework",
+          "hash": "e037077772fcda7973042af43db6945b614a34ea76a347caf9bdbe30af3ebc29"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.new-scoring-system-development",
+          "title": "New Scoring System Development",
+          "hash": "6bce3a7f0b6f0ffcc5e387855882888c924c896c1490b9cf3c04ae3b036c1e0d"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.use-metric-groups-to-gather-the-15-million-cvss-bte-vectors-into-270-equivalence-sets",
+          "title": "Use metric groups to gather the 15 million CVSS-BTE vectors into 270 equivalence sets",
+          "hash": "690b3ccf257cfe6cfdb966580f1d5073f286c9d354db906f1ac49a8733b9fa91"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.solicit-experts-to-compare-vectors-representing-each-equivalence-set",
+          "title": "Solicit experts to compare vectors representing each equivalence set",
+          "hash": "457ccd39bc06ef00e8b5abbd6a0e2669acaa1e8f92d78a1f86a40738d82eb6c9"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.use-the-expert-comparison-data-to-calculate-an-order-of-vectors-from-least-severe-to-most-severe",
+          "title": "Use the expert comparison data to calculate an order of vectors from least severe to most severe",
+          "hash": "6e4c7e1679600af5d38a33e64d9cb4a02e633b7b3167399d4f7479df162c8e89"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.solicit-expert-opinion-to-decide-what-vector-group-in-the-ordering-of-vectors-represents-the-boundary-between-qualitative-severity-scores-to-be-backwards-compatible-with-qualitative-severity-score-boundaries-from-cvss-v3-x",
+          "title": "Solicit expert opinion to decide what vector group in the ordering of vectors represents the boundary between qualitative severity scores to be backwards compatible with qualitative severity score boundaries from CVSS v3.x.",
+          "hash": "1c2f9304ea087f7811dcf08d5f8cec4447e3dede694d6a6fbbf0c50ee989b818"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.compress-the-vector-groups-in-each-qualitative-severity-bin-into-the-number-of-available-scores-in-that-bin-for-example-9-0-to-10-0-for-critical-7-0-to-8-9-for-high-etc",
+          "title": "Compress the vector groups in each qualitative severity bin into the number of available scores in that bin (for example, 9.0 to 10.0 for critical, 7.0 to 8.9 for high, etc.)",
+          "hash": "cd47332f3868de85eaa183aa020ea45f63e1ffde45ebe0338c4093223fe07ffb"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.create-a-small-score-modification-factor-that-adjusts-the-scores-of-vectors-within-a-vector-group-so-that-a-change-of-any-metric-value-results-in-a-score-change-the-intent-is-that-the-score-change-is-not-larger-than-the-uncertainty-in-the-ranking-of-the-vector-groups-as-collected-from-the-expert-comparison-data-in-step-2",
+          "title": "Create a small score modification factor that adjusts the scores of vectors within a vector group so that a change of any metric value results in a score change. The intent is that the score change is not larger than the uncertainty in the ranking of the vector groups as collected from the expert comparison data in step 2.",
+          "hash": "bbc11235d62fd6755cbe69f843da7fdef700ecaf95b5231d49d04d72012ab78f"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.update-to-the-version-identifier-in-the-vector-string",
+          "title": "Update to the Version Identifier in the Vector String",
+          "hash": "b8bb72b9d24a438e734c27a9e4d1a13a5bbd023ce963d9034a810fc41cb3b70f"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.assessment-guide",
+          "title": "Assessment Guide",
+          "hash": "3fc1798c8547108e4d00d346f79e14300eb5936e0a896d7b3a96cf086e9a32b2"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.integrate-vulnerability-scan-results-with-asset-management",
+          "title": "Integrate Vulnerability Scan results with Asset Management",
+          "hash": "cd078cf2044854917d61092646573be3ddc3b8d14e6e90dc31efa848ce0b2703"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.integrate-vulnerability-scan-results-with-threat-intelligence",
+          "title": "Integrate Vulnerability Scan results with Threat Intelligence",
+          "hash": "7261b72ba988d56954dadbd2bb9575055cb1e8f5a85248a3cc9d1cec2369edc2"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.cvss-scoring-in-the-exploit-life-cycle",
+          "title": "CVSS Scoring in the Exploit Life Cycle",
+          "hash": "eb2e06d558dc74b26fb6d55a061fae310102b91b15411abf8d8234c69160455e"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.confidentiality-and-integrity-versus-availability-impacts",
+          "title": "Confidentiality and Integrity, Versus Availability Impacts",
+          "hash": "39f3dc938f9c3cdf72906e595459e5330e864f4fcab148573ce8afc169346e8d"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.local-vulnerabilities-exploited-by-remote-attackers",
+          "title": "Local Vulnerabilities Exploited by Remote Attackers",
+          "hash": "b34cbf18c61c288083bd527122ed28148458cec3b92526a1545b390e71d810e8"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.vulnerability-chaining",
+          "title": "Vulnerability Chaining",
+          "hash": "84450d854c99c6b69e9c1e22034a5221756d396d9543269ba5ce6bba719887af"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.vulnerable-system-and-subsequent-system",
+          "title": "Vulnerable System and Subsequent System",
+          "hash": "4f9ea76d796665505bf24daf0ceff6c256be3b17ce1a184368c97fa811b54497"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.vulnerable-systems-protected-by-a-firewall",
+          "title": "Vulnerable Systems Protected by a Firewall",
+          "hash": "64b79b642695982bf57f6a5f0b8291db8b9735e9c94de892f290547af3fa57de"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.assessing-vulnerabilities-in-software-libraries-and-similar",
+          "title": "Assessing Vulnerabilities in Software Libraries (and Similar)",
+          "hash": "274dabccdd6ba23407353a90dee1f5ae82103ef10e7753841bf95d44fedc1823"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.multiple-cvss-base-cvss-b-scores",
+          "title": "Multiple CVSS Base (CVSS-B) Scores",
+          "hash": "6861591fc409da4fdea6fa1d6cca2b532441e10f8e9842e3d1e8dec9b751c7e1"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.cvss-extensions-framework",
+          "title": "CVSS Extensions Framework",
+          "hash": "7ce558873ae28bf4ba05f01e25b8a77383971a390b48b9288b754d40c5754936"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.guidelines",
+          "title": "Guidelines",
+          "hash": "28b91d2b912d1a5991dbae729b51967a4e198de7aca6d8ea8de958169a18a9e5"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.suggested-vector-string-format",
+          "title": "Suggested Vector String Format",
+          "hash": "2736ec54d3eb49748559adb46762da783620a260b4c814629cba04bcf0a59ec9"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.attack-vector-considerations",
+          "title": "Attack Vector Considerations",
+          "hash": "9da8ad8f1428aa67118e5d07612fd4a8f1b1ee3eeb15b86fc96c7c8a6e126c6e"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.non-repudiation-is-a-part-of-integrity",
+          "title": "Non-Repudiation is a Part of Integrity",
+          "hash": "27e5204a1cb3bab1c568c441cd01f542769493d255884d7a2d4082afb8bc7572"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.security-requirements",
+          "title": "Security Requirements",
+          "hash": "155c0cec98a36613742e745ea5e05efb6316f40a2840af1cc7c7fd9becf476a5"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.confidentiality-requirement-cr",
+          "title": "Confidentiality Requirement (CR)",
+          "hash": "3e885815858a0e1f74f16bc39aeca29f1a4c198f47a6026d25979ab1b639191c"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.integrity-requirement-ir",
+          "title": "Integrity Requirement (IR)",
+          "hash": "5220157fa7bbdcd38c7165aeb1898534f713d35d94dbd9e06be10b7a1908a786"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.availability-requirement-ar",
+          "title": "Availability Requirement (AR)",
+          "hash": "29f1c542eb0e7693c254e61d5274781aab1b996cb2d14f854b238299ac5ca6df"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.supplemental-metrics",
+          "title": "Supplemental Metrics",
+          "hash": "c87f512a68877634008f67644a23ee79703cbf9f50a13721faff749422863df9"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.safety",
+          "title": "Safety",
+          "hash": "00d90a0cd1f0c1c61f0ed4d9a143d18ac30966cf729a705378a9fcf4deea3e94"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.automatable",
+          "title": "Automatable",
+          "hash": "b1be1dfc18f83d1b1b607dc7d72471d45b1e4182ce76e6576cce9651ae4f1683"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.provider-urgency",
+          "title": "Provider Urgency",
+          "hash": "37ae4aa89b856a89f7387a12ac43146370c6dce400b1d68307ec416dca232b93"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.recovery",
+          "title": "Recovery",
+          "hash": "b0400bf9fe3ff4be92c2ae8475d6e758b53ff2f969e7cd7516323a960c28b6cf"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.value-density",
+          "title": "Value Density",
+          "hash": "dee94c31df438405c21418ca004f1f5771700fab9b8cb3527d40402d55235f7b"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.vulnerability-response-effort",
+          "title": "Vulnerability Response Effort",
+          "hash": "89ffb08e10811ba5b890329ba08a4239c9ac3d27b8d91995dc460aa57c93f159"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.glossary-of-terms",
+          "title": "Glossary of Terms",
+          "hash": "a2722c2c16fb9293121b475bee37547852bd43cf88027c3bcc3acfda09ff9033"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.scoring-rubrics",
+          "title": "Scoring Rubrics",
+          "hash": "f50aa2c06ba992139103520dadda576c95b0c843b887c19bb1505b3d1e9c9926"
+        },
+        {
+          "id": "first-cvss-4-0-user-guide.version-history",
+          "title": "Version History",
+          "hash": "088ed876326b2471fdca97c968d07a953dcf2d72bc2fbecf66d2eb1794f83e76"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-cvss-3-1-specification",
+      "title": "Common Vulnerability Scoring System v3.1: Specification Document",
+      "redacted": false,
+      "url": "https://www.first.org/cvss/v3.1/specification-document",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "de88b8b9fe4ae2d227420102a28e83014867fdc98391d09371c3a828e04e3a80",
+      "sections": [
+        {
+          "id": "first-cvss-3-1-specification.introduction",
+          "title": "1. Introduction",
+          "hash": "b47162f245f713e0841e00f497c364625894aed51343089ad9acb65f0a1dc453"
+        },
+        {
+          "id": "first-cvss-3-1-specification.1-1-metrics",
+          "title": "1.1. Metrics",
+          "hash": "aa49a96f1f54d44ae92307050348aa2d5d3e7c24a5adf08c963635dbc85e1457"
+        },
+        {
+          "id": "first-cvss-3-1-specification.1-2-scoring",
+          "title": "1.2. Scoring",
+          "hash": "140cdd4c314ac726730b6962c5367ef25fa6398b43838507f6f6afc030ae06bf"
+        },
+        {
+          "id": "first-cvss-3-1-specification.base-metrics",
+          "title": "2. Base Metrics",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-1-exploitability-metrics",
+          "title": "2.1. Exploitability Metrics",
+          "hash": "56e6d396138c96c77fea478fe9082364a7fda39e4909bfd178bd7d934aaace2d"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-1-1-attack-vector-av",
+          "title": "2.1.1. Attack Vector (AV)",
+          "hash": "2bdf9cf451dba6832919b19ead989d248a8f1637ebc37e109c0d8a43f6621241"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-1-2-attack-complexity-ac",
+          "title": "2.1.2. Attack Complexity (AC)",
+          "hash": "889487e84ac3f43e5f4d79f68843e2aafa8e475ce34f8aac667ae00ff830dd21"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-1-3-privileges-required-pr",
+          "title": "2.1.3. Privileges Required (PR)",
+          "hash": "18f4c3acc1111c92d8869421e9422b93a1ec9cfa0446d6d47931e32e53cca41b"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-1-4-user-interaction-ui",
+          "title": "2.1.4. User Interaction (UI)",
+          "hash": "cba79fde3bb548e731d2dadf680aece1be1559e74803a186dd63d97333e61702"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-2-scope-s",
+          "title": "2.2. Scope (S)",
+          "hash": "a45ce6779b72e44bf1b3fd01a0eb02dbef82b38822c050b9308b52cda90b8738"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-3-impact-metrics",
+          "title": "2.3. Impact Metrics",
+          "hash": "5f01e41091a9bd51dbaaea4b28f9dc7e906de0455d2c608822ed5a54eac9e3a8"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-3-1-confidentiality-c",
+          "title": "2.3.1. Confidentiality (C)",
+          "hash": "0faea19b0064724094f32399900c5d7c0ce27c4b86342d81cf52f33b574121e3"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-3-2-integrity-i",
+          "title": "2.3.2. Integrity (I)",
+          "hash": "f161e63626156accca7b4a5cb4d2fda5f4a59f728b8a44fde8cbe2c6034847ae"
+        },
+        {
+          "id": "first-cvss-3-1-specification.2-3-3-availability-a",
+          "title": "2.3.3. Availability (A)",
+          "hash": "1f31a812da40f00e94c0c47e8e07e373cd057fc289316abc74a482cac98073e1"
+        },
+        {
+          "id": "first-cvss-3-1-specification.temporal-metrics",
+          "title": "3. Temporal Metrics",
+          "hash": "69c2897c4eacff04ab31795c51172de030793aaaf95d1a166b1f57dc664a9c0c"
+        },
+        {
+          "id": "first-cvss-3-1-specification.3-1-exploit-code-maturity-e",
+          "title": "3.1. Exploit Code Maturity (E)",
+          "hash": "245ed50f94f0f9eda04b69ed12ea21460cf96b1a70ad186fcba13b74f4e928f8"
+        },
+        {
+          "id": "first-cvss-3-1-specification.3-2-remediation-level-rl",
+          "title": "3.2. Remediation Level (RL)",
+          "hash": "01528ab158cc9b27b9ef6a73e553b9b3daa9e460304ef8c9e0f8796e8dd358e5"
+        },
+        {
+          "id": "first-cvss-3-1-specification.3-3-report-confidence-rc",
+          "title": "3.3. Report Confidence (RC)",
+          "hash": "2612ed1f3628d42f83f46da7ac494c9fe468b120959cc17ca9aaa2c9fdb943e7"
+        },
+        {
+          "id": "first-cvss-3-1-specification.environmental-metrics",
+          "title": "4. Environmental Metrics",
+          "hash": "bf3e3cdf28f5f23fc26cbaf6629e2d59baaf84e1cab170903e906cd07a303cf3"
+        },
+        {
+          "id": "first-cvss-3-1-specification.4-1-security-requirements-cr-ir-ar",
+          "title": "4.1. Security Requirements (CR, IR, AR)",
+          "hash": "72fa9c4482cd84e7f03728e5d80d2adb65b72201748a4e00338ab582ef73c40c"
+        },
+        {
+          "id": "first-cvss-3-1-specification.4-2-modified-base-metrics",
+          "title": "4.2. Modified Base Metrics",
+          "hash": "2b320e8ca5f7d4ad99a55bbb13c66f44a83fa88a439ba3062014b404d234f53f"
+        },
+        {
+          "id": "first-cvss-3-1-specification.qualitative-severity-rating-scale",
+          "title": "5. Qualitative Severity Rating Scale",
+          "hash": "a27c9a121e19b1eb0855a8afd4bbbd6ed25b956c0823b81fb8265839ce173dfd"
+        },
+        {
+          "id": "first-cvss-3-1-specification.vector-string",
+          "title": "6. Vector String",
+          "hash": "910f5c2f80e4aa92f3ee5289b4a3fa00f2f14c1754197a01ce7224f28e81552d"
+        },
+        {
+          "id": "first-cvss-3-1-specification.cvss-v3-1-equations",
+          "title": "7. CVSS v3.1 Equations",
+          "hash": "ec287430b6fbf1aa830490413913fbfd895ef4468bc48df02a4afd07f06836cd"
+        },
+        {
+          "id": "first-cvss-3-1-specification.7-1-base-metrics-equations",
+          "title": "7.1. Base Metrics Equations",
+          "hash": "c4ce8148d762f68dc9bfe2794be7fb822c3d92036531811569a582b188a7f6aa"
+        },
+        {
+          "id": "first-cvss-3-1-specification.7-2-temporal-metrics-equations",
+          "title": "7.2. Temporal Metrics Equations",
+          "hash": "089f0e435fa1772e1817c2dba61b765d400f3c572737873057e0fe90ff885203"
+        },
+        {
+          "id": "first-cvss-3-1-specification.7-3-environmental-metrics-equations",
+          "title": "7.3. Environmental Metrics Equations",
+          "hash": "36fd9a8bfe211ba0ba7ca38b6b925add0c674706077d381e74e07a7cc591e6fd"
+        },
+        {
+          "id": "first-cvss-3-1-specification.7-4-metric-values",
+          "title": "7.4. Metric Values",
+          "hash": "b149454099aff9a7023a1d585cf1fde7db0f6dd8099efa02b24e68bcce3a4c7e"
+        },
+        {
+          "id": "first-cvss-3-1-specification.7-5-a-word-on-cvss-v3-1-equations-and-scoring",
+          "title": "7.5. A Word on CVSS v3.1 Equations and Scoring",
+          "hash": "d9f86cce53e4bbb8cce94abb17823e3a5898283a62ce756b9b032eb03c8e18c9"
+        },
+        {
+          "id": "first-cvss-3-1-specification.appendix-a---floating-point-rounding",
+          "title": "Appendix A - Floating Point Rounding",
+          "hash": "5ddeab1cf8bbf696cf9f931dca797c9a618674321ccd3e7ba99f11df7c9d8910"
+        },
+        {
+          "id": "first-cvss-3-1-specification.appendix-b---acknowledgments",
+          "title": "Appendix B - Acknowledgments",
+          "hash": "ee8420f9c7361220ec48760dff355f5782d6ece24b4d7d42c83f439da699a4de"
+        },
+        {
+          "id": "first-cvss-3-1-specification.appendix-c---on-line-resources",
+          "title": "Appendix C - On-Line Resources",
+          "hash": "0c1abdd34beaf114108ec1c2b5ff1052ca151582839dfffa5d6f1c611607b31f"
+        }
+      ]
+    },
+    {
+      "unit_id": "first-ethicsfirst",
+      "title": "EthicsfIRST",
+      "redacted": false,
+      "url": "https://www.first.org/global/sigs/ethics/ethics-first",
+      "git_commit_id": null,
+      "updated_at": null,
+      "ms_date": null,
+      "document_id": null,
+      "intro_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sections": [
+        {
+          "id": "first-ethicsfirst.ethics-for-incident-response-and-security-teams",
+          "title": "Ethics for Incident Response and Security Teams",
+          "hash": "e54276059c83db7e7145252e2cd661e70a978ba022c45e49fc2cdedaed15275a"
+        },
+        {
+          "id": "first-ethicsfirst.duty-of-trustworthiness",
+          "title": "Duty of trustworthiness",
+          "hash": "01dc64999118c2e69a8da8929371b98f641c68d026763ab3a6c7f1a0790cd33c"
+        },
+        {
+          "id": "first-ethicsfirst.duty-of-coordinated-vulnerability-disclosure",
+          "title": "Duty of coordinated vulnerability disclosure",
+          "hash": "728f5191d4ee5dfe1cb170bb8260bc34e97582a98bfe6eba59460b31519c91d0"
+        },
+        {
+          "id": "first-ethicsfirst.duty-of-confidentiality",
+          "title": "Duty of confidentiality",
+          "hash": "07b23f789b8c8eec5dffc741c131b8157c993893b5277e213d2d31fbbcf763fc"
+        },
+        {
+          "id": "first-ethicsfirst.duty-to-acknowledge",
+          "title": "Duty to acknowledge",
+          "hash": "7e17d3794592f5b993d95c9e8d2ffa4e291c0c66261d5119c393e44bb7fc96ea"
+        },
+        {
+          "id": "first-ethicsfirst.duty-of-authorization",
+          "title": "Duty of authorization",
+          "hash": "e37cb5937366941d697b3df6a8fc5dc4da0176ef9f30961d28d9ee42f2dfa662"
+        },
+        {
+          "id": "first-ethicsfirst.duty-to-inform",
+          "title": "Duty to inform",
+          "hash": "362964b243e51e06b6d635cc91dec72b1dae7d91c2fcc3347d58ae42def120d0"
+        },
+        {
+          "id": "first-ethicsfirst.duty-to-respect-human-rights",
+          "title": "Duty to respect human rights",
+          "hash": "970d190f60206c893515d30dc3356f7ac368e64b658c675c650deed7ec423e03"
+        },
+        {
+          "id": "first-ethicsfirst.duty-to-team-health",
+          "title": "Duty to Team health",
+          "hash": "028178b90b66007f8f8d4966563eb8488ce005cfa41f9e0b2018d10506034aa6"
+        },
+        {
+          "id": "first-ethicsfirst.duty-to-team-ability",
+          "title": "Duty to Team ability",
+          "hash": "d30328cf0bb03202fb11df7da8f594d97a8e86e61e103637535b6472e15fa04d"
+        },
+        {
+          "id": "first-ethicsfirst.duty-for-responsible-collection",
+          "title": "Duty for responsible collection",
+          "hash": "143526d7dd4d1ba768eb6c969bcfc54934ee405d973706a26991f45c69f936f7"
+        },
+        {
+          "id": "first-ethicsfirst.duty-to-recognize-jurisdictional-boundaries",
+          "title": "Duty to recognize jurisdictional boundaries",
+          "hash": "f5ac461521161e0696038a05bae077e7a3933cfab439f6ef052df75f8890cec7"
+        },
+        {
+          "id": "first-ethicsfirst.duty-of-evidence-based-reasoning",
+          "title": "Duty of evidence-based reasoning",
+          "hash": "2aa6017699e8cb7c891ac12f53778001bc02cdf731766941bb775a6960068769"
+        },
+        {
+          "id": "first-ethicsfirst.appendix-a",
+          "title": "Appendix A",
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "first-ethicsfirst.dealing-with-dilemmas",
+          "title": "Dealing with Dilemmas",
+          "hash": "1aff92f67fe79a78164f96617135a0e8f8f0838d605cee055aa7e523b31a8f25"
+        }
+      ]
+    }
+  ]
+}
