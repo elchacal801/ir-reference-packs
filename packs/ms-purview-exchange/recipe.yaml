@@ -8,7 +8,7 @@
 # licensing, configuration and API-reference sections are left out.
 route: learn_html_pages
 inputs:
-  snapshot: "2026-10-25"
+  snapshot: "2026-11-10"
 artifacts_file: articles.yaml
 discovery:
   base: https://learn.microsoft.com/en-us/

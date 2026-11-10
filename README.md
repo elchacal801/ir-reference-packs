@@ -17,10 +17,10 @@ canonical document therefore reaches every output.
       (November 2021), including the incident response and vulnerability response checklists.
     * `cisa-stopransomware`: the #StopRansomware Guide v3.0 (October 2023) by CISA, MS-ISAC, NSA and FBI:
       prevention best practices and the ransomware response checklist.
-  * **Microsoft Learn**, captured on 2026-10-25: 1,097 articles in five packs.
+  * **Microsoft Learn**, captured on 2026-11-10: 1,103 articles in five packs.
     * `ms-learn-ir` (135 articles): incident response process and playbooks; security operations; Entra
       security operations, Identity Protection, sign-in and audit logs.
-    * `ms-defender` (375): Defender XDR investigation, response and advanced hunting, including the schema
+    * `ms-defender` (376): Defender XDR investigation, response and advanced hunting, including the schema
       reference; Defender for Endpoint, Identity, Office 365, Cloud Apps and Cloud, for investigation and
       response.
     * `ms-sentinel` (99): investigation, hunting, analytics, UEBA, threat intelligence and automation.
@@ -32,14 +32,14 @@ canonical document therefore reaches every output.
     Well-Architected security guidance; the activity log, resource logs and diagnostic settings; network flow logs
     and packet capture; Key Vault, Storage and Firewall logging; Azure Backup security (multi-user authorization,
     immutable vaults, soft delete); disk snapshots and VHD export for evidence; chain of custody.
-  * `aws-security-ir` (262 pages, captured 2026-10-25): the AWS Security Incident Response User Guide, the
+  * `aws-security-ir` (263 pages, captured 2026-11-10): the AWS Security Incident Response User Guide, the
     Well-Architected security pillar's detection and incident response practices, GuardDuty finding types and
     remediation, Detective, the CloudTrail event and log reference, and VPC Flow Logs.
-  * `gcp-security-ir` (64 Google Cloud pages, captured 2026-10-25, CC BY 4.0): the data incident response
+  * `gcp-security-ir` (64 Google Cloud pages, captured 2026-11-10, CC BY 4.0): the data incident response
     process; responding to compromised credentials, abuse notifications, ransomware and cryptomining; Security
     Command Center findings and threat detection, and responding to them; Cloud Audit Logs, VPC Flow Logs and
     Packet Mirroring; disk snapshots; service account keys; Cloud Storage soft delete, versioning and locks.
-  * `first-standards` (8 FIRST pages, captured 2026-10-25): TLP 2.0, the CSIRT Services Framework 2.1, the PSIRT
+  * `first-standards` (8 FIRST pages, captured 2026-11-10): TLP 2.0, the CSIRT Services Framework 2.1, the PSIRT
     Services Framework 1.1, the multi-party vulnerability coordination guidelines 1.1, CVSS 4.0 (specification
     and user guide), CVSS 3.1, and EthicsfIRST.
   * `swgde-forensics` (15 SWGDE PDFs, current on 2026-10-25): best practices for computer forensic acquisition
@@ -221,18 +221,18 @@ CISA packs (tagged PDFs supplied by the maintainer on 2026-10-25; converted in o
 | **Public distribution** | Candidate: nothing omitted (the cover seal is an untagged image and is never extracted); byte checks passed. **Not published.** | Candidate: the 3 cover seals and logos omitted; byte checks passed. **Not published.** |
 | **Operational readiness** | Not production-ready: no maintainer review; source bytes unverified against cisa.gov. Written for Federal Civilian Executive Branch agencies: reporting deadlines and roles are federal requirements. | Not production-ready: no maintainer review; source bytes unverified against cisa.gov. |
 
-Web and PDF-collection packs (snapshot 2026-10-25):
+Web packs (snapshot 2026-11-10) and the PDF collection (2026-10-25):
 
 | Pack | Articles | Sections | Elements | Chunks | Images (not captured) | Validation | Public candidate |
 |---|---|---|---|---|---|---|---|
 | `ms-learn-ir` | 135 | 1,522 | 13,469 | 1,301 | 272 | 0 errors, 0 warnings | complete |
-| `ms-defender` | 375 | 3,243 | 34,038 | 3,208 | 1,275 | 0 errors, 0 warnings | complete |
-| `ms-sentinel` | 99 | 822 | 9,087 | 860 | 471 | 0 errors, 0 warnings | complete |
+| `ms-defender` | 376 | 3,252 | 34,107 | 3,213 | 1,275 | 0 errors, 0 warnings | complete |
+| `ms-sentinel` | 99 | 831 | 9,139 | 861 | 470 | 0 errors, 0 warnings | complete |
 | `ms-purview-exchange` | 156 | 1,266 | 12,755 | 1,307 | 245 | 0 errors, 0 warnings | complete |
 | `ms-windows-auditing` | 337 | 335 | 13,650 | 976 | 338 | 0 errors, 0 warnings | complete |
-| `ms-azure-ir` | 73 | 906 | 8,234 | 900 | 153 | 0 errors, 0 warnings | complete |
-| `aws-security-ir` | 262 | 1,092 | 13,416 | 1,151 | 70 | 0 errors, 1 warning (2 tables without a header row) | complete |
-| `gcp-security-ir` | 64 | 867 | 9,979 | 985 | 20 | 0 errors, 1 warning (tables without a header row) | complete |
+| `ms-azure-ir` | 73 | 911 | 8,162 | 888 | 153 | 0 errors, 0 warnings | complete |
+| `aws-security-ir` | 263 | 1,114 | 13,533 | 1,168 | 70 | 0 errors, 1 warning (2 tables without a header row) | complete |
+| `gcp-security-ir` | 64 | 869 | 9,988 | 988 | 20 | 0 errors, 1 warning (tables without a header row) | complete |
 | `first-standards` | 8 | 343 | 2,889 | 291 | 29 | 0 errors, 1 warning (1 table without a header row) | complete |
 | `swgde-forensics` (PDFs) | 15 documents | 592 | 4,010 | 508 (466 in default retrieval; cover pages excluded) | 12 | 0 errors, 1 warning (tables without a header row) | complete, each document with its SWGDE cover page |
 
@@ -313,6 +313,10 @@ and then judged once on a sealed held-out set it had never seen:
   * The words alone do not detect a version that does not exist ("TLP 3.0", "CVSS 5.0"); read the passage.
 * **Cross-source questions.** These need one search per source (`per_source`), and even then one side can be missing.
 * **Without the `dense` extra**, search falls back to the lexical blend and says so.
+* **Re-run on the 2026-11-10 snapshots** (ranking v4, `eval/results/hybrid-v4-14pack-*-2026-11-10.json`).
+  Evidence-complete@5 is unchanged on seven of the eight question sets. On x it is 12/20, was 13/20: after
+  Microsoft rewrote its phishing playbook, question x07 cites `ms-purview-exchange` and its evidence is not in the
+  top 5. The figures elsewhere in this section are from the 2026-10-25 snapshots.
 * **Practitioner test.** Thirty-three incident-time questions were asked through the MCP server
   ([docs/practitioner-test-2026-10-27.md](docs/practitioner-test-2026-10-27.md)), and the results were compared with
   the Microsoft Learn and AWS documentation servers. The packs did best on judgement, process, government and

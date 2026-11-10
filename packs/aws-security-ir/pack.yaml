@@ -17,12 +17,12 @@ source:
   publisher: "Amazon Web Services"
   url: "https://docs.aws.amazon.com/security-ir/latest/userguide/what-is.html"
   landing_page: "https://docs.aws.amazon.com/security-ir/latest/userguide/"
-  edition: "AWS documentation snapshot 2026-10-25"
-  edition_identifier: "2026-10-25"
+  edition: "AWS documentation snapshot 2026-11-10"
+  edition_identifier: "2026-11-10"
   publication_date: null   # continuously updated web documentation; pages carry no update time
-  retrieval_date: "2026-10-25"
+  retrieval_date: "2026-11-10"
   inputs:                   # one locked input per page: articles.yaml and sources.lock.json list them
-    - source_id: aws-security-ir/snapshot/2026-10-25
+    - source_id: aws-security-ir/snapshot/2026-11-10
       role: authoritative
   notes: >-
     Vendor documentation that changes frequently. Console paths, API names and finding types are specific to the

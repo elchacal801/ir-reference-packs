@@ -1,0 +1,547 @@
+{
+  "run_at": "2026-11-10T06:50:08Z",
+  "backend": "local-fts5",
+  "label": null,
+  "split": "x-heldout",
+  "k": 5,
+  "context_budget_tokens": 3000,
+  "questions_file": "questions-x.yaml",
+  "index": "build/local/index.sqlite",
+  "tokenizer": {
+    "id": "irpacks-approx-bpe",
+    "revision": "2",
+    "kind": "approximation",
+    "note": "character-class run heuristic; not a model tokenizer"
+  },
+  "generation_model": null,
+  "backend_details": {
+    "ranking": {
+      "version": "4",
+      "stopwords": false,
+      "all_terms_first": false,
+      "candidates": 100,
+      "corpus_weights": {
+        "notes": 0.5,
+        "references": 0.5
+      },
+      "proximity_weight": 1.0,
+      "visual_boost": 1.5,
+      "alias_slots": 2,
+      "alias_strip": "auto",
+      "alias_candidates": 20,
+      "alias_mode": "per_pack",
+      "alias_window": 5,
+      "rerank_weight": 0.3,
+      "dense_weight": 0.4,
+      "dense_candidates": 100,
+      "dense_within_filters": true,
+      "lexical_fallback": {
+        "rerank_weight": 0.3,
+        "dense_weight": 0.0
+      },
+      "v4_tokens": true,
+      "dense_norm": "minmax",
+      "similarity_levels": true
+    },
+    "dense": "on",
+    "fts_tokenizer": "porter unicode61 remove_diacritics 2",
+    "index_text": "plain",
+    "dense_model": "bge-small-en-v1.5 (model_quantized.onnx, sha256 6c9c6101a956)",
+    "bm25_column_weights": {
+      "heading_path": 2.0,
+      "text": 1.0
+    }
+  },
+  "summary": {
+    "questions": 23,
+    "answerable": 20,
+    "unanswerable": 3,
+    "evidence_complete_at_5": "12/20",
+    "evidence_complete_at_5_rate": 0.6,
+    "mean_group_recall": 0.6,
+    "multi_evidence_questions": "1/4 complete",
+    "mrr": 0.463,
+    "citation_valid": "12/12",
+    "required_context_complete": "1/1",
+    "duplicate_results": "0/115",
+    "failures": [
+      "x03",
+      "x04",
+      "x06",
+      "x07",
+      "x14",
+      "x18",
+      "x19",
+      "x20"
+    ],
+    "scoring_rule": "a question counts as retrieved only if ALL its evidence groups are satisfied within the top 5; group alternatives are interchangeable; table-row evidence also needs the row locator"
+  },
+  "questions": [
+    {
+      "id": "x01",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.workflow:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.evidence-integrity:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.os-disk-requirements:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.architecture.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.components.l01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x02",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-azure-ir:2026-11-10:7cde9a0b:kv-howto-logging.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:kv-logging.operation-names-table.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:kv-logging.interpret-your-key-vault-logs.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azmon-activity-log.p01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdc-alerts-azure-key-vault.suspicious-policy-change-and-secret-query-in-a-key-vault:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x03",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-keys-create-delete.creating.p08:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-keys-create-delete.creating.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-best-practices-for-managing-service-account-keys.code-repositories:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:iam-best-practices-for-managing-service-account-keys.rotate-keys:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-respond-to-abuse-misuse.potentially-compromised-api-keys:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x04",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:audit-configure-data-access.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcparch-security-log-analytics.enable_the_data_access_audit_logs.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcs-audit-logging.access:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:audit-configure-data-access.before-you-begin:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:audit-audit.data-access:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x05",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-instancecredentialexfiltrationoutsideaws:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-instancecredentialexfiltrationinsideaws_description.p01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-resourcecredentialexfiltrationoutsideaws:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-resourcecredentialexfiltrationinsideaws_description.p01:0",
+        "aws-security-ir:2026-11-10:7cde9a0b:gd-guardduty-finding-types-iam.unauthorizedaccess-iam-instancecredentialexfiltrationinsideaws_description.p06:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x06",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-ediscovery-search-for-and-delete-email-messages.a01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdo-submissions-outlook-report-messages.a01:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-edisc-search-mailbox-data.a01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdo-mdo-sec-ops-guide.review-phishing-and-malware-campaigns-that-resulted-in-delivered-mail:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:purview-audit-mailboxes.mailbox-actions-for-microsoft-365-group-mailboxes:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x07",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-11-10:7cde9a0b:mdca-investigate-anomaly-alerts.suspicious-inbox-forwarding:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdca-investigate-anomaly-alerts.suspicious-inbox-manipulation-rule:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s07.s01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdo-responding-to-a-compromised-email-account.step-6-review-mail-forwarders:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdca-investigate-anomaly-alerts.suspicious-email-deletion-activity-by-user:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x08",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-4697.f01:0",
+        "ms-defender:2026-11-10:7cde9a0b:mdc-alerts-windows-machines.suspect-service-installation:0",
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-4697.security-monitoring-recommendations:0",
+        "ms-defender:2026-11-10:7cde9a0b:mde-respond-machine-alerts.investigation-package-contents-for-windows-devices.p01:0",
+        "ms-windows-auditing:2026-11-10:7cde9a0b:winaudit-event-4944.f01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x09",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-tlp-2-0.tlp-definitions:0",
+        "first-standards:2026-11-10:7cde9a0b:first-tlp-2-0.introduction:0",
+        "ms-sentinel:2026-11-10:7cde9a0b:sentinel-understand-threat-intelligence.curate-threat-intelligence:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:exo-mfr-smtp-auth-clients-report.p01:0",
+        "ms-purview-exchange:2026-11-10:7cde9a0b:exo-outbound-messages-in-transit-security-report.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x10",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-user-guide.guidance-for-using-supplemental-metrics:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.attack-requirements-at:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.vector-string.p01:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-3-1-specification.2-1-1-attack-vector-av:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-3-1-specification.7-4-metric-values:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        2
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 2,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x11",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-csirt-services-framework-2-1.6-5-service-information-security-incident-coordination.p01:0",
+        "first-standards:2026-11-10:7cde9a0b:first-csirt-services-framework-2-1.6-5-4-function-activities-coordination:0",
+        "first-standards:2026-11-10:7cde9a0b:first-csirt-services-framework-2-1.6-5-5-function-reporting:0",
+        "first-standards:2026-11-10:7cde9a0b:first-csirt-services-framework-2-1.6-5-1-function-communication:0",
+        "first-standards:2026-11-10:7cde9a0b:first-csirt-services-framework-2-1.6-2-3-function-detailed-analysis-coordination:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x12",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-17-f-002.s7-3:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-21-f-001.s8-1-2:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-21-f-001.s8-1.p01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s3:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-22-f-003.s3:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x13",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-22-f-003.s4:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-22-f-003.s1:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-22-f-003.s7:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-22-f-003.s8:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-22-f-003.s2:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x14",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-respond-to-abuse-misuse.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-respond-to-abuse-misuse.bps-to-protect-from-abuse:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.steps-to-take-before-an-attack.t01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-004.s9:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-revoking-user-access.federate-users:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x15",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "cisa-ir-playbooks:2021-11:7cde9a0b:vulnerability-response-playbook.s06:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s03.s04.s01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:vulnerability-response-playbook.p01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:vulnerability-response-playbook.s03:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:vulnerability-response-playbook.s04:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        4
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 4,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x16",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s04.s02.s01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch12.s05.s01.s01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-23-f-005.s13:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.scene-module-2-live-memory-imaging-and-a:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch13.s02.s04.s02.s02.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": true
+    },
+    {
+      "id": "x17",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-azure-ir:2026-11-10:7cde9a0b:netwatch-packet-capture-overview.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:netwatch-packet-capture-inspect.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:netwatch-packet-capture-manage.prerequisites.l02:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:netwatch-packet-capture-manage.prerequisites.l03:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:vpc-packet-mirroring.p01:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        1,
+        5
+      ],
+      "evidence_complete": true,
+      "group_recall": 1.0,
+      "first_hit_rank": 1,
+      "citation_valid": true,
+      "required_context_complete": null
+    },
+    {
+      "id": "x18",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-azure-ir:2026-11-10:7cde9a0b:azsec-backup-plan-to-protect-against-ransomware.azure-backup:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:secops-azure-protect-resources-cyberattacks.b-protecting-data-services.t01:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:secops-azure-protect-resources-cyberattacks.c-protecting-recovery-infrastructure:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azbackup-secure-backup.p01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-mitigating-ransomware-attacks.protect-critical-data:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x19",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.p01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.scenario-details:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:azarch-forensics.considerations.p01:0",
+        "dynamic-ir:20260917164224:7cde9a0b:fm-preface.p01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-collection-myths-vs-facts.myth-all-digital-images-must-be-treated-:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x20",
+      "split": "x-heldout",
+      "answerable": true,
+      "returned": [
+        "ms-defender:2026-11-10:7cde9a0b:mdo-responding-to-a-compromised-email-account.a01:0",
+        "gcp-security-ir:2026-11-10:7cde9a0b:gcpsec-compromised-credentials.account-lockouts:0",
+        "ms-learn-ir:2026-11-10:7cde9a0b:ms-ir-token-theft.containment-state:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch18.s04.s02.s01:0",
+        "ms-azure-ir:2026-11-10:7cde9a0b:mcsb-mcsb-v2-incident-response.ir-6.p10:0"
+      ],
+      "duplicates": 0,
+      "group_ranks": [
+        null,
+        null
+      ],
+      "evidence_complete": false,
+      "group_recall": 0.0,
+      "first_hit_rank": null,
+      "citation_valid": null,
+      "required_context_complete": null
+    },
+    {
+      "id": "x21",
+      "split": "x-heldout",
+      "answerable": false,
+      "returned": [
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-3-1-specification.7-1-base-metrics-equations:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-3-1-specification.7-3-environmental-metrics-equations:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-3-1-specification.7-5-a-word-on-cvss-v3-1-equations-and-scoring:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.qualitative-severity-rating-scale:0",
+        "first-standards:2026-11-10:7cde9a0b:first-cvss-4-0-specification.appendix-b---on-line-resources:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "x22",
+      "split": "x-heldout",
+      "answerable": false,
+      "returned": [
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-data-integrity:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.lab-module-10-handheld-mobile-devices.p01:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-model-sop.scene-module-4-mobile-device-collection:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-mobile-analysis.s8:0",
+        "swgde-forensics:2026-10-25:7cde9a0b:swgde-16-f-001.s5-2:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    },
+    {
+      "id": "x23",
+      "split": "x-heldout",
+      "answerable": false,
+      "returned": [
+        "cisa-ir-playbooks:2021-11:7cde9a0b:vulnerability-response-playbook.s06:0",
+        "cisa-stopransomware:v3.0-2023-10:7cde9a0b:part-1-ransomware-and-data-extortion-pre.s02.s01.l01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:introduction:0",
+        "dynamic-ir:20260917164224:7cde9a0b:ch07.s02.s01.s04.s05.sb01:0",
+        "cisa-ir-playbooks:2021-11:7cde9a0b:appendix-e-vulnerability-and-incident-ca:0"
+      ],
+      "duplicates": 0,
+      "note": "unanswerable: retrieval returned results; abstention is not evaluated without a generator"
+    }
+  ]
+}

@@ -18,12 +18,12 @@ source:
   publisher: "Google"
   url: "https://docs.cloud.google.com/docs/security/incident-response"
   landing_page: "https://docs.cloud.google.com/docs/security"
-  edition: "Google Cloud documentation snapshot 2026-10-25"
-  edition_identifier: "2026-10-25"
+  edition: "Google Cloud documentation snapshot 2026-11-10"
+  edition_identifier: "2026-11-10"
   publication_date: null   # continuously updated web documentation; per-page update dates are in sources.lock.json
-  retrieval_date: "2026-10-25"
+  retrieval_date: "2026-11-10"
   inputs:                   # one locked input per page: articles.yaml and sources.lock.json list them
-    - source_id: gcp-security-ir/snapshot/2026-10-25
+    - source_id: gcp-security-ir/snapshot/2026-11-10
       role: authoritative
   notes: >-
     Vendor documentation that changes frequently. Product names, console paths, gcloud commands, log formats and

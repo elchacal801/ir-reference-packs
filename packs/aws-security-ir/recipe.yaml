@@ -8,7 +8,7 @@
 # billing, IAM-for-the-service and tutorial sections are left out.
 route: aws_docs_html
 inputs:
-  snapshot: "2026-10-25"
+  snapshot: "2026-11-10"
 artifacts_file: articles.yaml
 discovery:
   base: https://docs.aws.amazon.com/

@@ -48,7 +48,7 @@ questions:
     evidence:
       - [{pack: ms-azure-ir, element_id: azbackup-secure-by-default.whats-soft-delete.p01},
          {pack: ms-azure-ir, element_id: azbackup-secure-by-default.whats-soft-delete.l01.i04},
-         {pack: ms-azure-ir, element_id: azbackup-secure-backup.service-specific-security.l01.i03}]
+         {pack: ms-azure-ir, element_id: azbackup-secure-backup.service-specific-security.l01.i02}]
     rationale: "Soft delete keeps deleted backup data for 14 days by default, extendable to 180 days."
   - id: y05
     split: y-heldout

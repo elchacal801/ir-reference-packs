@@ -11,7 +11,7 @@
 # the architecture guides on security log analytics and incident management.
 route: gcp_docs_html
 inputs:
-  snapshot: "2026-10-25"
+  snapshot: "2026-11-10"
 artifacts_file: articles.yaml
 discovery:
   base: https://docs.cloud.google.com/
