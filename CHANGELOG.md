@@ -5,9 +5,15 @@ contain the code, recipes, source locks, history records and evaluation. Built p
 
 ## Unreleased
 
+## 0.1.1 (2026-11-10)
+
 ### Fixed
-* The README status line and `irpacks.__version__` said `0.1.0.dev0` in the v0.1.0 tag; both now say `0.1.0`. Packs
-  built from the tag record the engine version as `0.1.0.dev0`.
+* The README status line and `irpacks.__version__` said `0.1.0.dev0` in the v0.1.0 tag. Packs built from v0.1.0
+  record the engine version as `0.1.0.dev0`.
+* The changelog's 0.1.0 section said the evaluation had not been re-run on the `ms-learn-ir` snapshot; the same
+  section reports the re-run.
+
+No change to recipes, source locks, history records or evaluation results.
 
 ## 0.1.0 (2026-11-10)
 
