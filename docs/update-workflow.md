@@ -117,6 +117,8 @@ uv run irpacks sources lock                   # after reviewing the articles.yam
 * An article the site moved keeps its unit ID. When a listed URL is no longer selected, discovery follows it; if it
   now redirects to a URL the rules select, that URL inherits the entry and records `moved_from`. Microsoft moved the
   `ms-learn-ir` security operations guide into the Zero Trust docset this way in November 2026.
+* An entry is also matched by the address it was redirected from (`redirected_from`), so a table of contents that
+  still links to an old address keeps the entry's unit ID.
 
 ### 1. Has anything changed?
 

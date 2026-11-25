@@ -5,6 +5,49 @@ contain the code, recipes, source locks, history records and evaluation. Built p
 
 ## Unreleased
 
+### Changed (web packs, snapshot 2026-11-25)
+* **Seven web packs are at the 2026-11-25 snapshot**: `aws-security-ir`, `gcp-security-ir`, `ms-azure-ir`,
+  `ms-defender`, `ms-learn-ir`, `ms-purview-exchange` and `ms-sentinel`. Each build validates with 0 errors; history
+  records `history/<pack>/2026-11-25.json` are added. `ms-windows-auditing` and `first-standards` stay at 2026-11-10
+  (page template changes only).
+  * `ms-sentinel`: 29 articles changed; procedure steps now give the Microsoft Defender portal paths (for example
+    "Investigation & response > Detection" for analytics rules, "Setup & configuration > Data management >
+    Watchlist" for watchlists).
+  * `ms-defender`: about 50 articles changed. The classic Defender for Identity alert "Suspected identity theft
+    (pass-the-hash)" is announced for retirement at the end of November 2026. Advanced hunting: `IdentityInfo` adds
+    `IdentityId`, `SourceProvider`, `RiskScore` and `RiskScoreUpdateTime`; `IdentityAccountInfo` drops
+    `DefenderRiskLevel` and `DefenderRiskUpdateTime`. Custom detection rule creation was rewritten. Incident case
+    articles are no longer marked preview. Two articles added: graph mapping best practices, and the
+    SyntheticMediaDetectionEvents table.
+  * `aws-security-ir`: VPC flow log records add `eks-cluster-arn`, `eks-pod-name` and `eks-pod-uid`; the CloudTrail
+    `userIdentity` reference gained five example records and no longer lists AssumedRole among the identity types
+    (recorded in `packs/aws-security-ir/review/source-defects.yaml`).
+  * `ms-azure-ir`: the Activity Log does not record requests rejected during authentication or authorization; Azure
+    Backup threat-detection statuses now describe alerts on the source VM; time-based immutability is supported for
+    Backup vaults in all regions.
+  * `ms-purview-exchange`: three sensitivity-label audit operations are renamed (`FileSensitivityLabelApplyFailed`,
+    `FileSensitivityLabelChangeFailed`, `FileSensitivityLabelRemoveFailed`); the Teams chat purge procedure changed.
+  * `ms-learn-ir`: Entra audit log adds Verified ID activities; Identity Protection adds "Require Identity
+    Verification (preview)" to user risk policies; the SecOps discipline articles were restructured again. One
+    article added: SecOps implementation patterns.
+  * `gcp-security-ir`: Cloud Storage object reads and deletions produce Data Access audit logs, not Admin Activity
+    logs; disabling or enabling a packet mirroring policy disrupts active connections.
+* **`ms-learn-ir` discovery** follows Microsoft's renamed TOC section ("SecOps/SOC") and the move of the "Minimize
+  damage from security incidents" scenario under "Business scenarios". Two articles that left every TOC are pinned:
+  `siem-xdr-overview` and `azure-protect-resources-cyberattacks`.
+* **Evaluation, re-run on these snapshots** with ranking v4 (`eval/results/hybrid-v4-14pack-*-2026-11-25.json`).
+  Evidence-complete@5 is unchanged on all eight sets. Evidence maintenance: v09 cites the CloudTrail example of an
+  assumed-role session, because AWS removed AssumedRole from the list of identity types; y04's "Configurable
+  soft-delete retention" alternative moved up one list item in the Azure Backup soft-delete article (`l01.i04` →
+  `l01.i03`).
+
+### Fixed
+* **Discovery kept a unit ID only when the article's final URL matched.** When a table of contents linked to an
+  address that redirects, the entry got a new unit ID. On 2026-11-10 two `ms-defender` articles were renamed this way
+  (`mdc-managing-and-responding-alerts-2`, `mdc-workflow-automation-2`); v0.1.0 and v0.1.1 carry those IDs. They are
+  back to their 2026-10-25 IDs (`mdc-managing-and-responding-alerts`, `mdc-workflow-automation`), and discovery now
+  also matches an entry by its `redirected_from` address.
+
 ## 0.1.1 (2026-11-10)
 
 ### Fixed

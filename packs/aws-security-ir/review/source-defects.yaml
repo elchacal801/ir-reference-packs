@@ -1,0 +1,17 @@
+# Suspected defects in the published source, preserved exactly as published (the conversion never "fixes" source
+# text). Each entry was checked against the captured HTML. Reported upstream: no (publication actions are out of scope).
+schema_version: 1
+pack_id: aws-security-ir
+defects:
+  - element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-fields.l01.i01.l01.i03
+    pdf_page: null
+    page_label: null
+    description: >-
+      CloudTrail userIdentity element, field "type": the list of possible values no longer includes AssumedRole. Its
+      third item is now "Role – The request was made with a persistent IAM identity that has specific permissions",
+      while the same page's example records for requests made with temporary credentials from an assumed role all
+      carry "type": "AssumedRole" (present in the captured HTML of docs.aws.amazon.com, snapshot 2026-11-25; the
+      2026-11-10 snapshot listed AssumedRole in that position).
+    reviewer: Claude (AI agent)
+    status: documented
+    remediation: "Preserved as published. For the meaning of AssumedRole, read the examples section of the same page."

@@ -6,19 +6,20 @@
 # published tables of contents and writes articles.yaml (existing unit IDs are kept). Review its diff, then lock.
 route: learn_html_pages
 inputs:
-  snapshot: "2026-11-10"
+  snapshot: "2026-11-25"
 artifacts_file: articles.yaml
 discovery:
   base: https://learn.microsoft.com/en-us/
   rules:
     # Microsoft security operations: incident response process and playbooks. In November 2026 Microsoft moved this
     # guide from security/operations (whose TOC is gone) into the Zero Trust docset's SecOps discipline; the old URLs
-    # redirect, and discovery carries each moved article's unit ID over to its new URL.
+    # redirect, and discovery carries each moved article's unit ID over to its new URL. The section was then renamed
+    # "SecOps/SOC" and the "Minimize damage" scenario moved under "Business scenarios"; the patterns accept both names.
     - toc: security/zero-trust
       prefix: secops
       docset: security
-      include: ['^Security adoption framework \(SAF\) > Security disciplines > SecOps( >|$)',
-                '^Minimize damage from incidents( >|$)']
+      include: ['^Security adoption framework \(SAF\) > Security disciplines > SecOps(/SOC)?( >|$)',
+                '^(Security adoption framework \(SAF\) > Business scenarios > )?Minimize damage from (security )?incidents( >|$)']
       exclude: ['workshop']
       url_prefix: https://learn.microsoft.com/en-us/security/
     # Microsoft Entra security operations guide and other identity-security architecture guidance.
@@ -52,6 +53,10 @@ discovery:
     - {url: https://learn.microsoft.com/en-us/security/zero-trust/respond-incident-azure, prefix: secops, docset: security}
     - {url: https://learn.microsoft.com/en-us/security/ransomware/incident-response-playbook-dart-ransomware-approach,
        prefix: secops, docset: security}
+    # still published, but no longer in a TOC since Microsoft's later November 2026 TOC change
+    - {url: https://learn.microsoft.com/en-us/security/zero-trust/siem-xdr-overview, prefix: secops, docset: security}
+    - {url: https://learn.microsoft.com/en-us/security/zero-trust/azure-protect-resources-cyberattacks, prefix: secops,
+       docset: security}
 chunking:
   min_tokens: 600
   max_tokens: 1000

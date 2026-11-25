@@ -84,8 +84,9 @@ questions:
     kinds: [exact_term]
     question: "In an AWS CloudTrail record, what does a userIdentity type of AssumedRole mean?"
     evidence:
-      - [{pack: aws-security-ir, element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-fields.l01.i01.l01.i03}]
-    rationale: "CloudTrail userIdentity element reference: the list of identity types."
+      - [{pack: aws-security-ir, element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.p04},
+         {pack: aws-security-ir, element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.c02}]
+    rationale: "CloudTrail userIdentity element reference: the example of a request made with temporary security credentials obtained by assuming an IAM role, whose record has type AssumedRole. Evidence moved here on 2026-11-25, when AWS dropped AssumedRole from the page's list of identity types."
   - id: v10
     split: vendor-heldout
     scenario: cloud_logs
