@@ -5,6 +5,8 @@ contain the code, recipes, source locks, history records and evaluation. Built p
 
 ## Unreleased
 
+## 0.1.2 (2026-11-25)
+
 ### Changed (web packs, snapshot 2026-11-25)
 * **Seven web packs are at the 2026-11-25 snapshot**: `aws-security-ir`, `gcp-security-ir`, `ms-azure-ir`,
   `ms-defender`, `ms-learn-ir`, `ms-purview-exchange` and `ms-sentinel`. Each build validates with 0 errors; history
