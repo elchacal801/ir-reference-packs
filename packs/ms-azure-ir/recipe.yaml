@@ -10,7 +10,7 @@
 # benchmark versions are left out. Entra, Defender for Cloud and Sentinel articles are in their own packs.
 route: learn_html_pages
 inputs:
-  snapshot: "2026-11-10"
+  snapshot: "2026-11-25"
 artifacts_file: articles.yaml
 discovery:
   base: https://learn.microsoft.com/en-us/

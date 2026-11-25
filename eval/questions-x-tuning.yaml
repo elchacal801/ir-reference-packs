@@ -16,29 +16,29 @@ sources:
     document_id: cisa-stopransomware:v3.0-2023-10
     source_sha256: e698e945c359af5c9becce1c4e64e19daf26af710977cc24080ccbce3334ff5b
   ms-learn-ir:
-    document_id: ms-learn-ir:2026-11-10
-    source_sha256: 0bb7da675c3418038833ca4cca95567519ea6f5c209b5d50271279bfa149af9b
+    document_id: ms-learn-ir:2026-11-25
+    source_sha256: f2067013ea745f14d576130960c976d91d0633052bcbb2c209507992593955e0
   ms-defender:
-    document_id: ms-defender:2026-11-10
-    source_sha256: 4da0a21abd893ce8ff064299e47594fb7e54282f3b9c4d3faa35ec169062fd51
+    document_id: ms-defender:2026-11-25
+    source_sha256: 142f12c34eac3afcdb3b8915768af14d88bed38a277c1bd236ac96672efa2e5b
   ms-sentinel:
-    document_id: ms-sentinel:2026-11-10
-    source_sha256: ef1f9fb2180a5718262990eace99f8dcef2c336eb8dbed084c425e1e1a49fa84
+    document_id: ms-sentinel:2026-11-25
+    source_sha256: 8b0261d30ee4f97221224b58191de7031a5eeacb3da1254781fced584821d246
   ms-purview-exchange:
-    document_id: ms-purview-exchange:2026-11-10
-    source_sha256: 58e562ff68b0fdfdf36e0c7dd1ce10e6d49a3aef8fc3224652d6adbc9aa6e47b
+    document_id: ms-purview-exchange:2026-11-25
+    source_sha256: 8f9ffb5ed2e1dd65409792ae8b5d166f4ecb95992fa8aba403448fe710bbcf84
   ms-windows-auditing:
     document_id: ms-windows-auditing:2026-11-10
     source_sha256: 479f2a850db3bea4a8fa6786e847005eaaf202ab95931b6db1a94bd018bfbf3a
   aws-security-ir:
-    document_id: aws-security-ir:2026-11-10
-    source_sha256: ac7597805544a8c3c57e30aea449896e14b5f3c6e1f8b4210f81f44f949dec52
+    document_id: aws-security-ir:2026-11-25
+    source_sha256: 6da8f8dda4220ad49e52f0bf2bd52d71850615f228ac326302d2948f71c1ae0a
   ms-azure-ir:
-    document_id: ms-azure-ir:2026-11-10
-    source_sha256: 71d1483e3e793ac932eaf9b5dbf42b317830bd9c77839d2dcaf062a58ab199cb
+    document_id: ms-azure-ir:2026-11-25
+    source_sha256: fcd6465698d494657892d62e94849dd9a3d3ca293d64d202451ec0e7192836b2
   gcp-security-ir:
-    document_id: gcp-security-ir:2026-11-10
-    source_sha256: a3c55013403179e8112a05f62007a5b29e248c8707a76a0b41e503485a8a5342
+    document_id: gcp-security-ir:2026-11-25
+    source_sha256: 2760752a0a251135eea3a1b86e0134edb960b75cc81c61a05741e99c4ed4f223
   first-standards:
     document_id: first-standards:2026-11-10
     source_sha256: 3e3b56384bf1bc3216cda45519d86dea0b63f31687e5620530183f7aed186e31

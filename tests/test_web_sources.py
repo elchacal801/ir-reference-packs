@@ -173,6 +173,23 @@ def test_discover_keeps_the_unit_id_of_a_moved_article(tmp_path, monkeypatch):
     assert res["moved"] == {old_url: new_url} and res["removed"] == ["https://learn.microsoft.com/en-us/old/gone"]
 
 
+def test_discover_keeps_the_unit_id_when_the_toc_links_to_a_redirect(tmp_path, monkeypatch):
+    items = [{"toc_title": "Docs", "children": [{"toc_title": "A", "href": "old-a"}]}]
+    pdir, serve = _web_project(tmp_path, monkeypatch, items)
+    old_url, new_url = "https://learn.microsoft.com/en-us/test/old-a", "https://learn.microsoft.com/en-us/test/new-a"
+
+    def runner(cmd):  # the TOC still links to old-a, which redirects to new-a
+        rc, out = serve(cmd)
+        return rc, new_url if cmd[-1] == old_url else out
+    (pdir / "articles.yaml").write_text(yaml.safe_dump({"artifacts": [
+        {"source_id": "web-test/test/a/t", "role": "authoritative", "unit_id": "tst-old-a", "url": new_url,
+         "redirected_from": old_url, "local_path": "input/web-test/t/test/old-a.html", "toc": "test: Docs > A"}]}))
+    res = discover.discover("web-test", runner=runner, log=lambda *a: None)
+    listed = yaml.safe_load((pdir / "articles.yaml").read_text())["artifacts"]
+    assert [(a["unit_id"], a["url"], a.get("redirected_from")) for a in listed] == [("tst-old-a", new_url, old_url)]
+    assert res["added"] == 0 and res["removed"] == []
+
+
 def test_fingerprint_report_counts_units_and_names_changed_sections():
     old = {"document_id": "p:1", "units": [{"unit_id": "u", "title": "U", "sections": [{"id": "u.s", "title": "S", "hash": "a"}]}]}
     new = {"document_id": "p:2", "units": [{"unit_id": "u", "title": "U", "sections": [{"id": "u.s", "title": "S", "hash": "b"}]},

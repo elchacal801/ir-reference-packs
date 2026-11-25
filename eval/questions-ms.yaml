@@ -10,8 +10,8 @@ sources:
     document_id: nist-sp800-61r3:800-61r3
     source_sha256: e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d
   ms-learn-ir:
-    document_id: ms-learn-ir:2026-11-10
-    source_sha256: 0bb7da675c3418038833ca4cca95567519ea6f5c209b5d50271279bfa149af9b
+    document_id: ms-learn-ir:2026-11-25
+    source_sha256: f2067013ea745f14d576130960c976d91d0633052bcbb2c209507992593955e0
 questions:
 - id: m01
   split: ms-heldout

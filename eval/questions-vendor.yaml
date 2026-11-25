@@ -7,20 +7,20 @@ sources:
     document_id: dynamic-ir:20260917164224
     source_sha256: f882f3fdfe4d2de2b8b295747b1579f7592c59cd46d5a3dc211ba8b777925164
   ms-defender:
-    document_id: ms-defender:2026-11-10
-    source_sha256: 4da0a21abd893ce8ff064299e47594fb7e54282f3b9c4d3faa35ec169062fd51
+    document_id: ms-defender:2026-11-25
+    source_sha256: 142f12c34eac3afcdb3b8915768af14d88bed38a277c1bd236ac96672efa2e5b
   ms-sentinel:
-    document_id: ms-sentinel:2026-11-10
-    source_sha256: ef1f9fb2180a5718262990eace99f8dcef2c336eb8dbed084c425e1e1a49fa84
+    document_id: ms-sentinel:2026-11-25
+    source_sha256: 8b0261d30ee4f97221224b58191de7031a5eeacb3da1254781fced584821d246
   ms-purview-exchange:
-    document_id: ms-purview-exchange:2026-11-10
-    source_sha256: 58e562ff68b0fdfdf36e0c7dd1ce10e6d49a3aef8fc3224652d6adbc9aa6e47b
+    document_id: ms-purview-exchange:2026-11-25
+    source_sha256: 8f9ffb5ed2e1dd65409792ae8b5d166f4ecb95992fa8aba403448fe710bbcf84
   ms-windows-auditing:
     document_id: ms-windows-auditing:2026-11-10
     source_sha256: 479f2a850db3bea4a8fa6786e847005eaaf202ab95931b6db1a94bd018bfbf3a
   aws-security-ir:
-    document_id: aws-security-ir:2026-11-10
-    source_sha256: ac7597805544a8c3c57e30aea449896e14b5f3c6e1f8b4210f81f44f949dec52
+    document_id: aws-security-ir:2026-11-25
+    source_sha256: 6da8f8dda4220ad49e52f0bf2bd52d71850615f228ac326302d2948f71c1ae0a
 questions:
 - id: v01
   split: vendor-heldout
@@ -256,17 +256,30 @@ questions:
   question: In an AWS CloudTrail record, what does a userIdentity type of AssumedRole mean?
   evidence:
   - - pack: aws-security-ir
-      element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-fields.l01.i01.l01.i03
-      type: list_item
-      quote: AssumedRole – The request was made with temporary security credentials that were obtained with a role by making
-        a call to the AWS Security Token Service (AWS STS) AssumeRole API. This can include role
+      element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.p04
+      type: paragraph
+      quote: 'The following example shows a userIdentity element for a request made with temporary security credentials obtained
+        by assuming an IAM role. The element contains additional details about the role that '
       mapping_status: native_structure
       rights_state: redistributable
       locators:
       - pdf_page: null
         page_label: null
-        url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html#cloudtrail-event-reference-user-identity-fields
-  rationale: 'CloudTrail userIdentity element reference: the list of identity types.'
+        url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html#cloudtrail-event-reference-user-identity-examples
+    - pack: aws-security-ir
+      element_id: ct-cloudtrail-event-reference-user-identity.cloudtrail-event-reference-user-identity-examples.c02
+      type: code
+      quote: '"userIdentity": { "type": "AssumedRole", "principalId": "AROAIDPPEZS35WEXAMPLE:AssumedRoleSessionName", "arn":
+        "arn:aws:sts::123456789012:assumed-role/RoleToBeAssumed/MySessionName", "accountId": "123'
+      mapping_status: native_structure
+      rights_state: redistributable
+      locators:
+      - pdf_page: null
+        page_label: null
+        url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html#cloudtrail-event-reference-user-identity-examples
+  rationale: 'CloudTrail userIdentity element reference: the example of a request made with temporary security credentials
+    obtained by assuming an IAM role, whose record has type AssumedRole. Evidence moved here on 2026-11-25, when AWS dropped
+    AssumedRole from the page''s list of identity types.'
   answerable: true
   requires_context: false
   needs_visual: false
